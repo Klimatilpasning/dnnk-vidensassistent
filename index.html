@@ -786,7 +786,10 @@ function detectCategory(n) {
 function highlight(text, query) {
   let result = text;
   query.split(' ').filter(w => w.length > 2).forEach(w => {
-    result = result.replace(new RegExp('(' + w + ')', 'gi'), '<mark>$1</mark>');
+    const safe = w.replace(/[.*+?^${}()|[\]\]/g, '\$&');
+    try {
+      result = result.replace(new RegExp('(' + safe + ')', 'gi'), '<mark>$1</mark>');
+    } catch(e) {}
   });
   return result;
 }

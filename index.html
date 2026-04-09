@@ -426,31 +426,19 @@ function clearContext() {
 // ─── Chat messages ────────────────────────────────────────
 // ─── Markdown renderer ───────────────────────────────────
 function renderMarkdown(text) {
-  // Escape HTML first
   let t = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  // Headers
   t = t.replace(/^### (.+)$/gm,'<h3>$1</h3>');
   t = t.replace(/^## (.+)$/gm,'<h2>$1</h2>');
   t = t.replace(/^# (.+)$/gm,'<h1>$1</h1>');
-  // Bold and italic
   t = t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
-  // italic - only match when not at start of line (avoid list markers)
-  t = t.replace(/(?<![\n\s])\*(.+?)\*/g,'<em>$1</em>');
-  // Lists
   t = t.replace(/^[-*] (.+)$/gm,'<li>$1</li>');
   t = t.replace(/^(\d+)\. (.+)$/gm,'<li>$2</li>');
-  // Wrap consecutive li in ul
   t = t.replace(/(<li>[\s\S]*?<\/li>)(\s*(?!<li>))/g,'<ul>$1</ul>$2');
   t = t.replace(/<\/ul>\s*<ul>/g,'');
-  // Paragraphs: double newline
-  t = t.replace(/
-
-/g,'<br><br>');
-  t = t.replace(/
-/g,'<br>');
+  t = t.replace(/\n\n/g,'<br><br>');
+  t = t.replace(/\n/g,'<br>');
   return t;
 }
-
 
 function addMessage(role, text) {
   const msgs = document.getElementById('chatMessages');

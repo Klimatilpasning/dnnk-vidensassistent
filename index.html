@@ -431,16 +431,11 @@ async function sendChat() {
   }));
 
   try {
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+    const resp = await fetch('https://dnnk-klimamonitor-proxy.onrender.com/chat', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': geminiKey,
-        'anthropic-version': '2023-06-01'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001',
-        max_tokens: 800,
+        api_key: geminiKey,
         system: 'Du er vidensassistent for DNNK. Besvar spørgsmål præcist baseret på transskriptioner. Angiv hvilke webinarer du refererer til. Svar på dansk.\n\nTransskriptioner:\n' + context,
         messages: chatHistory.map(m => ({ role: m.role === 'model' ? 'assistant' : m.role, content: m.parts[0].text }))
       })

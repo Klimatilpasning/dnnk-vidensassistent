@@ -131,9 +131,9 @@
 </header>
 
 <div id="configBanner" class="config-banner">
-  <strong>Gemini API-nøgle påkrævet</strong> — Indtast din gratis nøgle for AI-svar i Chat-fanen.
-  <input type="password" id="geminiKey" placeholder="Google Gemini API-nøgle" />
-  <small style="color:var(--muted)">Hent gratis: <a style="color:var(--dnnk-blue)" href="https://aistudio.google.com/app/apikey" target="_blank">aistudio.google.com/app/apikey</a></small>
+  <strong>Anthropic API-nøgle påkrævet</strong> — Indtast din API-nøgle for AI-svar i Chat-fanen.
+  <input type="password" id="geminiKey" placeholder="Anthropic API-nøgle (sk-ant-...)" />
+  <small style="color:var(--muted)">Hent nøgle: <a style="color:var(--dnnk-blue)" href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com/settings/keys</a></small>
   <br><button onclick="saveConfig()">Gem nøgle</button>
 </div>
 
@@ -431,13 +431,22 @@ async function sendChat() {
   }));
 
   try {
-    const resp = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + geminiKey, {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contents: messages, generationConfig: { maxOutputTokens: 800, temperature: 0.3 } })
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': geminiKey,
+        'anthropic-version': '2023-06-01'
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 800,
+        system: 'Du er vidensassistent for DNNK. Besvar spørgsmål præcist baseret på transskriptioner. Angiv hvilke webinarer du refererer til. Svar på dansk.\n\nTransskriptioner:\n' + context,
+        messages: chatHistory.map(m => ({ role: m.role === 'model' ? 'assistant' : m.role, content: m.parts[0].text }))
+      })
     });
     const data = await resp.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    const text = data.content?.[0]?.text;
     thinking.remove();
     if (text) {
       addMessage('assistant', text);

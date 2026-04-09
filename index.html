@@ -435,7 +435,8 @@ function renderMarkdown(text) {
   t = t.replace(/^# (.+)$/gm,'<h1>$1</h1>');
   // Bold and italic
   t = t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
-  t = t.replace(/\*(.+?)\*/g,'<em>$1</em>');
+  // italic - only match when not at start of line (avoid list markers)
+  t = t.replace(/(?<![\n\s])\*(.+?)\*/g,'<em>$1</em>');
   // Lists
   t = t.replace(/^[-*] (.+)$/gm,'<li>$1</li>');
   t = t.replace(/^(\d+)\. (.+)$/gm,'<li>$2</li>');
@@ -505,7 +506,7 @@ async function sendChat() {
       : 'Ingen specifik transskription er indlæst. Tip: Søg i Søg-fanen og tryk "Spørg om dette webinar" for at chatte om et specifikt webinar.';
   }
 
-  const systemPrompt = `Du er vidensassistent for DNNK (Det Nationale Netværk for Klimatilpasning). Besvar spørgsmål præcist baseret på de vedlagte transskriptioner. Du har adgang til DNNK's samlede vidensbank med over 200 webinar-transskriptioner. Søg i dem og angiv altid hvilke webinarer du refererer til. Angiv altid hvilket webinar informationen stammer fra. Hvis svaret ikke fremgår af transskriptionerne, siger du det klart. Svar på dansk.
+  const systemPrompt = `Du er vidensassistent for DNNK (Det Nationale Netværk for Klimatilpasning). Besvar spørgsmål præcist baseret på de vedlagte transskriptioner. Når en bruger søger, matches relevante webinarer på filnavne og sendes som kontekst. Angiv altid hvilket webinar informationen stammer fra. Hvis ingen transskription er vedlagt, bed brugeren om at søge i søgefanen og trykke 'Spørg om dette webinar'. Angiv altid hvilket webinar informationen stammer fra. Hvis svaret ikke fremgår af transskriptionerne, siger du det klart. Svar på dansk.
 
 Transskriptioner:
 ${context}`;

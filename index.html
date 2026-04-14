@@ -308,7 +308,7 @@ function fuzzyScore(word, text) {
     const dist = levenshtein(word, tw);
     const maxLen = Math.max(word.length, tw.length);
     const similarity = 1 - dist / maxLen;
-    if (similarity >= 0.7) score += similarity;
+    if (similarity >= 0.6) score += similarity;
   }
   return score;
 }

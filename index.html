@@ -284,6 +284,35 @@ function getTitle(n) {
 }
 
 // ─── Search ───────────────────────────────────────────────
+// ── Fuzzy matching: Levenshtein distance ─────────────────────
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  const dp = Array.from({length: m+1}, (_, i) => [i, ...Array(n).fill(0)]);
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++)
+    for (let j = 1; j <= n; j++)
+      dp[i][j] = a[i-1] === b[j-1] ? dp[i-1][j-1]
+        : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+  return dp[m][n];
+}
+
+function fuzzyScore(word, text) {
+  // Eksakt match tæller mest
+  if (text.includes(word)) return text.split(word).length - 1;
+  // Fuzzy: find ord i teksten der ligner søgeordet
+  if (word.length < 4) return 0;
+  const textWords = text.split(/\s+/);
+  let score = 0;
+  for (const tw of textWords) {
+    if (Math.abs(tw.length - word.length) > 4) continue;
+    const dist = levenshtein(word, tw);
+    const maxLen = Math.max(word.length, tw.length);
+    const similarity = 1 - dist / maxLen;
+    if (similarity >= 0.7) score += similarity;
+  }
+  return score;
+}
+
 async function findRelevantFiles(query) {
   let pool = currentFilter === 'alle'
     ? allFiles
@@ -302,7 +331,8 @@ async function findRelevantFiles(query) {
       const fileContent = await resp.text();
       const lower = fileContent.toLowerCase();
       const nameScore = words.reduce((s, w) => s + (file.name.toLowerCase().split(w).length - 1) * 5, 0);
-      const contentScore = words.reduce((s, w) => s + (lower.split(w).length - 1), 0);
+      // Kombiner eksakt match + fuzzy match
+      const contentScore = words.reduce((s, w) => s + fuzzyScore(w, lower), 0);
       const score = nameScore + contentScore;
       if (score > 0) matches.push({ file, content: fileContent, score });
     } catch(e) {}

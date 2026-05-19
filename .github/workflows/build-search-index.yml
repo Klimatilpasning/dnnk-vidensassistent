@@ -4,6 +4,13 @@ on:
   schedule:
     - cron: "0 5 * * *"   # dagligt kl. 05:00 UTC
   workflow_dispatch:        # kan også køres manuelt fra GitHub
+    inputs:
+      rebuild:
+        description: "Genopbyg hele indekset fra bunden (slet eksisterende)"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
 
 permissions:
   contents: write
@@ -28,6 +35,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REBUILD: ${{ github.event.inputs.rebuild || 'false' }}
         run: python build_search_index.py
 
       - name: Commit and push updated index

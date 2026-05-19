@@ -235,37 +235,47 @@ def find_best_event(title: str, events: list[dict]) -> dict | None:
 
 def generate_summary(client: anthropic.Anthropic, title: str, content: str) -> dict:
     excerpt = content[:5000]
-    try:
-        resp = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=512,
-            messages=[
-                {
-                    "role": "user",
-                    "content": (
-                        f"Webinar: {title}\n\n"
-                        f"Transskription (uddrag):\n{excerpt}\n\n"
-                        "Svar KUN med valid JSON – ingen forklaring:\n"
-                        '{"summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
-                        ' "keywords": ["nøgleord1", "nøgleord2", ...]}\n\n'
-                        "Krav:\n"
-                        "- summary: 2-3 sætninger på dansk\n"
-                        "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)"
-                    ),
-                }
-            ],
-        )
-        raw = resp.content[0].text.strip()
-        raw = re.sub(r"^```json\s*", "", raw)
-        raw = re.sub(r"\s*```$", "", raw)
-        return json.loads(raw)
-    except Exception as exc:
-        print(f"    Warning – AI generation failed: {exc}")
-        return {"summary": "", "keywords": []}
+    for attempt in range(3):
+        try:
+            resp = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=512,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": (
+                            f"Webinar: {title}\n\n"
+                            f"Transskription (uddrag):\n{excerpt}\n\n"
+                            "Svar KUN med valid JSON – ingen forklaring:\n"
+                            '{"summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
+                            ' "keywords": ["nøgleord1", "nøgleord2", ...]}\n\n'
+                            "Krav:\n"
+                            "- summary: 2-3 sætninger på dansk\n"
+                            "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)"
+                        ),
+                    }
+                ],
+            )
+            raw = resp.content[0].text.strip()
+            raw = re.sub(r"^```json\s*", "", raw)
+            raw = re.sub(r"\s*```$", "", raw)
+            return json.loads(raw)
+        except anthropic.RateLimitError:
+            wait = 60 * (attempt + 1)
+            print(f"    Rate limit – venter {wait}s …")
+            time.sleep(wait)
+        except Exception as exc:
+            print(f"    Warning – AI generation failed: {exc}")
+            break
+    return {"summary": "", "keywords": []}
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def load_existing_index() -> list[dict]:
+    rebuild = os.environ.get("REBUILD", "").lower() in ("1", "true", "yes")
+    if rebuild:
+        print("  REBUILD=true – starter forfra")
+        return []
     if os.path.exists("search-index.json"):
         with open("search-index.json", encoding="utf-8") as f:
             return json.load(f)
@@ -318,7 +328,11 @@ def build_index():
             youtube_id = matched.get("youtube_id")
             youtube_url = matched.get("youtube_url")
             date = matched.get("date")
-            print(f"  → matched: {matched['title'][:60]}")
+            # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
+            match_confidence = title_similarity(title, matched["title"])
+            if match_confidence >= 0.55 and matched.get("title"):
+                title = matched["title"]
+            print(f"  → matched ({match_confidence:.2f}): {matched['title'][:60]}")
             if event_url:
                 description = get_event_description(event_url)
                 time.sleep(0.5)

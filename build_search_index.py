@@ -620,6 +620,11 @@ def build_index():
 
         time.sleep(0.3)
 
+        # Gem løbende hver 10. entry så vi ikke mister arbejde ved fejl
+        if len(index) % 10 == 0:
+            with open("search-index.json", "w", encoding="utf-8") as f:
+                json.dump(index, f, ensure_ascii=False, indent=2)
+
     # Compute related webinars across entire index
     print("Beregner krydsreferencer mellem webinarer …")
     compute_related_webinars(index)

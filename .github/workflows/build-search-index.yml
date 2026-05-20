@@ -45,5 +45,6 @@ jobs:
           git add search-index.json
           git diff --staged --quiet && echo "No changes." || (
             git commit -m "chore: update search index [skip ci]" &&
+            git pull --rebase origin main &&
             git push
           )

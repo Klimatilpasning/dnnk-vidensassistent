@@ -23,6 +23,7 @@ import requests
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 from urllib.parse import unquote, quote
+import yt_dlp
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
@@ -46,6 +47,8 @@ EXTERNAL_RESOURCE_PAGES = [
 ]
 
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; DNNK-indexer/1.0)"}
+
+DNNK_YOUTUBE_CHANNEL = "https://www.youtube.com/@dnnk-detnationalenetvrkfor946/videos"
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -157,6 +160,36 @@ def get_all_transcription_files() -> list[dict]:
     return files
 
 # ── DNNK scraping ─────────────────────────────────────────────────────────────
+
+def fetch_youtube_channel() -> list[dict]:
+    """
+    Fetch all videos from DNNK's YouTube channel using yt-dlp.
+    Returns list of {title, youtube_id, youtube_url}.
+    """
+    try:
+        print("  Henter videoer fra DNNK YouTube-kanal …")
+        ydl_opts = {
+            "quiet": True,
+            "extract_flat": True,
+            "playlist_items": "1-500",
+        }
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(DNNK_YOUTUBE_CHANNEL, download=False)
+            videos = []
+            for entry in (info or {}).get("entries", []):
+                vid_id = entry.get("id", "")
+                title  = entry.get("title", "")
+                if vid_id and title:
+                    videos.append({
+                        "title":       title,
+                        "youtube_id":  vid_id,
+                        "youtube_url": f"https://youtube.com/watch?v={vid_id}",
+                    })
+            print(f"  Fandt {len(videos)} videoer på YouTube-kanalen")
+            return videos
+    except Exception as exc:
+        print(f"  Warning – YouTube-kanal ikke tilgængelig: {exc}")
+        return []
 
 def scrape_dnnk_events() -> list[dict]:
     """
@@ -342,7 +375,9 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
             raw = re.sub(r"^```json\s*", "", raw)
             raw = re.sub(r"\s*```$", "", raw)
             return json.loads(raw)
-        except anthropic.RateLimitError:
+        except (anthropic.RateLimitError, anthropic.APIStatusError) as e:
+            if hasattr(e, 'status_code') and e.status_code not in (429, 529):
+                raise
             wait = 60 * (attempt + 1)
             print(f"    Rate limit – venter {wait}s …")
             time.sleep(wait)
@@ -489,6 +524,9 @@ def build_index():
         print("Nothing new to process.")
         return
 
+    print("Henter DNNK YouTube-kanal …")
+    youtube_videos = fetch_youtube_channel()
+
     print("Scraping dnnk.dk for event metadata …")
     dnnk_events = scrape_dnnk_events()
 
@@ -530,7 +568,21 @@ def build_index():
                 description = get_event_description(event_url)
                 time.sleep(0.5)
 
-        # Fallback: extract YouTube ID directly from transcript
+        # Fallback 1: match against YouTube channel video titles
+        if not youtube_id and youtube_videos:
+            best_yt_score = 0.0
+            best_yt = None
+            for vid in youtube_videos:
+                score = title_similarity(title, vid["title"])
+                if score > best_yt_score:
+                    best_yt_score = score
+                    best_yt = vid
+            if best_yt and best_yt_score >= 0.45:
+                youtube_id  = best_yt["youtube_id"]
+                youtube_url = best_yt["youtube_url"]
+                print(f"  → YouTube match ({best_yt_score:.2f}): {best_yt['title'][:60]}")
+
+        # Fallback 2: extract YouTube ID directly from transcript
         if not youtube_id:
             yt_m = re.search(
                 r"(?:youtube\.com/watch\?v=|youtu\.be/)([a-zA-Z0-9_-]{11})", content

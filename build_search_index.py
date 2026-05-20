@@ -233,8 +233,12 @@ def find_best_event(title: str, events: list[dict]) -> dict | None:
 
 # ── AI summary ────────────────────────────────────────────────────────────────
 
-def generate_summary(client: anthropic.Anthropic, title: str, content: str) -> dict:
+def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None) -> dict:
     excerpt = content[:5000]
+    invitation_block = (
+        f"Invitationstekst fra dnnk.dk (verificeret af DNNK, brug som primær kilde):\n{description}\n\n"
+        if description else ""
+    )
     for attempt in range(3):
         try:
             resp = client.messages.create(
@@ -245,11 +249,14 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str) -> d
                         "role": "user",
                         "content": (
                             f"Webinar: {title}\n\n"
-                            f"Transskription (uddrag):\n{excerpt}\n\n"
+                            f"{invitation_block}"
+                            f"Transskription (uddrag, brug som supplement):\n{excerpt}\n\n"
                             "Svar KUN med valid JSON – ingen forklaring:\n"
                             '{"summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
                             ' "keywords": ["nøgleord1", "nøgleord2", ...]}\n\n'
                             "Krav:\n"
+                            "- summary: Basér primært på invitationsteksten hvis den findes. "
+                            "Supplér med pointer fra transskriptionen som invitationen ikke dækker.\n"
                             "- summary: 2-3 sætninger på dansk\n"
                             "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)"
                         ),
@@ -348,7 +355,7 @@ def build_index():
 
         # Generate AI summary
         print("  → generating summary …")
-        ai = generate_summary(client, title, content)
+        ai = generate_summary(client, title, content, description)
 
         index.append(
             {

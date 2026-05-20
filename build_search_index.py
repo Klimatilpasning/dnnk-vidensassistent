@@ -141,6 +141,8 @@ def get_all_transcription_files() -> list[dict]:
 def scrape_dnnk_events() -> list[dict]:
     """
     Scrape all DNNK category pages.
+    dnnk.dk lists webinars directly with YouTube links and dates —
+    there are no separate /event/ subpages.
     Returns list of {title, category, event_url, youtube_id, youtube_url, date}.
     """
     events = []
@@ -151,46 +153,89 @@ def scrape_dnnk_events() -> list[dict]:
             resp = requests.get(cat_url, headers=HTTP_HEADERS, timeout=15)
             soup = BeautifulSoup(resp.text, "html.parser")
 
-            # Find all links to event pages
-            for a in soup.find_all("a", href=re.compile(r"/event/")):
-                event_url = a["href"]
-                if not event_url.startswith("http"):
-                    event_url = "https://www.dnnk.dk" + event_url
+            # Remove boilerplate
+            for tag in soup.find_all(["nav", "header", "footer", "script", "style"]):
+                tag.decompose()
 
-                title = a.get_text(strip=True)
+            # Strategy: find every YouTube link, then extract title and date from context
+            seen_yt = set()
+            for yt_a in soup.find_all("a", href=re.compile(r"youtu")):
+                yt_id = extract_youtube_id(yt_a["href"])
+                if not yt_id or yt_id in seen_yt:
+                    continue
+                seen_yt.add(yt_id)
+
+                # Walk up to find a container with a title
+                title = ""
+                date = None
+                parent = yt_a.find_parent(["li", "tr", "article", "div", "section"])
+                for _ in range(4):  # max 4 levels up
+                    if not parent:
+                        break
+                    # Look for heading or bold text as title
+                    for tag in ["h1", "h2", "h3", "h4", "strong", "b"]:
+                        el = parent.find(tag)
+                        if el:
+                            t = el.get_text(strip=True)
+                            if len(t) > 8 and t != yt_a.get_text(strip=True):
+                                title = t
+                                break
+                    # Look for date in DD.MM.YYYY format
+                    if not date:
+                        m = re.search(r"\d{2}\.\d{2}\.\d{4}", parent.get_text())
+                        if m:
+                            raw = m.group(0)
+                            parts = raw.split(".")
+                            date = f"{parts[2]}-{parts[1]}-{parts[0]}"
+                    if title:
+                        break
+                    parent = parent.find_parent(["li", "tr", "article", "div", "section"])
+
+                # Fallback: use link text if no heading found
                 if not title:
+                    title = yt_a.get_text(strip=True)
+                if not title or len(title) < 5:
                     continue
 
-                # Look for nearby YouTube link
-                parent = a.find_parent(["li", "div", "article", "tr"])
-                yt_id = None
+                events.append({
+                    "title":       title,
+                    "category":    cat_name,
+                    "event_url":   cat_url,   # no individual event page — use category URL
+                    "youtube_id":  yt_id,
+                    "youtube_url": f"https://youtube.com/watch?v={yt_id}",
+                    "date":        date,
+                })
+
+            # Also check iframes (embedded players)
+            for iframe in soup.find_all("iframe", src=re.compile(r"youtu")):
+                yt_id = extract_youtube_id(iframe.get("src", ""))
+                if not yt_id or yt_id in seen_yt:
+                    continue
+                seen_yt.add(yt_id)
+                parent = iframe.find_parent(["li", "tr", "article", "div"])
+                title = ""
                 date = None
                 if parent:
-                    for yt_a in parent.find_all("a", href=re.compile(r"youtu")):
-                        yt_id = extract_youtube_id(yt_a["href"])
-                        if yt_id:
+                    for tag in ["h1", "h2", "h3", "h4", "strong"]:
+                        el = parent.find(tag)
+                        if el:
+                            title = el.get_text(strip=True)
                             break
-                    for yt_i in parent.find_all("iframe", src=re.compile(r"youtu")):
-                        yt_id = yt_id or extract_youtube_id(yt_i.get("src", ""))
-                    date_el = parent.find(
-                        string=re.compile(r"\d{2}\.\d{2}\.\d{4}")
-                    )
-                    if date_el:
-                        m = re.search(r"\d{2}\.\d{2}\.\d{4}", str(date_el))
-                        date = m.group(0) if m else None
+                    m = re.search(r"\d{2}\.\d{2}\.\d{4}", parent.get_text())
+                    if m:
+                        parts = m.group(0).split(".")
+                        date = f"{parts[2]}-{parts[1]}-{parts[0]}"
+                if not title:
+                    continue
+                events.append({
+                    "title":       title,
+                    "category":    cat_name,
+                    "event_url":   cat_url,
+                    "youtube_id":  yt_id,
+                    "youtube_url": f"https://youtube.com/watch?v={yt_id}",
+                    "date":        date,
+                })
 
-                events.append(
-                    {
-                        "title": title,
-                        "category": cat_name,
-                        "event_url": event_url,
-                        "youtube_id": yt_id,
-                        "youtube_url": (
-                            f"https://youtube.com/watch?v={yt_id}" if yt_id else None
-                        ),
-                        "date": date,
-                    }
-                )
             time.sleep(0.5)
         except Exception as exc:
             print(f"  Warning – could not scrape {cat_url}: {exc}")

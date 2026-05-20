@@ -391,6 +391,50 @@ function buildCard(entry, matchedKws) {
   actEl.appendChild(chatBtn);
 
   card.appendChild(actEl);
+
+  // ── Relateret indhold ──────────────────────────────────────
+  const related = [];
+  if (entry.related_webinars && entry.related_webinars.length) {
+    entry.related_webinars.forEach(w => {
+      related.push({ label: w.title, url: w.youtube_url || w.dnnk_url, type: 'webinar' });
+    });
+  }
+  if (entry.related_resources && entry.related_resources.length) {
+    entry.related_resources.forEach(r => {
+      related.push({ label: r.title, url: r.url, type: 'resource', source: r.source });
+    });
+  }
+
+  if (related.length) {
+    const relDiv = document.createElement('div');
+    relDiv.style.cssText = 'margin-top:10px;padding-top:10px;border-top:1px solid #e0e8f0;';
+    const relTitle = document.createElement('div');
+    relTitle.style.cssText = 'font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;';
+    relTitle.textContent = 'Relateret indhold';
+    relDiv.appendChild(relTitle);
+    const relList = document.createElement('div');
+    relList.style.cssText = 'display:flex;flex-direction:column;gap:4px;';
+    related.forEach(item => {
+      if (!item.url) return;
+      const link = document.createElement('a');
+      link.href = item.url;
+      link.target = '_blank';
+      link.style.cssText = 'font-size:12px;color:' + (item.type === 'webinar' ? 'var(--dnnk-blue)' : 'var(--dnnk-green)') + ';text-decoration:none;display:flex;align-items:flex-start;gap:4px;';
+      link.onclick = e => e.stopPropagation();
+      const icon = document.createElement('span');
+      icon.textContent = item.type === 'webinar' ? '▶' : '📄';
+      icon.style.cssText = 'flex-shrink:0;margin-top:1px;font-size:10px;';
+      const txt = document.createElement('span');
+      txt.textContent = (item.source ? '[' + item.source + '] ' : '') + item.label;
+      txt.style.cssText = 'line-height:1.4;';
+      link.appendChild(icon);
+      link.appendChild(txt);
+      relList.appendChild(link);
+    });
+    relDiv.appendChild(relList);
+    card.appendChild(relDiv);
+  }
+
   return card;
 }
 

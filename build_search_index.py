@@ -38,6 +38,13 @@ DNNK_CATEGORY_PAGES = [
     ("Øvrige",             "https://www.dnnk.dk/ovrige-optagelser/"),
 ]
 
+# External resource pages to scrape for cross-references
+EXTERNAL_RESOURCE_PAGES = [
+    ("DNNK Rapporter",         "https://www.dnnk.dk/vidensbank2/",                              "dnnk.dk"),
+    ("Klimatilpasning.dk",     "https://www.klimatilpasning.dk/publikationer/",                 "klimatilpasning.dk"),
+    ("Klimatilpasning vejl.",  "https://www.klimatilpasning.dk/kommuner-og-forsyning/proces-og-vejledning/", "klimatilpasning.dk"),
+]
+
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; DNNK-indexer/1.0)"}
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -276,6 +283,114 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
             break
     return {"summary": "", "keywords": []}
 
+# ── External resources ────────────────────────────────────────────────────────
+
+def scrape_external_resources() -> list[dict]:
+    """
+    Scrape DNNK rapporter og klimatilpasning.dk publikationer/vejledninger.
+    Returns list of {title, url, source}.
+    """
+    resources = []
+
+    for label, base_url, source in EXTERNAL_RESOURCE_PAGES:
+        try:
+            print(f"  Scraping ekstern kilde: {base_url} …")
+            page_url = base_url
+            pages_scraped = 0
+            while page_url and pages_scraped < 8:
+                resp = requests.get(page_url, headers=HTTP_HEADERS, timeout=15)
+                soup = BeautifulSoup(resp.text, "html.parser")
+
+                # Find article/resource links — try multiple selectors
+                found = 0
+                for a in soup.find_all("a", href=True):
+                    href = a["href"]
+                    title = a.get_text(strip=True)
+                    if not title or len(title) < 10:
+                        continue
+                    # Skip navigation/boilerplate links
+                    if any(skip in title.lower() for skip in ["log ind", "søg", "menu", "læs mere", "detaljer", "→", "←"]):
+                        continue
+                    if not href.startswith("http"):
+                        href = "https://www." + source + href if href.startswith("/") else href
+                    # Only keep links on same domain
+                    if source not in href:
+                        continue
+                    # Skip category/index pages — only individual resources
+                    if href.rstrip("/") == base_url.rstrip("/"):
+                        continue
+                    resources.append({"title": title, "url": href, "source": label})
+                    found += 1
+
+                # Follow pagination
+                next_link = soup.find("a", string=re.compile(r"→|næste|next", re.I))
+                if next_link and next_link.get("href") and found > 0:
+                    next_href = next_link["href"]
+                    if not next_href.startswith("http"):
+                        next_href = "https://www." + source + next_href
+                    page_url = next_href if next_href != page_url else None
+                else:
+                    page_url = None
+                pages_scraped += 1
+                time.sleep(0.5)
+
+        except Exception as exc:
+            print(f"  Warning – kunne ikke scrape {base_url}: {exc}")
+
+    # Deduplicate by URL
+    seen = set()
+    unique = []
+    for r in resources:
+        if r["url"] not in seen:
+            seen.add(r["url"])
+            unique.append(r)
+
+    print(f"  Fandt {len(unique)} eksterne ressourcer")
+    return unique
+
+
+def keyword_overlap(kw_list: list[str], text: str) -> int:
+    """Count how many keywords from kw_list appear in text (case-insensitive)."""
+    text_lower = text.lower()
+    return sum(1 for kw in kw_list if kw.lower() in text_lower)
+
+
+def find_related_resources(keywords: list[str], title: str, resources: list[dict], top_n: int = 3) -> list[dict]:
+    """Find top_n external resources matching the webinar's keywords."""
+    if not keywords or not resources:
+        return []
+    scored = []
+    for r in resources:
+        score = keyword_overlap(keywords, r["title"])
+        if score > 0:
+            scored.append((score, r))
+    scored.sort(key=lambda x: -x[0])
+    return [r for _, r in scored[:top_n]]
+
+
+def compute_related_webinars(index: list[dict], top_n: int = 3) -> None:
+    """
+    For each entry in index, find top_n related webinars by keyword overlap.
+    Mutates index in place by adding 'related_webinars' key.
+    """
+    for entry in index:
+        kw = entry.get("keywords", [])
+        if not kw:
+            entry["related_webinars"] = []
+            continue
+        scored = []
+        for other in index:
+            if other["filename"] == entry["filename"]:
+                continue
+            other_kw = other.get("keywords", [])
+            other_text = " ".join(other_kw) + " " + other.get("title", "")
+            score = keyword_overlap(kw, other_text)
+            if score >= 2:  # require at least 2 overlapping keywords
+                scored.append((score, {"title": other["title"], "filename": other["filename"], "youtube_url": other.get("youtube_url"), "dnnk_url": other.get("dnnk_url")}))
+        scored.sort(key=lambda x: -x[0])
+        entry["related_webinars"] = [r for _, r in scored[:top_n]]
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def load_existing_index() -> list[dict]:
@@ -308,6 +423,9 @@ def build_index():
 
     print("Scraping dnnk.dk for event metadata …")
     dnnk_events = scrape_dnnk_events()
+
+    print("Scraping eksterne ressourcer (vidensbank, klimatilpasning.dk) …")
+    ext_resources = scrape_external_resources()
 
     index = list(existing)
 
@@ -357,6 +475,8 @@ def build_index():
         print("  → generating summary …")
         ai = generate_summary(client, title, content, description)
 
+        related_resources = find_related_resources(ai.get("keywords", []), title, ext_resources)
+
         index.append(
             {
                 "filename": filename,
@@ -371,10 +491,16 @@ def build_index():
                 "youtube_url": youtube_url,
                 "dnnk_url": event_url,
                 "description": description,
+                "related_resources": related_resources,
+                "related_webinars": [],  # filled in after all entries are built
             }
         )
 
         time.sleep(0.3)
+
+    # Compute related webinars across entire index
+    print("Beregner krydsreferencer mellem webinarer …")
+    compute_related_webinars(index)
 
     # Sort chronologically by folder, then title
     index.sort(key=lambda x: (x.get("folder", ""), x.get("title", "")))

@@ -87,11 +87,31 @@ def detect_category(filename: str) -> str:
 
 
 def title_similarity(a: str, b: str) -> float:
-    def norm(s):
+    """
+    Robust similarity that handles missing æ/ø/å in filenames.
+    Uses three strategies and returns the best score:
+    1. Standard normalization
+    2. ASCII normalization (æ→ae, ø→oe, å→aa) + remove spaces
+    3. Consonant-only comparison (most robust against missing vowels)
+    """
+    def norm_std(s):
         s = s.lower()
         s = re.sub(r"[^a-z0-9æøå ]", " ", s)
         return re.sub(r"\s+", " ", s).strip()
-    return SequenceMatcher(None, norm(a), norm(b)).ratio()
+
+    def norm_ascii(s):
+        s = s.lower()
+        s = s.replace("æ", "ae").replace("ø", "oe").replace("å", "aa")
+        return re.sub(r"[^a-z0-9]", "", s)
+
+    def consonants(s):
+        s = norm_ascii(s)
+        return "".join(c for c in s if c.isalpha() and c not in "aeiou")
+
+    sim1 = SequenceMatcher(None, norm_std(a), norm_std(b)).ratio()
+    sim2 = SequenceMatcher(None, norm_ascii(a), norm_ascii(b)).ratio()
+    sim3 = SequenceMatcher(None, consonants(a), consonants(b)).ratio()
+    return max(sim1, sim2, sim3)
 
 # ── GitHub ────────────────────────────────────────────────────────────────────
 

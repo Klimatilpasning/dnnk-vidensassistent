@@ -295,18 +295,21 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
         try:
             resp = client.messages.create(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=512,
+                max_tokens=600,
                 messages=[
                     {
                         "role": "user",
                         "content": (
-                            f"Webinar: {title}\n\n"
+                            f"Webinar titel (kan have manglende æ/ø/å): {title}\n\n"
                             f"{invitation_block}"
                             f"Transskription (uddrag, brug som supplement):\n{excerpt}\n\n"
                             "Svar KUN med valid JSON – ingen forklaring:\n"
-                            '{"summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
+                            '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
+                            ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
                             ' "keywords": ["nøgleord1", "nøgleord2", ...]}\n\n'
                             "Krav:\n"
+                            "- corrected_title: Ret manglende eller forkerte æ/ø/å i titlen baseret på kontekst. "
+                            "Behold titlen uændret hvis den allerede er korrekt.\n"
                             "- summary: Basér primært på invitationsteksten hvis den findes. "
                             "Supplér med pointer fra transskriptionen som invitationen ikke dækker.\n"
                             "- summary: 2-3 sætninger på dansk\n"
@@ -500,7 +503,7 @@ def build_index():
             date = matched.get("date")
             # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
             match_confidence = title_similarity(title, matched["title"])
-            if match_confidence >= 0.55 and matched.get("title"):
+            if match_confidence >= 0.45 and matched.get("title"):
                 title = matched["title"]
             print(f"  → matched ({match_confidence:.2f}): {matched['title'][:60]}")
             if event_url:
@@ -519,6 +522,8 @@ def build_index():
         # Generate AI summary
         print("  → generating summary …")
         ai = generate_summary(client, title, content, description)
+        if ai.get("corrected_title") and len(ai["corrected_title"]) > 5:
+            title = ai["corrected_title"]
 
         related_resources = find_related_resources(ai.get("keywords", []), title, ext_resources)
 

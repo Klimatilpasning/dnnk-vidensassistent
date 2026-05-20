@@ -180,10 +180,13 @@ def fetch_youtube_channel() -> list[dict]:
                 vid_id = entry.get("id", "")
                 title  = entry.get("title", "")
                 if vid_id and title:
-                    videos.append({
+                    raw_date = entry.get("upload_date", "") or ""
+                upload_date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}" if len(raw_date) == 8 else None
+                videos.append({
                         "title":       title,
                         "youtube_id":  vid_id,
                         "youtube_url": f"https://youtube.com/watch?v={vid_id}",
+                        "upload_date": upload_date,
                     })
             print(f"  Fandt {len(videos)} videoer på YouTube-kanalen")
             return videos
@@ -580,6 +583,8 @@ def build_index():
             if best_yt and best_yt_score >= 0.45:
                 youtube_id  = best_yt["youtube_id"]
                 youtube_url = best_yt["youtube_url"]
+                if not date and best_yt.get("upload_date"):
+                    date = best_yt["upload_date"]
                 print(f"  → YouTube match ({best_yt_score:.2f}): {best_yt['title'][:60]}")
 
         # Fallback 2: extract YouTube ID directly from transcript

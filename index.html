@@ -161,6 +161,10 @@
     <button class="filter-btn" onclick="setFilter('Jura',this)">Jura</button>
     <button class="filter-btn" onclick="setFilter('DNNK_Masterclass',this)">Masterclass</button>
   </div>
+  <div id="recentSearches" style="display:none;margin-top:0.6rem;font-size:0.75rem;color:var(--muted);">
+    <span style="margin-right:0.4rem;">Seneste:</span>
+    <span id="recentChips"></span>
+  </div>
   <div class="loading-bar" id="loadingBar"></div>
   <div id="newsSection" style="display:none;margin:0.8rem 0;">
     <div id="newsHeader" onclick="toggleNews()" style="cursor:pointer;font-size:0.8rem;color:var(--muted);padding:0.5rem 0.8rem;background:#FAFBFC;border:1px solid var(--border);border-radius:4px;display:flex;justify-content:space-between;align-items:center;user-select:none;">
@@ -265,6 +269,7 @@ function scoreEntry(entry, words) {
   const cat      = (entry.category || '').toLowerCase();
   const kws      = (entry.keywords || []).map(k => k.toLowerCase());
   const speakers = (entry.speakers || []).map(s => ((s.name || '') + ' ' + (s.org || '')).toLowerCase());
+  const places   = (entry.places   || []).map(p => p.toLowerCase());
   let score = 0;
   const hits = new Set();
   for (const w of words) {
@@ -276,6 +281,9 @@ function scoreEntry(entry, words) {
     for (const s of speakers) {
       if (s.includes(w)) { score += 12; }  // speakers vægter højt
     }
+    for (const p of places) {
+      if (p.includes(w) || w.includes(p)) { score += 9; }  // steder vægter højt
+    }
     score += (summary.match(new RegExp(w,'g')) || []).length * 3;
     if (desc.includes(w))    score += 2;
   }
@@ -283,6 +291,40 @@ function scoreEntry(entry, words) {
 }
 
 const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
+
+// ─── Recent searches ───────────────────────────────────────
+function loadRecentSearches() {
+  try {
+    return JSON.parse(localStorage.getItem('dnnk_recent_searches') || '[]');
+  } catch { return []; }
+}
+function saveRecentSearch(query) {
+  if (!query || query.length < 2) return;
+  let recent = loadRecentSearches();
+  recent = recent.filter(q => q.toLowerCase() !== query.toLowerCase());
+  recent.unshift(query);
+  recent = recent.slice(0, 5);
+  localStorage.setItem('dnnk_recent_searches', JSON.stringify(recent));
+  renderRecentSearches();
+}
+function renderRecentSearches() {
+  const recent = loadRecentSearches();
+  const container = document.getElementById('recentSearches');
+  const chips = document.getElementById('recentChips');
+  if (!recent.length) { container.style.display = 'none'; return; }
+  chips.innerHTML = '';
+  recent.forEach(q => {
+    const chip = document.createElement('span');
+    chip.style.cssText = 'display:inline-block;padding:2px 8px;margin:0 4px 4px 0;background:#EBF4F9;color:var(--dnnk-blue);border:1px solid var(--dnnk-blue);border-radius:12px;cursor:pointer;font-size:0.7rem;';
+    chip.textContent = q;
+    chip.onclick = () => {
+      document.getElementById('searchInput').value = q;
+      doSearch();
+    };
+    chips.appendChild(chip);
+  });
+  container.style.display = 'block';
+}
 
 async function fetchKlimamonitorNews(query) {
   try {
@@ -353,6 +395,9 @@ async function doSearch() {
   document.getElementById('resultsHeader').style.display = 'none';
   document.getElementById('newsSection').style.display = 'none';
 
+  // Save to recent searches
+  saveRecentSearch(query);
+
   // Fetch news in parallel (don't block webinar search)
   fetchKlimamonitorNews(query).then(arts => renderNews(arts, query));
   const bar = document.getElementById('loadingBar');
@@ -410,13 +455,20 @@ function buildCard(entry, matchedKws) {
 
   if (entry.speakers && entry.speakers.length) {
     const spEl = document.createElement('div');
-    spEl.style.cssText = 'font-size:0.72rem;color:var(--muted);margin:0.2rem 0 0.5rem 0;';
+    spEl.style.cssText = 'font-size:0.72rem;color:var(--muted);margin:0.2rem 0 0.3rem 0;';
     spEl.innerHTML = '👤 ' + entry.speakers.map(s => {
       const name = (s.name || '').trim();
       const org = (s.org || '').trim();
       return name + (org ? ' <span style="color:#95A5A6;">(' + org + ')</span>' : '');
     }).join(' · ');
     card.appendChild(spEl);
+  }
+
+  if (entry.places && entry.places.length) {
+    const plEl = document.createElement('div');
+    plEl.style.cssText = 'font-size:0.72rem;color:var(--muted);margin:0 0 0.5rem 0;';
+    plEl.innerHTML = '📍 ' + entry.places.join(' · ');
+    card.appendChild(plEl);
   }
 
   if (entry.summary) {
@@ -571,9 +623,31 @@ async function sendChat() {
       .map(e => ({ e, score: scoreEntry(e, ws).score }))
       .filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0,5);
     if (top.length) {
-      sys += '\n\nRelevante webinar-resuméer:\n';
-      top.forEach(({e}) => { sys += '\n## ' + e.title + '\n' + (e.summary||'') + '\nNøgleord: ' + (e.keywords||[]).join(', ') + '\n'; });
+      sys += '\n\n=== DNNK WEBINAR-ARKIV (faglig viden) ===\n';
+      top.forEach(({e}) => {
+        sys += '\n## ' + e.title + '\n';
+        if (e.speakers && e.speakers.length) {
+          sys += 'Oplægsholdere: ' + e.speakers.map(s => s.name + (s.org ? ' ('+s.org+')' : '')).join(', ') + '\n';
+        }
+        sys += (e.summary||'') + '\nNøgleord: ' + (e.keywords||[]).join(', ');
+        if (e.youtube_url) sys += '\nLink: ' + e.youtube_url;
+        sys += '\n';
+      });
     }
+
+    // Hent også aktuelle nyheder fra Klimamonitor
+    try {
+      const news = await fetchKlimamonitorNews(msg);
+      if (news.length) {
+        sys += '\n\n=== AKTUELLE NYHEDER (sidste dage) ===\n';
+        news.slice(0, 5).forEach(n => {
+          sys += '\n· ' + (n.feedSource||'Nyhed') + ' (' + (n.date||'') + '): ' + n.title;
+          if (n.summary) sys += ' — ' + n.summary.slice(0, 200);
+          sys += '\n';
+        });
+        sys += '\nKombiner faglig viden fra arkivet med den aktuelle udvikling fra nyhederne. Citér hvilken kilde du bruger.';
+      }
+    } catch {}
   }
 
   try {
@@ -607,6 +681,7 @@ function appendMsg(role, text, md) {
 }
 
 loadConfig();
+renderRecentSearches();
 </script>
 </body>
 </html>

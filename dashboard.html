@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNNK Editorial Dashboard</title>
+<style>
+:root {
+  --dnnk-blue: #5B9BBF;
+  --dnnk-green: #7DB65A;
+  --bg: #F4F6F8;
+  --text: #2C3E50;
+  --muted: #7F8C8D;
+  --border: #DDE3E8;
+  --hot: #E74C3C;
+  --warm: #F39C12;
+  --cool: #3498DB;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.header { background: white; border-bottom: 1px solid var(--border); padding: 1rem 2rem; position: sticky; top: 0; z-index: 10; }
+.header h1 { font-size: 1.3rem; font-weight: 500; color: var(--dnnk-blue); }
+.header .sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.2rem; }
+.container { max-width: 1400px; margin: 1.5rem auto; padding: 0 2rem; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.stat { background: white; border-radius: 6px; padding: 1rem; border-left: 4px solid var(--dnnk-blue); }
+.stat .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+.stat .value { font-size: 1.8rem; font-weight: 300; color: var(--text); margin-top: 0.3rem; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; }
+@media (max-width: 1024px) { .grid { grid-template-columns: 1fr; } }
+.panel { background: white; border-radius: 6px; padding: 1.2rem; margin-bottom: 1rem; }
+.panel h2 { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); text-transform: uppercase; letter-spacing: 0.5px; }
+.panel-sub { font-size: 0.75rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1rem; font-style: italic; }
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+th { text-align: left; padding: 0.5rem; background: var(--bg); color: var(--muted); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none; }
+th:hover { background: #E8EEF2; }
+td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--border); }
+tr:hover td { background: #FAFBFC; }
+.keyword { font-weight: 500; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.gap-positive { color: var(--hot); font-weight: 600; }
+.gap-negative { color: var(--cool); }
+.gap-balanced { color: var(--muted); }
+.insight { padding: 0.7rem; background: #FAFBFC; border-left: 3px solid var(--dnnk-green); border-radius: 0 4px 4px 0; margin-bottom: 0.6rem; }
+.insight.hot { border-left-color: var(--hot); background: #FFF5F3; }
+.insight.warm { border-left-color: var(--warm); background: #FFF9F0; }
+.insight .topic { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.insight .meta { font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
+.insight a { color: var(--dnnk-blue); text-decoration: none; font-size: 0.8rem; display: block; margin-top: 0.3rem; }
+.insight a:hover { text-decoration: underline; }
+.loading { text-align: center; padding: 3rem; color: var(--muted); font-size: 0.9rem; }
+.spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--dnnk-blue); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 0.5rem; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.tag { display: inline-block; font-size: 0.65rem; padding: 1px 6px; border-radius: 2px; background: #EBF4F9; color: var(--dnnk-blue); border: 1px solid var(--dnnk-blue); margin-right: 3px; }
+.refresh-btn { background: var(--dnnk-blue); color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-size: 0.75rem; }
+.refresh-btn:hover { background: #4A85A8; }
+.refresh-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.footer { text-align: center; color: var(--muted); font-size: 0.7rem; padding: 2rem; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DNNK Editorial Dashboard</h1>
+  <div class="sub">Hvad medierne fokuserer på · hvad DNNK dækker · hvor gabet er <button id="refreshBtn" class="refresh-btn" onclick="loadData()" style="margin-left:1rem;">Genindlæs</button></div>
+</div>
+
+<div class="container">
+  <div id="loading" class="loading"><span class="spinner"></span>Indlæser data fra Vidensassistent og Klimamonitor...</div>
+
+  <div id="content" style="display:none;">
+    <div class="stats">
+      <div class="stat"><div class="label">DNNK webinarer</div><div class="value" id="statWebinars">–</div></div>
+      <div class="stat" style="border-left-color: var(--warm);"><div class="label">Aktuelle nyheder</div><div class="value" id="statNews">–</div></div>
+      <div class="stat" style="border-left-color: var(--hot);"><div class="label">Trending uden DNNK-dækning</div><div class="value" id="statGap">–</div></div>
+      <div class="stat" style="border-left-color: var(--dnnk-green);"><div class="label">Underudnyttet indhold</div><div class="value" id="statUnderused">–</div></div>
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="panel">
+          <h2>Emne-varmekort</h2>
+          <p class="panel-sub">Klik på kolonnerne for at sortere. Gap = nyhedshits − webinardækning. Positiv gap betyder under-dækket.</p>
+          <table id="heatTable">
+            <thead>
+              <tr>
+                <th onclick="sortBy('keyword')">Nøgleord</th>
+                <th class="num" onclick="sortBy('webinars')">DNNK webinarer</th>
+                <th class="num" onclick="sortBy('news')">Nyhedshits</th>
+                <th class="num" onclick="sortBy('gap')">Gap ↕</th>
+              </tr>
+            </thead>
+            <tbody id="heatBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel">
+          <h2>🔥 Trending uden dækning</h2>
+          <p class="panel-sub">Hot i medierne, men I har ingen eller få webinarer om emnet. Kandidat til næste webinar.</p>
+          <div id="gapInsights"></div>
+        </div>
+
+        <div class="panel">
+          <h2>💎 Underudnyttet indhold</h2>
+          <p class="panel-sub">I har stærke webinarer her, men medierne taler ikke om det. Kandidat til genfremvisning.</p>
+          <div id="underusedInsights"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Data: search-index.json + Klimamonitor live · Opdateret <span id="updatedAt">–</span></div>
+</div>
+
+<script>
+const INDEX_URL = 'search-index.json';
+const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
+
+let webinars = [];
+let newsArticles = [];
+let topicData = [];
+let sortKey = 'gap';
+let sortDir = -1;  // descending
+
+// Top-level keywords vi vil tracke (relevante emner indenfor klimatilpasning)
+const TRACKED_KEYWORDS = [
+  'skybrud', 'oversvømmelse', 'kystbeskyttelse', 'stormflod', 'havvandsstigning',
+  'LAR', 'regnvand', 'klimasikring', 'spildevand', 'kloakseparering',
+  'grundvand', 'BNBO', 'vandløb', 'vandløbsrestaurering', 'vådområde',
+  'klimatilpasning', 'klimahandlingsplan', 'DK2020', 'klimarisiko',
+  'naturbaseret', 'blå-grøn', 'svampeby', 'klimakvarter', 'grønt tag',
+  'oversvømmelsesdirektiv', 'klimatilpasningsloven', 'serviceniveau',
+  'samfundsøkonomi', 'beredskab', 'forsikring', 'finansiering',
+  'jura', 'lovgivning', 'høring', 'kommuner', 'forsyning',
+  'DMI', 'klimaatlas', 'SCALGO', 'kortlægning', 'hydrologi',
+  'kvælstof', 'fosfor', 'nitrat', 'okker', 'vandkvalitet',
+  'sponge city', 'living shoreline', 'biomimicry', 'resiliens'
+];
+
+async function loadData() {
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('content').style.display = 'none';
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span>Henter...';
+
+  try {
+    // Load DNNK webinars
+    const wRes = await fetch(INDEX_URL);
+    webinars = await wRes.json();
+
+    // Fetch recent news (one broad call for general climate adaptation)
+    const queries = ['klimatilpasning', 'vand klima', 'oversvømmelse skybrud'];
+    const newsResults = await Promise.all(
+      queries.map(q => fetch(KLIMAMONITOR_URL + '/news?q=' + encodeURIComponent(q))
+        .then(r => r.ok ? r.json() : { articles: [] })
+        .catch(() => ({ articles: [] })))
+    );
+    // Combine and dedupe by URL
+    const seenUrls = new Set();
+    newsArticles = [];
+    for (const result of newsResults) {
+      for (const art of (result.articles || [])) {
+        if (art.url && !seenUrls.has(art.url)) {
+          seenUrls.add(art.url);
+          newsArticles.push(art);
+        }
+      }
+    }
+
+    computeTopics();
+    render();
+
+    document.getElementById('updatedAt').textContent = new Date().toLocaleString('da-DK');
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  } catch (e) {
+    document.getElementById('loading').innerHTML = 'Fejl ved indlæsning: ' + e.message;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Genindlæs';
+  }
+}
+
+function computeTopics() {
+  topicData = TRACKED_KEYWORDS.map(kw => {
+    const kwLow = kw.toLowerCase();
+    // Count webinars matching this keyword (in title, keywords, or summary)
+    const matchingWebinars = webinars.filter(w => {
+      const blob = ((w.title || '') + ' ' + (w.summary || '') + ' ' + ((w.keywords || []).join(' '))).toLowerCase();
+      return blob.includes(kwLow);
+    });
+    // Count news articles matching this keyword
+    const matchingNews = newsArticles.filter(a => {
+      const blob = ((a.title || '') + ' ' + (a.summary || '')).toLowerCase();
+      return blob.includes(kwLow);
+    });
+
+    return {
+      keyword: kw,
+      webinars: matchingWebinars.length,
+      news: matchingNews.length,
+      gap: matchingNews.length - matchingWebinars.length,
+      webinarList: matchingWebinars.slice(0, 3),
+      newsList: matchingNews.slice(0, 3),
+    };
+  });
+}
+
+function sortBy(key) {
+  if (sortKey === key) sortDir = -sortDir;
+  else { sortKey = key; sortDir = -1; }
+  render();
+}
+
+function render() {
+  // Stats
+  document.getElementById('statWebinars').textContent = webinars.length;
+  document.getElementById('statNews').textContent = newsArticles.length;
+  const gapCount = topicData.filter(t => t.gap > 0 && t.news >= 2).length;
+  const underusedCount = topicData.filter(t => t.webinars >= 5 && t.news === 0).length;
+  document.getElementById('statGap').textContent = gapCount;
+  document.getElementById('statUnderused').textContent = underusedCount;
+
+  // Heat table — sorted
+  const sorted = [...topicData].sort((a, b) => {
+    const va = a[sortKey], vb = b[sortKey];
+    if (typeof va === 'string') return sortDir * va.localeCompare(vb);
+    return sortDir * (va - vb);
+  });
+  const body = document.getElementById('heatBody');
+  body.innerHTML = '';
+  sorted.forEach(t => {
+    const tr = document.createElement('tr');
+    const gapCls = t.gap > 2 ? 'gap-positive' : (t.gap < -2 ? 'gap-negative' : 'gap-balanced');
+    const gapStr = t.gap > 0 ? '+' + t.gap : t.gap.toString();
+    tr.innerHTML = `<td class="keyword">${t.keyword}</td><td class="num">${t.webinars}</td><td class="num">${t.news}</td><td class="num ${gapCls}">${gapStr}</td>`;
+    body.appendChild(tr);
+  });
+
+  // Gap insights — trending, low coverage
+  const gapTopics = topicData
+    .filter(t => t.news >= 2 && t.webinars <= 2)
+    .sort((a, b) => b.gap - a.gap)
+    .slice(0, 6);
+  renderInsights('gapInsights', gapTopics, 'hot', t =>
+    `${t.news} nyhedshits · kun ${t.webinars} webinar${t.webinars === 1 ? '' : 'er'}`,
+    t => t.newsList.length ? `Senest: <a href="${t.newsList[0].url}" target="_blank">${(t.newsList[0].title || '').slice(0, 80)}</a>` : ''
+  );
+
+  // Underused insights — strong webinars, no news
+  const underusedTopics = topicData
+    .filter(t => t.webinars >= 4 && t.news <= 1)
+    .sort((a, b) => b.webinars - a.webinars)
+    .slice(0, 6);
+  renderInsights('underusedInsights', underusedTopics, 'warm', t =>
+    `${t.webinars} webinarer · kun ${t.news} aktuelle nyheder`,
+    t => t.webinarList.length ? `Bedst: <a href="${t.webinarList[0].youtube_url || '#'}" target="_blank">${(t.webinarList[0].title || '').slice(0, 80)}</a>` : ''
+  );
+}
+
+function renderInsights(elId, topics, level, metaFn, linkFn) {
+  const el = document.getElementById(elId);
+  el.innerHTML = '';
+  if (!topics.length) {
+    el.innerHTML = '<div class="insight"><div class="meta">Ingen kandidater lige nu.</div></div>';
+    return;
+  }
+  topics.forEach(t => {
+    const div = document.createElement('div');
+    div.className = 'insight ' + level;
+    div.innerHTML = `<div class="topic">${t.keyword}</div><div class="meta">${metaFn(t)}</div>${linkFn(t)}`;
+    el.appendChild(div);
+  });
+}
+
+loadData();
+</script>
+
+</body>
+</html>

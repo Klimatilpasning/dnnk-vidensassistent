@@ -425,7 +425,7 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
         try:
             resp = client.messages.create(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=600,
+                max_tokens=750,
                 messages=[
                     {
                         "role": "user",
@@ -436,14 +436,16 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
                             "Svar KUN med valid JSON – ingen forklaring:\n"
                             '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
                             ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
-                            ' "keywords": ["nøgleord1", "nøgleord2", ...]}\n\n'
+                            ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
+                            ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...]}\n\n'
                             "Krav:\n"
                             "- corrected_title: Ret manglende eller forkerte æ/ø/å i titlen baseret på kontekst. "
                             "Behold titlen uændret hvis den allerede er korrekt.\n"
                             "- summary: Basér primært på invitationsteksten hvis den findes. "
                             "Supplér med pointer fra transskriptionen som invitationen ikke dækker.\n"
                             "- summary: 2-3 sætninger på dansk\n"
-                            "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)"
+                            "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
+                            "- speakers: Identificer faktiske oplægsholdere (ikke moderator), max 4. Tom hvis uklart."
                         ),
                     }
                 ],
@@ -695,6 +697,7 @@ def build_index():
                 "date": date,
                 "summary": ai.get("summary", ""),
                 "keywords": ai.get("keywords", []),
+                "speakers": ai.get("speakers", []),
                 "youtube_id": youtube_id,
                 "youtube_url": youtube_url,
                 "dnnk_url": event_url,

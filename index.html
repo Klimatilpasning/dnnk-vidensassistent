@@ -259,11 +259,12 @@ function filterMatches(entry) {
 
 // ─── Search ────────────────────────────────────────────────
 function scoreEntry(entry, words) {
-  const title   = (entry.title    || '').toLowerCase();
-  const summary = (entry.summary  || '').toLowerCase();
-  const desc    = (entry.description || '').toLowerCase();
-  const cat     = (entry.category || '').toLowerCase();
-  const kws     = (entry.keywords || []).map(k => k.toLowerCase());
+  const title    = (entry.title    || '').toLowerCase();
+  const summary  = (entry.summary  || '').toLowerCase();
+  const desc     = (entry.description || '').toLowerCase();
+  const cat      = (entry.category || '').toLowerCase();
+  const kws      = (entry.keywords || []).map(k => k.toLowerCase());
+  const speakers = (entry.speakers || []).map(s => ((s.name || '') + ' ' + (s.org || '')).toLowerCase());
   let score = 0;
   const hits = new Set();
   for (const w of words) {
@@ -271,6 +272,9 @@ function scoreEntry(entry, words) {
     if (cat.includes(w))     score += 4;
     for (const k of kws) {
       if (k.includes(w) || w.includes(k)) { score += 7; hits.add(k); }
+    }
+    for (const s of speakers) {
+      if (s.includes(w)) { score += 12; }  // speakers vægter højt
     }
     score += (summary.match(new RegExp(w,'g')) || []).length * 3;
     if (desc.includes(w))    score += 2;
@@ -403,6 +407,17 @@ function buildCard(entry, matchedKws) {
   titleEl.className = 'result-title';
   titleEl.textContent = entry.title || entry.filename;
   card.appendChild(titleEl);
+
+  if (entry.speakers && entry.speakers.length) {
+    const spEl = document.createElement('div');
+    spEl.style.cssText = 'font-size:0.72rem;color:var(--muted);margin:0.2rem 0 0.5rem 0;';
+    spEl.innerHTML = '👤 ' + entry.speakers.map(s => {
+      const name = (s.name || '').trim();
+      const org = (s.org || '').trim();
+      return name + (org ? ' <span style="color:#95A5A6;">(' + org + ')</span>' : '');
+    }).join(' · ');
+    card.appendChild(spEl);
+  }
 
   if (entry.summary) {
     const sumEl = document.createElement('div');

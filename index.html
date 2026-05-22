@@ -401,7 +401,7 @@ function buildCard(entry, matchedKws) {
   }
   if (entry.related_resources && entry.related_resources.length) {
     entry.related_resources.forEach(r => {
-      related.push({ label: r.title, url: r.url, type: 'resource', source: r.source });
+      related.push({ label: r.title, url: r.url, type: 'resource', source: r.source, resourceType: r.type });
     });
   }
 
@@ -422,10 +422,11 @@ function buildCard(entry, matchedKws) {
       link.style.cssText = 'font-size:12px;color:' + (item.type === 'webinar' ? 'var(--dnnk-blue)' : 'var(--dnnk-green)') + ';text-decoration:none;display:flex;align-items:flex-start;gap:4px;';
       link.onclick = e => e.stopPropagation();
       const icon = document.createElement('span');
-      icon.textContent = item.type === 'webinar' ? '▶' : '📄';
-      icon.style.cssText = 'flex-shrink:0;margin-top:1px;font-size:10px;';
+      icon.textContent = item.type === 'webinar' ? '▶' : (item.resourceType ? item.resourceType.split(' ')[0] : '📄');
+      icon.style.cssText = 'flex-shrink:0;margin-top:1px;font-size:11px;';
       const txt = document.createElement('span');
-      txt.textContent = (item.source ? '[' + item.source + '] ' : '') + item.label;
+      const typeLabel = item.resourceType ? item.resourceType.split(' ').slice(1).join(' ') + ' · ' : '';
+      txt.textContent = typeLabel + (item.source ? '[' + item.source + '] ' : '') + item.label;
       txt.style.cssText = 'line-height:1.4;';
       link.appendChild(icon);
       link.appendChild(txt);

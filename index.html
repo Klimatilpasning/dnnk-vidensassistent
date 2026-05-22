@@ -292,6 +292,24 @@ function scoreEntry(entry, words) {
 
 const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
 
+// ─── Semantic query expansion ──────────────────────────────
+const expansionCache = {};
+
+async function expandQuery(query) {
+  const key = query.toLowerCase().trim();
+  if (expansionCache[key]) return expansionCache[key];
+  try {
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 4000);
+    const r = await fetch(KLIMAMONITOR_URL + '/expand-query?q=' + encodeURIComponent(query), { signal: ctrl.signal });
+    if (!r.ok) return [];
+    const data = await r.json();
+    const terms = (data.terms || []).filter(t => t && t.length >= 2);
+    expansionCache[key] = terms;
+    return terms;
+  } catch { return []; }
+}
+
 // ─── Recent searches ───────────────────────────────────────
 function loadRecentSearches() {
   try {
@@ -400,23 +418,42 @@ async function doSearch() {
 
   // Fetch news in parallel (don't block webinar search)
   fetchKlimamonitorNews(query).then(arts => renderNews(arts, query));
+  // Get expanded semantic terms in parallel
+  const expandPromise = expandQuery(query);
   const bar = document.getElementById('loadingBar');
   bar.style.width = '30%';
 
-  const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 1);
+  const originalWords = query.toLowerCase().split(/\s+/).filter(w => w.length > 1);
   const pool = searchIndex.filter(e => filterMatches(e));
-  const ranked = pool
-    .map(e => { const { score, hits } = scoreEntry(e, words); return { e, score, hits }; })
-    .filter(x => x.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 12);
+
+  // Wait briefly for semantic expansion (max 3.5s), then rank
+  const expanded = await Promise.race([expandPromise, new Promise(res => setTimeout(() => res([]), 3500))]);
+  const expandedWords = (expanded || []).map(t => t.toLowerCase()).filter(w => !originalWords.includes(w) && w.length > 1);
+  bar.style.width = '60%';
+
+  let ranked;
+  if (expandedWords.length) {
+    // Hybrid scoring: original at 1.0x, expanded at 0.5x
+    ranked = pool.map(e => {
+      const orig = scoreEntry(e, originalWords);
+      const exp = scoreEntry(e, expandedWords);
+      return { e, score: orig.score + exp.score * 0.5, hits: [...new Set([...orig.hits, ...exp.hits])] };
+    }).filter(x => x.score > 0).sort((a, b) => b.score - a.score).slice(0, 12);
+  } else {
+    ranked = pool.map(e => { const { score, hits } = scoreEntry(e, originalWords); return { e, score, hits }; })
+                 .filter(x => x.score > 0).sort((a, b) => b.score - a.score).slice(0, 12);
+  }
 
   bar.style.width = '80%';
 
   if (ranked.length > 0) {
     const header = document.getElementById('resultsHeader');
     header.style.display = 'block';
-    header.textContent = ranked.length + (ranked.length === 12 ? '+' : '') + ' resultater for "' + query + '"';
+    let headerText = ranked.length + (ranked.length === 12 ? '+' : '') + ' resultater for "' + query + '"';
+    if (expandedWords.length) {
+      headerText += ' <span style="font-weight:400;font-size:0.75rem;color:var(--muted);">· udvidet med: ' + expandedWords.slice(0, 6).join(', ') + '</span>';
+    }
+    header.innerHTML = headerText;
     ranked.forEach(({ e, hits }) => document.getElementById('results').appendChild(buildCard(e, hits)));
   } else {
     document.getElementById('emptyState').style.display = 'block';

@@ -180,6 +180,24 @@ def get_github_headers() -> dict:
     return h
 
 
+def is_junk_filename(filename: str) -> bool:
+    """Skip timestamp-only or otherwise meaningless filenames."""
+    name = filename
+    for ext in (".mp3.txt", ".aac.txt", ".wav.txt", ".m4a.txt", ".txt"):
+        if name.endswith(ext):
+            name = name[: -len(ext)]
+            break
+    # All-digit filename (unix timestamp etc)
+    if re.fullmatch(r"\d{8,}", name.replace("_", "")):
+        return True
+    # Too short to be a real title
+    if len(name) < 10:
+        return True
+    # Just a UUID
+    if re.fullmatch(r"[a-f0-9-]{30,}", name.lower()):
+        return True
+    return False
+
 def get_all_transcription_files() -> list[dict]:
     url = (
         f"https://api.github.com/repos/{TRANSCRIPTIONS_REPO}"
@@ -198,6 +216,8 @@ def get_all_transcription_files() -> list[dict]:
             and item["type"] == "blob"
         ):
             filename = os.path.basename(path)
+            if is_junk_filename(filename):
+                continue
             folder = os.path.basename(os.path.dirname(path))
             safe_path = quote(path, safe="/")
             files.append(

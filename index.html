@@ -162,9 +162,12 @@
     <button class="filter-btn" onclick="setFilter('DNNK_Masterclass',this)">Masterclass</button>
   </div>
   <div class="loading-bar" id="loadingBar"></div>
-  <div id="newsSection" style="display:none;margin:1rem 0;">
-    <div id="newsHeader" style="font-size:0.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.6rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border);">📰 Aktuelle nyheder</div>
-    <div id="newsList" style="display:flex;flex-direction:column;gap:0.5rem;"></div>
+  <div id="newsSection" style="display:none;margin:0.8rem 0;">
+    <div id="newsHeader" onclick="toggleNews()" style="cursor:pointer;font-size:0.8rem;color:var(--muted);padding:0.5rem 0.8rem;background:#FAFBFC;border:1px solid var(--border);border-radius:4px;display:flex;justify-content:space-between;align-items:center;user-select:none;">
+      <span id="newsHeaderText">📰 Aktuelle nyheder</span>
+      <span id="newsToggleIcon" style="font-size:0.7rem;">▼</span>
+    </div>
+    <div id="newsList" style="display:none;flex-direction:column;margin-top:0.4rem;padding:0 0.4rem;"></div>
   </div>
   <div id="resultsHeader" class="results-header"></div>
   <div id="results"></div>
@@ -288,14 +291,24 @@ async function fetchKlimamonitorNews(query) {
   } catch { return []; }
 }
 
+function toggleNews() {
+  const list = document.getElementById('newsList');
+  const icon = document.getElementById('newsToggleIcon');
+  const expanded = list.style.display !== 'none';
+  list.style.display = expanded ? 'none' : 'flex';
+  icon.textContent = expanded ? '▼' : '▲';
+}
+
 function renderNews(articles, query) {
   const section = document.getElementById('newsSection');
   const list = document.getElementById('newsList');
-  const header = document.getElementById('newsHeader');
+  const headerText = document.getElementById('newsHeaderText');
   list.innerHTML = '';
+  list.style.display = 'none';
+  document.getElementById('newsToggleIcon').textContent = '▼';
   if (!articles.length) { section.style.display = 'none'; return; }
 
-  header.textContent = '📰 Aktuelle nyheder om "' + query + '" (' + articles.length + ')';
+  headerText.textContent = '📰 ' + articles.length + ' aktuelle nyheder om "' + query + '" — klik for at vise';
   articles.forEach(art => {
     const row = document.createElement('a');
     row.href = art.url || '#';

@@ -41,10 +41,64 @@ DNNK_CATEGORY_PAGES = [
 
 # External resource pages to scrape for cross-references
 EXTERNAL_RESOURCE_PAGES = [
+    # DNNK egen vidensbank — primær kilde
     ("DNNK Rapporter",         "https://www.dnnk.dk/vidensbank2/",                              "dnnk.dk"),
+    ("DNNK Rapporter side 2",  "https://www.dnnk.dk/vidensbank2/page/2/",                       "dnnk.dk"),
+    ("DNNK Rapporter side 3",  "https://www.dnnk.dk/vidensbank2/page/3/",                       "dnnk.dk"),
+    ("DNNK Rapporter side 4",  "https://www.dnnk.dk/vidensbank2/page/4/",                       "dnnk.dk"),
+    ("DNNK Rapporter side 5",  "https://www.dnnk.dk/vidensbank2/page/5/",                       "dnnk.dk"),
+    ("DNNK Rapporter side 6",  "https://www.dnnk.dk/vidensbank2/page/6/",                       "dnnk.dk"),
+    ("DNNK Horizon & LIFE",    "https://www.dnnk.dk/horizon-og-life/",                          "dnnk.dk"),
+    ("DNNK Nyheder",           "https://www.dnnk.dk/nyheder/",                                  "dnnk.dk"),
+    # Klimatilpasning.dk — sekundær
     ("Klimatilpasning.dk",     "https://www.klimatilpasning.dk/publikationer/",                 "klimatilpasning.dk"),
     ("Klimatilpasning vejl.",  "https://www.klimatilpasning.dk/kommuner-og-forsyning/proces-og-vejledning/", "klimatilpasning.dk"),
 ]
+
+# URL-patterns og titler der ALDRIG må optræde som ressource
+EXCLUDE_PATTERNS = [
+    r"/privatlivspolitik",
+    r"/kontakt",
+    r"/cookies",
+    r"/login",
+    r"/medlem",
+    r"/wp-admin",
+    r"/wp-content",
+    r"/wp-login",
+    r"/feed",
+    r"#",
+    r"/page/\d+/?$",     # selve paginerings-links
+    r"/\d+-\d+/?$",      # numerisk junk som /8293-2
+]
+EXCLUDE_TITLE_KEYWORDS = [
+    "privatlivspolitik", "cookies", "kontakt os", "log ind",
+    "tilmeld", "nyhedsbrev", "om os", "medlemskab",
+]
+
+def is_junk_resource(url: str, title: str) -> bool:
+    """Filter out navigation/junk URLs and titles"""
+    url_low = url.lower()
+    title_low = title.lower()
+    for pat in EXCLUDE_PATTERNS:
+        if re.search(pat, url_low):
+            return True
+    for kw in EXCLUDE_TITLE_KEYWORDS:
+        if kw in title_low:
+            return True
+    if len(title) < 15 or len(title) > 200:
+        return True
+    return False
+
+def detect_resource_type(url: str, title: str) -> str:
+    """Detect what type of resource this is for icon display"""
+    u = url.lower(); t = title.lower()
+    if any(k in u for k in ["/horizon", "/life", "interreg"]): return "🌐 EU-projekt"
+    if any(k in t for k in ["håndbog", "haandbog", "guide", "vejledning"]): return "📋 Vejledning"
+    if any(k in t for k in ["værktøj", "vaerktoj", "atlas", "kort"]):       return "🔧 Værktøj"
+    if any(k in t for k in ["case", "kommune", "projekt"]):                 return "📍 Case"
+    if any(k in t for k in ["lov", "bekendtg", "direktiv", "paragraf"]):    return "⚖️ Lovgivning"
+    if any(k in t for k in ["rapport", "hvidbog", "white paper", "analyse"]): return "📊 Rapport"
+    return "📄 Dokument"
 
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; DNNK-indexer/1.0)"}
 
@@ -425,7 +479,8 @@ def scrape_external_resources() -> list[dict]:
                     # Skip category/index pages — only individual resources
                     if href.rstrip("/") == base_url.rstrip("/"):
                         continue
-                    resources.append({"title": title, "url": href, "source": label})
+                    if is_junk_resource(href, title): continue
+                    resources.append({"title": title, "url": href, "source": label, "type": detect_resource_type(href, title)})
                     found += 1
 
                 # Follow pagination
@@ -462,14 +517,20 @@ def keyword_overlap(kw_list: list[str], text: str) -> int:
 
 
 def find_related_resources(keywords: list[str], title: str, resources: list[dict], top_n: int = 3) -> list[dict]:
-    """Find top_n external resources matching the webinar's keywords."""
+    """Find top_n external resources matching by weighted keyword + title overlap.
+    Requires at least 2 overlapping keywords for inclusion."""
     if not keywords or not resources:
         return []
     scored = []
+    title_low = title.lower()
     for r in resources:
-        score = keyword_overlap(keywords, r["title"])
-        if score > 0:
-            scored.append((score, r))
+        kw_score = keyword_overlap(keywords, r["title"]) * 3  # nøgleord vægter 3x
+        # Bonus hvis ressourcetitlen indeholder et stort ord fra webinartitlen
+        title_words = [w for w in title_low.split() if len(w) > 5]
+        title_bonus = sum(1 for w in title_words if w in r["title"].lower())
+        total = kw_score + title_bonus
+        if kw_score >= 6:   # mindst 2 nøgleords-overlap (2 × 3 = 6)
+            scored.append((total, r))
     scored.sort(key=lambda x: -x[0])
     return [r for _, r in scored[:top_n]]
 
@@ -629,6 +690,21 @@ def build_index():
         if len(index) % 10 == 0:
             with open("search-index.json", "w", encoding="utf-8") as f:
                 json.dump(index, f, ensure_ascii=False, indent=2)
+
+    # Drop ressourcer der matcher 40%+ af alle entries (for generiske til at være nyttige)
+    print("Filtrerer for generiske ressourcer …")
+    resource_counts = {}
+    for entry in index:
+        for r in entry.get("related_resources", []):
+            resource_counts[r["url"]] = resource_counts.get(r["url"], 0) + 1
+    threshold = len(index) * 0.40
+    too_common = {url for url, cnt in resource_counts.items() if cnt > threshold}
+    if too_common:
+        print(f"  Fjerner {len(too_common)} for generiske ressourcer:")
+        for url in too_common:
+            print(f"    - {url} (matchede {resource_counts[url]} entries)")
+    for entry in index:
+        entry["related_resources"] = [r for r in entry.get("related_resources", []) if r["url"] not in too_common]
 
     # Compute related webinars across entire index
     print("Beregner krydsreferencer mellem webinarer …")

@@ -162,6 +162,10 @@
     <button class="filter-btn" onclick="setFilter('DNNK_Masterclass',this)">Masterclass</button>
   </div>
   <div class="loading-bar" id="loadingBar"></div>
+  <div id="newsSection" style="display:none;margin:1rem 0;">
+    <div id="newsHeader" style="font-size:0.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.6rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border);">📰 Aktuelle nyheder</div>
+    <div id="newsList" style="display:flex;flex-direction:column;gap:0.5rem;"></div>
+  </div>
   <div id="resultsHeader" class="results-header"></div>
   <div id="results"></div>
   <div class="empty-state" id="emptyState">
@@ -271,6 +275,55 @@ function scoreEntry(entry, words) {
   return { score, hits: [...hits] };
 }
 
+const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
+
+async function fetchKlimamonitorNews(query) {
+  try {
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 8000);  // max 8s timeout
+    const r = await fetch(KLIMAMONITOR_URL + '/news?q=' + encodeURIComponent(query), { signal: ctrl.signal });
+    if (!r.ok) return [];
+    const data = await r.json();
+    return (data.articles || []).slice(0, 5);
+  } catch { return []; }
+}
+
+function renderNews(articles, query) {
+  const section = document.getElementById('newsSection');
+  const list = document.getElementById('newsList');
+  const header = document.getElementById('newsHeader');
+  list.innerHTML = '';
+  if (!articles.length) { section.style.display = 'none'; return; }
+
+  header.textContent = '📰 Aktuelle nyheder om "' + query + '" (' + articles.length + ')';
+  articles.forEach(art => {
+    const card = document.createElement('a');
+    card.href = art.url || '#';
+    card.target = '_blank';
+    card.style.cssText = 'display:block;padding:0.6rem 0.8rem;background:#FFFBEB;border-left:3px solid #F59E0B;border-radius:0 4px 4px 0;text-decoration:none;color:var(--text);transition:background 0.15s;';
+    card.onmouseenter = () => card.style.background = '#FEF3C7';
+    card.onmouseleave = () => card.style.background = '#FFFBEB';
+
+    const meta = document.createElement('div');
+    meta.style.cssText = 'font-size:0.65rem;color:var(--muted);margin-bottom:0.2rem;text-transform:uppercase;letter-spacing:0.3px;';
+    meta.textContent = (art.feedSource || art.org || 'Nyhed') + (art.date ? ' · ' + art.date : '');
+
+    const title = document.createElement('div');
+    title.style.cssText = 'font-size:0.9rem;font-weight:500;line-height:1.4;color:#92400E;';
+    title.textContent = art.title;
+
+    const sum = document.createElement('div');
+    sum.style.cssText = 'font-size:0.75rem;color:var(--muted);margin-top:0.2rem;line-height:1.4;';
+    sum.textContent = (art.summary || '').slice(0, 180) + ((art.summary || '').length > 180 ? '…' : '');
+
+    card.appendChild(meta);
+    card.appendChild(title);
+    if (art.summary) card.appendChild(sum);
+    list.appendChild(card);
+  });
+  section.style.display = 'block';
+}
+
 async function doSearch() {
   const query = document.getElementById('searchInput').value.trim();
   if (!query) return;
@@ -286,6 +339,10 @@ async function doSearch() {
   document.getElementById('emptyState').style.display = 'none';
   document.getElementById('results').innerHTML = '';
   document.getElementById('resultsHeader').style.display = 'none';
+  document.getElementById('newsSection').style.display = 'none';
+
+  // Fetch news in parallel (don't block webinar search)
+  fetchKlimamonitorNews(query).then(arts => renderNews(arts, query));
   const bar = document.getElementById('loadingBar');
   bar.style.width = '30%';
 

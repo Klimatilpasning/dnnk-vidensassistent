@@ -3,7 +3,7 @@ name: Build Search Index
 on:
   schedule:
     - cron: "0 5 * * *"   # dagligt kl. 05:00 UTC
-  workflow_dispatch:        # kan også køres manuelt fra GitHub
+  workflow_dispatch:        # kan ogsÃ¥ kÃ¸res manuelt fra GitHub
     inputs:
       rebuild:
         description: "Genopbyg hele indekset fra bunden (slet eksisterende)"
@@ -21,10 +21,10 @@ jobs:
 
     steps:
       - name: Checkout vidensassistent
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 

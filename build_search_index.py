@@ -425,7 +425,7 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
         try:
             resp = client.messages.create(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=750,
+                max_tokens=850,
                 messages=[
                     {
                         "role": "user",
@@ -437,7 +437,8 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
                             '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
                             ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
                             ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
-                            ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...]}\n\n'
+                            ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...],\n'
+                            ' "places": ["Stednavn1", "Stednavn2", ...]}\n\n'
                             "Krav:\n"
                             "- corrected_title: Ret manglende eller forkerte æ/ø/å i titlen baseret på kontekst. "
                             "Behold titlen uændret hvis den allerede er korrekt.\n"
@@ -445,7 +446,9 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
                             "Supplér med pointer fra transskriptionen som invitationen ikke dækker.\n"
                             "- summary: 2-3 sætninger på dansk\n"
                             "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
-                            "- speakers: Identificer faktiske oplægsholdere (ikke moderator), max 4. Tom hvis uklart."
+                            "- speakers: Identificer faktiske oplægsholdere (ikke moderator), max 4. Tom hvis uklart.\n"
+                            "- places: Konkrete danske eller udenlandske stednavne nævnt i webinaret "
+                            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
                         ),
                     }
                 ],
@@ -698,6 +701,7 @@ def build_index():
                 "summary": ai.get("summary", ""),
                 "keywords": ai.get("keywords", []),
                 "speakers": ai.get("speakers", []),
+                "places": ai.get("places", []),
                 "youtube_id": youtube_id,
                 "youtube_url": youtube_url,
                 "dnnk_url": event_url,

@@ -297,29 +297,24 @@ function renderNews(articles, query) {
 
   header.textContent = '📰 Aktuelle nyheder om "' + query + '" (' + articles.length + ')';
   articles.forEach(art => {
-    const card = document.createElement('a');
-    card.href = art.url || '#';
-    card.target = '_blank';
-    card.style.cssText = 'display:block;padding:0.6rem 0.8rem;background:#FFFBEB;border-left:3px solid #F59E0B;border-radius:0 4px 4px 0;text-decoration:none;color:var(--text);transition:background 0.15s;';
-    card.onmouseenter = () => card.style.background = '#FEF3C7';
-    card.onmouseleave = () => card.style.background = '#FFFBEB';
+    const row = document.createElement('a');
+    row.href = art.url || '#';
+    row.target = '_blank';
+    row.style.cssText = 'display:flex;align-items:baseline;gap:0.6rem;padding:0.3rem 0;font-size:0.78rem;text-decoration:none;color:var(--text);border-bottom:1px solid #F4F6F8;line-height:1.4;';
+    row.onmouseenter = () => row.style.background = '#FAFBFC';
+    row.onmouseleave = () => row.style.background = 'transparent';
 
-    const meta = document.createElement('div');
-    meta.style.cssText = 'font-size:0.65rem;color:var(--muted);margin-bottom:0.2rem;text-transform:uppercase;letter-spacing:0.3px;';
+    const meta = document.createElement('span');
+    meta.style.cssText = 'flex-shrink:0;color:var(--muted);font-size:0.7rem;min-width:140px;';
     meta.textContent = (art.feedSource || art.org || 'Nyhed') + (art.date ? ' · ' + art.date : '');
 
-    const title = document.createElement('div');
-    title.style.cssText = 'font-size:0.9rem;font-weight:500;line-height:1.4;color:#92400E;';
+    const title = document.createElement('span');
+    title.style.cssText = 'color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;';
     title.textContent = art.title;
 
-    const sum = document.createElement('div');
-    sum.style.cssText = 'font-size:0.75rem;color:var(--muted);margin-top:0.2rem;line-height:1.4;';
-    sum.textContent = (art.summary || '').slice(0, 180) + ((art.summary || '').length > 180 ? '…' : '');
-
-    card.appendChild(meta);
-    card.appendChild(title);
-    if (art.summary) card.appendChild(sum);
-    list.appendChild(card);
+    row.appendChild(meta);
+    row.appendChild(title);
+    list.appendChild(row);
   });
   section.style.display = 'block';
 }

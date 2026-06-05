@@ -185,13 +185,6 @@
   </div>
 </header>
 
-<div id="configBanner" class="config-banner">
-  <strong>Anthropic API-nøgle påkrævet</strong> — Indtast din nøgle for at bruge Chat-funktionen.<br>
-  <input type="password" id="apiKey" placeholder="Anthropic API-nøgle (sk-ant-...)" />
-  <small style="color:var(--muted)">Hent nøgle: <a style="color:var(--dnnk-blue)" href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com/settings/keys</a></small>
-  <br><button onclick="saveConfig()">Gem nøgle</button>
-</div>
-
 <div id="searchPanel">
   <span class="search-label">Søg i DNNK's webinar-vidensbank</span>
   <div class="search-box">
@@ -242,21 +235,14 @@
 <script>
 let searchIndex = [];
 let currentFilter = 'alle';
-let apiKey = '';
 let chatHistory = [];
 let chatContext = null;
 
 // ─── Config ───────────────────────────────────────────────
+// API-nøglen ligger nu server-side (KLIMAMONITOR_URL/chat) — ingen
+// nøglehåndtering i browseren længere.
 function loadConfig() {
-  apiKey = localStorage.getItem('dnnk_anthropic_key') || '';
-  if (document.getElementById('apiKey')) document.getElementById('apiKey').value = apiKey;
   loadIndex();
-}
-
-function saveConfig() {
-  apiKey = document.getElementById('apiKey').value.trim();
-  localStorage.setItem('dnnk_anthropic_key', apiKey);
-  document.getElementById('configBanner').classList.remove('visible');
 }
 
 // ─── Load search-index.json ────────────────────────────────
@@ -285,7 +271,6 @@ function showTab(tab, btn) {
   document.getElementById('searchPanel').style.display = tab === 'search' ? 'flex' : 'none';
   document.getElementById('chatPanel').style.display = tab === 'chat' ? 'flex' : 'none';
   if (tab === 'chat') {
-    if (!apiKey) document.getElementById('configBanner').classList.add('visible');
     document.getElementById('chatInput').focus();
   }
 }
@@ -686,7 +671,6 @@ async function openInChat(entry) {
 }
 
 async function sendChat() {
-  if (!apiKey) { document.getElementById('configBanner').classList.add('visible'); return; }
   const input = document.getElementById('chatInput');
   const msg = input.value.trim();
   if (!msg) return;
@@ -736,15 +720,18 @@ async function sendChat() {
   }
 
   try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
+    // Kald server-side proxy (KLIMAMONITOR_URL/chat) — API-nøglen ligger
+    // sikkert på serveren, aldrig i browseren.
+    const r = await fetch(KLIMAMONITOR_URL + '/chat', {
       method: 'POST',
-      headers: { 'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true' },
-      body: JSON.stringify({ model:'claude-haiku-4-5-20251001', max_tokens:1024, system:sys, messages:chatHistory })
+      headers: { 'Content-Type':'application/json' },
+      body: JSON.stringify({ system: sys, messages: chatHistory, max_tokens: 1024 })
     });
     let data;
     try { data = await r.json(); } catch { data = {}; }
-    if (!r.ok || data.error) {
-      throw new Error((data.error && data.error.message) || ('Serverfejl (HTTP ' + r.status + ')'));
+    const errMsg = typeof data.error === 'string' ? data.error : (data.error && data.error.message);
+    if (!r.ok || errMsg) {
+      throw new Error(errMsg || ('Serverfejl (HTTP ' + r.status + ')'));
     }
     const reply = data.content && data.content[0] && data.content[0].text;
     if (!reply) throw new Error('Tomt svar fra serveren.');

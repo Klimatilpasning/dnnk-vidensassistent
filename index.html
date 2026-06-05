@@ -320,6 +320,10 @@ function scoreEntry(entry, words) {
 }
 
 const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
+// Delt adgangskode til chat-proxyen. SKAL matche miljøvariablen
+// DNNK_ACCESS_CODE på serveren. Bemærk: synlig i klient-JS — det er et
+// værn mod tilfældigt misbrug, ikke en hemmelighed. Skift begge steder samtidig.
+const DNNK_ACCESS_CODE = 'dnnk-intern-2026';
 
 // ─── Semantic query expansion ──────────────────────────────
 const expansionCache = {};
@@ -724,7 +728,7 @@ async function sendChat() {
     // sikkert på serveren, aldrig i browseren.
     const r = await fetch(KLIMAMONITOR_URL + '/chat', {
       method: 'POST',
-      headers: { 'Content-Type':'application/json' },
+      headers: { 'Content-Type':'application/json', 'X-DNNK-Code': DNNK_ACCESS_CODE },
       body: JSON.stringify({ system: sys, messages: chatHistory, max_tokens: 1024 })
     });
     let data;

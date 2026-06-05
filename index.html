@@ -185,6 +185,13 @@
   </div>
 </header>
 
+<div id="codeBanner" class="config-banner">
+  <strong>DNNK-adgangskode</strong> — Indtast den interne kode for at bruge chatten. Du skal kun gøre det én gang på denne enhed.
+  <input type="password" id="accessCodeInput" aria-label="DNNK-adgangskode" placeholder="Adgangskode" onkeydown="if(event.key==='Enter')saveAccessCode()" />
+  <button onclick="saveAccessCode()">Gem kode</button>
+  <span id="codeError" role="alert" style="color:#c53030;font-size:0.75rem;margin-left:0.5rem;"></span>
+</div>
+
 <div id="searchPanel">
   <span class="search-label">Søg i DNNK's webinar-vidensbank</span>
   <div class="search-box">
@@ -271,6 +278,7 @@ function showTab(tab, btn) {
   document.getElementById('searchPanel').style.display = tab === 'search' ? 'flex' : 'none';
   document.getElementById('chatPanel').style.display = tab === 'chat' ? 'flex' : 'none';
   if (tab === 'chat') {
+    if (!getAccessCode()) promptForCode('Indtast den interne DNNK-kode for at bruge chatten (kun én gang).');
     document.getElementById('chatInput').focus();
   }
 }
@@ -320,10 +328,31 @@ function scoreEntry(entry, words) {
 }
 
 const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
-// Delt adgangskode til chat-proxyen. SKAL matche miljøvariablen
-// DNNK_ACCESS_CODE på serveren. Bemærk: synlig i klient-JS — det er et
-// værn mod tilfældigt misbrug, ikke en hemmelighed. Skift begge steder samtidig.
-const DNNK_ACCESS_CODE = 'dnnk-intern-2026';
+
+// Adgangskoden hardkodes IKKE i kildekoden. Hver bruger taster den ind én
+// gang; den gemmes lokalt i browseren (localStorage). Så er koden ikke synlig
+// i den offentlige kildekode — kun dem, du har givet koden, kan bruge chatten.
+// Skal matche serverens DNNK_ACCESS_CODE.
+function getAccessCode() { return localStorage.getItem('dnnk_access_code') || ''; }
+function promptForCode(msg) {
+  const b = document.getElementById('codeBanner');
+  if (!b) return;
+  b.classList.add('visible');
+  const err = document.getElementById('codeError');
+  if (err) err.textContent = msg || '';
+  const inp = document.getElementById('accessCodeInput');
+  if (inp) inp.focus();
+}
+function saveAccessCode() {
+  const inp = document.getElementById('accessCodeInput');
+  const v = (inp.value || '').trim();
+  if (!v) return;
+  localStorage.setItem('dnnk_access_code', v);
+  document.getElementById('codeBanner').classList.remove('visible');
+  const err = document.getElementById('codeError');
+  if (err) err.textContent = '';
+  inp.value = '';
+}
 
 // ─── Semantic query expansion ──────────────────────────────
 const expansionCache = {};
@@ -678,6 +707,8 @@ async function sendChat() {
   const input = document.getElementById('chatInput');
   const msg = input.value.trim();
   if (!msg) return;
+  const accessCode = getAccessCode();
+  if (!accessCode) { promptForCode('Indtast den interne DNNK-kode for at bruge chatten.'); return; }
   input.value = '';
 
   appendMsg('user', msg);
@@ -728,9 +759,17 @@ async function sendChat() {
     // sikkert på serveren, aldrig i browseren.
     const r = await fetch(KLIMAMONITOR_URL + '/chat', {
       method: 'POST',
-      headers: { 'Content-Type':'application/json', 'X-DNNK-Code': DNNK_ACCESS_CODE },
+      headers: { 'Content-Type':'application/json', 'X-DNNK-Code': accessCode },
       body: JSON.stringify({ system: sys, messages: chatHistory, max_tokens: 1024 })
     });
+    if (r.status === 401) {
+      // Forkert/manglende kode: ryd den gemte kode og bed om den igen
+      localStorage.removeItem('dnnk_access_code');
+      if (chatHistory.length && chatHistory[chatHistory.length - 1].role === 'user') chatHistory.pop();
+      btn.disabled = false; btn.textContent = 'Send';
+      promptForCode('Koden blev afvist — indtast den rigtige DNNK-kode.');
+      return;
+    }
     let data;
     try { data = await r.json(); } catch { data = {}; }
     const errMsg = typeof data.error === 'string' ? data.error : (data.error && data.error.message);

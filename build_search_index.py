@@ -591,7 +591,7 @@ def load_existing_index() -> list[dict]:
         print("  REBUILD=true – starter forfra")
         return []
     if os.path.exists("search-index.json"):
-        with open("search-index.json", encoding="utf-8") as f:
+        with open("search-index.json", encoding="utf-8-sig") as f:
             return json.load(f)
     return []
 

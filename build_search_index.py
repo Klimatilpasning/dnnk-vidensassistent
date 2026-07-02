@@ -22,13 +22,14 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
-from urllib.parse import unquote, quote
+from urllib.parse import unquote, quote, urlparse
 import yt_dlp
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
 TRANSCRIPTIONS_REPO = "klimatilpasning/dnnk-transcriptor"
-BASE_FOLDER = ".github/workflows/transcritranscriptions"
+# Korpusset ligger i transcriptions/ i transcriptor-repoet; kan overstyres via env
+BASE_FOLDER = os.environ.get("BASE_FOLDER", "transcriptions")
 
 DNNK_CATEGORY_PAGES = [
     ("Godmorgen med DNNK", "https://www.dnnk.dk/god-morgen-med-dnnk/"),
@@ -255,8 +256,8 @@ def fetch_youtube_channel() -> list[dict]:
                 title  = entry.get("title", "")
                 if vid_id and title:
                     raw_date = entry.get("upload_date", "") or ""
-                upload_date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}" if len(raw_date) == 8 else None
-                videos.append({
+                    upload_date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}" if len(raw_date) == 8 else None
+                    videos.append({
                         "title":       title,
                         "youtube_id":  vid_id,
                         "youtube_url": f"https://youtube.com/watch?v={vid_id}",
@@ -281,6 +282,7 @@ def scrape_dnnk_events() -> list[dict]:
         try:
             print(f"  Scraping {cat_url} …")
             resp = requests.get(cat_url, headers=HTTP_HEADERS, timeout=15)
+            resp.raise_for_status()  # en 404/500-fejlside må ikke parses som "0 events" i stilhed
             soup = BeautifulSoup(resp.text, "html.parser")
 
             # Remove boilerplate
@@ -401,7 +403,8 @@ def get_event_description(event_url: str) -> str | None:
     return None
 
 
-def find_best_event(title: str, events: list[dict]) -> dict | None:
+def find_best_event(title: str, events: list[dict]) -> tuple[dict | None, float]:
+    """Returnerer (event, score) så confidence ikke skal genberegnes af kalderen."""
     best_score = 0.0
     best = None
     for ev in events:
@@ -411,16 +414,21 @@ def find_best_event(title: str, events: list[dict]) -> dict | None:
         if score > best_score:
             best_score = score
             best = ev
-    return best if best_score >= 0.45 else None
+    if best_score >= 0.45:
+        return best, best_score
+    return None, 0.0
 
 # ── AI summary ────────────────────────────────────────────────────────────────
 
-def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None) -> dict:
+def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None) -> dict | None:
+    """Returnerer dict med resumé-felter, eller None hvis AI-kaldet fejlede.
+    None betyder: gem IKKE entry'en — filen prøves igen ved næste kørsel."""
     excerpt = content[:5000]
     invitation_block = (
         f"Invitationstekst fra dnnk.dk (verificeret af DNNK, brug som primær kilde):\n{description}\n\n"
         if description else ""
     )
+    json_retries = 0
     for attempt in range(3):
         try:
             resp = client.messages.create(
@@ -456,7 +464,16 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
             raw = resp.content[0].text.strip()
             raw = re.sub(r"^```json\s*", "", raw)
             raw = re.sub(r"\s*```$", "", raw)
-            return json.loads(raw)
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError as exc:
+                # Ugyldig JSON fra modellen: giv den ét ekstra forsøg
+                if json_retries < 1:
+                    json_retries += 1
+                    print(f"    Warning – ugyldig JSON fra modellen, prøver igen: {exc}")
+                    continue
+                print(f"    Warning – ugyldig JSON fra modellen igen: {exc}")
+                return None
         except (anthropic.RateLimitError, anthropic.APIStatusError) as e:
             if hasattr(e, 'status_code') and e.status_code not in (429, 529):
                 raise
@@ -465,8 +482,8 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
             time.sleep(wait)
         except Exception as exc:
             print(f"    Warning – AI generation failed: {exc}")
-            break
-    return {"summary": "", "keywords": []}
+            return None
+    return None
 
 # ── External resources ────────────────────────────────────────────────────────
 
@@ -498,8 +515,10 @@ def scrape_external_resources() -> list[dict]:
                         continue
                     if not href.startswith("http"):
                         href = "https://www." + source + href if href.startswith("/") else href
-                    # Only keep links on same domain
-                    if source not in href:
+                    # Only keep links on same domain (rigtigt domænecheck,
+                    # ikke substring — 'dnnk.dk' må ikke matche fx en sti)
+                    netloc = urlparse(href).netloc.lower()
+                    if not (netloc == source or netloc.endswith("." + source)):
                         continue
                     # Skip category/index pages — only individual resources
                     if href.rstrip("/") == base_url.rstrip("/"):
@@ -571,8 +590,9 @@ def compute_related_webinars(index: list[dict], top_n: int = 3) -> None:
             entry["related_webinars"] = []
             continue
         scored = []
+        entry_key = entry.get("path") or entry["filename"]
         for other in index:
-            if other["filename"] == entry["filename"]:
+            if (other.get("path") or other["filename"]) == entry_key:
                 continue
             other_kw = other.get("keywords", [])
             other_text = " ".join(other_kw) + " " + other.get("title", "")
@@ -601,12 +621,14 @@ def build_index():
 
     print("Loading existing index …")
     existing = load_existing_index()
-    existing_map = {e["filename"]: e for e in existing}
+    # Dedupe pr. path (ikke kun filnavn) — samme filnavn kan ligge i flere mapper.
+    # Ældre entries uden path falder tilbage til filename.
+    existing_map = {e.get("path") or e["filename"]: e for e in existing}
     print(f"  {len(existing)} entries already indexed")
 
     print("Fetching transcription file list from GitHub …")
     all_files = get_all_transcription_files()
-    new_files = [f for f in all_files if f["filename"] not in existing_map]
+    new_files = [f for f in all_files if f["path"] not in existing_map and f["filename"] not in existing_map]
     print(f"  {len(all_files)} total files, {len(new_files)} new")
 
     if not new_files:
@@ -618,6 +640,9 @@ def build_index():
 
     print("Scraping dnnk.dk for event metadata …")
     dnnk_events = scrape_dnnk_events()
+    if not dnnk_events:
+        # GitHub Actions-annotation så et strukturskifte på dnnk.dk opdages i workflow-loggen
+        print("::warning::scrape_dnnk_events() fandt 0 events - dnnk.dk-strukturen kan vaere aendret; tjek kategorisiderne og parsing-heuristikken i scrape_dnnk_events()")
 
     print("Scraping eksterne ressourcer (vidensbank, klimatilpasning.dk) …")
     ext_resources = scrape_external_resources()
@@ -634,13 +659,15 @@ def build_index():
         # Fetch transcription text
         try:
             resp = requests.get(file_info["raw_url"], timeout=15)
+            resp.raise_for_status()
+            resp.encoding = "utf-8"  # rå .txt fra GitHub er altid UTF-8
             content = resp.text
         except Exception as exc:
             print(f"  Error fetching content: {exc}")
             continue
 
         # Match with dnnk.dk event
-        matched = find_best_event(title, dnnk_events)
+        matched, match_confidence = find_best_event(title, dnnk_events)
         event_url = youtube_id = youtube_url = description = date = None
 
         if matched:
@@ -649,8 +676,8 @@ def build_index():
             youtube_url = matched.get("youtube_url")
             date = matched.get("date")
             # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
-            match_confidence = title_similarity(title, matched["title"])
-            if match_confidence >= 0.45 and matched.get("title"):
+            # (find_best_event returnerer kun matches med score >= 0.45)
+            if matched.get("title"):
                 title = matched["title"]
             print(f"  → matched ({match_confidence:.2f}): {matched['title'][:60]}")
             if event_url:
@@ -685,6 +712,10 @@ def build_index():
         # Generate AI summary
         print("  → generating summary …")
         ai = generate_summary(client, title, content, description)
+        if ai is None:
+            # Gem IKKE entry med tomt resumé — spring over, så filen prøves igen næste kørsel
+            print(f"  Warning – AI-resumé fejlede for {filename}; springer over (prøves igen næste kørsel)")
+            continue
         if ai.get("corrected_title") and len(ai["corrected_title"]) > 5:
             title = ai["corrected_title"]
 

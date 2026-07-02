@@ -198,12 +198,14 @@
     <input type="text" id="searchInput" aria-label="Søg i webinar-vidensbanken" placeholder="fx: naturbaseret kystbeskyttelse, LAR-anlæg, stormflod..." onkeydown="if(event.key==='Enter')doSearch()" />
     <button id="searchBtn" onclick="doSearch()">Søg</button>
   </div>
+  <!-- data-category matcher de eksakte category-værdier i search-index.json -->
   <div class="filters">
-    <button class="filter-btn active" onclick="setFilter('alle',this)">Alle kategorier</button>
-    <button class="filter-btn" onclick="setFilter('Tech_Talks',this)">Tech Talks</button>
-    <button class="filter-btn" onclick="setFilter('Godmorgen_med_DNNK',this)">Godmorgen med DNNK</button>
-    <button class="filter-btn" onclick="setFilter('Jura',this)">Jura</button>
-    <button class="filter-btn" onclick="setFilter('DNNK_Masterclass',this)">Masterclass</button>
+    <button class="filter-btn active" data-category="alle" onclick="setFilter(this)">Alle kategorier</button>
+    <button class="filter-btn" data-category="Tech Talk" onclick="setFilter(this)">Tech Talks</button>
+    <button class="filter-btn" data-category="Godmorgen med DNNK" onclick="setFilter(this)">Godmorgen med DNNK</button>
+    <button class="filter-btn" data-category="Jura" onclick="setFilter(this)">Jura</button>
+    <button class="filter-btn" data-category="Masterclass" onclick="setFilter(this)">Masterclass</button>
+    <button class="filter-btn" data-category="Øvrige" onclick="setFilter(this)">Øvrige</button>
   </div>
   <div id="recentSearches" style="display:none;margin-top:0.6rem;font-size:0.75rem;color:var(--muted);">
     <span style="margin-right:0.4rem;">Seneste:</span>
@@ -218,6 +220,13 @@
     <div id="newsList" style="display:none;flex-direction:column;margin-top:0.4rem;padding:0 0.4rem;"></div>
   </div>
   <div id="resultsHeader" class="results-header"></div>
+  <div id="sortRow" style="display:none;justify-content:flex-end;align-items:center;gap:0.4rem;margin-bottom:0.75rem;font-size:0.72rem;color:var(--muted);">
+    <label for="sortSelect">Sortér:</label>
+    <select id="sortSelect" onchange="onSortChange()" style="font-family:'Roboto',sans-serif;font-size:0.72rem;padding:0.25rem 0.5rem;border:1px solid var(--border);border-radius:2px;color:var(--text);background:var(--card);cursor:pointer;">
+      <option value="relevans">Mest relevante</option>
+      <option value="dato">Nyeste først</option>
+    </select>
+  </div>
   <div id="results"></div>
   <div class="empty-state" id="emptyState">
     <img id="emptyStateLogo" alt="DNNK" style="height:64px;width:auto;margin-bottom:1rem;opacity:0.3;" />
@@ -306,18 +315,19 @@ function showTab(tab, btn) {
 }
 
 // ─── Filters ──────────────────────────────────────────────
-function setFilter(f, btn) {
-  currentFilter = f;
+function setFilter(btn) {
+  currentFilter = btn.dataset.category || 'alle';
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  // Kør søgningen igen med det nye filter, hvis der allerede står en query
+  if (document.getElementById('searchInput').value.trim()) doSearch();
 }
 
-// Map original filter keys → index categories
+// Eksakt match mod category-værdierne i search-index.json
+// (Tech Talk / Godmorgen med DNNK / Jura / Masterclass / Øvrige)
 function filterMatches(entry) {
   if (currentFilter === 'alle') return true;
-  const cat = (entry.category || '').toLowerCase().replace(/\s/g,'_');
-  const f = currentFilter.toLowerCase();
-  return cat === f || cat.includes(f.replace('dnnk_','')) || f.includes(cat.replace('_med_dnnk',''));
+  return (entry.category || 'Øvrige') === currentFilter;
 }
 
 // ─── Search ────────────────────────────────────────────────
@@ -585,10 +595,34 @@ function rankEntries(pool, originalWords, expandedWords) {
              .filter(x => x.score > 0).sort((a, b) => b.score - a.score).slice(0, 12);
 }
 
+// ─── Sortering af resultater ───────────────────────────────
+let currentSort = 'relevans';
+let lastResults = null;  // seneste render-argumenter, så sorteringsskift kan re-rendere
+
+function sortRanked(ranked) {
+  if (currentSort !== 'dato') return ranked;
+  // Nyeste først; entries uden dato sidst (indbyrdes efter relevans)
+  return ranked.slice().sort((a, b) => {
+    const da = a.e.date || '', db = b.e.date || '';
+    if (da && db) return db.localeCompare(da) || b.score - a.score;
+    if (da) return -1;
+    if (db) return 1;
+    return b.score - a.score;
+  });
+}
+
+function onSortChange() {
+  currentSort = document.getElementById('sortSelect').value;
+  if (lastResults) renderResults(lastResults.ranked, lastResults.query, lastResults.expandedWords);
+}
+
 function renderResults(ranked, query, expandedWords) {
+  lastResults = { ranked, query, expandedWords };
   const header = document.getElementById('resultsHeader');
   const results = document.getElementById('results');
+  const sortRow = document.getElementById('sortRow');
   results.innerHTML = '';
+  sortRow.style.display = ranked.length > 0 ? 'flex' : 'none';
   if (ranked.length > 0) {
     header.style.display = 'block';
     // textContent, ikke innerHTML — query og expandedWords er rå input/API-data
@@ -600,7 +634,7 @@ function renderResults(ranked, query, expandedWords) {
       header.appendChild(span);
     }
     document.getElementById('emptyState').style.display = 'none';
-    ranked.forEach(({ e, hits }) => results.appendChild(buildCard(e, hits)));
+    sortRanked(ranked).forEach(({ e, hits }) => results.appendChild(buildCard(e, hits)));
   } else {
     header.style.display = 'none';
     document.getElementById('emptyState').style.display = 'block';
@@ -680,7 +714,7 @@ function buildCard(entry, matchedKws) {
   if (entry.date) {
     const dateEl = document.createElement('span');
     dateEl.style.cssText = 'font-size:0.65rem;color:var(--muted);margin-left:0.5rem;';
-    dateEl.textContent = entry.date;
+    dateEl.textContent = '📅 ' + formatDanishDate(entry.date);
     card.appendChild(dateEl);
   }
 
@@ -698,7 +732,24 @@ function buildCard(entry, matchedKws) {
       if (i > 0) spEl.appendChild(document.createTextNode(' · '));
       const name = (s.name || '').trim();
       const org = (s.org || '').trim();
-      spEl.appendChild(document.createTextNode(name));
+      if (name) {
+        // Klikbart talernavn → søger efter navnet (scoreEntry matcher speakers)
+        const nameEl = document.createElement('span');
+        nameEl.textContent = name;
+        nameEl.style.cssText = 'cursor:pointer;color:var(--dnnk-blue);text-decoration:underline;text-underline-offset:2px;';
+        nameEl.setAttribute('role', 'button');
+        nameEl.tabIndex = 0;
+        nameEl.title = 'Søg efter webinarer med ' + name;
+        const goSearch = ev => {
+          ev.stopPropagation();
+          document.getElementById('searchInput').value = name;
+          doSearch();
+          window.scrollTo({ top: 0 });
+        };
+        nameEl.onclick = goSearch;
+        nameEl.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); goSearch(ev); } };
+        spEl.appendChild(nameEl);
+      }
       if (org) {
         const orgEl = document.createElement('span');
         orgEl.style.color = '#95A5A6';
@@ -767,7 +818,48 @@ function buildCard(entry, matchedKws) {
   chatBtn.onclick = e => { e.stopPropagation(); openInChat(entry); };
   actEl.appendChild(chatBtn);
 
+  // ── "Læs transskription": fold transskriptet ud i kortet ──
+  let transDiv = null;
+  if (entry.path) {
+    transDiv = document.createElement('div');
+    transDiv.style.cssText = 'display:none;margin-top:0.75rem;max-height:320px;overflow-y:auto;border-top:1px solid var(--border);padding-top:0.6rem;font-size:0.78rem;line-height:1.6;color:var(--text);';
+    transDiv.onclick = e => e.stopPropagation();  // kortet åbner ellers YouTube ved klik
+
+    const transBtn = document.createElement('button');
+    transBtn.className = 'action-btn';
+    transBtn.textContent = 'Læs transskription';
+    transBtn.setAttribute('aria-expanded', 'false');
+    transBtn.onclick = async e => {
+      e.stopPropagation();
+      if (transDiv.style.display !== 'none') {
+        transDiv.style.display = 'none';
+        transBtn.textContent = 'Læs transskription';
+        transBtn.setAttribute('aria-expanded', 'false');
+        return;
+      }
+      transBtn.disabled = true;
+      transBtn.textContent = 'Henter...';
+      try {
+        const text = await fetchTranscript(entry);
+        if (!transDiv.dataset.rendered) {
+          renderTranscriptInto(transDiv, text, entry.youtube_url);
+          transDiv.dataset.rendered = '1';
+        }
+        transBtn.textContent = 'Skjul transskription';
+      } catch {
+        transDiv.textContent = 'Kunne ikke hente transskriptionen — prøv igen senere.';
+        transBtn.textContent = 'Skjul transskription';
+      } finally {
+        transDiv.style.display = 'block';
+        transBtn.setAttribute('aria-expanded', 'true');
+        transBtn.disabled = false;
+      }
+    };
+    actEl.appendChild(transBtn);
+  }
+
   card.appendChild(actEl);
+  if (transDiv) card.appendChild(transDiv);
 
   // ── Relateret indhold ──────────────────────────────────────
   const related = [];
@@ -814,6 +906,41 @@ function buildCard(entry, matchedKws) {
   }
 
   return card;
+}
+
+// Rendér transskript-blokke i et kort; hvert tidsstempel bliver klikbart
+// YouTube-link (&t=Ns) når youtube_url findes. Al tekst indsættes via
+// textContent/createTextNode — aldrig innerHTML.
+function renderTranscriptInto(div, text, youtubeUrl) {
+  const yt = safeUrl(youtubeUrl);
+  const blocks = parseTranscriptBlocks(text);
+  if (!blocks.length) {
+    div.textContent = 'Transskriptionen er tom.';
+    return;
+  }
+  blocks.forEach(b => {
+    const p = document.createElement('p');
+    p.style.cssText = 'margin:0 0 0.5rem;';
+    const label = hms(b.seconds);
+    if (yt) {
+      const a = document.createElement('a');
+      a.href = ytTimeUrl(yt, b.seconds);
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = label;
+      a.title = 'Spring til ' + label + ' i webinaret';
+      a.style.cssText = 'color:var(--dnnk-blue);font-weight:500;text-decoration:none;margin-right:0.5rem;font-variant-numeric:tabular-nums;';
+      a.onclick = e => e.stopPropagation();
+      p.appendChild(a);
+    } else {
+      const s = document.createElement('span');
+      s.textContent = label;
+      s.style.cssText = 'color:var(--muted);font-weight:500;margin-right:0.5rem;font-variant-numeric:tabular-nums;';
+      p.appendChild(s);
+    }
+    p.appendChild(document.createTextNode(b.text));
+    div.appendChild(p);
+  });
 }
 
 // ─── Chat ──────────────────────────────────────────────────

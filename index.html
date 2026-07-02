@@ -321,8 +321,81 @@ function filterMatches(entry) {
 }
 
 // ─── Search ────────────────────────────────────────────────
+// RAG-HELPERS-START — rene funktioner uden DOM (røgtestes i node)
 // Escape regex-specialtegn i brugerinput (fx "c++" må ikke crashe RegExp)
 const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// "HH:MM:SS" på egen linje → sekunder; null hvis linjen ikke er et tidsstempel
+function tsToSeconds(line) {
+  const m = /^(\d{1,2}):(\d{2}):(\d{2})$/.exec((line || '').trim());
+  if (!m) return null;
+  return (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
+}
+
+// Sekunder → "HH:MM:SS"
+function hms(totalSeconds) {
+  const s = Math.max(0, Math.floor(totalSeconds || 0));
+  const p = n => String(n).padStart(2, '0');
+  return p(Math.floor(s / 3600)) + ':' + p(Math.floor((s % 3600) / 60)) + ':' + p(s % 60);
+}
+
+// YouTube-URL med tidsparameter (?t=Ns eller &t=Ns afhængigt af eksisterende query)
+function ytTimeUrl(youtubeUrl, seconds) {
+  return youtubeUrl + (youtubeUrl.includes('?') ? '&' : '?') + 't=' + Math.max(0, Math.floor(seconds || 0)) + 's';
+}
+
+// Parsér transskript til blokke {seconds, text} ud fra HH:MM:SS-linjer.
+// Tekst før første tidsstempel lander i en blok med seconds=0.
+function parseTranscriptBlocks(text) {
+  const blocks = [];
+  let cur = null;
+  for (const raw of (text || '').split('\n')) {
+    const line = raw.trim();
+    const secs = tsToSeconds(line);
+    if (secs !== null) {
+      if (cur && cur.text) blocks.push(cur);
+      cur = { seconds: secs, text: '' };
+    } else if (line) {
+      if (!cur) cur = { seconds: 0, text: '' };
+      cur.text += (cur.text ? ' ' : '') + line;
+    }
+  }
+  if (cur && cur.text) blocks.push(cur);
+  return blocks;
+}
+
+// Saml blokke til passager på ~1.200-1.800 tegn; passagen beholder
+// start-tidsstemplet fra sin første blok.
+function chunkTranscript(text, minLen = 1200) {
+  const passages = [];
+  let cur = null;
+  for (const b of parseTranscriptBlocks(text)) {
+    if (!cur) cur = { seconds: b.seconds, text: b.text };
+    else cur.text += ' ' + b.text;
+    if (cur.text.length >= minLen) { passages.push(cur); cur = null; }
+  }
+  if (cur && cur.text) passages.push(cur);
+  return passages;
+}
+
+// Ordmatch-score for en passage (samme tilgang som scoreEntry's summary-del)
+function scorePassage(text, words) {
+  const t = (text || '').toLowerCase();
+  let score = 0;
+  for (const w of words) {
+    score += (t.match(new RegExp(esc(w), 'g')) || []).length;
+  }
+  return score;
+}
+
+// "2025-06-17" → "17. juni 2025"
+const DA_MONTHS = ['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december'];
+function formatDanishDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  if (!m) return iso || '';
+  return (+m[3]) + '. ' + (DA_MONTHS[+m[2] - 1] || '?') + ' ' + m[1];
+}
+// RAG-HELPERS-END
 
 function scoreEntry(entry, words) {
   const title    = (entry.title    || '').toLowerCase();
@@ -796,9 +869,26 @@ function clearChatContext() {
   ctx.textContent = '';
 }
 
+// ─── Transskript-hentning (delt cache: entry._content) ─────
+const TRANSCRIPT_BASE = 'https://raw.githubusercontent.com/klimatilpasning/dnnk-transcriptor/main/';
+
+async function fetchTranscript(entry) {
+  if (entry._content) return entry._content;
+  if (!entry.path) throw new Error('Ingen transskriptionssti');
+  // Dedupliker samtidige kald (fx "Læs transskription" + åben-i-chat)
+  if (!entry._contentPromise) {
+    const safePath = entry.path.split('/').map(encodeURIComponent).join('/');
+    entry._contentPromise = fetch(TRANSCRIPT_BASE + safePath)
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(t => { entry._content = t; return t; })
+      .catch(err => { entry._contentPromise = null; throw err; });
+  }
+  return entry._contentPromise;
+}
+
 async function openInChat(entry) {
   showTab('chat', document.getElementById('tabChat'));
-  chatContext = { title: entry.title, content: entry.summary || '' };
+  chatContext = { title: entry.title, content: entry.summary || '', entry };
   const my = chatContext;  // lokal reference — guard mod race hvis brugeren skifter kontekst
   const ctx = document.getElementById('chatContext');
   ctx.textContent = '📄 Kontekst: ' + entry.title;
@@ -809,15 +899,23 @@ async function openInChat(entry) {
   ctx.appendChild(clearBtn);
   ctx.classList.add('visible');
 
-  if (entry._content) { my.content = entry._content; return; }
-  if (!entry.path) return;
+  if (!entry.path && !entry._content) return;
   try {
-    const safePath = entry.path.split('/').map(encodeURIComponent).join('/');
-    const r = await fetch('https://raw.githubusercontent.com/klimatilpasning/dnnk-transcriptor/main/' + safePath);
-    if (!r.ok) return; // behold summary som kontekst
-    entry._content = await r.text();
-    if (chatContext === my) my.content = entry._content;
-  } catch { /* keep summary */ }
+    const text = await fetchTranscript(entry);
+    if (chatContext === my && text) my.content = text;
+  } catch { /* behold summary som kontekst */ }
+}
+
+// ─── RAG-kontekst til chatten ──────────────────────────────
+const CONTEXT_BUDGET = 24000;  // maks. samlet systemprompt-længde (tegn)
+const CITATION_INSTRUCTION = '\n\nNår du bruger en passage, citér kilden som markdown-link: [Webinartitel, MM:SS](youtube-url&t=Ns) — brug URL\'en fra passagens [KILDE: ...]-linje. Har passagen ingen URL, angiv titel og minuttal uden link. Angiv altid mindst én kilde med minuttal.';
+
+// Kilde-linje foran hver passage i systemprompten
+function passageLabel(title, youtubeUrl, seconds) {
+  let label = '[KILDE: ' + title + ' | ' + hms(seconds);
+  const u = safeUrl(youtubeUrl);
+  if (u) label += ' | ' + ytTimeUrl(u, seconds);
+  return label + ']';
 }
 
 async function sendChat() {
@@ -851,25 +949,73 @@ async function sendChat() {
   // try/finally: knappen re-enables ALTID, også hvis fx scoreEntry kaster
   try {
     let sys = 'Du er vidensassistent for DNNK (Det Nationale Netværk for Klimatilpasning).\nBesvar spørgsmål præcist på dansk. Angiv altid kilde-webinar. Vær kortfattet og faglig.';
+    let searchedTitles = [];  // vises som diskret kilde-linje under svaret
+    const qWords = msg.toLowerCase().split(/\s+/).filter(w => w.length > 1);
 
     if (chatContext && chatContext.content) {
-      sys += '\n\nPrimær kilde – ' + chatContext.title + ':\n' + chatContext.content.slice(0, 8000);
+      searchedTitles = [chatContext.title];
+      const ctxEntry = chatContext.entry || null;
+      const ctxYt = ctxEntry && ctxEntry.youtube_url;
+      const passages = chunkTranscript(chatContext.content);
+      // Kun passage-udvælgelse hvis indholdet faktisk har tidsstempler
+      // (ellers er content blot summary — send den som hidtil)
+      if (/^\s*\d{1,2}:\d{2}:\d{2}\s*$/m.test(chatContext.content) && passages.length) {
+        const scored = passages.map((p, i) => ({ p, i, score: scorePassage(p.text, qWords) }));
+        const picks = scored.slice().sort((a, b) => b.score - a.score).slice(0, 8);
+        if (!picks.some(x => x.i === 0)) picks.push(scored[0]);  // intro-passagen altid med
+        picks.sort((a, b) => a.i - b.i);  // kronologisk rækkefølge i prompten
+        sys += '\n\nPrimær kilde – uddrag fra webinaret "' + chatContext.title + '":\n';
+        for (const x of picks) {
+          const block = '\n' + passageLabel(chatContext.title, ctxYt, x.p.seconds) + '\n' + x.p.text + '\n';
+          if (sys.length + block.length > CONTEXT_BUDGET) break;
+          sys += block;
+        }
+        sys += CITATION_INSTRUCTION;
+      } else {
+        sys += '\n\nPrimær kilde – ' + chatContext.title + ':\n' + chatContext.content.slice(0, 8000);
+      }
     } else {
-      const ws = msg.toLowerCase().split(/\s+/).filter(w => w.length > 1);
+      const ws = qWords;
       const top = searchIndex
         .map(e => ({ e, score: scoreEntry(e, ws).score }))
-        .filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0,5);
+        .filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0,3);
+      searchedTitles = top.map(x => x.e.title);
+
+      // Hent de tre transskriptioner parallelt; fejl håndteres pr. webinar
+      const fetched = await Promise.all(top.map(async ({ e }) => {
+        try { return { e, text: await fetchTranscript(e) }; }
+        catch { return { e, text: null }; }
+      }));
+      const allPassages = [];
+      for (const { e, text } of fetched) {
+        if (!text) continue;
+        for (const p of chunkTranscript(text)) {
+          allPassages.push({ e, p, score: scorePassage(p.text, ws) });
+        }
+      }
+      const chosen = allPassages.filter(x => x.score > 0)
+        .sort((a, b) => b.score - a.score).slice(0, 10);
+
       if (top.length) {
-        sys += '\n\n=== DNNK WEBINAR-ARKIV (faglig viden) ===\n';
+        sys += '\n\n=== DNNK WEBINAR-ARKIV (fundne webinarer) ===\n';
         top.forEach(({e}) => {
           sys += '\n## ' + e.title + '\n';
           if (e.speakers && e.speakers.length) {
             sys += 'Oplægsholdere: ' + e.speakers.map(s => s.name + (s.org ? ' ('+s.org+')' : '')).join(', ') + '\n';
           }
-          sys += (e.summary||'') + '\nNøgleord: ' + (e.keywords||[]).join(', ');
+          sys += (e.summary||'');
           if (e.youtube_url) sys += '\nLink: ' + e.youtube_url;
           sys += '\n';
         });
+      }
+      if (chosen.length) {
+        sys += '\n\n=== RELEVANTE UDDRAG FRA TRANSSKRIPTIONERNE ===\n';
+        for (const x of chosen) {
+          const block = '\n' + passageLabel(x.e.title, x.e.youtube_url, x.p.seconds) + '\n' + x.p.text + '\n';
+          if (sys.length + block.length > CONTEXT_BUDGET) break;
+          sys += block;
+        }
+        sys += CITATION_INSTRUCTION;
       }
 
       // Hent også aktuelle nyheder fra Klimamonitor — men vent max 2s,
@@ -916,7 +1062,7 @@ async function sendChat() {
     const reply = data.content && data.content[0] && data.content[0].text;
     if (!reply) throw new Error('Tomt svar fra serveren.');
     chatHistory.push({ role:'assistant', content:reply });
-    appendMsg('assistant', reply, true);
+    appendMsg('assistant', reply, true, searchedTitles);
   } catch(err) {
     // Fjern den fejlede brugerbesked, så historikken ikke bliver ugyldig ved næste kald
     if (chatHistory.length && chatHistory[chatHistory.length - 1].role === 'user') chatHistory.pop();
@@ -932,12 +1078,19 @@ async function sendChat() {
   }
 }
 
-function appendMsg(role, text, md) {
+function appendMsg(role, text, md, sourceTitles) {
   const box = document.getElementById('chatMessages');
   const d = document.createElement('div');
   d.className = 'msg ' + role;
   if (role === 'assistant') {
     d.innerHTML = '<div class="msg-label">DNNK Vidensassistent</div><div class="msg-body">' + (md ? renderMarkdown(text) : text.replace(/</g,'&lt;')) + '</div>';
+    if (sourceTitles && sourceTitles.length) {
+      // Diskret kilde-linje: hvilke webinarer der blev søgt i (textContent — sikkert)
+      const src = document.createElement('div');
+      src.style.cssText = 'margin-top:0.5rem;padding-top:0.4rem;border-top:1px dashed var(--border);font-size:0.68rem;color:var(--muted);line-height:1.5;';
+      src.textContent = '🔎 Søgte i: ' + sourceTitles.join(' · ');
+      d.appendChild(src);
+    }
   } else {
     d.textContent = text;
   }

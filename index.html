@@ -1035,7 +1035,8 @@ async function openInChat(entry) {
 
 // ─── RAG-kontekst til chatten ──────────────────────────────
 const CONTEXT_BUDGET = 24000;  // maks. samlet systemprompt-længde (tegn)
-const CITATION_INSTRUCTION = '\n\nNår du bruger en passage, citér kilden som markdown-link: [Webinartitel, MM:SS](youtube-url&t=Ns) — brug URL\'en fra passagens [KILDE: ...]-linje. Har passagen ingen URL, angiv titel og minuttal uden link. Angiv altid mindst én kilde med minuttal.';
+const CITATION_INSTRUCTION = '\n\nNår du bruger en passage, citér kilden som markdown-link: [Webinartitel, MM:SS](youtube-url&t=Ns) — brug URL\'en fra passagens [KILDE: ...]-linje. Har passagen ingen URL, angiv titel og minuttal uden link. Angiv altid mindst én kilde med minuttal.'
+  + '\n\nVIGTIGT — kildetro svar: Byg dit svar UDELUKKENDE på kilderne ovenfor. Fremgår svaret ikke af dem, så sig det ærligt (fx "Det fremgår ikke af webinar-arkivet") og henvis i stedet til det nærmeste relaterede webinar. Gæt aldrig, og tilføj ikke viden udefra uden at markere det tydeligt som generel viden.';
 
 // Kilde-linje foran hver passage i systemprompten
 function passageLabel(title, youtubeUrl, seconds) {
@@ -1102,7 +1103,15 @@ async function sendChat() {
         sys += '\n\nPrimær kilde – ' + chatContext.title + ':\n' + chatContext.content.slice(0, 8000);
       }
     } else {
-      const ws = qWords;
+      // Semantisk udvidelse (cachet, maks. 3,5s): "regnbede" finder også "LAR-anlæg"
+      let expTerms = [];
+      try {
+        expTerms = await Promise.race([
+          expandQuery(msg),
+          new Promise(r => setTimeout(() => r([]), 3500))
+        ]) || [];
+      } catch { /* udvidelse er valgfri */ }
+      const ws = [...new Set([...qWords, ...expTerms.map(t => String(t).toLowerCase())])];
       const top = searchIndex
         .map(e => ({ e, score: scoreEntry(e, ws).score }))
         .filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0,3);

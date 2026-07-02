@@ -5,7 +5,7 @@
     "folder": "August 2025",
     "title": "Godmorgen med DNNK: Limfjorden i balance: naturgenopretning",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-06-17",
     "summary": "Webinaret præsenterer Coastal Life-projektet, et stort EU-støttet projekt ledet af Limfjordsrådet, der skal genoprette kyster, strandænger og lavvandet fjordområder omkring Limfjorden med et budget på 300 millioner kroner. Projektet fokuserer på hvordan restaurering af kystlandskaber kan skabe vedvarende resultater på tværs af klima, kystnatur, kvælstofbelastning og kystbeskyttelse. Limfjorden er et højt belastet område med stort landbrugspres, hvor kvælstofudledningen skal reduceres betydeligt for at opnå god økologisk tilstand.",
     "keywords": [
       "naturgenopretning",
@@ -37,7 +37,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -59,7 +59,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Stort_LAR-anl_g_i_Urbanplan.mp3.txt",
@@ -67,17 +68,18 @@
     "folder": "August 2025",
     "title": "Godmorgen med DNNK: Stort LAR-anl g i Urbanplan",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-03-13",
     "summary": "",
     "keywords": [],
     "speakers": [],
     "places": [],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
@@ -85,17 +87,18 @@
     "folder": "August 2025",
     "title": "Godmorgen med DNNK: Webinar om planl gning af regnvandsh ndt",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-05-08",
     "summary": "",
     "keywords": [],
     "speakers": [],
     "places": [],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 0.894
   },
   {
     "filename": "Gr_nsel_s_adf_rd_og_gr_nsel_se_potentialer.mp3.txt",
@@ -733,7 +736,7 @@
     "folder": "August 2025",
     "title": "Tech Talk: Ny nordisk håndbog viser vejen til naturbaserede løsninger",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-05-28",
     "summary": "Elvira Borgmann fra Norion Consult præsenterer en ny nordisk håndbog om naturbaserede løsninger, som kan håndtere samfundsmæssige udfordringer inden for klima og biodiversitet. Webinaret fokuserer på hvordan kommuner praktisk kan implementere naturbaserede løsninger med fokus på klimatilpasning, og hvordan man navigerer i den digitale håndbog.",
     "keywords": [
       "naturbaserede løsninger",
@@ -759,7 +762,7 @@
     ],
     "youtube_id": "7I18KF-T6Xo",
     "youtube_url": "https://youtube.com/watch?v=7I18KF-T6Xo",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -775,7 +778,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech-Talk__Automatisk_insektmonitorering___kvantitative_biod.mp3.txt",
@@ -783,7 +787,7 @@
     "folder": "August 2025",
     "title": "Tech-Talk: Automatisk insektmonitorering: kvantitative biodiversitetsdata",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-05-21",
     "summary": "Webinaret præsenterer en automatiseret sensorløsning til monitorering af insekter som biodiversitetsproxy. Frederik Elbæk og Poul Kjerbo fra FAUNA Photonics forklarer hvordan deres sensor måler insektantal, biomasse og diversitet i højere opløsning end traditionelle metoder som malaisefælder og insektnetting. Løsningen anvender maskinlæring til databehandling og giver brugerne resultater på en online portal.",
     "keywords": [
       "insektmonitorering",
@@ -812,7 +816,7 @@
     ],
     "youtube_id": "-cb4v7A5zes",
     "youtube_url": "https://youtube.com/watch?v=-cb4v7A5zes",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -834,7 +838,8 @@
         "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Temadag_om_kystn_re_risici__lovgivning_og_social_s_rbarhed.mp3.txt",
@@ -1195,7 +1200,7 @@
     "folder": "September - november 2025",
     "title": "Godmorgen med DNNK: Landsbyggefondens Klimakortlægning til boligorganisationer",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-10-27",
     "summary": "Webinaret præsenterer Landsbyggefondens projekt om klimakortlægning, som er en screening af oversvømmelsesrisici for den almene boligsektor i Danmark. Projektet omfatter analyse af cirka 92.000 bygninger med 600.000 boliger, der huser omkring en million mennesker. Der præsenteres metodologi, resultater og data, som stilles til rådighed for boligorganisationer og kommuner.",
     "keywords": [
       "klimakortlægning",
@@ -1224,7 +1229,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1234,7 +1239,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__N_r_jorden_skrider___landskred_som_overs.mp3.txt",
@@ -1242,7 +1248,7 @@
     "folder": "September - november 2025",
     "title": "Godmorgen med DNNK: Når jorden skrider: landskred som oversete klimarisici",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-09-17",
     "summary": "Webinaret sætter fokus på landskred som en ofte overset klimarisiko i kommunal planlægning. Henriette Bunde fra Sønderborg Kommune deler konkrete erfaringer fra et alvorligt landskred ved Asbøl i 2007, hvor kraftigt nedbør førte til jordskred ved en jernbanestrækning. Lis Nowak fra Envidan præsenterer kortlægningsmetoder til at vurdere landskrédpotentiale som grundlag for prioritering og dialog.",
     "keywords": [
       "landskred",
@@ -1276,7 +1282,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1298,7 +1304,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.967
   },
   {
     "filename": "Godmorgen_med_DNNK__Risikokommunikation_i_Kystomr_der.mp3.txt",
@@ -1306,7 +1313,7 @@
     "folder": "September - november 2025",
     "title": "Godmorgen med DNNK: Risikokommunikation i Kystområder",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-09-19",
     "summary": "Webinaret fokuserer på hvordan kompleks kystnær risiko kommunikeres effektivt til borgere, så det fører til konkret handling i hverdagen i stedet for blot at blive til kort og infografikker. Nina Baron fra Københavns Professionshøjskole præsenterer alternative kommunikationsmetoder beyond digitale formater, herunder co-design, lokale partnerskaber og borgerdrevne værktøjer. Hovedpointer omfatter behovet for at arbejde på tværs af siloer, samt betydningen af at engagere borgere i forebyggelse, forberedelse, håndtering og genopbygning efter klimarelaterede risici.",
     "keywords": [
       "risikokommunikation",
@@ -1332,7 +1339,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1354,7 +1361,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Samskabelse_af_naturbaserede_l_sninger__.mp3.txt",
@@ -1362,7 +1370,7 @@
     "folder": "September - november 2025",
     "title": "Godmorgen med DNNK: Samskabelse af naturbaserede løsninger",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-11-04",
     "summary": "Webinaret udforsker, hvordan man implementerer naturbaserede løsninger i Danmark gennem samskabelse og brugerindragelse, med fokus på at nedbryde implementeringsbarriere. Jona Olavsdottir præsenterer resultater fra sit PUD-projekt om implementering og opskalering af naturbaserede løsninger i kommuner, samt hvordan New Public Governance-tilgange og samarbejdsmodeller kan understøtte overgangen fra intention til handling.",
     "keywords": [
       "naturbaserede løsninger",
@@ -1391,7 +1399,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1401,7 +1409,8 @@
         "youtube_url": "https://youtube.com/watch?v=7I18KF-T6Xo",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Holder_rensel_sninger_til_rensning_af_regnvand__v.mp3.txt",
@@ -1409,7 +1418,7 @@
     "folder": "September - november 2025",
     "title": "Tech Talk: Holder renseløsninger til rensning af regnvand",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-09-03",
     "summary": "Brian Borum fra ScanPipe Klima præsenterer erfaringer og udfordringer inden for tekniske renseløsninger til regnvandshåndtering. Webinaret fokuserer på markedssituationen med mange nye produkter, problematikken med forskellige testmetoder og behovet for at differentiere mellem sedimenter og opløste stoffer ved valg af renseløsning.",
     "keywords": [
       "regnvand",
@@ -1434,7 +1443,7 @@
     "places": [],
     "youtube_id": "ay2QrzQLFuE",
     "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [
       {
@@ -1463,7 +1472,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Klimatilpasning_i_Danmark_med_blik_for_den_gr_nne.mp3.txt",
@@ -1471,7 +1481,7 @@
     "folder": "September - november 2025",
     "title": "Tech Talk: Klimatilpasning i Danmark med blik for den grønne",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-10-09",
     "summary": "Sabine Bryde fra Vabro præsenterer konkrete danske projekter og erfaringer med kontraklappe og Vasto Stop-ventilen som løsninger til håndtering af spildevand og stormflod. Webinaret fokuserer på miljøvenlige og pladsbesparende installationer, der tilpasser sig eksisterende bygværker uden omfattende ombygninger.",
     "keywords": [
       "kontraklappe",
@@ -1499,7 +1509,7 @@
     ],
     "youtube_id": "z2gAXSuesg4",
     "youtube_url": "https://youtube.com/watch?v=z2gAXSuesg4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1521,7 +1531,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech-Talk__Screeningsv_rkt_j_til_beregning_af_klimaaftryk_p_.mp3.txt",
@@ -1529,7 +1540,7 @@
     "folder": "September - november 2025",
     "title": "Tech-Talk: Screeningsværktøj til beregning af klimaaftryk på forsynings- og anlægsprojekter",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-09-24",
     "summary": "Webinaret præsenterer et gratis screeningsværktøj udviklet til at beregne klimaaftrykket (CO2-ekvivalenter) på forsynings- og anlægsprojekter i den tidlige projektfase. Værktøjet baserer sig på Life Cycle Assessment-metodikken og fokuserer på livscyklusfaserne A1-A5, hvor størstedelen af udledningerne fra et projekt stammer fra råmaterialer, transport og anlægsarbejde. Præsentationen demonstrerer værktøjets praktiske anvendelse med eksempler og viser, hvordan resultater kan tolkes og bruges til at optimere projekters klimapåvirkning.",
     "keywords": [
       "klimaaftryk",
@@ -1560,7 +1571,7 @@
     ],
     "youtube_id": "X_KGmKrcmM8",
     "youtube_url": "https://youtube.com/watch?v=X_KGmKrcmM8",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1570,7 +1581,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimatilpasning__naturbeskyttelse_og_nat.mp3.txt",
@@ -1578,7 +1590,7 @@
     "folder": "december",
     "title": "Godmorgen med DNNK: Klimatilpasning: naturbeskyttelse og naturpositive tiltag",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-11-13",
     "summary": "Webinaret behandler dilemmaerne mellem klimatilpasning, naturbeskyttelse og naturpositive tiltag, hvor beskyttede naturtyper og arter ofte dukker op sent i projekterne og skaber usikkerhed. Martin Hesselsøe fra NIRA præsenterer løsninger på paradokset, hvor frygt for restriktioner fra naturbeskyttelsesreglerne fører til nedprioritering af naturpositive projekter og dermed mindre natur samlet set. Webinaret fokuserer på praktiske løsninger i planlægning, myndighedsproces og design.",
     "keywords": [
       "klimatilpasning",
@@ -1604,7 +1616,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1620,7 +1632,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__NBS_i_t_t_by___erfaringer_fra_Malm_.mp3.txt",
@@ -1628,7 +1641,7 @@
     "folder": "december",
     "title": "Godmorgen med DNNK: NBS i byen - erfaringer fra Malmø",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-12-09",
     "summary": "Webinaret fokuserer på hvordan Malmø Kommune arbejder med klimatilpasning og naturbaserede løsninger (NBS) i byudviklingen under pres af befolkningstilvækst og begrænset plads. Der belyses udfordringerne med fortætning, konkurrence om arealanvendelse, og klimarisici som skyfaldsfloder, hvoraf eksemplet stormen Arvid i 2014 fremhæves.",
     "keywords": [
       "klimatilpasning",
@@ -1656,7 +1669,7 @@
     ],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1672,7 +1685,8 @@
         "youtube_url": "https://youtube.com/watch?v=z2gAXSuesg4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Fra_testanl_g_til_hverdagsdrift___s_dan_.mp3.txt",
@@ -1680,7 +1694,7 @@
     "folder": "december - næsten januar 2026",
     "title": "Godmorgen med DNNK: Fra testanlæg til hverdagsdrift: sådan",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-01-09",
     "summary": "Webinaret behandler naturbaserede løsninger (NBS) og hvordan de kan skaleres fra pilotprojekter til daglig drift i kommuner og forsyningsselskaber. Seniorforsker Line Johanne Barkved fra Norsk Institut for Vandforskning (NIVA) deler konkrete kriterier for organisering, dokumentation og drift af NBS-løsninger, med særligt fokus på koblingen mellem klima, natur og økosystemfunktioner i arealplanlægning og vandhåndtering.",
     "keywords": [
       "naturbaserede løsninger",
@@ -1706,7 +1720,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1722,7 +1736,8 @@
         "youtube_url": "https://youtube.com/watch?v=PbsuU-zM9j0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimahuse_i_Lemvig.mp3.txt",
@@ -1730,7 +1745,7 @@
     "folder": "december - næsten januar 2026",
     "title": "Godmorgen med DNNK: Klimahuse i Lemvig",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-12-16",
     "summary": "Webinaret præsenterer erfaringer fra et EU Horizon-projekt om klimaresiliente bygninger, med fokus på oversvømmelsesrisici og adaptive løsninger for eksisterende byggeri. Thorsten Schark-Nielsen og Thomas Bjørnstedt fra VIA University College demonstrerer, hvordan huse i Lemvig designes til at kunne modstå vand ved at acceptere vandintrængning uden væsentlige skader, frem for fuld vandtætning.",
     "keywords": [
       "klimaresiliens",
@@ -1764,7 +1779,7 @@
     ],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1786,7 +1801,8 @@
         "youtube_url": "https://youtube.com/watch?v=CRTBz-62FZY",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Screeningsv_rkt_j_til_udv_lgelse_af_rens.mp3.txt",
@@ -1794,7 +1810,7 @@
     "folder": "december - næsten januar 2026",
     "title": "Godmorgen med DNNK: Screeningsværktøj til udvælgelse af rensningsteknologier",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-01-08",
     "summary": "Webinaret præsenterer et screeningsværktøj og katalog over rensningsteknologier til rensning af regnvand, udviklet af Teknologisk Institut. Værktøjet skal hjælpe med hurtig indsnævring af mulige renseteknologier og sikre overholdelse af lovgivning ved udledning af regnvand til recipienter. Indlægget sætter udviklingen i historisk perspektiv med fokus på videnopbygning omkring stoffers forekomst i regnvand.",
     "keywords": [
       "regnvand",
@@ -1821,7 +1837,7 @@
     ],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1837,7 +1853,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.873
   },
   {
     "filename": "Tech_Talk__Effektiv_rensning_af_afstr_mmende_regnvand___erfa.mp3.txt",
@@ -1845,7 +1862,7 @@
     "folder": "december - næsten januar 2026",
     "title": "Tech Talk: Effektiv rensning af afstrømmende regnvand: erfa",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-12-17",
     "summary": "Webinaret præsenterer Volt-filtersystemet fra Uponor til rensning af forurenet regnvand i klimatilpasningsprojekter. Gennem projekteksemplet Fremtidsparken i Rønte på Tåsinge demonstreres, hvordan alternative rensløsninger kan etableres når traditionelle vådebassinløsninger ikke er mulige grundet jordforhold. Systemet kan håndtere store regnafstrømninger og kan placeres strategisk både opstrøms og nedstrøms for tørre jordbassinløsninger.",
     "keywords": [
       "regnvandshåndtering",
@@ -1873,7 +1890,7 @@
     ],
     "youtube_id": "ay2QrzQLFuE",
     "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1895,7 +1912,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Biodiversitet_som_beslutningsgrundlag_i_.mp3.txt",
@@ -1903,7 +1921,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNAK: Biodiversitet som beslutningsgrundlag i naturbaserede løsninger",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-01-27",
     "summary": "Webinaret udforsker hvordan biodiversitetsviden kan blive praktisk anvendelig i forvaltningen og danne grundlag for beslutninger inden for naturbaserede løsninger (NBS). Præsentationen fokuserer på nexus-tilgangen, der forbinder biodiversitet med klima, fødevaresikkerhed, vand og menneskelig velfærd, samt hvordan traditionel silotænkning i forvaltningen bør erstattes af integrereret løsninger.",
     "keywords": [
       "biodiversitet",
@@ -1944,7 +1962,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -1966,7 +1984,8 @@
         "youtube_url": "https://youtube.com/watch?v=7I18KF-T6Xo",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
@@ -1974,7 +1993,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNNK: Aarhus: erfaringer fra City Blues: naturbaserede løsninger",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-03-03",
     "summary": "Webinaret præsenterer Aarhus Kommunes erfaringer med naturbaserede løsninger som del af City Blues-projektet og klimatilpasningen i byen. Christina Mardi, hydrobiolog og projektleder, forklarer hvordan naturbaserede løsninger bruges til at løse samfundsmæssige udfordringer gennem natur og ekosystemer, samt hvordan Aarhus udvikler multifunktionelle byrum med fokus på robust og grøn infrastruktur.",
     "keywords": [
       "naturbaserede løsninger",
@@ -2003,7 +2022,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2019,7 +2038,8 @@
         "youtube_url": "https://youtube.com/watch?v=7I18KF-T6Xo",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Fra_lukket_land_til__bent_landskab.mp3.txt",
@@ -2027,7 +2047,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNNK: Fra lukket land til åbent landskab",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-01-22",
     "summary": "Webinaret præsenterer en temperaturmåling på arbejdet med den grønne træpartsaftale og analyserer, hvordan implementeringen tager form. Professor Ellen Brouwer fra Københavns Universitet introducerer rapporten, som undersøger de kvalitative aspekter af landskabsudviklingen og hvordan flere funktioner kan arbejde sammen i det åbne landskab.",
     "keywords": [
       "grøn træpart",
@@ -2053,7 +2073,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2063,7 +2083,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Nyt_till_g_til_spildevandsvejledningen.mp3.txt",
@@ -2071,7 +2092,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNNK: Nyt tillæg til spildevandsvejledningen",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-02-24",
     "summary": "Webinaret handler om Miljøstyrelsens nye vejledning til kommunernes planlægning for terrænnært grundvand, som skal håndtere udfordringer med oversvømmelser af infrastruktur og bygninger. Fokus ligger på kommunernes forpligtelser ved fastsættelse af områder i spildevandsplanen, anvendelse af nationale og lokale data, samt spildevandsforsyningsselskabernes forsyningspligt. Der præsenteres baggrund for overgangen fra individuelle til kollektive løsninger på grundvandsproblemer.",
     "keywords": [
       "terrænnært grundvand",
@@ -2100,7 +2121,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2122,7 +2143,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Satellites_to_Measure_Social_and_Human_F.mp3.txt",
@@ -2130,7 +2152,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNNK: Satellites to Measure Social and Human Footprint",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-01-30",
     "summary": "Webinaret udforsker, hvordan satellitdata og fjernmålinger kan anvendes til at måle menneskets økonomiske og sociale fodaftryk på jorden. Præsentationen demonstrerer konkrete eksempler på, hvordan satelliobservationer kan understøtte risikovurdering inden for klimatilpasning, befolkningsdynamik og katastrofeberedskab.",
     "keywords": [
       "satellitdata",
@@ -2160,7 +2182,7 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2176,7 +2198,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Svanem_llen_Skybrudstunnel.mp3.txt",
@@ -2184,7 +2207,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNNK: Svanemøllen Skybrudstunnel",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-02-27",
     "summary": "Webinaret præsenterer Svanemøllen Skybrudstunnel, et stort skybrudsprojekt der skal løse oversvæmmelser i det nordlige hovedstadsområde gennem en 10 km lang tunnel med kapacitet på 100.000 kubikmeter vand. Projektet er et tværkommunalt og tværforsyningsmæssigt samarbejde, som reducerer overløb til Udderslev Mose med 97% og til Øresund med 87%, og bidrager til renere vandmiljø.",
     "keywords": [
       "skybrudstunnel",
@@ -2218,7 +2241,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2240,7 +2263,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Terr_nn_rt_grundvand___fra_lovgivning_ti.mp3.txt",
@@ -2248,7 +2272,7 @@
     "folder": "jan,feb 2026",
     "title": "Godmorgen med DNNK: Terræn og grundvand: fra lovgivning til praksis",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-01-28",
     "summary": "Webinaret fokuserer på den nye lovgivning omkring terræn og grundvand, med praktiske eksempler fra Rambøl om udpegning af undersøgelsesområder, vurdering af skader på bygninger og infrastruktur samt effekten af forskellige grundvandssænkende løsninger. Oplægget præsenterer en syvtrinds proces for lovgivningsimplementering med særlig vægt på et solidt datagrundlag og samarbejde mellem kommuner og forsyningsselskaber.",
     "keywords": [
       "terræn",
@@ -2282,7 +2306,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [
       {
@@ -2311,7 +2335,8 @@
         "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.857
   },
   {
     "filename": "Klimatilpasning_i_den_dansk-tyske_gr_nseregion__fra_klimadat.mp3.txt",
@@ -2319,7 +2344,7 @@
     "folder": "jan,feb 2026",
     "title": "Klimatilpasning i den dansk-tyske grænseregion: fra klimadata til klimaaktion",
     "category": "Øvrige",
-    "date": null,
+    "date": "2026-02-18",
     "summary": "Webinaret præsenterer ClimatePol-projektets forskningsresultater om dansk-tysk klimatilpasning i grænseregionen. Fokus ligger på fysiske klimaforhold, aktørnetværk og muligheder for tværgrænsende samarbejde om klimaadaptation, hvor fælles udfordringer og forskellig ekspertise på begge sider af grænsen skaber grundlag for effektivt samarbejde.",
     "keywords": [
       "klimatilpasning",
@@ -2361,7 +2386,7 @@
     ],
     "youtube_id": "kG3ZBFW4AHU",
     "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2383,7 +2408,8 @@
         "youtube_url": "https://youtube.com/watch?v=zpzBuv6P0ys",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.948
   },
   {
     "filename": "Tech_Talk__Effektiv_rensning_af_afstr_mmende_regnvand___erfa.mp3.txt",
@@ -2391,7 +2417,7 @@
     "folder": "jan,feb 2026",
     "title": "Tech Talk: Effektiv rensning af afstrømmende regnvand: erfa",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-12-17",
     "summary": "Webinaret præsenterer Volt-filtersystemet fra UpoNord, en innovativ løsning til rensning af forurenet regnvand i klimatilpasningsprojekter. Gennem et konkret eksempel fra Fremtidsparken i Rønte demonstreres, hvordan systemet kan håndtere overfladevand fra erhvervsområder, når traditionelle vådebassiner ikke er mulige på grund af jordforhold.",
     "keywords": [
       "regnvandshåndtering",
@@ -2420,7 +2446,7 @@
     ],
     "youtube_id": "ay2QrzQLFuE",
     "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2442,7 +2468,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Styrbar_vandbremse_med_rensefunktion.mp3.txt",
@@ -2450,7 +2477,7 @@
     "folder": "jan,feb 2026",
     "title": "Tech Talk: Styrbar vandbremse med rensefunktion",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2026-03-04",
     "summary": "Smartbrønd præsenterer en intelligent vandbremse-løsning, der kan styres dynamisk til at regulere vandudløb fra klimatilpasningsprojekter som bassiner og kassetsystemer under terræn. Teknologien kombinerer vandstandsmåling med IoT-kommunikation og mulighed for at justere udløbsflugt i realtid, som eksemplificeret gennem et projekt på Frederiksberg.",
     "keywords": [
       "vandbremse",
@@ -2478,7 +2505,7 @@
     ],
     "youtube_id": "HCzn9uIy6-c",
     "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2500,7 +2527,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Bidragsmodeller_v.txt",
@@ -2563,7 +2591,7 @@
     "folder": "transcritranscriptions",
     "title": "Byerne og det stigende havvand 1 Risikostyring og sikkerhed",
     "category": "Øvrige",
-    "date": null,
+    "date": "2023-01-19",
     "summary": "Webinaret handler om klimatilpasning af havnearealer i danske byer med fokus på risikostyring og sikkerhedsniveauer. Anna Alles Nielsen fra Svendborg Kommune præsenterer erfaringer fra 'Den Blå Kant'-projektet, hvor havnen skal tilpasses stigende vandstand og øgede oversvømmelsesrisici både fra havet og intensiv regn.",
     "keywords": [
       "klimatilpasning",
@@ -2593,9 +2621,9 @@
       "Frederikssø",
       "Aalborg Kommune"
     ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
+    "youtube_id": "6SnZ_YYPRWs",
+    "youtube_url": "https://youtube.com/watch?v=6SnZ_YYPRWs",
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2617,7 +2645,8 @@
         "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Byerne_og_det_stigende_havvand___Kystbeskyttelsesprojekter_i.mp3.txt",
@@ -2625,7 +2654,7 @@
     "folder": "transcritranscriptions",
     "title": "Byerne og det stigende havvand: Kystbeskyttelsesprojekter i Danmark",
     "category": "Øvrige",
-    "date": null,
+    "date": "2023-03-09",
     "summary": "Webinaret omhandler juridiske perspektiver på kystbeskyttelse og er det sidste i en serie om byerne og stigende havvand. Præsentationen fokuserer på formålsbestemmelsen i kystgødsloven, kommunale fællesprojekter, afvejning af hensyn ved projekttilladelser og lovgivningsændringer fra 2018.",
     "keywords": [
       "kystbeskyttelse",
@@ -2656,7 +2685,7 @@
     ],
     "youtube_id": "G6Wa4fHjsQg",
     "youtube_url": "https://youtube.com/watch?v=G6Wa4fHjsQg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -2678,7 +2707,8 @@
         "youtube_url": "https://youtube.com/watch?v=4h-LgQEW98M",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_.txt",
@@ -3727,8 +3757,8 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
-    "description": null,
+    "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
+    "description": "I denne DNNK Masterclass sætter Københavns Universitet fokus på planlægning, drift og økonomien i LAR-løsninger. Det er tale om et online forløb med tre kursusgange á 1,5 times varighed fordelt over tre formiddage i april. Hver kursusgang består af et oplæg (30 minutter), en diskussion (15 minutter) og en øvelse relateret til dagens emne (30 minutter). Masterclassen henvender sig til alle med interesse for landskabsbaseret klimatilpasning og den nyeste viden indenfor planlægning, drift, økonomi og bæredygtighed i bred forstand. Masterclassen er særlig relevant for ’begyndere’ og ’let øvede’ in",
     "related_resources": [],
     "related_webinars": [
       {
@@ -3749,7 +3779,8 @@
         "youtube_url": "https://youtube.com/watch?v=-cb4v7A5zes",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.913
   },
   {
     "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3 (2).txt",
@@ -3775,8 +3806,8 @@
     "places": [],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
-    "description": null,
+    "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
+    "description": "I denne DNNK Masterclass sætter Københavns Universitet fokus på planlægning, drift og økonomien i LAR-løsninger. Det er tale om et online forløb med tre kursusgange á 1,5 times varighed fordelt over tre formiddage i april. Hver kursusgang består af et oplæg (30 minutter), en diskussion (15 minutter) og en øvelse relateret til dagens emne (30 minutter). Masterclassen henvender sig til alle med interesse for landskabsbaseret klimatilpasning og den nyeste viden indenfor planlægning, drift, økonomi og bæredygtighed i bred forstand. Masterclassen er særlig relevant for ’begyndere’ og ’let øvede’ in",
     "related_resources": [],
     "related_webinars": [
       {
@@ -3785,7 +3816,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3.txt",
@@ -3819,8 +3851,8 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
-    "description": null,
+    "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
+    "description": "I denne DNNK Masterclass sætter Københavns Universitet fokus på planlægning, drift og økonomien i LAR-løsninger. Det er tale om et online forløb med tre kursusgange á 1,5 times varighed fordelt over tre formiddage i april. Hver kursusgang består af et oplæg (30 minutter), en diskussion (15 minutter) og en øvelse relateret til dagens emne (30 minutter). Masterclassen henvender sig til alle med interesse for landskabsbaseret klimatilpasning og den nyeste viden indenfor planlægning, drift, økonomi og bæredygtighed i bred forstand. Masterclassen er særlig relevant for ’begyndere’ og ’let øvede’ in",
     "related_resources": [],
     "related_webinars": [
       {
@@ -3835,7 +3867,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
@@ -4112,7 +4145,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNAK: Overløb og oversvømmelser fra vandløb",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-01-29",
     "summary": "Webinaret fokuserer på håndtering af overløb og oversvømmelser fra vandløb gennem præsentation af et screeningsværktøj udviklet af Klimadatastyrelsen. Georg Barneton Larsen præsenterer værktøjet til landsdækkende beregning af oversvømmelsesudbredelse, mens Rafael Variant Blom fra Danmarks Meteorologiske Institut deler viden om udviklingen af et modelbaser varslingssystem for vandløbsoversvømmelser.",
     "keywords": [
       "oversvømmelser",
@@ -4141,7 +4174,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4163,7 +4196,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen med DNNK Organiserings- og finansieringsmodeller t.txt",
@@ -4171,7 +4205,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNDK - Organiserings- og finansieringsmodeller til kystbeskyttelsesprojekter",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-12-06",
     "summary": "Webinaret omhandler organiserings- og finansieringsmodeller for projekter til forebyggelse af stormflod og havvandsstigninger, baseret på Realdania-projektet. Advokat Søren Hilbert gennemgår juridiske og lovgivningsmæssige aspekter af bidragsfordeling i kystprojekter, mens projektleder Per Nørremark præsenterer praktiske erfaringer fra dialogen i Juelsminde Kommune.",
     "keywords": [
       "kystbeskyttelse",
@@ -4202,7 +4236,7 @@
     ],
     "youtube_id": "G6Wa4fHjsQg",
     "youtube_url": "https://youtube.com/watch?v=G6Wa4fHjsQg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4224,7 +4258,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen med DNNK - Borgerinddragelse og klimatilpasning -.txt",
@@ -4232,7 +4267,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK - Borgerinddragelse og klimatilpasning",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-05-31",
     "summary": "Webinaret fokuserer på borgerinddragelsesprocesser i klimatilpasnings- og kystbeskyttelsesprojekter, som er både vigtig og udfordrende for projektmagere. Der præsenteres konkrete erfaringer fra Dragør Kommune og Hedensted Kommune om hvordan borgerne inddrages i projekter, med særligt fokus på hvordan man skaber ejerskab og dialog omkring synlige forandringer i lokalsamfundene.",
     "keywords": [
       "borgerinddragelse",
@@ -4263,7 +4298,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4285,7 +4320,8 @@
         "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen med DNNK - Dynamisk Adaptiv Pathway Planning DAPP.txt",
@@ -4293,7 +4329,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK - Dynamisk Adaptiv Pathway Planning DAPP",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-10-27",
     "summary": "Webinaret introducerer DAPP-metoden (Dynamisk Adaptiv Pathway Planning), et cirkulært planværktøj til klimatilpasning, som hjælper med at holde flere fremtidsmuligheder åbne samtidigt med at undgå over- eller underimplementering. Metoden skifter fokus fra at forudsige præcise årstal for klimakonsekvenser til at identificere under hvilke forhold infrastruktur og byer bliver sårbare, hvilket gør den velegnet til usikre fremtidsscenarier som uforudsigelige havspejlsstigninger.",
     "keywords": [
       "klimatilpasning",
@@ -4320,7 +4356,7 @@
     ],
     "youtube_id": "YEJyvfjXpZA",
     "youtube_url": "https://youtube.com/watch?v=YEJyvfjXpZA",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4342,7 +4378,8 @@
         "youtube_url": "https://youtube.com/watch?v=zpzBuv6P0ys",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK_-_Ekstreme_skybrud_og_stormfloder.mp3.txt",
@@ -4350,7 +4387,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK - Ekstreme skybrud og stormfloder",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-08-15",
     "summary": "Webinaret fokuserer på ekstreme skybrud og stormfloder, der forekommer sjældnere end hvert 100. år, og hvordan vi kan lære af historiske hændelser til fremtidig planlægning. Charlotte Sinkbæk-Skov fra Invidan præsenterer betydningen af at integrere viden om ekstreme vejrhændelser i klimatilpasningsstrategier, da sådan begivenheder bliver mere hyppige og ekstreme.",
     "keywords": [
       "ekstreme skybrud",
@@ -4377,7 +4414,7 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4393,7 +4430,8 @@
         "youtube_url": "https://youtube.com/watch?v=PbsuU-zM9j0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK_-_Ny_klimatilpasningsplan_i_Aarhus_Kommun.mp3.txt",
@@ -4401,7 +4439,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK - Ny klimatilpasningsplan i Aarhus Kommune",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-11-13",
     "summary": "Webinaret præsenterer Aarhus Kommunes nye klimatilpasningsplan for 2024-2030, som fokuserer på at gøre kommunen mere robust over for stigende vandmængder og ekstreme vejrforhold. Birgit Sønderskov Weber gennemgår kommunens programorganiserede tilgang til klimatilpasning, der kombinerer tilpasning med merværdi for byudvikling, herunder arbejdet med regnvandshåndtering både i nye og eksisterende byområder samt ved kysten.",
     "keywords": [
       "klimatilpasning",
@@ -4428,7 +4466,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4444,7 +4482,8 @@
         "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK_-_Stormflodsplan_for_hovedstadsomr_det.mp3.txt",
@@ -4452,7 +4491,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK - Stormflodsplan for hovedstadsområdet",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-10-22",
     "summary": "Webinaret præsenterer arbejdet med en stormflodsplan for hovedstadsområdet, som er en cirka 60 km sammenhængende mega-infrastruktur, der omfatter fire kommuner. Forundersøgelsen fokuserer på de stormflodstekniske aspekter og blev offentliggjort efteråret 2024, og kommunerne præsenterer både arbejdsprocessen og de komplekse lokale perspektiver og udfordringer, der skal balanceres ved planlægningen.",
     "keywords": [
       "stormflod",
@@ -4495,7 +4534,7 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4517,7 +4556,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen med DNNK - Webinar om Klimaatlas.txt",
@@ -4589,17 +4629,18 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK Bæredygtigt vandkredsløb Fortid nutid",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2021-04-22",
     "summary": "",
     "keywords": [],
     "speakers": [],
     "places": [],
     "youtube_id": "p5KWW2mdOrA",
     "youtube_url": "https://youtube.com/watch?v=p5KWW2mdOrA",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen med DNNK  Mulighedskatalog for involvering af borg.txt",
@@ -4607,7 +4648,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK Mulighedskatalog for involvering af borgere",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-11-25",
     "summary": "Webinaret præsenterer et mulighedskatalog for klimatilpasning, der skal bruges til at involvere borgere og politikere i arbejdet med dynamisk adaptiv klimatilpasning og byudvikling. Kataloget bygger på grundig områdeanalyse af vandudfordringer og byplanmæssige forhold, og løsninger udvikles gennem tværfagligt samarbejde mellem specialister inden for vand og klimatilpasning.",
     "keywords": [
       "klimatilpasning",
@@ -4634,7 +4675,7 @@
     "places": [],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4656,7 +4697,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK_om_Naturbaserede_l_sninger.mp3.txt",
@@ -4664,7 +4706,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK om Naturbaserede løsninger",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-03-07",
     "summary": "Webinaret præsenterer naturbaserede løsninger som svar på samtidig adressering af natur-, miljø- og klimaudfordringer. Der gives både teoretisk indføring i konceptet og praktiske eksempler fra danske projekter samt erfaringer fra det svenske klimatilpasningsprojekt Livecost Adaptapt.",
     "keywords": [
       "naturbaserede løsninger",
@@ -4705,7 +4747,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4721,7 +4763,8 @@
         "youtube_url": "https://youtube.com/watch?v=PbsuU-zM9j0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen med DNNK – Borgerinddragelsesprocesser i klimatilp.txt",
@@ -4729,7 +4772,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK – Borgerinddragelsesprocesser i klimatilpasning",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-06-08",
     "summary": "Webinaret fokuserer på borgerinddragelsesprocesser i klimatilpasningsprojekter, med særlig vægt på lokale tilpasninger til ekstreme vejrbegivenheder som stormfloder og skybrud. Forskningsleder Kristoffer Alfreds præsenterer erfaringer om menneskelig adfærd i katastrofer, risikoopfattelse og kollektiv hukommelse, mens Søren Gram fra Teknologirådet deler resultater fra borgertopmmøder i Realdania-projektet 'Byer med stigende havvand'.",
     "keywords": [
       "borgerinddragelse",
@@ -4762,7 +4805,7 @@
     ],
     "youtube_id": "PbsuU-zM9j0",
     "youtube_url": "https://youtube.com/watch?v=PbsuU-zM9j0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4784,7 +4827,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen med DNNK – Inspirationsoplæg om NBS og monitering.txt",
@@ -4792,7 +4836,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK – Inspirationsoplæg om NBS og monitorering",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-06-24",
     "summary": "Webinaret fokuserer på naturbaserede løsninger (NBS) som klimatilpasningsmål, med forsker Zenia Centana fra Syddansk Universitet som hovedtaler. Der præsenteres forskning omkring effekterne af naturbaserede løsninger og introduktion til et nyt EU-projekt om vejledning og håndbok for implementering af NBS.",
     "keywords": [
       "naturbaserede løsninger",
@@ -4816,7 +4860,7 @@
     ],
     "youtube_id": "CgdzP4k0egA",
     "youtube_url": "https://youtube.com/watch?v=CgdzP4k0egA",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4838,7 +4882,8 @@
         "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen med DNNK – Klimaændringernes effekt på vandkredslø.txt",
@@ -4846,7 +4891,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK – Klimaændringernes effekt på vandkredsløbet",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2021-05-06",
     "summary": "Webinaret behandler klimaforandringernes indflydelse på vandkredsløbet i Danmark, med fokus på ændringer i grundvand, vandføring og oversvømmelsesrisiko. Der præsenteres nye detaljerede modelberegninger baseret på RCP-scenarier, som viser øget vådt vejr om vinteren og tørre perioder om sommeren samt udfordringer med flere sammenhængende våde eller tørre år.",
     "keywords": [
       "klimaforandringer",
@@ -4875,7 +4920,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4897,7 +4942,8 @@
         "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen med DNNK – Skitsering af problematikker for vores.txt",
@@ -4905,7 +4951,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK – Skitsering af problematikker for vores kyster",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2022-04-28",
     "summary": "Webinaret introducerer DNNK's initiativ om klimamæssige kønsudfordringer langs danske kyster som følge af klimaforandringer. Der præsenteres historiske perspektiver på byggesårbarhed i kystområder, med Peter Sørensen fra Kystdirektoratet der illustrerer, hvordan udvikling over tid har øget risikoen for oversvømmelser ved at udnytte områder tæt på vandet.",
     "keywords": [
       "klimatilpasning",
@@ -4940,7 +4986,7 @@
     ],
     "youtube_id": "1-A_PXpuxc8",
     "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4962,7 +5008,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen med DNNK Det bæredygtige vandkredsløb – fra en reg.txt",
@@ -4970,7 +5017,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Det bæredygtige vandkredsløb – fra et regionalt perspektiv",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2021-08-20",
     "summary": "Webinaret fokuserer på det regionale perspektiv på klimatilpasning og det bæredygtige vandkredsløb, med erfaringer fra Region Midtjylland og Region Hovedstaden. Dorthe Verts fra Region Midtjylland præsenterer regionens arbejde med klimatilpasning siden 2010, herunder projekter som 'Vind over vandet', regionale netværk og internationale samarbejdsprojekter som Watercard.",
     "keywords": [
       "klimatilpasning",
@@ -5005,7 +5052,7 @@
     ],
     "youtube_id": "sTjHsoDt00A",
     "youtube_url": "https://youtube.com/watch?v=sTjHsoDt00A",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [
       {
@@ -5022,7 +5069,8 @@
         "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Drag_r__klimarobust_kystkommune___fra_ud.txt",
@@ -5030,7 +5078,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Dragør - klimarobust kystkommune: fra udviklingsplan til dispositionsforslag",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-01-16",
     "summary": "Webinaret fokuserer på Dragør Kommunes arbejde med at skabe klimarobusthed mod havstigning, stormflod, grundvand og nedbør gennem en konkret dispositionsforslag-proces. Projektleder Lise Holm præsenterer kommunens løsningsforslag, borgerinvolvering og læringspunkter fra en arkitektkonkurrence og udviklingsprojekt støttet af Realdania og miljøministeriet.",
     "keywords": [
       "klimatilpasning",
@@ -5057,7 +5105,7 @@
     ],
     "youtube_id": "1-A_PXpuxc8",
     "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5079,7 +5127,8 @@
         "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Dynamisk_skybrudsplanl_gning___erfaringe.mp3.txt",
@@ -5087,17 +5136,18 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Dynamisk skybrudsplanl gning: erfaringe",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-06-27",
     "summary": "",
     "keywords": [],
     "speakers": [],
     "places": [],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 0.924
   },
   {
     "filename": "Godmorgen_med_DNNK__Gr_nningen_NV___Klimatilpasning__Kunst_o.txt",
@@ -5105,17 +5155,18 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Gr nningen NV: Klimatilpasning: Kunst o",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-02-06",
     "summary": "",
     "keywords": [],
     "speakers": [],
     "places": [],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 0.919
   },
   {
     "filename": "Godmorgen_med_DNNK__Karens_Minde_Aksen.mp3.txt",
@@ -5123,17 +5174,18 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Karens Minde Aksen",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-05-22",
     "summary": "",
     "keywords": [],
     "speakers": [],
     "places": [],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimaforandringernes_konsekvenser_for_kl.mp3.txt",
@@ -5141,7 +5193,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Klimaforandringernes konsekvenser for kysten",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-09-24",
     "summary": "Webinaret behandler klimaforandringernes indvirkning på havniveau og stormfloder med fokus på Danmark. Klimaforsker Hjalte Sørup fra DMI præsenterer, hvordan global opvarmning medfører højere havniveauer og øget risiko for stormfloder, mens Katrine Viberg fra Arkitektskolen i Aarhus diskuterer implikationer for planlægningen af fremtidige kystbyer.",
     "keywords": [
       "klimaforandringer",
@@ -5171,7 +5223,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5193,7 +5245,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.927
   },
   {
     "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
@@ -5201,7 +5254,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-01-19",
     "summary": "Webinaret præsenterer en rapport om 90 danske kommuners klimatilpasningsarbejde i forbindelse med DK 2020-initiativet, der skal hjælpe kommunerne med at lave ambitiøse klimaplaner i overensstemmelse med Parisaftalen. Rapporten dækker kommunernes risikovurderinger, mål, milepæle og vedtagne klimatilpasningsstrategier, med fokus på hvordan kommunerne kan skabe samlet klimafortælling og klimarobus indsats.",
     "keywords": [
       "klimatilpasning",
@@ -5231,7 +5284,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5253,7 +5306,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK___Klimatilpasning_og_den_gr_nne_omstillin.mp3.txt",
@@ -5261,7 +5315,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Klimatilpasning og den grønne omstilling",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-10-03",
     "summary": "Webinaret behandler forholdet mellem klimareduktion og klimatilpasning, hvor det vises at klimatilpasningsindsatser ofte har et stort klimaaftryk, der ikke indgår i reduktionsplanerne. Mads Ugerby og Sara Rusland fra Envi Dagen præsenterer dynamiske planlægningsværktøjer, der kan integrere både reduktions- og tilpasningsindsatser for at undgå klimagasudledninger ved klimatilpasning.",
     "keywords": [
       "klimareduktion",
@@ -5290,7 +5344,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5312,7 +5366,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimatilpasning_og_kystbeskyttelse_i_K_g.mp3.txt",
@@ -5320,7 +5375,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Klimatilpasning og kystbeskyttelse i Køge Bugt",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-06-06",
     "summary": "Webinaret fokuserer på Køge Bugt Strandpark som eksempel på kommunalt samarbejde om klimatilpasning og kystbeskyttelse. Anlægget, etableret i 1980 efter planer fra 1936, består af diger, sluser og pumpesystemer, der beskytter mod ekstreme vejrhændelser og oversvømmelser, samtidig med at det bevarer naturmæssige og rekreative værdier. Præsentationen behandler anlæggets historiske udvikling, nuværende drift og fremtidige moderniseringsbehov.",
     "keywords": [
       "klimatilpasning",
@@ -5353,7 +5408,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5375,7 +5430,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__K_ge_Nord___Tv_rfaglig_samarbejdsform__i.mp3.txt",
@@ -5383,7 +5439,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Køge Nord: Tværfaglig samarbejdsform",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-08-27",
     "summary": "Webinaret præsenterer Køge Nord-projektet i Køge Kommune som et eksempel på bæredygtig byudvikling kombineret med klimatilpasning og naturgenopretning. Projektet demonstrerer, hvordan tværfagligt samarbejde mellem kommune, forsyningsselskab og rådgivere muliggør regenerativ planlægning med naturbaserede løsninger og integreret regnvandshåndtering.",
     "keywords": [
       "Køge Nord",
@@ -5414,7 +5470,7 @@
     ],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5436,7 +5492,8 @@
         "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK___M_det_og_dialogen_med_borgerne.mp3.txt",
@@ -5444,7 +5501,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Mødet og dialogen med borgerne",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-04-30",
     "summary": "Webinaret fokuserer på mødet og dialogen med borgerne, især såkaldte 'markante borgere' - borgere med høje forventninger, store krav og stærke følelser. Hans Mogensen fra Silkeborg Kommune præsenterer perspektiver på, hvorfor konflikter opleves hyppigere i det offentlige, hvem disse borgere er, og hvordan man konstruktivt kan møde dem for at nedtrappe konflikter og skabe ordentlig dialog.",
     "keywords": [
       "markante borgere",
@@ -5472,7 +5529,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5482,7 +5539,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Naturbaserede_byer___vejen_til_klimarobu.mp3.txt",
@@ -5490,7 +5548,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Naturbaserede byer: vejen til klimarobusthed",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-05-16",
     "summary": "Webinaret præsenterer Concitos nye rapport om naturbaserede byer og deres rolle i at skabe klimarobuste og bæredygtige bysamfund. Rapporten dokumenterer, hvordan integration af natur i byplanlægning og -udvikling kan modvirke klima- og biodiversitetsudfordringer samt styrke sundhed, trivsel og naturgrundlaget i byerne. Naturbaserede løsninger fremstilles som en vigtig rygrad i fremtidens byudvikling, hvor byer både er del af problemet og løsningen på klimakrisen.",
     "keywords": [
       "naturbaserede byer",
@@ -5515,7 +5573,7 @@
     ],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5531,7 +5589,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Opdaterede_h_jvandsstatistikker_2024.mp3.txt",
@@ -5539,7 +5598,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Opdaterede højvandsstatistikker 2024",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-11-04",
     "summary": "Webinaret præsenterer de opdaterede højvandsstatistikker fra 2024, som kortlægger risikoen for ekstreme vandstande baseret på data fra 70 stationer rundt omkring i Danmark. Statistikkerne bruges til at vurdere forsikringsudbetaling ved stormfloder og til at understøtte klimatilpasning og planlægning af kystsikring mod fremtidige stormhalser.",
     "keywords": [
       "højvandsstatistikker",
@@ -5569,7 +5628,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5591,7 +5650,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Skred_og_klimaforandringer_i_Danmark.mp3.txt",
@@ -5599,7 +5659,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Skred og klimaforandringer i Danmark",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-01-07",
     "summary": "Webinaret omhandler landskred i Danmark og hvordan klimaforandringerne med øget nedbør og ekstremtvejr øger risikoen for skred i det danske landskab. Geolog og seniorforsker Christian Svendevig fra GEUS præsenterer kortlægning af landskred, konkrete eksempler og fremtidsperspektiver på hvordan klimaforandringerne påvirker skredprocesser i Danmark.",
     "keywords": [
       "landskred",
@@ -5628,7 +5688,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5650,7 +5710,8 @@
         "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Stort_LAR-anl_g_i_Urbanplan.txt",
@@ -5658,7 +5719,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Stort LAR-anlæg i Urbanplan",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-03-13",
     "summary": "Webinaret præsenterer et stort landskabsarkitekturprojekt inden for klimatilpasning i Urbanplan, som har været i udvikling siden 2018. Projektet fokuserer på at skabe attraktive og biodiversitet-rige byrum med blågrønne løsninger, der respekterer arkitektur og beboere. Oplægget fremhæver betydningen af tværfagligt teamwork gennem hele processen fra projektering til udførelse.",
     "keywords": [
       "landskabsarkitektur",
@@ -5698,7 +5759,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5714,7 +5775,8 @@
         "youtube_url": "https://youtube.com/watch?v=CRTBz-62FZY",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Svendborgs_nye_strategi_for_beskyttelse_.mp3.txt",
@@ -5722,7 +5784,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Svendborgs nye strategi for beskyttelse mod højvande",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-06-12",
     "summary": "Webinaret præsenterer Svendborg Kommunes projekt 'Fra blå kant til blå zone', som handler om klimatilpasning og beskyttelse mod stigende havvand i havneområdet. Kommunen skiftede strategisk fra traditionel beskyttelse med sluseporte til en integreret tilgang, der inviterer vandet ind, og oplægget dækker blandt andet beskyttelsesniveauer, finansiering og borgerinddragelse.",
     "keywords": [
       "klimatilpasning",
@@ -5754,7 +5816,7 @@
     ],
     "youtube_id": "1-A_PXpuxc8",
     "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5776,7 +5838,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
@@ -5784,7 +5847,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne: klimasikringen",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-08-19",
     "summary": "Webinaret præsenterer Hofors nye hvidbog om klimasikring, der argumenterer for en helhedsorienteret tilgang til klimatilpasning af byerne. Ditte Marie Reinholdt Jensen diskuterer hvordan klimaforandringer som skybrud, grundvandsstigninger og stormfloder udgør stigende risici for oversvømmelser, og hvordan løsninger kræver fælles indsats på tværs af sektorer.",
     "keywords": [
       "klimasikring",
@@ -5807,7 +5870,7 @@
     "places": [],
     "youtube_id": "YEJyvfjXpZA",
     "youtube_url": "https://youtube.com/watch?v=YEJyvfjXpZA",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5823,7 +5886,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Vandets_veje.mp3.txt",
@@ -5878,7 +5942,7 @@
     "folder": "transcritranscriptions",
     "title": "Godmorgen med DNNK: om havstigninger, kystnatur og strandeng",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2024-08-28",
     "summary": "Webinaret behandler konsekvenserne af stigende havniveauer for dansk kystnatur og strandområder baseret på en national analyse. Der præsenteres konkrete eksempler på, hvordan kommuner og naturområder påvirkes, samt hvilke naturbaserede løsninger og beskyttelsesprojekter der kan implementeres for at bevare kystnatur.",
     "keywords": [
       "havstigninger",
@@ -5911,7 +5975,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5933,7 +5997,8 @@
         "youtube_url": "https://youtube.com/watch?v=4h-LgQEW98M",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Gr_nne_v_gge___en_overset_klimatilpasningsl_sning_i_DK_.mp3.txt",
@@ -6152,7 +6217,7 @@
     "places": [],
     "youtube_id": "jQHOOGRZL_E",
     "youtube_url": "https://youtube.com/watch?v=jQHOOGRZL_E",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
     "description": null,
     "related_resources": [
       {
@@ -6181,7 +6246,8 @@
         "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.976
   },
   {
     "filename": "Klimatilpasning_i_det__bne_land_-_Strategier_og_eksempler_fr.mp3.txt",
@@ -6189,7 +6255,7 @@
     "folder": "transcritranscriptions",
     "title": "Klimatilpasning i det åbne land - Strategier og eksempler fra praksis",
     "category": "Øvrige",
-    "date": null,
+    "date": "2024-08-13",
     "summary": "Webinaret præsenterer projektet 'Klimaprojekter som driver for forbedring af landskabet' fra Plan 22 Plus-initiativet, hvor Assens og Odense Kommuner udvikler en helhedsplan for landskabet mellem kommunerne med fokus på klimatilpasning, bæredygtig planlægning og multifunktionel arealanvendelse. Anders Dam fra Assens Kommune præsenterer strategi og eksempler på implementering af klimamål gennem fysisk planlægning, herunder udtagning af lavbundsjorde, skovrejsning og grundvandsbeskyttelse.",
     "keywords": [
       "klimatilpasning",
@@ -6219,7 +6285,7 @@
     ],
     "youtube_id": "z2gAXSuesg4",
     "youtube_url": "https://youtube.com/watch?v=z2gAXSuesg4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [
       {
@@ -6242,7 +6308,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.94
   },
   {
     "filename": "Optagelse_af_Pitch_3_Remoni.mp3.txt",
@@ -6474,7 +6541,7 @@
     "folder": "transcritranscriptions",
     "title": "Oversvømmelser: beregninger, data og digitale værktøjer",
     "category": "Øvrige",
-    "date": null,
+    "date": "2022-08-22",
     "summary": "Webinaret præsenterer fire softwareværktøjer til beregning af skader fra oversvømmelser og klimatilpasning, med fokus på samfundsøkonomiske analyser og serviceniveauer for vand på terræn. Værktøjerne skal hjælpe kommuner og forsyningsselskaber med at forudsige oversvømmelsers udbredelse, varighed og økonomiske konsekvenser samt prioritere klimatilpasningstiltag.",
     "keywords": [
       "oversvømmelser",
@@ -6499,7 +6566,7 @@
     "places": [],
     "youtube_id": "m1tgfbFMyvE",
     "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [
       {
@@ -6528,7 +6595,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Rockflow_01_opl_g.mp3.txt",
@@ -6905,7 +6973,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - A wastewater platform built on big data",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-11-08",
     "summary": "Søren Schou fra Clarify præsenterer en spildevandsplatform baseret på big data, som udnytzer offentligt tilgængelige EU-data om industriel forurening og spildevand. Platformen gør kommercielt potentiale i miljødata mere tilgængeligt ved at kombinere regulatoriske data fra kilder som EPRTR og spildevandsdirektivet.",
     "keywords": [
       "spildevand",
@@ -6936,7 +7004,7 @@
     ],
     "youtube_id": "N1CbssTdim0",
     "youtube_url": "https://youtube.com/watch?v=N1CbssTdim0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -6946,7 +7014,8 @@
         "youtube_url": "https://youtube.com/watch?v=oeUQmiidh9o",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_-_CO2_fra_forsyningsselskabets_anl_gsprojekter.txt",
@@ -6954,7 +7023,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - CO2 fra forsyningsselskabets anlægsprojekter",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-10-25",
     "summary": "Webinaren præsenterer et nyt værktøj til beregning af CO2-udledning fra forsyningsselskabernes anlægsprojekter, udviklet i samarbejde med Skanderborg Forsyning. Værktøjet sigter mod at give projektledere en hurtig og brugbar metode til at kvalificere klimapåvirkningen fra forskellige projekttyper uden at vente på perfekt datakvalitet. Desuden præsenteres arbejde med samfundsøkonomiske konsekvensvurderinger og affaldsbyrder for flere danske vandselskaber.",
     "keywords": [
       "CO2-udledning",
@@ -6985,7 +7054,7 @@
     ],
     "youtube_id": "m1tgfbFMyvE",
     "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7007,7 +7076,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_-_Den_gode_vej_til_planl_gning_af_klimatilpasning_.txt",
@@ -7015,7 +7085,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Den gode vej til planlægning af klimatilpasning",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-09-13",
     "summary": "Webinaret behandler kommunal klimatilpasning og de nye lovkomplekser, især serviceniveaubekendtgørelsen og omkostningsbekendtgørelsen, som introducerer begreber som samfundsøkonomisk hensigtsmæssighed og hydrodynamiske kortlægninger. Aarhus Kommune præsenterer deres tilgang til klimatilpasning inden for tre kategorier: ny by, eksisterende by og byomdannelse, hvor de blandt andet anvender renvandsdispositionsplaner og landskabsbaseret afvanding.",
     "keywords": [
       "klimatilpasning",
@@ -7045,7 +7115,7 @@
     ],
     "youtube_id": "MIYK5y7B1GU",
     "youtube_url": "https://youtube.com/watch?v=MIYK5y7B1GU",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7061,7 +7131,8 @@
         "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_-_Dynamisk_beredskabsplanl_gning_mod_stormfloden.txt",
@@ -7069,7 +7140,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Dynamisk beredskabsplanlægning mod stormfloden",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2024-01-24",
     "summary": "Webinaret handler om dynamisk beredskabsplanlægning mod stormfloden, med fokus på Koldings erfaringer fra oktober. Bjarne Laursen fra Kolding Kommune præsenterer, hvordan man vurderer oversvømmelsesudbredelse og udvikler afværgestrategier, især hvor vandløb møder fjord og hvor både åen og havets højvande påvirker området.",
     "keywords": [
       "stormflod",
@@ -7098,7 +7169,7 @@
     ],
     "youtube_id": "kG3ZBFW4AHU",
     "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7120,7 +7191,8 @@
         "youtube_url": "https://youtube.com/watch?v=uWRcgAlzsww",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_-_Fully_integral_hydrodynamic_simulations (1).txt",
@@ -7128,7 +7200,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Fully integral hydrodynamic simulations (1)",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2024-03-13",
     "summary": "Webinaret præsenterer Nelen & Schuurmans 3Di-software, som er et hydronamisk værktøj, der integrerer overfladevand, grundvand og spildevand i én løsning for præcise modelleringer af oversvømmelser. Oplægget fokuserer på betydningen af fuldt integrerede hydro-dynamiske simuleringer for at håndtere klimaforandringer og ekstreme regnskyl i danske byer.",
     "keywords": [
       "hydronamisk simulering",
@@ -7155,7 +7227,7 @@
     ],
     "youtube_id": "m1tgfbFMyvE",
     "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7177,7 +7249,8 @@
         "youtube_url": "https://youtube.com/watch?v=YEJyvfjXpZA",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_-_Hvordan_renser_man_regnvand_for_mikroplast_.txt",
@@ -7185,7 +7258,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Hvordan renser man regnvand for mikroplast",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-06-15",
     "summary": "Webinaret handler om rensning af regnvand for mikroplast, hvor der præsenteres forskningsresultater om forskellige rensemetoder herunder bundfældning og filtrering. Der fokuseres på praktiske løsninger som regnvandsbassiner og sandfiltre, samt deres effektivitet over for mikroplast og andre forureninger som metaller og fosfor.",
     "keywords": [
       "mikroplast",
@@ -7212,7 +7285,7 @@
     ],
     "youtube_id": "ay2QrzQLFuE",
     "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7234,7 +7307,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_-_H_jtst_ende_grundvand_til_PtX.txt",
@@ -7242,7 +7316,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Højtstående grundvand til PtX",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2024-02-28",
     "summary": "Webinaret omhandler et erhvervsfyrtårnsprojekt for vandteknologi, hvor Klimatorium præsenterer erfaringer og resultater fra forskning i, hvordan højtstående grundvand kan anvendes som ressource til kommende power-to-x anlæg. Projektet fokuserer på klimatilpasning og grøn energiproduktion i sammenhæng med vand og innovativ vandhåndtering uden for det traditionelle forsyningsnet.",
     "keywords": [
       "højtstående grundvand",
@@ -7270,7 +7344,7 @@
     ],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7292,7 +7366,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_-_Klimask_rm.txt",
@@ -7355,7 +7430,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Kortvarige havniveaustigningers indflydelse på det terrænende grundvand",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-10-12",
     "summary": "Webinaret omhandler forsker Ronja Mathiesens arbejde med at kortlægge hvordan kortvarige havniveaustigninger påvirker grundvandsstanden og risikoen for oversvømmelser nedefra i kystnære områder omkring Juelsminde. Projektet undersøger det 'usynlige problem' under jorden – hvordan stormflod skaber tryk på grundvandet og kan forcere oversvømmelser – som ofte negligeres i forhold til direkte stormflodstruslerne.",
     "keywords": [
       "havniveaustigning",
@@ -7385,7 +7460,7 @@
     ],
     "youtube_id": "ydcOvzPz7Vg",
     "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7407,7 +7482,8 @@
         "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.957
   },
   {
     "filename": "Tech_Talk_-_Oversv_mmelsesberegninger_med_integrerede_modell.txt",
@@ -7480,7 +7556,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Regnvandshåndtering i byerne kan løses med træer",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2024-01-10",
     "summary": "Webinaret præsenterer hvordan træer kan fungere som en aktiv klimatilpasningsløsning til håndtering af regnvand i urbane områder. Christian fra Mattle deler erfaringer fra projekter i Holland og Danmark, hvor træer og naturbaserede løsninger integreres i blågrønne byudviklinger for at håndtere flere millioner liter regnvand gennem kapillære grundvandsmagasiner og vækstmedier.",
     "keywords": [
       "regnvandshåndtering",
@@ -7508,7 +7584,7 @@
     ],
     "youtube_id": "kG3ZBFW4AHU",
     "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7524,7 +7600,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_-_Sundhed_i_klimatilpasning_og_byplanl_gning (1).txt",
@@ -7592,7 +7669,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk - Test implementering og anvendelsesmuligheder af SWMM",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-12-21",
     "summary": "Webinaret præsenterer erfaringer med implementering af den amerikanske SWMM-model (Stormwater Management Model) til danske forhold samt koblinger med overflademodel ANAGA til klimatilpasning. Projektdeltakerne fra LNHW Water, DTU Compute og Klareforsyningen deler indsigter om udvikling af en gratis open source-løsning til oversvømmelsesberegninger som alternativ til kommercielle værktøjer.",
     "keywords": [
       "SWMM",
@@ -7624,7 +7701,7 @@
     ],
     "youtube_id": "N1CbssTdim0",
     "youtube_url": "https://youtube.com/watch?v=N1CbssTdim0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7646,7 +7723,8 @@
         "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.757
   },
   {
     "filename": "Tech_Talk_001_-_Sygdomssporing_i_Spildevand.txt",
@@ -7764,7 +7842,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 003 - Sustainable Climate Adaptation",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2020-11-25",
     "summary": "Webinaret omhandler bæredygtig klimatilpasning med fokus på konkrete projekter i Frederiksberg Kommune, hvor man arbejder på at reducere CO2-udledningen fra byggeri og drift. Der diskuteres, hvordan klimatilpasning kan integreres i byplanlægning og kommunal strategi, samt hvordan man skal kommunikere omkostninger og miljømæssige gevinster klart og troværdigt.",
     "keywords": [
       "klimatilpasning",
@@ -7798,7 +7876,7 @@
     ],
     "youtube_id": "zpzBuv6P0ys",
     "youtube_url": "https://youtube.com/watch?v=zpzBuv6P0ys",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -7814,7 +7892,8 @@
         "youtube_url": "https://youtube.com/watch?v=MIYK5y7B1GU",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_004_-_VeVa.txt",
@@ -8009,7 +8088,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 007 - New requirements for water management demands",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-02-24",
     "summary": "Webinaret præsenterer Rockflow-produktet, som adresserer klimatilpasningsudfordringer relateret til urbant vandstyring. Præsentationen fokuserer på, hvordan man kan håndtere stigende mængder regnvand i byer, hvor urbanisering og ekstreme vejrbegivenheder stiller nye krav til vandhåndteringssystemer.",
     "keywords": [
       "klimatilpasning",
@@ -8036,7 +8115,7 @@
     ],
     "youtube_id": "25a7BNv7clQ",
     "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8058,7 +8137,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_008_-__Dannozzle_Klimasikringsanl_g.txt",
@@ -8066,7 +8146,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 008 - Danozzle Klimasikringsanlæg",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-03-24",
     "summary": "Webinaret præsenterer Danozzles klimasikringsanlæg, som løser problemer med tilbageløbende vand og sandaflejringer ved kystkommuner. Jan Eriksen fra Danozzle demonstrerer et stort anlæg installeret i Nyborg, der håndterer overfladevand uafhængigt af sandfyldning gennem innovative gravklapper og løftedyser.",
     "keywords": [
       "klimatilpasning",
@@ -8095,7 +8175,7 @@
     ],
     "youtube_id": "7I18KF-T6Xo",
     "youtube_url": "https://youtube.com/watch?v=7I18KF-T6Xo",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8117,7 +8197,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_009___Fra_Satellitdata_til_klimatilpasning.txt",
@@ -8125,7 +8206,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 009: Fra Satellitdata til klimatilpasning",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-04-07",
     "summary": "Webinaret præsenterer hvordan satellitdata kan anvendes til klimatilpasning og opmåling i Danmark. Carsten Olsen fra GeoPartner Inspector gennemgår geodætiske principper, højdesystemer og lokale sætninger, samt betydningen af præcise højdemålinger for klimatilpasningsscenarier som oversvømmelsesberegninger.",
     "keywords": [
       "satellitdata",
@@ -8153,7 +8234,7 @@
     ],
     "youtube_id": "dQD4UzfLbN4",
     "youtube_url": "https://youtube.com/watch?v=dQD4UzfLbN4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8175,7 +8256,8 @@
         "youtube_url": "https://youtube.com/watch?v=sbh2YqucMys",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_010___IOT_og_vand_n_r_terr_n.txt",
@@ -8183,7 +8265,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 010: IoT og vand nær terræn",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-05-05",
     "summary": "Webinaret handler om internetforbundne sensorer (IoT) og deres anvendelse inden for vandmonitering og vandnær terræn. Jacob Jensen fra Wosten C præsenterer, hvordan sensorer og realtime data kan bruges til at indsamle og håndtere vanddata, samt præsenterer deres digitale løsning Calypso-platformen. Der diskuteres både muligheder og udfordringer ved at arbejde med store mængder sensordata, herunder databeskyttelse, kvalitetssikring og metadatahåndtering.",
     "keywords": [
       "IoT",
@@ -8206,7 +8288,7 @@
     "places": [],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8228,7 +8310,8 @@
         "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_011_-__Rensning_af_regnvand_Hvad_ka__vi_og_hvad_sk.txt",
@@ -8236,7 +8319,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 011 - Rensning af regnvand: Hvad kan vi og hvad skal vi?",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-05-19",
     "summary": "Webinaret behandler rensning af regnvand fra urbane overflader som veje og bebyggelse, og diskuterer det grundlæggende spørgsmål om hvornår regnvand skal renses. Professor Jess Wollesen fra Aalborg Universitet præsenterer to tilgange: om rensning skal baseres på påvist miljøpåvirkning eller anvendes forebyggende uden sikker viden om forurening.",
     "keywords": [
       "regnvand",
@@ -8261,7 +8344,7 @@
     ],
     "youtube_id": "ay2QrzQLFuE",
     "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8283,7 +8366,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_012___Geofysik_til_detaljerede_hydrogeologiske_und.txt",
@@ -8291,7 +8375,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 012: Geofysik til detaljerede hydrogeologiske undersøgelser",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-06-16",
     "summary": "Webinaret handler om anvendelsen af geofysik i detaljerede hydrogeologiske undersøgelser, især inden for byudviklingsprojekter. Peter Thomsen fra Rambøll præsenterer, hvordan geofysiske metoder bruges til kortlægning af terræn og grundvand i forbindelse med klimatilpasning og bæredygtig regnvandshåndtering. Der fokuseres på behovet for at supplere offentligt tilgængelige screeningsdata med detaljerede undersøgelser under jorden for at kunne planlægge effektiv håndtering af regn- og skybrydsvand på projektniveau.",
     "keywords": [
       "geofysik",
@@ -8314,7 +8398,7 @@
     "places": [],
     "youtube_id": "252-u9jo3h0",
     "youtube_url": "https://youtube.com/watch?v=252-u9jo3h0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8336,7 +8420,8 @@
         "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_014_-_HOFORs_erfaringer_med_overv_gning_af_spildev.txt",
@@ -8344,7 +8429,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 014 - HOFORs erfaringer med overvågning af spildevand",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-08-25",
     "summary": "Webinaret handler om vandselskabet HOFORs erfaringer med overvågning af coronavirus i spildevand som supplement til eksisterende testmetoder. Ida Marie Knudsen fra HOFOR præsenterer, hvordan vandselskaber bidrager til COVID-19-overvågning gennem spildevandsbaseret epidemiologi, samt det juridiske og praktiske grundlag for arbejdet i samarbejde med Statens Serum Institut.",
     "keywords": [
       "coronavirus",
@@ -8370,7 +8455,7 @@
     ],
     "youtube_id": "X_KGmKrcmM8",
     "youtube_url": "https://youtube.com/watch?v=X_KGmKrcmM8",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8392,7 +8477,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_015_-_N_r_klimatilpasning_skal_t_nkes_sammen_med_f.txt",
@@ -8400,7 +8486,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 015 - Når klimatilpasning skal tænkes sammen med flere formål",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-09-01",
     "summary": "Webinaret handler om hvordan klimatilpasning kan integreres med biodiversitet, bæredygtighed og borgerinddragelse gennem konkrete projekter. Byblomst præsenterer deres holistiske tilgang til klimaprojekter med vægt på tidlig inddragelse af plantninger, samarbejde mellem faggrupper og autentisk borgerinddragelse.",
     "keywords": [
       "klimatilpasning",
@@ -8438,7 +8524,7 @@
     ],
     "youtube_id": "z2gAXSuesg4",
     "youtube_url": "https://youtube.com/watch?v=z2gAXSuesg4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8454,7 +8540,8 @@
         "youtube_url": "https://youtube.com/watch?v=zVApjEn8eMc",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_016_-_Sammenh_ngen_mellem_oversv_mmelse__folks_hel.txt",
@@ -8462,7 +8549,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 016 - Sammenhængen mellem oversvømmelse og folks helbred",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-09-29",
     "summary": "Webinaret præsenterer et forskningsprojekt om sammenhængen mellem oversvømmelser og folkesundhed, finansieret af blandt andet Realdania, danske regioner og EU-fonde. Projektet undersøger både de fysiske helbredsmæssige konsekvenser af oversvømmelser og de immaterielle skader såsom stress, familievindinger og ødelagte personlige ejendele, samt adresserer forskellen mellem stormflod og skybrud og deres forskellige påvirkninger på mennesker.",
     "keywords": [
       "oversvømmelser",
@@ -8494,7 +8581,7 @@
     ],
     "youtube_id": "oQx_47fe8z0",
     "youtube_url": "https://youtube.com/watch?v=oQx_47fe8z0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8516,7 +8603,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.938
   },
   {
     "filename": "Tech_Talk_017_-_Biologiske_vandbehandlingsprincipper_fra_sv_.txt",
@@ -8524,7 +8612,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 017 - Biologiske vandbehandlingsprincipper fra svømmebassiner til laguner",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-11-10",
     "summary": "Lars Junker fra Junkerhaven præsenterer biologiske vandbehandlingsprincipper med fokus på svømmesøer, naturpools og vandlegepladser. Han gennemgår udviklingen siden 2008 med særligt vægt på design af svømmesøer som menneskeligt skabt biologisk system med skimmersø og biofilter, samt et nyt vandlegeplads-projekt for Københavns Kommune.",
     "keywords": [
       "svømmesøer",
@@ -8555,10 +8643,11 @@
     ],
     "youtube_id": "CdhyuzLQLNA",
     "youtube_url": "https://youtube.com/watch?v=CdhyuzLQLNA",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "match_confidence": 0.956
   },
   {
     "filename": "Tech_Talk_018_-_Konstruerede_v_domr_der_i_Danmark___nyeste_e.txt",
@@ -8566,7 +8655,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 018 - Konstruerede vådomrader der i Danmark: nyeste erfaringer",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2021-11-17",
     "summary": "Webinaret handler om konstruerede vådomrader som en metode til regnvandshåndtering i Danmark. Nikolaj Thomsen fra VSP præsenterer hvordan konstruerede vådomrader fungerer, hvordan de adskiller sig fra regnvandsbassiner, og deler praktiske erfaringer med etablering af sådanne anlæg samt de gevinster og udfordringer der er forbundet hermed.",
     "keywords": [
       "konstruerede vådomrader",
@@ -8595,7 +8684,7 @@
     ],
     "youtube_id": "sbh2YqucMys",
     "youtube_url": "https://youtube.com/watch?v=sbh2YqucMys",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8617,7 +8706,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.966
   },
   {
     "filename": "Tech_Talk_019___Erfaringer_med_nye_rensel_sninger_i_K_ge_Nor.txt",
@@ -8625,7 +8715,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 019: Erfaringer med nye renseløsninger i Køge Nord",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-01-12",
     "summary": "Webinaret præsenterer erfaringer fra udviklingen af Køge Nord, et 190 hektar stort byudviklingsområde med fokus på innovative regnvandshåndteringslø sninger. Oplægget dækker de nye krav til fosforfjernelse, grundvandsbeskyttelse, klimatilpasning og grønne løsninger, som resulterede i alternative løsninger til traditionelle våde bassiner.",
     "keywords": [
       "regnvandshåndtering",
@@ -8657,7 +8747,7 @@
     ],
     "youtube_id": "HCzn9uIy6-c",
     "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8673,7 +8763,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_020_-_Terr_nn_rt_grundvand_i_danske_byer___en_ekse.txt",
@@ -8681,7 +8772,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 020 - Terræn med grundvand i danske byer: en case-eksempelsamling",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-02-23",
     "summary": "Webinaret præsenterer en eksempelsamling om håndtering af terræn med højt grundvand i danske byområder, udviklet af et arbejdsnetværk under P+ med kommuner og forsyningsselskaber. Der gennemgås konkrete problemstillinger og løsningsmetoder på teknisk, organisatorisk og juridisk niveau, som flere danske kommuner arbejder med i kampen mod øgede grundvandsudfordringer forårsaget af klimaforandringer og ændret urbant vandmanagement.",
     "keywords": [
       "grundvand",
@@ -8720,7 +8811,7 @@
     ],
     "youtube_id": "kG3ZBFW4AHU",
     "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [
       {
@@ -8743,7 +8834,8 @@
         "youtube_url": "https://youtube.com/watch?v=252-u9jo3h0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.865
   },
   {
     "filename": "Tech_Talk_021___Status_p__dobbeltpor_s_filtrering__DPF_.txt",
@@ -8751,7 +8843,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 021: Status på dobbeltporøs filtrering: DPF",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-03-02",
     "summary": "Webinaret handler om dobbeltporøs filtrering (DPF), en teknologi til højkvalitets rensning af vejvand gennem tvelags konstruktion med høj- og fangstlag. Marina Bergen Jensen fra Københavns Universitet præsenterer udviklingen over 20 år, udfordringer ved opskaleringen fra pilot til kommercielt produkt, samt aktuel status hvor driften er optimeret og markedet modnes.",
     "keywords": [
       "dobbeltporøs filtrering",
@@ -8781,7 +8873,7 @@
     ],
     "youtube_id": "N1CbssTdim0",
     "youtube_url": "https://youtube.com/watch?v=N1CbssTdim0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8803,7 +8895,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_022_-_Funktionelle_regnbede_der_virker_fra_dag_1__.txt",
@@ -8811,7 +8904,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 022 - Funktionelle regnbede der virker fra dag 1",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-03-16",
     "summary": "Webinaret præsenterer arbejdet med funktionelle regnbede, der kan fungere og præstere fra etablering uden ventetid. Camilla Aggerlund fra Bygros diskuterer udfordringer ved regnbede, filtermedier og hydrauliske egenskaber, samt hvordan regnbede skal ses som et teknisk anlæg snarere end blot estetisk element.",
     "keywords": [
       "regnbede",
@@ -8837,7 +8930,7 @@
     ],
     "youtube_id": "RMgkFY37k6k",
     "youtube_url": "https://youtube.com/watch?v=RMgkFY37k6k",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8853,7 +8946,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_023___Bystrategisk_vandforvaltning___Panik_f_r_sky.txt",
@@ -8861,7 +8955,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 023: Bystrategisk vandforvaltning: Panik før skybrud",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-03-30",
     "summary": "Webinaret handler om bystrategisk vandforvaltning og klimatilpasning i Aarhus Kommune, hvor fokus ligger på at håndtere både hverdagsregn og ekstremregn. Nicolai Krause Christensen fra Aarhus Kommune teknik og miljø præsenterer, hvordan kommunen arbejder med integrerede vandforvaltningsløsninger og ikke mindst om der egentlig er grund til panik for skybrud.",
     "keywords": [
       "bystrategisk vandforvaltning",
@@ -8886,7 +8980,7 @@
     ],
     "youtube_id": "ydcOvzPz7Vg",
     "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8908,7 +9002,8 @@
         "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_024___T_nk__hvis_skybrud_ikke_var_et_problem__men_.txt",
@@ -8916,7 +9011,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 024: Tænk hvis skybrud ikke var et problem: men",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-04-13",
     "summary": "Webinaret omhandler borgernær klimatilpasning med fokus på hvordan man håndterer skybrud uden at grave op og anlægge nye større kloakker. Katrine Leth præsenterer skybrudsventilen som en simpel og bæredygtig løsning, der omdirigerer skybrud væk fra kloaksystemet ved at sortere normal regn fra ekstreme nedbørsmængder, og projektet demonstreres gennem et pilotprojekt i Roskilde.",
     "keywords": [
       "skybrud",
@@ -8949,7 +9044,7 @@
     ],
     "youtube_id": "XkQpOdVMzE4",
     "youtube_url": "https://youtube.com/watch?v=XkQpOdVMzE4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -8965,7 +9060,8 @@
         "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk_025___B_redygtighed___dilemmaernes_holdeplads.txt",
@@ -8973,7 +9069,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk 025: Bæredygtighed: dilemmaernes holdeplads",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-04-27",
     "summary": "Webinaret behandler bæredygtighedsdilemmaer i praksis, hvor Michael vom Bülow fra OK nygård og malmous præsenterer naturbaserede løsninger som svar på klima- og biodiversitetskrisen. Der sættes fokus på, at bæredygtighed skal omfatte miljø, sociale aspekter og økonomisk rentabilitet (ESG), og på udfordringen med at implementere bæredygtighedsstrategier når lovgivning og samfundskrav stiller nye krav til virksomhederne.",
     "keywords": [
       "bæredygtighed",
@@ -8999,7 +9095,7 @@
     ],
     "youtube_id": "zVApjEn8eMc",
     "youtube_url": "https://youtube.com/watch?v=zVApjEn8eMc",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9015,7 +9111,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk_Regnvand___udfordringer_og_muligheder_ (1).txt",
@@ -9023,7 +9120,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk Regnvand: udfordringer og muligheder",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-03-08",
     "summary": "Webinaret præsenterer løsninger til genanvendelse og rensning af regnvand fra tage og overflader, med fokus på miljøfordele og grundvandsbeskyttelse. Nyrup Plast introducerer innovativ teknologi som HMS Heavy Metal Separator til fjernelse af tungmetaller fra afvasket regnvand, samt strategier for opmagasinering og anvendelse af regnvand til toiletskyl og maskinevask.",
     "keywords": [
       "regnvand",
@@ -9052,7 +9149,7 @@
     ],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9074,7 +9171,8 @@
         "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__Byudvikling__vandbalance_og__kologi.txt",
@@ -9198,7 +9296,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Finansiering af kystbeskyttelsesprojekter i Danmark",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-04-19",
     "summary": "Webinaren behandler erfaringer med finansiering af kystbeskyttelsesprojekter i Danmark, herunder hvad der er gået godt og mindre godt. Brian Gärtner Mogensen fra Realize Danmark præsenterer udfordringer og muligheder for kommerciel medfinansiering af kystbeskyttelse mod stormflod, højvande, skybrud og stigende grundvand.",
     "keywords": [
       "kystbeskyttelse",
@@ -9228,7 +9326,7 @@
     ],
     "youtube_id": "G6Wa4fHjsQg",
     "youtube_url": "https://youtube.com/watch?v=G6Wa4fHjsQg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9250,7 +9348,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__Fra_Nordens_st_rste_renseanl_g_via_milj_problem_t.txt",
@@ -9258,7 +9357,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Fra Nordens største renseanlæg via miljøproblemer til bassinanlæg og ruinpark",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2024-02-07",
     "summary": "Webinaret omhandler transformationen af Nordens største renseanlæg til et bassinanlæg med tilhørende ruinpark ved Lyngby Taarbæk Forsyning. Alf Thomsen præsenterer projektet med fokus på løsning af miljøudfordringer gennem udvidelse af bassinkapacitet, rensning og udvikling af et offentligt tilgængeligt parkanlæg på stedet af det gamle renseanlæg.",
     "keywords": [
       "renseanlæg",
@@ -9288,7 +9387,7 @@
     ],
     "youtube_id": "HCzn9uIy6-c",
     "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9304,7 +9403,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.833
   },
   {
     "filename": "Tech_Talk__Fra_problem_til_potentiale___klimatilpasning_der_.txt",
@@ -9312,7 +9412,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Fra problem til potentiale: klimatilpasning der",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-02-19",
     "summary": "Webinaret præsenterer Third Nature's arbejde med klimatilpasning og klimasikring i byudviklingssammenhæng. Fokus ligger på klimaflisen – en innovativ løsning der håndterer skybrud ved at lede regnvand gennem kronisk formede huller, hvilket transformerer vandudfordringer til potentialer ved at skabe muligheder for vegetation og vandopsamling.",
     "keywords": [
       "klimatilpasning",
@@ -9341,7 +9441,7 @@
     ],
     "youtube_id": "dQD4UzfLbN4",
     "youtube_url": "https://youtube.com/watch?v=dQD4UzfLbN4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9363,7 +9463,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Future_City_Flow.txt",
@@ -9426,7 +9527,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Inspirationskatalog for håndtering af terræn og grundvand",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-04-30",
     "summary": "Webinaret præsenterer et inspirationskatalog om håndtering af terræn og grundvand i Danmark, udviklet af WSP, Søndherr og Teknologisk Institut. Der gives baggrund for katalogets tilblivelse baseret på stigende grundvandsniveauer dokumenteret gennem boringer, samt præsentation af HIP-databasen og fremtidsudsigter for grundvandsniveauer under forskellige klimascenarier.",
     "keywords": [
       "grundvand",
@@ -9462,7 +9563,7 @@
     ],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9484,7 +9585,8 @@
         "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.901
   },
   {
     "filename": "Tech_Talk__Klimatilpasning_i_Frederiksberg_Kommune.txt",
@@ -9492,7 +9594,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Klimatilpasning i Frederiksberg Kommune",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2024-12-18",
     "summary": "Webinaret omhandler hvordan Smart Grøn i samarbejde med Frederiksberg Kommune bruger monitorering og dataanalyse til at forbedre effektiviteten af klimatilpasningsprojekter, især inden for regnvandshåndtering. Fokus ligger på optimering af anlæggenes udløbshastighed, fylningsgrad og størrelse på oplande, samt måling af om eksisterende bassinanlæg fungerer efter hensigten. Kommunen arbejder også med genbrug af regnvand for at spare på drikkevand.",
     "keywords": [
       "klimatilpasning",
@@ -9523,7 +9625,7 @@
     ],
     "youtube_id": "z2gAXSuesg4",
     "youtube_url": "https://youtube.com/watch?v=z2gAXSuesg4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9545,7 +9647,8 @@
         "youtube_url": "https://youtube.com/watch?v=PbsuU-zM9j0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Kunstig_og_menneskelig_viden_i_den_digitale_vandf.mp3.txt",
@@ -9553,7 +9656,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Kunstig og menneskelig viden i den digitale vandforsyning",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-04-25",
     "summary": "Jonas Eg Falzarano Jessen præsenterer, hvordan kunstig og menneskelig intelligens kan bidrage til bedre og sikre vandforsyning gennem digitalisering og asset management. Foredraget udforsker vandets antropologiske betydning og relationen mellem teknologi og menneskelig praksis i vandbranchen, med vægt på hvordan vandteknologier påvirker samfund og menneskers forståelse af vand.",
     "keywords": [
       "kunstig intelligens",
@@ -9578,7 +9681,7 @@
     ],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9594,7 +9697,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__Kunstig_og_menneskelig_viden_i_den_digitale_vandf.txt",
@@ -9602,7 +9706,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Kunstig og menneskelig viden i den digitale vandforsyning",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-04-25",
     "summary": "Webinaret udforsker samspillet mellem kunstig intelligens og menneskelig viden inden for digitalisering af vandbranchen, med særligt fokus på asset management og struktureret vedligehold af vandinfrastruktur. Gennem et antropologisk perspektiv præsenteres hvordan teknologier ikke blot er resultat af menneskelig viden, men også påvirker menneskers forståelse og håndtering af vand i samfundet.",
     "keywords": [
       "kunstig intelligens",
@@ -9627,7 +9731,7 @@
     ],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9643,7 +9747,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__MAPIT.mp3.txt",
@@ -9803,7 +9908,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Overfladevandafstrømning: The missing link",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-11-16",
     "summary": "Webinaret præsenterer en mere nuanceret tilgang til håndtering af overfladevandafstrømning fra ubefæstede arealer, som er blevet stadig vigtigere i takt med klimaforandringer og mere ekstreme vejrsituationer. Der præsenteres en udvidet modelleringsmetode, der inkluderer dinamiske bidrag fra ubefæstede arealer som 'the missing link' i traditionel regnvandmodellering.",
     "keywords": [
       "overfladevandafstrømning",
@@ -9832,7 +9937,7 @@
     ],
     "youtube_id": "m1tgfbFMyvE",
     "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9854,7 +9959,8 @@
         "youtube_url": "https://youtube.com/watch?v=dQD4UzfLbN4",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk___Pathways_to_water_resilient_cities.txt",
@@ -9862,7 +9968,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Pathways to water resilient cities",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2022-11-07",
     "summary": "Webinaret handler om at øge vandresiliensen i sydafrikanske byer, specifikt Kapstad, gennem omformning af over 800 tørbassiner til multifunktionelle grønne områder. Projektet fokuserer på at øge infiltration og grundvandsdannelse ved at redesigne stormvandssystemet, samtidig med at der skabes små rekreative parker i byen.",
     "keywords": [
       "vandresiliens",
@@ -9896,7 +10002,7 @@
     ],
     "youtube_id": "dGf3Ud37L_w",
     "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9918,7 +10024,8 @@
         "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.817
   },
   {
     "filename": "Tech_Talk___Prognoser_for_afstr_mning_og_oversv_mmelse_gjort.txt",
@@ -9926,7 +10033,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Prognoser for afstemning og oversvømmelse gjort",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-05-24",
     "summary": "Webinaret præsenterer ASAB-platformen fra Water Web Tools, som gør det muligt at få indsigt i overfladisk afstemning og oversvømmelser. Dennis Troels fra Water Web Tools gennemgår hvordan prognoser og varslingssystemer kan reducere omkostninger ved oversvømmelser samt forbedre driften af vandreservoirs, med eksempler fra både Danmark og USA.",
     "keywords": [
       "oversvømmelse",
@@ -9956,7 +10063,7 @@
     ],
     "youtube_id": "m1tgfbFMyvE",
     "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -9978,7 +10085,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.951
   },
   {
     "filename": "Tech_Talk__SUMBA___nem_og_hurtig_hydraulisk_modellering.mp3.txt",
@@ -9986,7 +10094,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: SUMBA: nem og hurtig hydraulisk modellering",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-04-02",
     "summary": "Webinaret præsenterer SUMBA, et hydraulisk modelleringsværktøj til vandhåndtering udviklet af WSP. Værktøjet anvendes til beregning af bassindimensionering og LAR-løsninger ved meget lave afløbstalsscenarier, hvor SVK's standardregneark har begrænsninger. SUMBA er en boksmodel baseret på lange historiske regnsekssrier, der siden 2017 er blevet anvendt på over 320 projekter i 68 danske kommuner.",
     "keywords": [
       "SUMBA",
@@ -10012,7 +10120,7 @@
     ],
     "youtube_id": "zVApjEn8eMc",
     "youtube_url": "https://youtube.com/watch?v=zVApjEn8eMc",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10028,7 +10136,8 @@
         "youtube_url": "https://youtube.com/watch?v=HN2x08zNQ0k",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__SUMBA___nem_og_hurtig_hydraulisk_modellering.txt",
@@ -10036,7 +10145,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: SUMBA: nem og hurtig hydraulisk modellering",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-04-02",
     "summary": "Webinaren præsenterer SUMBA, et boksmodel-værktøj til hydraulisk modellering af vandhåndtering udviklet af WSP. SUMBA løser udfordringer med eksisterende regneark ved at håndtere komplekse scenarier med meget lave afløbstal, flere bassiner og lange historiske regneserier. Værktøjet er anvendt på over 330 projekter i 68 danske kommuner siden 2017.",
     "keywords": [
       "hydraulisk modellering",
@@ -10061,7 +10170,7 @@
     ],
     "youtube_id": "zVApjEn8eMc",
     "youtube_url": "https://youtube.com/watch?v=zVApjEn8eMc",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10077,7 +10186,8 @@
         "youtube_url": "https://youtube.com/watch?v=HN2x08zNQ0k",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__Smart_integrering_i_klimatilpasning (1).txt",
@@ -10085,7 +10195,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Smart integrering i klimatilpasning",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-02-26",
     "summary": "Webinaret præsenterer projektet 'Verandas Have' i Gladsaxe, som handler om smart integrering af naturbaserede løsninger til klimatilpasning gennem fordampning og tilbageholdelse af regnvand. Projektet kombinerer teknologiske innovationer med social inklusion og sundhed på en boligblok med 114 lejligheder, og er støttet af blandt andet Realdania, EU's Horizon 2020-program og flere danske institutioner.",
     "keywords": [
       "klimatilpasning",
@@ -10116,7 +10226,7 @@
     ],
     "youtube_id": "dQD4UzfLbN4",
     "youtube_url": "https://youtube.com/watch?v=dQD4UzfLbN4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10138,7 +10248,8 @@
         "youtube_url": "https://youtube.com/watch?v=7I18KF-T6Xo",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Smart_integrering_i_klimatilpasning.txt",
@@ -10146,7 +10257,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: Smart integrering i klimatilpasning",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-02-26",
     "summary": "Webinaret præsenterer projektet 'Verandas Have' i Gladsaxe, som handler om smart integrering af klimatilpasning gennem fordampning og tilbageholdelse af regnvand i et boligområde. Projektet kombinerer naturbaserede løsninger med social inklusion og sundhed, og præsenteres af eksperter fra Teknologisk Institut, SmartBånd og BugSpectrum.",
     "keywords": [
       "klimatilpasning",
@@ -10183,7 +10294,7 @@
     ],
     "youtube_id": "dQD4UzfLbN4",
     "youtube_url": "https://youtube.com/watch?v=dQD4UzfLbN4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10205,7 +10316,8 @@
         "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Tech_Talk__Storkeengen_i_Randers.txt",
@@ -10275,7 +10387,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech Talk: UrbanBioScore: indikator for biodiversitet i byer",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-03-05",
     "summary": "Webinaret præsenterer UrbanBioScore, en ny metode til at vurdere biodiversitet i byer og på bebyggede arealer, som blev lanceret i starten af 2025. Metoden udviklet af en tværfaglig arbejdsgruppe med bl.a. WSP, Aarhus Universitet og Rådet for Bæredygtigt Byggeri skal give en standardiseret tilgang til at måle og forbedre bynaturens biologiske mangfoldighed. Formålet er at skabe grundlag for mere viden om byernes naturtyper og sikre, at byggeri og anlæg ikke ødelægger værdifuld bynatur.",
     "keywords": [
       "biodiversitet",
@@ -10301,7 +10413,7 @@
     ],
     "youtube_id": "RMgkFY37k6k",
     "youtube_url": "https://youtube.com/watch?v=RMgkFY37k6k",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10311,7 +10423,8 @@
         "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech-Talk__Automatisk_insektmonitorering___kvantitative_biod.mp3.txt",
@@ -10319,7 +10432,7 @@
     "folder": "transcritranscriptions",
     "title": "Tech-Talk: Automatisk insektmonitorering: kvantitative biodiversitetsdata",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2025-05-21",
     "summary": "Webinaret præsenterer FAUNA Photonics' automatiske sensorløsning til insektmonitorering som alternativ til traditionelle, arbejdskrævende biodiversitetsmålingsmetoder. Løsningen måler insekttal og biomasse via sensorer, som sender data til en server med machine learning-modeller, der processerer dataene til en online portal. Insekter fungerer som en vigtig proxy for biodiversitet, da de er megadiverse, indgår i alle fødenettets led, og reagerer hurtigt på miljøforandringer.",
     "keywords": [
       "automatisk monitoring",
@@ -10350,7 +10463,7 @@
     ],
     "youtube_id": "-cb4v7A5zes",
     "youtube_url": "https://youtube.com/watch?v=-cb4v7A5zes",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10372,7 +10485,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Temadag_-_nye_metoder_til_akt_rkortl_gning_og_v_rdiskabende_.txt",
@@ -10492,7 +10606,7 @@
     "folder": "transcritranscriptions",
     "title": "Tørke og Hede i Danmark 3: Data og Vandindvinding",
     "category": "Øvrige",
-    "date": null,
+    "date": "2024-10-24",
     "summary": "Webinaret fokuserer på vandindvindingstilladelser og samarbejde om indsamling af supplerende data for at forbedre beslutningsgrundlaget. Rikke Krogshave Laursen fra Sikker Innovation præsenterer udfordringerne med stigende tørkeperioder i dansk landbrug, især forårstørker, og deres indvirkning på behovet for markvanding.",
     "keywords": [
       "vandindvinding",
@@ -10521,7 +10635,7 @@
     ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10543,7 +10657,8 @@
         "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_4__Vandforvaltning_i_praksis.mp3.txt",
@@ -10551,7 +10666,7 @@
     "folder": "transcritranscriptions",
     "title": "Tørke og Hede i Danmark 4: Vandforvaltning i praksis",
     "category": "Øvrige",
-    "date": null,
+    "date": "2024-10-30",
     "summary": "Webinaret fokuserer på vandreservoirs som virkemiddel til oplagring af drænvand til senere markvanding og vandmiljøindsats. Gennem konkrete eksempler fra Samsø præsenteres forskellige typer af vandreservoirs, deres konstruktion og funktion, samt deres betydning for landbrugsjorden i klimatilpasning.",
     "keywords": [
       "vandreservoirs",
@@ -10580,7 +10695,7 @@
     ],
     "youtube_id": "ydcOvzPz7Vg",
     "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10602,7 +10717,8 @@
         "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_5__Hede_i_Byen.mp3.txt",
@@ -10610,7 +10726,7 @@
     "folder": "transcritranscriptions",
     "title": "Tørke og Hede i Danmark 5: Hede i Byen",
     "category": "Øvrige",
-    "date": null,
+    "date": "2024-11-06",
     "summary": "Webinaret omhandler håndtering af varmeøer og hitteeffekter i byområder med særligt fokus på Frederiksberg Kommune. Lene Stolt Meyer præsenterer brugen af satellitdata til at identificere højttemperatur-områder og diskuterer løsninger som begroning, lysere belægninger, grønne tage og skyggegivende strukturer for at afhjælpe varmeproblemer i tæt bebyggede byer.",
     "keywords": [
       "varmeøer",
@@ -10639,7 +10755,7 @@
     ],
     "youtube_id": "sbh2YqucMys",
     "youtube_url": "https://youtube.com/watch?v=sbh2YqucMys",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10655,7 +10771,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_6__T_rke_og_Grundvandsstand.mp3.txt",
@@ -10663,7 +10780,7 @@
     "folder": "transcritranscriptions",
     "title": "Tørke og Hede i Danmark 6: Tørke og Grundvandstand",
     "category": "Øvrige",
-    "date": null,
+    "date": "2024-11-20",
     "summary": "Webinaret handler om sammenhængen mellem tørke og grundvandstand i Danmark, især i forhold til klimaforandringer og fremtidsperspektiver mod 2050 og 2100. Præsentationen dækker historiske tørkeepisoder, hydrologiske modeller, og hvordan Danmark kan tilpasse grundvandsforvaltningen til fremtidige udfordringer.",
     "keywords": [
       "tørke",
@@ -10692,7 +10809,7 @@
     ],
     "youtube_id": "fXCjmza5qP0",
     "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10714,7 +10831,8 @@
         "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_2__T_rke_og_Klimatilpasning_i_Dansk_.mp3.txt",
@@ -10722,7 +10840,7 @@
     "folder": "transcritranscriptions",
     "title": "Tørke og Klimatilpasning i Dansk Landbrug",
     "category": "Øvrige",
-    "date": null,
+    "date": "2024-10-11",
     "summary": "Webinaret fokuserer på, hvordan dansk landbrug kan tilpasse sig klimaforandringer, herunder længere tørkeperioder, stigende temperaturer og ændringer i vandtilgængelighed. Der præsenteres praktiske løsninger inden for nye dyrkningssystemer, vandforvaltning og teknologiske innovationer, der kan styrke landbrugets modstandskraft. Webinaret indgår i en serie om tørke, hede og klimatilpasning og undervises af Jørgen Olesen fra Aarhus Universitet.",
     "keywords": [
       "tørke",
@@ -10750,7 +10868,7 @@
     ],
     "youtube_id": "jQHOOGRZL_E",
     "youtube_url": "https://youtube.com/watch?v=jQHOOGRZL_E",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -10772,7 +10890,8 @@
         "youtube_url": "https://youtube.com/watch?v=dGf3Ud37L_w",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.906
   },
   {
     "filename": "V.I.P._AquaGreen.mp3.txt",
@@ -11119,7 +11238,7 @@
     "places": [],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -11141,7 +11260,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Webinar_om_jura_2__Omkostningsbekendtg_relsen.mp3.txt",
@@ -11298,7 +11418,7 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -11320,7 +11440,8 @@
         "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Workshop_om_oversv_mmelser__skader_og__konomi__opl_g_3.mp3.txt",
@@ -11922,7 +12043,7 @@
     "folder": "wordwebinarer",
     "title": "Godmorgen med DNNK: Biodiversitet og beplantning af LAR-anlæg",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-06-12",
     "summary": "Webinaret handler om biodiversitet og beplantning i forbindelse med lokale aflednings- og regnvandshåndteringanlæg (LAR) i byer, samt hvordan disse kan styrke grøn infrastruktur og klimatilpasning. Lærke fra VandCenter Syd deler erfaringer med at skabe biologisk diverse beplantninger i forsyningssektoren og integration af biodiversitet i anlægsarbejde.",
     "keywords": [
       "biodiversitet",
@@ -11947,7 +12068,7 @@
     ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -11963,7 +12084,8 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Drift__renovering_og_design_af_regnvands.mp3.txt",
@@ -11971,7 +12093,7 @@
     "folder": "wordwebinarer",
     "title": "Godmorgen med DNNK: Drift, renovering og design af regnvandsbassiner",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-08-26",
     "summary": "Webinaret handler om drift, renovering og design af regnvandsbassiner i NOVAfos område på Sjælland, hvor der er 350 bassiner fordelt på 9 kommuner. Jens Stærdal præsenterer erfaringer fra fem års arbejde med at få styr på bassinerne, herunder målsætninger, dataregistrering, lærdom fra gamle bassiner og udviklingsprojekter inden for sedimenttørring og bassintdesign.",
     "keywords": [
       "regnvandsbassiner",
@@ -11999,7 +12121,7 @@
     ],
     "youtube_id": "cQC0R4IQyOg",
     "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -12021,7 +12143,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Godmorgen_med_DNNK__Gr_n_byudvikling_med_data_og_tr_er___100.mp3.txt",
@@ -12029,7 +12152,7 @@
     "folder": "wordwebinarer",
     "title": "Godmorgen med DNNK: Grøn byudvikling med data og træer: 100K Trees",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-08-06",
     "summary": "Webinaret præsenterer 100K Trees-projektet, et digitalt værktøj der bruger satellitdata, mapping og modellering til at optimere træplantning i byer og dokumentere værdien af naturbaserede løsninger. Projektet kombinerer evidensbaseret data med monetær valorisering af økosystemtjenester for at forbedre byernes grønne udvikling, skybrudssikring og borgernes velfærd.",
     "keywords": [
       "træplantning",
@@ -12071,7 +12194,7 @@
     ],
     "youtube_id": "jBWJQdKfRG0",
     "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -12087,7 +12210,8 @@
         "youtube_url": "https://youtube.com/watch?v=zpzBuv6P0ys",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Gr_nningen_NV___Klimatilpasning__Kunst_o.mp3.txt",
@@ -12095,7 +12219,7 @@
     "folder": "wordwebinarer",
     "title": "Godmorgen med DNNK: Grønningen NV: Klimatilpasning og Kunst",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-02-06",
     "summary": "Webinaret præsenterer Grønningen-projektet i Københavns Kommune, hvor klimatilpasning og kunstnerisk intervention går hånd i hånd for at skabe værdi i et udsat byområde. Projektet demonstrerer, hvordan tværfagligt samarbejde mellem kommune, landskabsarkitekter, ingeniører og kunstnere kan løse både hydrologiske og sociale udfordringer gennem vandtekniske løsninger og beboerindragelse.",
     "keywords": [
       "klimatilpasning",
@@ -12140,7 +12264,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -12162,7 +12286,8 @@
         "youtube_url": null,
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.924
   },
   {
     "filename": "Godmorgen_med_DNNK___Tr_data_som_redskab_i_klimatilpasning__.mp3.txt",
@@ -12170,7 +12295,7 @@
     "folder": "wordwebinarer",
     "title": "Godmorgen med DNNK: Trædata som redskab i klimatilpasning",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2025-05-15",
     "summary": "Webinaret handler om biodiversitet i klimatilpasningsløsninger og hvordan trædata kan bruges som redskab til at kvantificere og værdisætte træers økosystemtjenester. Emilie Winter fra Grønt Aftryk præsenterer iTree-software, der sætter tal og kroner på træers betydning for CO2-optagelse, temperaturregulering, overfladvandshåndtering og menneskers sundhed, samt Henrik Nonnegård fra Kolding Kommune deler praktiske erfaringer med implementering.",
     "keywords": [
       "trædata",
@@ -12203,7 +12328,7 @@
     ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -12219,6 +12344,7 @@
         "youtube_url": "https://youtube.com/watch?v=PbsuU-zM9j0",
         "dnnk_url": null
       }
-    ]
+    ],
+    "match_confidence": 0.98
   }
 ]

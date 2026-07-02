@@ -674,7 +674,7 @@ async function doSearch() {
     });
 
     bar.style.width = '40%';
-    const originalWords = query.toLowerCase().split(/\s+/).filter(w => w.length > 1);
+    const originalWords = tokenizeQuery(query);
     const pool = searchIndex.filter(e => filterMatches(e));
 
     // Rendér lokale resultater STRAKS (lokal ranking tager <5ms) —
@@ -1034,6 +1034,28 @@ async function openInChat(entry) {
 }
 
 // ─── RAG-kontekst til chatten ──────────────────────────────
+// Danske stopord + spørgeord: bærer ingen betydning i søgning og lod
+// spørgsmåls-formuleringer ranke efter stopords-tæthed i resuméerne.
+const STOPWORDS = new Set(['og','i','at','det','en','den','til','er','som','på',
+  'de','med','af','for','ikke','der','var','sig','men','et','har','om','vi',
+  'nu','over','da','fra','du','ud','sin','dem','os','op','man','hvor','eller',
+  'hvad','skal','selv','her','alle','vil','blev','kunne','ind','når','være',
+  'dog','noget','ville','jo','deres','efter','ned','skulle','denne','end',
+  'dette','også','under','have','dig','anden','mine','alt','meget','sit',
+  'sine','mod','disse','hvis','din','nogle','hos','blive','mange','bliver',
+  'været','jer','så','ved','gør','kan','hvordan','hvorfor','hvilke','hvilken',
+  'stor','store','godt','helt','lidt','sådan','derfor','fordi','mere','mest']);
+
+// Tokenisér en forespørgsel: fjern tegnsætning i kanterne af hvert ord og
+// filtrér stopord fra ("skybrudstunnel," matchede aldrig "skybrudstunnel").
+function tokenizeQuery(q) {
+  const all = q.toLowerCase().split(/\s+/)
+    .map(w => w.replace(/^[^\wæøåé]+|[^\wæøåé]+$/g, ''))
+    .filter(w => w.length > 1);
+  const informative = all.filter(w => !STOPWORDS.has(w));
+  return informative.length ? informative : all;  // fald tilbage hvis alt er stopord
+}
+
 const CONTEXT_BUDGET = 24000;  // maks. samlet systemprompt-længde (tegn)
 const CITATION_INSTRUCTION = '\n\nNår du bruger en passage, citér kilden som markdown-link: [Webinartitel, MM:SS](youtube-url&t=Ns) — brug URL\'en fra passagens [KILDE: ...]-linje. Har passagen ingen URL, angiv titel og minuttal uden link. Angiv altid mindst én kilde med minuttal.'
   + '\n\nVIGTIGT — kildetro svar: Byg dit svar UDELUKKENDE på kilderne ovenfor. Fremgår svaret ikke af dem, så sig det ærligt (fx "Det fremgår ikke af webinar-arkivet") og henvis i stedet til det nærmeste relaterede webinar. Gæt aldrig, og tilføj ikke viden udefra uden at markere det tydeligt som generel viden.';
@@ -1078,7 +1100,7 @@ async function sendChat() {
   try {
     let sys = 'Du er vidensassistent for DNNK (Det Nationale Netværk for Klimatilpasning).\nBesvar spørgsmål præcist på dansk. Angiv altid kilde-webinar. Vær kortfattet og faglig.';
     let searchedTitles = [];  // vises som diskret kilde-linje under svaret
-    const qWords = msg.toLowerCase().split(/\s+/).filter(w => w.length > 1);
+    const qWords = tokenizeQuery(msg);
 
     if (chatContext && chatContext.content) {
       searchedTitles = [chatContext.title];

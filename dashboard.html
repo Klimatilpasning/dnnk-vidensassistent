@@ -150,14 +150,20 @@ async function loadData() {
   try {
     // Load DNNK webinars
     const wRes = await fetch(INDEX_URL);
+    if (!wRes.ok) throw new Error('Kunne ikke hente webinar-indekset (HTTP ' + wRes.status + ')');
     webinars = await wRes.json();
 
     // Fetch recent news (one broad call for general climate adaptation)
     const queries = ['klimatilpasning', 'vand klima', 'oversvømmelse skybrud'];
     const newsResults = await Promise.all(
-      queries.map(q => fetch(KLIMAMONITOR_URL + '/news?q=' + encodeURIComponent(q))
-        .then(r => r.ok ? r.json() : { articles: [] })
-        .catch(() => ({ articles: [] })))
+      queries.map(q => {
+        const ctrl = new AbortController();
+        const abortTimer = setTimeout(() => ctrl.abort(), 8000);  // max 8s pr. kald
+        return fetch(KLIMAMONITOR_URL + '/news?q=' + encodeURIComponent(q), { signal: ctrl.signal })
+          .then(r => r.ok ? r.json() : { articles: [] })
+          .catch(() => ({ articles: [] }))
+          .finally(() => clearTimeout(abortTimer));
+      })
     );
     // Combine and dedupe by URL
     const seenUrls = new Set();
@@ -248,7 +254,7 @@ function render() {
     .slice(0, 6);
   renderInsights('gapInsights', gapTopics, 'hot', t =>
     `${t.news} nyhedshits · kun ${t.webinars} webinar${t.webinars === 1 ? '' : 'er'}`,
-    t => t.newsList.length ? `Senest: <a href="${t.newsList[0].url}" target="_blank">${(t.newsList[0].title || '').slice(0, 80)}</a>` : ''
+    t => t.newsList.length ? makeInsightLink('Senest: ', t.newsList[0].url, t.newsList[0].title) : null
   );
 
   // Underused insights — strong webinars, no news
@@ -258,8 +264,24 @@ function render() {
     .slice(0, 6);
   renderInsights('underusedInsights', underusedTopics, 'warm', t =>
     `${t.webinars} webinarer · kun ${t.news} aktuelle nyheder`,
-    t => t.webinarList.length ? `Bedst: <a href="${t.webinarList[0].youtube_url || '#'}" target="_blank">${(t.webinarList[0].title || '').slice(0, 80)}</a>` : ''
+    t => t.webinarList.length ? makeInsightLink('Bedst: ', t.webinarList[0].youtube_url, t.webinarList[0].title) : null
   );
+}
+
+// Tillad kun http(s)-URL'er fra tredjeparts-feeddata
+function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : null; }
+
+// Byg link-node med createElement/textContent — feeddata må ikke i innerHTML
+function makeInsightLink(prefix, url, title) {
+  const wrap = document.createElement('div');
+  wrap.appendChild(document.createTextNode(prefix));
+  const a = document.createElement('a');
+  a.textContent = (title || '').slice(0, 80);
+  a.href = safeUrl(url) || '#';
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  wrap.appendChild(a);
+  return wrap;
 }
 
 function renderInsights(elId, topics, level, metaFn, linkFn) {
@@ -272,7 +294,16 @@ function renderInsights(elId, topics, level, metaFn, linkFn) {
   topics.forEach(t => {
     const div = document.createElement('div');
     div.className = 'insight ' + level;
-    div.innerHTML = `<div class="topic">${t.keyword}</div><div class="meta">${metaFn(t)}</div>${linkFn(t)}`;
+    const topicEl = document.createElement('div');
+    topicEl.className = 'topic';
+    topicEl.textContent = t.keyword;
+    const metaEl = document.createElement('div');
+    metaEl.className = 'meta';
+    metaEl.textContent = metaFn(t);
+    div.appendChild(topicEl);
+    div.appendChild(metaEl);
+    const link = linkFn(t);
+    if (link) div.appendChild(link);
     el.appendChild(div);
   });
 }

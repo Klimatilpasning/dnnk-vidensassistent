@@ -14,7 +14,8 @@ Env:  ANTHROPIC_API_KEY  (required)
       GITHUB_TOKEN        (optional but recommended to avoid rate limits)
 """
 
-import anthropic
+from __future__ import annotations
+
 import json
 import os
 import re
@@ -23,7 +24,17 @@ import requests
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 from urllib.parse import unquote, quote, urlparse
-import yt_dlp
+
+# anthropic og yt_dlp er kun nødvendige for behandling af NYE filer.
+# Metadata-refresh af eksisterende entries skal kunne køre uden dem.
+try:
+    import anthropic
+except ImportError:
+    anthropic = None
+try:
+    import yt_dlp
+except ImportError:
+    yt_dlp = None
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
@@ -37,8 +48,14 @@ DNNK_CATEGORY_PAGES = [
     ("Jura",               "https://www.dnnk.dk/jura-i-klimatilpasning/"),
     ("Masterclass",        "https://www.dnnk.dk/dnnk-masterclass/"),
     ("Konferencer",        "https://www.dnnk.dk/optagelser-fra-konferencer-og-temadage/"),
-    ("Øvrige",             "https://www.dnnk.dk/ovrige-optagelser/"),
+    # ("Øvrige", "https://www.dnnk.dk/ovrige-optagelser/") er fjernet:
+    # siden giver 404 (juli 2026), og hverken /oevrige-optagelser/ eller
+    # dnnk.dk's sitemap (wp-sitemap-posts-page-1.xml) har en afløser.
 ]
+
+# Kategorier hvor videoerne ligger på UNDERSIDER (én side pr. event)
+# i stedet for direkte på kategorisiden.
+SUBPAGE_CATEGORIES = {"Masterclass"}
 
 # External resource pages to scrape for cross-references
 EXTERNAL_RESOURCE_PAGES = [
@@ -144,14 +161,33 @@ def detect_category(filename: str) -> str:
     return "Øvrige"
 
 
+_SERIES_PREFIX = re.compile(
+    r"^\s*(?:tech[\s_-]*talk(?:\s*\d+)?|god\s*morgen\s+med\s+dnnk|dnnk[\s_-]*masterclass(?:\s+om)?"
+    r"|webinar(?:\s+\d+)?(?:\s+om\s+jura)?)\s*[:–—-]*\s*",
+    re.I,
+)
+
+# Kalibreret mod det faktiske indeks (juli 2026): under ~0.75 er næsten alle
+# kandidater falske positiver (mange optagelser — fx konference-oplæg — findes
+# slet ikke på kategorisiderne). Et forkert dnnk_url/dato er værre end null.
+MATCH_THRESHOLD = 0.75
+MATCH_THRESHOLD_SHORT = 0.85  # korte titler matcher for let — kræv mere
+
+
 def title_similarity(a: str, b: str) -> float:
     """
     Robust similarity that handles missing æ/ø/å in filenames.
-    Uses three strategies and returns the best score:
+    Fælles seriepræfikser ('Tech Talk:', 'Godmorgen med DNNK:') strippes først —
+    ellers scorer to urelaterede webinarer i samme serie kunstigt højt.
+    Uses four strategies and returns the best score:
     1. Standard normalization
     2. ASCII normalization (æ→ae, ø→oe, å→aa) + remove spaces
     3. Consonant-only comparison (most robust against missing vowels)
+    4. Truncation-tolerant comparison (filenames are cut at ~60 chars)
     """
+    a = _SERIES_PREFIX.sub("", a)
+    b = _SERIES_PREFIX.sub("", b)
+
     def norm_std(s):
         s = s.lower()
         s = re.sub(r"[^a-z0-9æøå ]", " ", s)
@@ -169,7 +205,15 @@ def title_similarity(a: str, b: str) -> float:
     sim1 = SequenceMatcher(None, norm_std(a), norm_std(b)).ratio()
     sim2 = SequenceMatcher(None, norm_ascii(a), norm_ascii(b)).ratio()
     sim3 = SequenceMatcher(None, consonants(a), consonants(b)).ratio()
-    return max(sim1, sim2, sim3)
+    # 4. Trunkerings-tolerant: Transkriptor klipper mp3-navne ved ~60 tegn,
+    #    så sammenlign kun op til den kortestes længde (kræver rimelig længde
+    #    for ikke at give falske positiver på korte strenge).
+    sim4 = 0.0
+    na, nb = norm_ascii(a), norm_ascii(b)
+    m = min(len(na), len(nb))
+    if m >= 25:
+        sim4 = SequenceMatcher(None, na[:m], nb[:m]).ratio() * 0.98
+    return max(sim1, sim2, sim3, sim4)
 
 # ── GitHub ────────────────────────────────────────────────────────────────────
 
@@ -241,6 +285,9 @@ def fetch_youtube_channel() -> list[dict]:
     Fetch all videos from DNNK's YouTube channel using yt-dlp.
     Returns list of {title, youtube_id, youtube_url}.
     """
+    if yt_dlp is None:
+        print("  Warning – yt_dlp er ikke installeret; springer YouTube-kanal over")
+        return []
     try:
         print("  Henter videoer fra DNNK YouTube-kanal …")
         ydl_opts = {
@@ -269,11 +316,107 @@ def fetch_youtube_channel() -> list[dict]:
         print(f"  Warning – YouTube-kanal ikke tilgængelig: {exc}")
         return []
 
+def _title_from_table_row(tr, link_el) -> str:
+    """
+    dnnk.dk lister Godmorgen-webinarer og Tech Talks i <table>-rækker.
+    Titlen står som ren tekst i en søskende-celle til link-cellen — IKKE i en
+    heading — så heading-strategien fandt kun linkteksten ('Se webinaret her >').
+    Tag den længste celle (titelcellen), og fjern dato-præfiks og
+    oplægsholder-suffiks ('v. Navn, Organisation').
+    """
+    link_td = link_el.find_parent("td")
+    texts = []
+    for td in tr.find_all("td"):
+        if td is link_td:
+            continue
+        t = re.sub(r"\s+", " ", td.get_text(" ", strip=True)).strip()
+        if t:
+            texts.append(t)
+    if not texts:
+        return ""
+    best = max(texts, key=len)
+    best = re.sub(r"^\s*\d{2}\.\d{2}\.\d{4}\s*:?\s*", "", best)  # ledende dato
+    best = re.sub(r"\sv\.\s.*$", "", best)                        # oplægsholder-suffiks
+    return best.strip(" -–:")
+
+
+def _date_from_text(text: str) -> str | None:
+    """Find DD.MM.YYYY i tekst og returnér som YYYY-MM-DD."""
+    m = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", text)
+    if m:
+        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+    return None
+
+
+def scrape_category_subpages(cat_name: str, cat_url: str, soup, seen_yt: set,
+                             max_pages: int = 30) -> list[dict]:
+    """
+    Crawl event-UNDERSIDER fra en kategoriside (fx Masterclass): videoerne
+    ligger ikke på kategorisiden, men på én underside pr. event
+    (fx /dnnk-masterclass-om-klimamodeller-...-v-dmi/).
+    Henter YouTube-links, titel (h1) og evt. dato fra hver underside.
+    """
+    events = []
+    cat_path = urlparse(cat_url).path.strip("/").lower()
+    sub_urls = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.startswith("/"):
+            href = "https://www.dnnk.dk" + href
+        parsed = urlparse(href)
+        if not parsed.netloc.lower().endswith("dnnk.dk"):
+            continue
+        path = parsed.path.strip("/").lower()
+        # Undersider genkendes på at kategoriens navn indgår i stien
+        # (fx 'masterclass'), uden at det er selve kategorisiden.
+        if "masterclass" not in path or path == cat_path:
+            continue
+        clean = f"https://www.dnnk.dk/{parsed.path.strip('/')}/"
+        if clean not in sub_urls:
+            sub_urls.append(clean)
+
+    for sub_url in sub_urls[:max_pages]:
+        try:
+            resp = requests.get(sub_url, headers=HTTP_HEADERS, timeout=15)
+            resp.raise_for_status()
+            ssoup = BeautifulSoup(resp.text, "html.parser")
+            h1 = ssoup.find("h1")
+            title = h1.get_text(strip=True) if h1 else ""
+            if not title or len(title) < 8:
+                continue
+            for tag in ssoup.find_all(["nav", "header", "footer", "script", "style"]):
+                tag.decompose()
+            date = _date_from_text(ssoup.get_text())
+            yt_ids = []
+            for el in ssoup.find_all("a", href=re.compile(r"youtu")):
+                yt_ids.append(extract_youtube_id(el["href"]))
+            for el in ssoup.find_all("iframe", src=re.compile(r"youtu")):
+                yt_ids.append(extract_youtube_id(el.get("src", "")))
+            for yt_id in yt_ids:
+                if not yt_id or yt_id in seen_yt:
+                    continue
+                seen_yt.add(yt_id)
+                events.append({
+                    "title":       title,
+                    "category":    cat_name,
+                    "event_url":   sub_url,
+                    "youtube_id":  yt_id,
+                    "youtube_url": f"https://youtube.com/watch?v={yt_id}",
+                    "date":        date,
+                })
+        except Exception as exc:
+            print(f"    Warning – kunne ikke hente underside {sub_url}: {exc}")
+        time.sleep(0.5)  # høflig pause mellem undersider
+
+    print(f"    {cat_name}: {len(sub_urls[:max_pages])} undersider crawlet")
+    return events
+
+
 def scrape_dnnk_events() -> list[dict]:
     """
     Scrape all DNNK category pages.
-    dnnk.dk lists webinars directly with YouTube links and dates —
-    there are no separate /event/ subpages.
+    Godmorgen/Tech Talks/Jura lister webinarer direkte på kategorisiden;
+    Masterclass har én underside pr. event (crawles via scrape_category_subpages).
     Returns list of {title, category, event_url, youtube_id, youtube_url, date}.
     """
     events = []
@@ -297,35 +440,42 @@ def scrape_dnnk_events() -> list[dict]:
                     continue
                 seen_yt.add(yt_id)
 
-                # Walk up to find a container with a title
                 title = ""
                 date = None
-                parent = yt_a.find_parent(["li", "tr", "article", "div", "section"])
-                for _ in range(4):  # max 4 levels up
-                    if not parent:
-                        break
-                    # Look for heading or bold text as title
-                    for tag in ["h1", "h2", "h3", "h4", "strong", "b"]:
-                        el = parent.find(tag)
-                        if el:
-                            t = el.get_text(strip=True)
-                            if len(t) > 8 and t != yt_a.get_text(strip=True):
-                                title = t
-                                break
-                    # Look for date in DD.MM.YYYY format
-                    if not date:
-                        m = re.search(r"\d{2}\.\d{2}\.\d{4}", parent.get_text())
-                        if m:
-                            raw = m.group(0)
-                            parts = raw.split(".")
-                            date = f"{parts[2]}-{parts[1]}-{parts[0]}"
-                    if title:
-                        break
-                    parent = parent.find_parent(["li", "tr", "article", "div", "section"])
 
-                # Fallback: use link text if no heading found
+                # Primær strategi: dnnk.dk bruger tabeller (Godmorgen, Tech Talks)
+                # hvor titlen står i en søskende-<td> — ikke i en heading.
+                tr = yt_a.find_parent("tr")
+                if tr:
+                    title = _title_from_table_row(tr, yt_a)
+                    date = _date_from_text(tr.get_text(" ", strip=True))
+
+                # Sekundær strategi: gå op og find heading/fed tekst (Jura-siden)
                 if not title:
-                    title = yt_a.get_text(strip=True)
+                    parent = yt_a.find_parent(["li", "tr", "article", "div", "section"])
+                    for _ in range(4):  # max 4 levels up
+                        if not parent:
+                            break
+                        # Look for heading or bold text as title
+                        for tag in ["h1", "h2", "h3", "h4", "strong", "b"]:
+                            el = parent.find(tag)
+                            if el:
+                                t = el.get_text(strip=True)
+                                if len(t) > 8 and t != yt_a.get_text(strip=True):
+                                    title = t
+                                    break
+                        if not date:
+                            date = _date_from_text(parent.get_text())
+                        if title:
+                            break
+                        parent = parent.find_parent(["li", "tr", "article", "div", "section"])
+
+                # Fallback: use link text if no heading found — men aldrig rene
+                # navigationslinktekster som 'Se webinaret her >'
+                if not title:
+                    t = yt_a.get_text(strip=True)
+                    if not re.search(r"^se\b|klik her|læs mere|>$", t.lower()):
+                        title = t
                 if not title or len(title) < 5:
                     continue
 
@@ -348,15 +498,15 @@ def scrape_dnnk_events() -> list[dict]:
                 title = ""
                 date = None
                 if parent:
-                    for tag in ["h1", "h2", "h3", "h4", "strong"]:
-                        el = parent.find(tag)
-                        if el:
-                            title = el.get_text(strip=True)
-                            break
-                    m = re.search(r"\d{2}\.\d{2}\.\d{4}", parent.get_text())
-                    if m:
-                        parts = m.group(0).split(".")
-                        date = f"{parts[2]}-{parts[1]}-{parts[0]}"
+                    if parent.name == "tr":
+                        title = _title_from_table_row(parent, iframe)
+                    if not title:
+                        for tag in ["h1", "h2", "h3", "h4", "strong"]:
+                            el = parent.find(tag)
+                            if el:
+                                title = el.get_text(strip=True)
+                                break
+                    date = _date_from_text(parent.get_text())
                 if not title:
                     continue
                 events.append({
@@ -367,6 +517,10 @@ def scrape_dnnk_events() -> list[dict]:
                     "youtube_url": f"https://youtube.com/watch?v={yt_id}",
                     "date":        date,
                 })
+
+            # Kategorier hvor events ligger på undersider (fx Masterclass)
+            if cat_name in SUBPAGE_CATEGORIES:
+                events.extend(scrape_category_subpages(cat_name, cat_url, soup, seen_yt))
 
             time.sleep(0.5)
         except Exception as exc:
@@ -403,20 +557,115 @@ def get_event_description(event_url: str) -> str | None:
     return None
 
 
+# Ord der er så generiske i DNNK-sammenhæng at de ikke beviser et match
+_GENERIC_TOKENS = {
+    "klimatilpasning", "klimatilpasningen", "klimatilpasningsprojekter",
+    "webinar", "dnnk", "danmark", "dansk", "danske", "optagelse", "temadag",
+}
+
+
+def _shared_significant_token(a: str, b: str) -> bool:
+    """Deler de to titler mindst ét betydende ord (>=5 tegn, ikke-generisk)?
+    Substring-tjek mod den sammenkædede modpart, så æ/ø/å-hullede ord
+    ('nseregion' fra 'gr nseregion') stadig kan genfindes i 'graenseregion'."""
+    def norm(s: str) -> str:
+        s = s.lower().replace("æ", "ae").replace("ø", "oe").replace("å", "aa")
+        return re.sub(r"[^a-z0-9 ]", " ", s)
+    na, nb = norm(a), norm(b)
+    ta = [w for w in na.split() if len(w) >= 5 and w not in _GENERIC_TOKENS]
+    tb = [w for w in nb.split() if len(w) >= 5 and w not in _GENERIC_TOKENS]
+    na_j, nb_j = na.replace(" ", ""), nb.replace(" ", "")
+    return any(w in nb_j for w in ta) or any(w in na_j for w in tb)
+
+
+def _match_acceptable(a: str, b: str, score: float) -> bool:
+    """Accept-regel for et titelmatch — kalibreret mod falske positiver."""
+    a_s = _SERIES_PREFIX.sub("", a)
+    b_s = _SERIES_PREFIX.sub("", b)
+    # Tal-konflikt: 'Tørke og Hede i Danmark 1' må ikke matche '... 6'
+    da = {str(int(d)) for d in re.findall(r"\d+", a_s)}
+    db = {str(int(d)) for d in re.findall(r"\d+", b_s)}
+    if da and db and not (da & db):
+        return False
+    # I gråzonen skal parret dele mindst ét betydende ord — SequenceMatcher
+    # alene kan score to urelaterede titler ens på ordstumper og småord
+    if score < 0.82 and not _shared_significant_token(a_s, b_s):
+        return False
+    def _alen(s: str) -> int:
+        return len(re.sub(r"[^a-z0-9æøå]", "", s.lower()))
+    thresh = MATCH_THRESHOLD if min(_alen(a_s), _alen(b_s)) >= 25 else MATCH_THRESHOLD_SHORT
+    return score >= thresh
+
+
 def find_best_event(title: str, events: list[dict]) -> tuple[dict | None, float]:
-    """Returnerer (event, score) så confidence ikke skal genberegnes af kalderen."""
-    best_score = 0.0
-    best = None
+    """Returnerer (event, score) så confidence ikke skal genberegnes af kalderen.
+    Bedste kandidat der opfylder accept-reglen vinder — en høj men afvist
+    kandidat (fx tal-konflikt) må ikke skygge for en korrekt nr. 2."""
+    scored = []
     for ev in events:
         if not ev.get("title"):
             continue
-        score = title_similarity(title, ev["title"])
-        if score > best_score:
-            best_score = score
-            best = ev
-    if best_score >= 0.45:
-        return best, best_score
+        scored.append((title_similarity(title, ev["title"]), ev))
+    scored.sort(key=lambda x: -x[0])
+    for score, ev in scored[:5]:
+        if _match_acceptable(title, ev["title"], score):
+            return ev, score
     return None, 0.0
+
+
+def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
+    """
+    Backfill: genkør KUN event-matchingen for eksisterende entries (ingen
+    AI-kald) og opdatér date/dnnk_url/description/match_confidence.
+    Uden dette får entries fra før et scraper-fix aldrig deres metadata —
+    skip-logikken ('filename in existing_map') rører dem aldrig igen.
+    Returnerer antal opdaterede entries.
+    """
+    if not dnnk_events:
+        return 0
+    category_urls = {url.rstrip("/") for _, url in DNNK_CATEGORY_PAGES}
+    desc_cache: dict[str, str | None] = {}
+    updated = 0
+    for entry in index:
+        # Match både på det afkodede filnavn og på den (evt. AI-rettede) titel
+        candidates = [decode_filename(entry["filename"])]
+        if entry.get("title") and entry["title"] not in candidates:
+            candidates.append(entry["title"])
+        best, best_score = None, 0.0
+        for cand in candidates:
+            ev, score = find_best_event(cand, dnnk_events)
+            if ev and score > best_score:
+                best, best_score = ev, score
+        if not best:
+            continue
+
+        changed = False
+        if best.get("event_url") and entry.get("dnnk_url") != best["event_url"]:
+            entry["dnnk_url"] = best["event_url"]
+            changed = True
+        if best.get("date") and entry.get("date") != best["date"]:
+            entry["date"] = best["date"]
+            changed = True
+        if not entry.get("youtube_id") and best.get("youtube_id"):
+            entry["youtube_id"] = best["youtube_id"]
+            entry["youtube_url"] = best["youtube_url"]
+            changed = True
+        if entry.get("match_confidence") != round(best_score, 3):
+            entry["match_confidence"] = round(best_score, 3)
+            changed = True
+        # Beskrivelse hentes kun fra rigtige event-UNDERSIDER — kategorisider
+        # giver bare listetekst ('Dato, Titel og Oplægsholdere …') som beskrivelse.
+        ev_url = (best.get("event_url") or "").rstrip("/")
+        if ev_url and ev_url not in category_urls and not entry.get("description"):
+            if ev_url not in desc_cache:
+                desc_cache[ev_url] = get_event_description(best["event_url"])
+                time.sleep(0.5)
+            if desc_cache[ev_url]:
+                entry["description"] = desc_cache[ev_url]
+                changed = True
+        if changed:
+            updated += 1
+    return updated
 
 # ── AI summary ────────────────────────────────────────────────────────────────
 
@@ -616,9 +865,12 @@ def load_existing_index() -> list[dict]:
     return []
 
 
-def build_index():
-    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+def save_index(index: list[dict]) -> None:
+    with open("search-index.json", "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
 
+
+def build_index():
     print("Loading existing index …")
     existing = load_existing_index()
     # Dedupe pr. path (ikke kun filnavn) — samme filnavn kan ligge i flere mapper.
@@ -631,23 +883,42 @@ def build_index():
     new_files = [f for f in all_files if f["path"] not in existing_map and f["filename"] not in existing_map]
     print(f"  {len(all_files)} total files, {len(new_files)} new")
 
-    if not new_files:
-        print("Nothing new to process.")
-        return
-
-    print("Henter DNNK YouTube-kanal …")
-    youtube_videos = fetch_youtube_channel()
-
     print("Scraping dnnk.dk for event metadata …")
     dnnk_events = scrape_dnnk_events()
     if not dnnk_events:
         # GitHub Actions-annotation så et strukturskifte på dnnk.dk opdages i workflow-loggen
         print("::warning::scrape_dnnk_events() fandt 0 events - dnnk.dk-strukturen kan vaere aendret; tjek kategorisiderne og parsing-heuristikken i scrape_dnnk_events()")
 
+    index = list(existing)
+
+    # ── Metadata-refresh af EKSISTERENDE entries (default, ingen API-kald) ────
+    # Kører før og uafhængigt af AI-delen, så date/dnnk_url/description kan
+    # backfilles selv når ANTHROPIC_API_KEY mangler.
+    if index and dnnk_events:
+        print("Opdaterer event-metadata for eksisterende entries …")
+        updated = refresh_event_metadata(index, dnnk_events)
+        with_url = sum(1 for e in index if e.get("dnnk_url"))
+        with_date = sum(1 for e in index if e.get("date"))
+        print(f"  {updated} entries opdateret — {with_url}/{len(index)} har dnnk_url, {with_date}/{len(index)} har dato")
+        if updated:
+            save_index(index)
+
+    if not new_files:
+        print("Ingen nye filer at behandle.")
+        return
+
+    # ── Nye filer kræver AI-resumé (anthropic + ANTHROPIC_API_KEY) ───────────
+    if anthropic is None or not os.environ.get("ANTHROPIC_API_KEY"):
+        print(f"::warning::ANTHROPIC_API_KEY mangler (eller anthropic-pakken er ikke installeret) - "
+              f"springer {len(new_files)} nye filer over. Kun metadata-refresh af eksisterende entries blev udfoert.")
+        return
+    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+
+    print("Henter DNNK YouTube-kanal …")
+    youtube_videos = fetch_youtube_channel()
+
     print("Scraping eksterne ressourcer (vidensbank, klimatilpasning.dk) …")
     ext_resources = scrape_external_resources()
-
-    index = list(existing)
 
     for i, file_info in enumerate(new_files):
         filename = file_info["filename"]
@@ -676,11 +947,14 @@ def build_index():
             youtube_url = matched.get("youtube_url")
             date = matched.get("date")
             # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
-            # (find_best_event returnerer kun matches med score >= 0.45)
+            # (find_best_event returnerer kun matches der opfylder _match_acceptable)
             if matched.get("title"):
                 title = matched["title"]
             print(f"  → matched ({match_confidence:.2f}): {matched['title'][:60]}")
-            if event_url:
+            # Beskrivelse kun fra rigtige event-undersider — kategorisider
+            # giver bare listetekst som "beskrivelse"
+            category_urls = {url.rstrip("/") for _, url in DNNK_CATEGORY_PAGES}
+            if event_url and event_url.rstrip("/") not in category_urls:
                 description = get_event_description(event_url)
                 time.sleep(0.5)
 
@@ -736,6 +1010,7 @@ def build_index():
                 "youtube_id": youtube_id,
                 "youtube_url": youtube_url,
                 "dnnk_url": event_url,
+                "match_confidence": round(match_confidence, 3) if matched else None,
                 "description": description,
                 "related_resources": related_resources,
                 "related_webinars": [],  # filled in after all entries are built
@@ -746,8 +1021,7 @@ def build_index():
 
         # Gem løbende hver 10. entry så vi ikke mister arbejde ved fejl
         if len(index) % 10 == 0:
-            with open("search-index.json", "w", encoding="utf-8") as f:
-                json.dump(index, f, ensure_ascii=False, indent=2)
+            save_index(index)
 
     # Drop ressourcer der matcher 40%+ af alle entries (for generiske til at være nyttige)
     print("Filtrerer for generiske ressourcer …")
@@ -771,8 +1045,7 @@ def build_index():
     # Sort chronologically by folder, then title
     index.sort(key=lambda x: (x.get("folder", ""), x.get("title", "")))
 
-    with open("search-index.json", "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
+    save_index(index)
 
     print(f"\nDone. {len(index)} entries written to search-index.json")
 

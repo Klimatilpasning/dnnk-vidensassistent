@@ -9,6 +9,14 @@ For each transcription:
   - Generates AI summary + keywords via Claude Haiku
   - Only processes NEW files (skips already-indexed ones)
 
+PDF-dokumenter (filer med navnepræfikset "PDF_", lagt i samme mappe af
+PDF-scraperen) behandles særskilt:
+  - Titel/kategori/kilde-URL/dato parses fra filens header (=== DNNK PDF Dokument ===)
+  - Ingen YouTube- eller dnnk.dk-event-matching
+  - AI-resumé + keywords genereres som for webinarer, men med dokument-prompt
+  - Entries får type="pdf" (webinarer får type="webinar"; manglende type
+    betyder webinar af hensyn til bagudkompatibilitet)
+
 Run:  python build_search_index.py
 Env:  ANTHROPIC_API_KEY  (required)
       GITHUB_TOKEN        (optional but recommended to avoid rate limits)
@@ -161,6 +169,66 @@ def detect_category(filename: str) -> str:
     return "Øvrige"
 
 
+# ── PDF-dokumenter fra PDF-scraperen ─────────────────────────────────────────
+
+PDF_FILENAME_PREFIX = "PDF_"
+
+_PDF_HEADER_START = re.compile(r"^=+\s*DNNK PDF Dokument\s*=+$")
+_PDF_HEADER_END = re.compile(r"^={10,}$")
+_PDF_HEADER_FIELD = re.compile(r"^(Titel|Kategori|Kilde|Indekseret):\s*(.*)$")
+
+
+def is_pdf_filename(filename: str) -> bool:
+    return filename.startswith(PDF_FILENAME_PREFIX)
+
+
+def parse_pdf_document(content: str) -> tuple[dict | None, str]:
+    """
+    Parsér headeren fra en PDF-scrapet tekstfil:
+
+        === DNNK PDF Dokument ===
+        Titel: <titel>
+        Kategori: <kategori>
+        Kilde: <pdf-url>
+        Indekseret: <iso-dato>
+        ==================================================
+        <udtrukket tekst>
+
+    Returnerer (meta, body) hvor meta har nøglerne title/category/source_url/date
+    (date som YYYY-MM-DD eller None). Hvis headeren mangler eller er ugyldig,
+    returneres (None, content) så kalderen kan falde tilbage til filnavnet.
+    """
+    lines = content.splitlines()
+    if not lines or not _PDF_HEADER_START.match(lines[0].strip()):
+        return None, content
+
+    fields: dict[str, str] = {}
+    body_start = len(lines)
+    for i in range(1, len(lines)):
+        stripped = lines[i].strip()
+        if _PDF_HEADER_END.match(stripped):
+            body_start = i + 1
+            break
+        m = _PDF_HEADER_FIELD.match(stripped)
+        if m:
+            fields[m.group(1).lower()] = m.group(2).strip()
+
+    # Dato: kun YYYY-MM-DD-delen af ISO-datoen (fx '2026-07-01T09:30:00')
+    date = None
+    m = re.match(r"(\d{4}-\d{2}-\d{2})", fields.get("indekseret", ""))
+    if m:
+        date = m.group(1)
+
+    meta = {
+        "title": fields.get("titel") or None,
+        "category": fields.get("kategori") or None,
+        "source_url": fields.get("kilde") or None,
+        "date": date,
+    }
+    body = "\n".join(lines[body_start:]).strip()
+    return meta, body
+
+
 _SERIES_PREFIX = re.compile(
     r"^\s*(?:tech[\s_-]*talk(?:\s*\d+)?|god\s*morgen\s+med\s+dnnk|dnnk[\s_-]*masterclass(?:\s+om)?"
     r"|webinar(?:\s+\d+)?(?:\s+om\s+jura)?)\s*[:–—-]*\s*",
@@ -261,7 +329,8 @@ def get_all_transcription_files() -> list[dict]:
             and item["type"] == "blob"
         ):
             filename = os.path.basename(path)
-            if is_junk_filename(filename):
+            # PDF-filer får titel m.m. fra headeren — filnavnet må ikke afvise dem
+            if not is_pdf_filename(filename) and is_junk_filename(filename):
                 continue
             folder = os.path.basename(os.path.dirname(path))
             safe_path = quote(path, safe="/")
@@ -627,6 +696,9 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
     desc_cache: dict[str, str | None] = {}
     updated = 0
     for entry in index:
+        # PDF-dokumenter har ingen dnnk.dk-event — spring dem over
+        if entry.get("type") == "pdf":
+            continue
         # Match både på det afkodede filnavn og på den (evt. AI-rettede) titel
         candidates = [decode_filename(entry["filename"])]
         if entry.get("title") and entry["title"] not in candidates:
@@ -669,46 +741,66 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
 
 # ── AI summary ────────────────────────────────────────────────────────────────
 
-def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None) -> dict | None:
+def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None, doc_type: str = "webinar") -> dict | None:
     """Returnerer dict med resumé-felter, eller None hvis AI-kaldet fejlede.
-    None betyder: gem IKKE entry'en — filen prøves igen ved næste kørsel."""
+    None betyder: gem IKKE entry'en — filen prøves igen ved næste kørsel.
+    doc_type: 'webinar' (default) eller 'pdf' (rapport/dokument — anden prompt,
+    samme JSON-schema, så downstream-koden er uændret)."""
     excerpt = content[:5000]
     invitation_block = (
         f"Invitationstekst fra dnnk.dk (verificeret af DNNK, brug som primær kilde):\n{description}\n\n"
         if description else ""
     )
+    if doc_type == "pdf":
+        prompt = (
+            f"Rapport/dokument titel: {title}\n\n"
+            f"{invitation_block}"
+            f"Uddrag af dokumentets tekst:\n{excerpt}\n\n"
+            "Dette er en rapport eller et dokument om klimatilpasning – IKKE et webinar.\n"
+            "Svar KUN med valid JSON – ingen forklaring:\n"
+            '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
+            ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
+            ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
+            ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...],\n'
+            ' "places": ["Stednavn1", "Stednavn2", ...]}\n\n'
+            "Krav:\n"
+            "- corrected_title: Behold titlen uændret medmindre den har åbenlyse fejl "
+            "(fx manglende æ/ø/å).\n"
+            "- summary: 2-3 sætninger på dansk om dokumentets indhold og vigtigste pointer/anbefalinger.\n"
+            "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
+            "- speakers: Forfattere eller udgivende organisationer hvis de fremgår tydeligt, max 4. Tom hvis uklart.\n"
+            "- places: Konkrete danske eller udenlandske stednavne nævnt i dokumentet "
+            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
+        )
+    else:
+        prompt = (
+            f"Webinar titel (kan have manglende æ/ø/å): {title}\n\n"
+            f"{invitation_block}"
+            f"Transskription (uddrag, brug som supplement):\n{excerpt}\n\n"
+            "Svar KUN med valid JSON – ingen forklaring:\n"
+            '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
+            ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
+            ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
+            ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...],\n'
+            ' "places": ["Stednavn1", "Stednavn2", ...]}\n\n'
+            "Krav:\n"
+            "- corrected_title: Ret manglende eller forkerte æ/ø/å i titlen baseret på kontekst. "
+            "Behold titlen uændret hvis den allerede er korrekt.\n"
+            "- summary: Basér primært på invitationsteksten hvis den findes. "
+            "Supplér med pointer fra transskriptionen som invitationen ikke dækker.\n"
+            "- summary: 2-3 sætninger på dansk\n"
+            "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
+            "- speakers: Identificer faktiske oplægsholdere (ikke moderator), max 4. Tom hvis uklart.\n"
+            "- places: Konkrete danske eller udenlandske stednavne nævnt i webinaret "
+            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
+        )
     json_retries = 0
     for attempt in range(3):
         try:
             resp = client.messages.create(
                 model="claude-haiku-4-5-20251001",
                 max_tokens=850,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": (
-                            f"Webinar titel (kan have manglende æ/ø/å): {title}\n\n"
-                            f"{invitation_block}"
-                            f"Transskription (uddrag, brug som supplement):\n{excerpt}\n\n"
-                            "Svar KUN med valid JSON – ingen forklaring:\n"
-                            '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
-                            ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
-                            ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
-                            ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...],\n'
-                            ' "places": ["Stednavn1", "Stednavn2", ...]}\n\n'
-                            "Krav:\n"
-                            "- corrected_title: Ret manglende eller forkerte æ/ø/å i titlen baseret på kontekst. "
-                            "Behold titlen uændret hvis den allerede er korrekt.\n"
-                            "- summary: Basér primært på invitationsteksten hvis den findes. "
-                            "Supplér med pointer fra transskriptionen som invitationen ikke dækker.\n"
-                            "- summary: 2-3 sætninger på dansk\n"
-                            "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
-                            "- speakers: Identificer faktiske oplægsholdere (ikke moderator), max 4. Tom hvis uklart.\n"
-                            "- places: Konkrete danske eller udenlandske stednavne nævnt i webinaret "
-                            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
-                        ),
-                    }
-                ],
+                messages=[{"role": "user", "content": prompt}],
             )
             raw = resp.content[0].text.strip()
             raw = re.sub(r"^```json\s*", "", raw)
@@ -832,6 +924,8 @@ def compute_related_webinars(index: list[dict], top_n: int = 3) -> None:
     """
     For each entry in index, find top_n related webinars by keyword overlap.
     Mutates index in place by adding 'related_webinars' key.
+    PDF-entries deltager på lige fod (keyword-overlap er ens); de har ingen
+    youtube_url/dnnk_url, så source_url og type medtages i krydslinket.
     """
     for entry in index:
         kw = entry.get("keywords", [])
@@ -847,7 +941,14 @@ def compute_related_webinars(index: list[dict], top_n: int = 3) -> None:
             other_text = " ".join(other_kw) + " " + other.get("title", "")
             score = keyword_overlap(kw, other_text)
             if score >= 2:  # require at least 2 overlapping keywords
-                scored.append((score, {"title": other["title"], "filename": other["filename"], "youtube_url": other.get("youtube_url"), "dnnk_url": other.get("dnnk_url")}))
+                scored.append((score, {
+                    "title": other["title"],
+                    "filename": other["filename"],
+                    "type": other.get("type", "webinar"),
+                    "youtube_url": other.get("youtube_url"),
+                    "dnnk_url": other.get("dnnk_url"),
+                    "source_url": other.get("source_url"),
+                }))
         scored.sort(key=lambda x: -x[0])
         entry["related_webinars"] = [r for _, r in scored[:top_n]]
 
@@ -922,6 +1023,7 @@ def build_index():
 
     for i, file_info in enumerate(new_files):
         filename = file_info["filename"]
+        is_pdf = is_pdf_filename(filename)
         title = decode_filename(filename)
         category = detect_category(filename)
 
@@ -937,9 +1039,28 @@ def build_index():
             print(f"  Error fetching content: {exc}")
             continue
 
-        # Match with dnnk.dk event
-        matched, match_confidence = find_best_event(title, dnnk_events)
+        matched = None
+        match_confidence = 0.0
         event_url = youtube_id = youtube_url = description = date = None
+        source_url = None
+
+        if is_pdf:
+            # PDF-dokument: metadata fra headeren — INGEN event-/YouTube-matching
+            meta, body = parse_pdf_document(content)
+            if meta:
+                title = meta["title"] or title
+                category = meta["category"] or "Rapporter"
+                source_url = meta["source_url"]
+                date = meta["date"]
+                content = body or content
+                print(f"  → PDF-dokument: {title[:60]}")
+            else:
+                category = "Rapporter"
+                print(f"  Warning – kunne ikke parse PDF-header i {filename}; "
+                      "bruger filnavnet som titel")
+        else:
+            # Match with dnnk.dk event
+            matched, match_confidence = find_best_event(title, dnnk_events)
 
         if matched:
             event_url = matched.get("event_url")
@@ -958,8 +1079,8 @@ def build_index():
                 description = get_event_description(event_url)
                 time.sleep(0.5)
 
-        # Fallback 1: match against YouTube channel video titles
-        if not youtube_id and youtube_videos:
+        # Fallback 1: match against YouTube channel video titles (ikke for PDF)
+        if not is_pdf and not youtube_id and youtube_videos:
             best_yt_score = 0.0
             best_yt = None
             for vid in youtube_videos:
@@ -974,8 +1095,8 @@ def build_index():
                     date = best_yt["upload_date"]
                 print(f"  → YouTube match ({best_yt_score:.2f}): {best_yt['title'][:60]}")
 
-        # Fallback 2: extract YouTube ID directly from transcript
-        if not youtube_id:
+        # Fallback 2: extract YouTube ID directly from transcript (ikke for PDF)
+        if not is_pdf and not youtube_id:
             yt_m = re.search(
                 r"(?:youtube\.com/watch\?v=|youtu\.be/)([a-zA-Z0-9_-]{11})", content
             )
@@ -985,7 +1106,8 @@ def build_index():
 
         # Generate AI summary
         print("  → generating summary …")
-        ai = generate_summary(client, title, content, description)
+        ai = generate_summary(client, title, content, description,
+                              doc_type="pdf" if is_pdf else "webinar")
         if ai is None:
             # Gem IKKE entry med tomt resumé — spring over, så filen prøves igen næste kørsel
             print(f"  Warning – AI-resumé fejlede for {filename}; springer over (prøves igen næste kørsel)")
@@ -1000,6 +1122,7 @@ def build_index():
                 "filename": filename,
                 "path": file_info["path"],
                 "folder": file_info["folder"],
+                "type": "pdf" if is_pdf else "webinar",
                 "title": title,
                 "category": category,
                 "date": date,
@@ -1010,6 +1133,7 @@ def build_index():
                 "youtube_id": youtube_id,
                 "youtube_url": youtube_url,
                 "dnnk_url": event_url,
+                "source_url": source_url,  # PDF-kilde-URL; None for webinarer
                 "match_confidence": round(match_confidence, 3) if matched else None,
                 "description": description,
                 "related_resources": related_resources,

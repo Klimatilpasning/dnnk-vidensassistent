@@ -210,18 +210,96 @@ async function loadData() {
   }
 }
 
+// Synonymer/oversættelser pr. emne — så nyheder på svensk/engelsk og
+// beslægtede danske fagtermer også tæller med. Nøglen (emnet selv) matcher
+// altid. Match mod Klimamonitors egne 'tags' vægter højest.
+const TOPIC_SYNONYMS = {
+  'skybrud': ['cloudburst', 'skybrudssikring', 'skybrudsplan'],
+  'oversvømmelse': ['oversvømmelser', 'översvämning', 'flooding', 'flood risk', 'oversvømmelsesrisiko'],
+  'kystbeskyttelse': ['kystsikring', 'kusterosion', 'kustskydd', 'coastal adaptation', 'kystzone'],
+  'stormflod': ['stormflodssikring', 'storm surge', 'højvande'],
+  'havvandsstigning': ['havvandsstigninger', 'havniveau', 'havsnivå', 'sea level'],
+  'LAR': ['lokal afledning', 'regnbed', 'faskine', 'regnvandshåndtering'],
+  'regnvand': ['regnvandshåndtering', 'dagvatten', 'stormwater', 'regnvandsbassin'],
+  'klimasikring': ['klimatilpasset', 'klimarobust'],
+  'spildevand': ['kloakvand', 'wastewater', 'spildevandsplan'],
+  'kloakseparering': ['separatkloakering', 'kloakadskillelse', 'kloakrenovering'],
+  'grundvand': ['grundvandsstand', 'terrænnært grundvand', 'groundwater', 'grundvattnet'],
+  'BNBO': ['boringsnære', 'boringsnært'],
+  'vandløb': ['vandløbsrestaurering', 'watercourse', 'åløb'],
+  'vandløbsrestaurering': ['restaurering af vandløb'],
+  'vådområde': ['vådområder', 'wetland', 'våtmark', 'lavbund'],
+  'klimatilpasning': ['klimatilpasnings', 'klimatanpassning', 'climate adaptation'],
+  'klimahandlingsplan': ['klimaplan', 'klimahandleplan', 'dk2020'],
+  'DK2020': ['klimahandleplan'],
+  'klimarisiko': ['klimarisici', 'climate risk'],
+  'naturbaseret': ['naturbaserede', 'nature-based', 'nbs', 'naturbaserede løsninger'],
+  'blå-grøn': ['blågrøn', 'blue-green', 'blå-grønne'],
+  'svampeby': ['sponge city', 'svampbyar'],
+  'klimakvarter': ['klimakvarterer'],
+  'grønt tag': ['grønne tage', 'green roof', 'taghave'],
+  'oversvømmelsesdirektiv': ['floods directive'],
+  'klimatilpasningsloven': ['klimatilpasningslov'],
+  'serviceniveau': ['serviceniveauer'],
+  'samfundsøkonomi': ['samfundsøkonomisk', 'cost-benefit', 'samfundsøkonomiske'],
+  'beredskab': ['beredskabsplan', 'beredskabsplanlægning', 'emergency'],
+  'forsikring': ['forsikringsselskab', 'forsikringsskade', 'insurance'],
+  'finansiering': ['medfinansiering', 'funding', 'finansieringsmodel'],
+  'jura': ['juridisk', 'juridiske'],
+  'lovgivning': ['regulering', 'regulation', 'lovændring'],
+  'høring': ['høringssvar', 'offentlig høring'],
+  'kommuner': ['kommune', 'kommunal', 'municipality'],
+  'forsyning': ['forsyningsselskab', 'vandselskab', 'utility'],
+  'DMI': ['klimaatlas'],
+  'klimaatlas': ['climate atlas'],
+  'SCALGO': ['scalgo live'],
+  'kortlægning': ['kortlagt', 'kortlægninger', 'mapping'],
+  'hydrologi': ['hydrologisk', 'hydrology', 'langsom hydrologi'],
+  'kvælstof': ['nitrogen', 'kväve', 'kvælstofudledning'],
+  'fosfor': ['phosphorus', 'fosforudledning'],
+  'nitrat': ['nitrate', 'nitratudvaskning'],
+  'okker': ['okkerudledning'],
+  'vandkvalitet': ['water quality', 'vattenkvalitet'],
+  'sponge city': ['svampeby'],
+  'living shoreline': ['levende kyst'],
+  'biomimicry': ['biomimetik'],
+  'resiliens': ['resilient', 'robusthed', 'resilience'],
+};
+
+// Kort/akronym-agtige termer kræver ordgrænse, så 'LAR' ikke rammer 'Lars'
+// og 'DMI' ikke rammer et tilfældigt bogstavsammenfald.
+function isStrictTerm(term) {
+  return term.length <= 4 || /\d/.test(term) || /^[A-ZÆØÅ0-9-]+$/.test(term);
+}
+function termMatches(blob, term) {
+  const t = term.toLowerCase();
+  if (isStrictTerm(term)) {
+    const esc = t.replace(/[.*+?^${}()|[\]\\-]/g, '\\$&');
+    return new RegExp('(?<![a-zæøå0-9])' + esc + '(?![a-zæøå0-9])', 'i').test(blob);
+  }
+  return blob.includes(t);
+}
+function topicTerms(kw) {
+  return [kw, ...(TOPIC_SYNONYMS[kw] || [])];
+}
+
 function computeTopics() {
   topicData = TRACKED_KEYWORDS.map(kw => {
-    const kwLow = kw.toLowerCase();
-    // Count webinars matching this keyword (in title, keywords, or summary)
+    const terms = topicTerms(kw);
+
+    // Webinarer: match mod titel + resumé + nøgleord
     const matchingWebinars = webinars.filter(w => {
       const blob = ((w.title || '') + ' ' + (w.summary || '') + ' ' + ((w.keywords || []).join(' '))).toLowerCase();
-      return blob.includes(kwLow);
+      return terms.some(t => termMatches(blob, t));
     });
-    // Count news articles matching this keyword
+
+    // Nyheder: Klimamonitors egne 'tags' vægter højest (allerede emne-
+    // klassificeret), ellers match mod titel + resumé via synonymer
     const matchingNews = newsArticles.filter(a => {
+      const tagBlob = (a.tags || []).join(' ').toLowerCase();
+      if (terms.some(t => termMatches(tagBlob, t))) return true;
       const blob = ((a.title || '') + ' ' + (a.summary || '')).toLowerCase();
-      return blob.includes(kwLow);
+      return terms.some(t => termMatches(blob, t));
     });
 
     return {

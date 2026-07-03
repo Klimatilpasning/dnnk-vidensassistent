@@ -299,6 +299,14 @@ async function loadIndex() {
 }
 
 // ─── Tabs ───────────────────────────────────────────────
+// Chatten er slået fra: den kræver Anthropic-API på serveren, og behovet
+// dækkes nu af MCP-forbindelsen i Claude (søgning på siden virker fortsat).
+// Genaktivér ved at sætte true — alt chat-koden ligger intakt nedenfor.
+const CHAT_ENABLED = false;
+if (!CHAT_ENABLED) {
+  document.getElementById('tabChat').style.display = 'none';
+}
+
 function showTab(tab, btn) {
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -812,11 +820,13 @@ function buildCard(entry, matchedKws) {
     actEl.appendChild(dn);
   }
 
-  const chatBtn = document.createElement('button');
-  chatBtn.className = 'action-btn';
-  chatBtn.textContent = 'Spørg om dette webinar';
-  chatBtn.onclick = e => { e.stopPropagation(); openInChat(entry); };
-  actEl.appendChild(chatBtn);
+  if (CHAT_ENABLED) {
+    const chatBtn = document.createElement('button');
+    chatBtn.className = 'action-btn';
+    chatBtn.textContent = 'Spørg om dette webinar';
+    chatBtn.onclick = e => { e.stopPropagation(); openInChat(entry); };
+    actEl.appendChild(chatBtn);
+  }
 
   // ── "Læs transskription": fold transskriptet ud i kortet ──
   let transDiv = null;

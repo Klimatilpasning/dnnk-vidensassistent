@@ -39,6 +39,8 @@ th:hover { background: #E8EEF2; }
 td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--border); }
 tr:hover td { background: #FAFBFC; }
 .keyword { font-weight: 500; }
+.topic-link { color: inherit; text-decoration: none; border-bottom: 1px dashed var(--border); }
+.topic-link:hover { color: var(--dnnk-blue); border-bottom-color: var(--dnnk-blue); }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
 .gap-positive { color: var(--hot); font-weight: 600; }
 .gap-negative { color: var(--cool); }
@@ -252,7 +254,18 @@ function render() {
     const tr = document.createElement('tr');
     const gapCls = t.gap > 2 ? 'gap-positive' : (t.gap < -2 ? 'gap-negative' : 'gap-balanced');
     const gapStr = t.gap > 0 ? '+' + t.gap : t.gap.toString();
-    tr.innerHTML = `<td class="keyword">${t.keyword}</td><td class="num">${t.webinars}</td><td class="num">${t.news}</td><td class="num ${gapCls}">${gapStr}</td>`;
+    // Nøgleord → klik åbner en søgning i vidensbanken på det emne
+    const kwTd = document.createElement('td');
+    kwTd.className = 'keyword';
+    const kwLink = document.createElement('a');
+    kwLink.className = 'topic-link';
+    kwLink.href = searchUrl(t.keyword);
+    kwLink.textContent = t.keyword;
+    kwLink.title = 'Søg i vidensbanken efter "' + t.keyword + '"';
+    kwTd.appendChild(kwLink);
+    tr.appendChild(kwTd);
+    tr.insertAdjacentHTML('beforeend',
+      `<td class="num">${t.webinars}</td><td class="num">${t.news}</td><td class="num ${gapCls}">${gapStr}</td>`);
     body.appendChild(tr);
   });
 
@@ -261,21 +274,28 @@ function render() {
     .filter(t => t.news >= 2 && t.webinars <= 2)
     .sort((a, b) => b.gap - a.gap)
     .slice(0, 6);
-  renderInsights('gapInsights', gapTopics, 'hot', t =>
-    `${t.news} nyhedshits · kun ${t.webinars} webinar${t.webinars === 1 ? '' : 'er'}`,
-    t => t.newsList.length ? makeInsightLink('Senest: ', t.newsList[0].url, t.newsList[0].title) : null
+  // Trending: emnet er hot i medierne → klik åbner Klimamonitor filtreret
+  renderInsights('gapInsights', gapTopics, 'hot',
+    t => `${t.news} nyhedshits · kun ${t.webinars} webinar${t.webinars === 1 ? '' : 'er'}`,
+    t => t.newsList.length ? makeInsightLink('Senest: ', t.newsList[0].url, t.newsList[0].title) : null,
+    t => ({ href: monitorUrl(t.keyword), title: 'Se mediedækningen i Klimamonitor' })
   );
 
-  // Underused insights — strong webinars, no news
+  // Underused insights — strong webinars, no news → klik åbner vidensbanken
   const underusedTopics = topicData
     .filter(t => t.webinars >= 4 && t.news <= 1)
     .sort((a, b) => b.webinars - a.webinars)
     .slice(0, 6);
-  renderInsights('underusedInsights', underusedTopics, 'warm', t =>
-    `${t.webinars} webinarer · kun ${t.news} aktuelle nyheder`,
-    t => t.webinarList.length ? makeInsightLink('Bedst: ', t.webinarList[0].youtube_url, t.webinarList[0].title) : null
+  renderInsights('underusedInsights', underusedTopics, 'warm',
+    t => `${t.webinars} webinarer · kun ${t.news} aktuelle nyheder`,
+    t => t.webinarList.length ? makeInsightLink('Bedst: ', t.webinarList[0].youtube_url, t.webinarList[0].title) : null,
+    t => ({ href: searchUrl(t.keyword), title: 'Se webinarerne i vidensbanken' })
   );
 }
+
+// Deeplink-URL'er til de to kilde-sider (nøgleord kommer fra fast liste)
+function searchUrl(kw) { return './?q=' + encodeURIComponent(kw); }
+function monitorUrl(kw) { return 'https://klimatilpasning.github.io/dnnk-klimamonitor-proxy/?q=' + encodeURIComponent(kw); }
 
 // Tillad kun http(s)-URL'er fra tredjeparts-feeddata
 function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : null; }
@@ -293,7 +313,7 @@ function makeInsightLink(prefix, url, title) {
   return wrap;
 }
 
-function renderInsights(elId, topics, level, metaFn, linkFn) {
+function renderInsights(elId, topics, level, metaFn, linkFn, topicHrefFn) {
   const el = document.getElementById(elId);
   el.innerHTML = '';
   if (!topics.length) {
@@ -305,7 +325,18 @@ function renderInsights(elId, topics, level, metaFn, linkFn) {
     div.className = 'insight ' + level;
     const topicEl = document.createElement('div');
     topicEl.className = 'topic';
-    topicEl.textContent = t.keyword;
+    // Emne-titel bliver et link til den relevante kilde-side
+    const href = topicHrefFn && topicHrefFn(t);
+    if (href) {
+      const a = document.createElement('a');
+      a.className = 'topic-link';
+      a.href = href.href;
+      a.textContent = t.keyword;
+      a.title = href.title || '';
+      topicEl.appendChild(a);
+    } else {
+      topicEl.textContent = t.keyword;
+    }
     const metaEl = document.createElement('div');
     metaEl.className = 'meta';
     metaEl.textContent = metaFn(t);

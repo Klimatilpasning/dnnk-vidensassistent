@@ -1,0 +1,14 @@
+[
+  {"titel": "Favrholm-webinar", "status": "bekræftet", "dato": "2026-09", "emner": ["klimatilpasning", "regnvand", "kommuner"]},
+  {"titel": "Fælles om vandhåndtering i Vejle", "status": "bekræftet", "dato": "2026-09", "emner": ["klimatilpasning", "kommuner", "forsyning", "regnvand"]},
+  {"titel": "Klimalavbund: vandparkering (Langstrup Mose)", "status": "planlagt", "dato": "2026", "emner": ["vådområde", "hydrologi", "vandløb"]},
+  {"titel": "Kolding Pumpesluse", "status": "forespurgt", "dato": "2026-07-02", "emner": ["stormflod", "kystbeskyttelse", "beredskab"]},
+  {"titel": "Vesterbro Torv (Aarhus)", "status": "forespurgt", "dato": "2026-06-22", "emner": ["skybrud", "regnvand", "klimakvarter"]},
+  {"titel": "Valby Skybrudstunnel", "status": "forespurgt", "dato": "2026-06-22", "emner": ["skybrud", "spildevand", "oversvømmelse"]},
+  {"titel": "NK Forsyning", "status": "forespurgt", "dato": "2026-06-22", "emner": ["forsyning", "spildevand"]},
+  {"titel": "Kagsåparken regnvandspark", "status": "forespurgt", "dato": "2026-06-17", "emner": ["regnvand", "oversvømmelse", "naturbaseret"]},
+  {"titel": "KLAR RIVEREASE (SCL-system)", "status": "forespurgt", "dato": "2026-06-17", "emner": ["vandløb", "oversvømmelse", "kortlægning"]},
+  {"titel": "Helsingør Klimabykerne", "status": "forespurgt", "dato": "2026-06-17", "emner": ["klimatilpasning", "klimakvarter", "kommuner"]},
+  {"titel": "BaltFloods", "status": "forespurgt", "dato": "2026-06-12", "emner": ["oversvømmelse", "beredskab", "kystbeskyttelse"]},
+  {"titel": "ARCADIA (NbS på Fyn)", "status": "afventer 2027", "dato": "2027", "emner": ["naturbaseret", "klimatilpasning"]}
+]

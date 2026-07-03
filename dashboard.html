@@ -85,6 +85,18 @@ tr:hover td { background: #FAFBFC; }
 .idea-btn { background: none; border: 1px solid var(--dnnk-green); color: var(--dnnk-green); border-radius: 3px; font-size: 0.68rem; padding: 2px 7px; cursor: pointer; margin-top: 0.35rem; }
 .idea-btn:hover { background: var(--dnnk-green); color: white; }
 .idea-btn.added { border-color: var(--muted); color: var(--muted); cursor: default; }
+.heat-toggle { display: inline-block; width: 1rem; color: var(--muted); cursor: pointer; user-select: none; font-size: 0.7rem; }
+.heat-toggle:hover { color: var(--dnnk-blue); }
+.pipe-dot { margin-left: 0.35rem; cursor: help; font-size: 0.8rem; }
+.drill-row td { background: #FAFBFC; padding: 0.8rem 1rem 1rem; }
+.drill-pipe { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.7rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.drill-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+@media (max-width: 640px) { .drill-cols { grid-template-columns: 1fr; } }
+.drill-col .drill-h { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); margin-bottom: 0.4rem; }
+.drill-item { display: block; font-size: 0.8rem; color: var(--dnnk-blue); text-decoration: none; padding: 0.2rem 0; border-bottom: 1px solid #EEF1F4; }
+.drill-item:hover { text-decoration: underline; }
+.pipe-chip { display: inline-block; font-size: 0.68rem; padding: 2px 7px; border-radius: 10px; white-space: nowrap; }
+.insight-pipe { margin-top: 0.4rem; display: flex; flex-wrap: wrap; gap: 0.3rem; }
 </style>
 </head>
 <body>
@@ -167,9 +179,11 @@ const KLIMAMONITOR_URL = 'https://dnnk-klimamonitor-proxy.onrender.com';
 
 let webinars = [];
 let newsArticles = [];
+let pipeline = [];      // igangværende webinarforespørgsler (pipeline.json)
 let topicData = [];
 let sortKey = 'gap';
 let sortDir = -1;  // descending
+let expandedTopic = null;  // hvilket emne er foldet ud i varmekortet
 
 // Top-level keywords vi vil tracke (relevante emner indenfor klimatilpasning)
 const TRACKED_KEYWORDS = [
@@ -197,6 +211,13 @@ async function loadData() {
     const wRes = await fetch(INDEX_URL);
     if (!wRes.ok) throw new Error('Kunne ikke hente webinar-indekset (HTTP ' + wRes.status + ')');
     webinars = await wRes.json();
+
+    // Load pipeline (igangværende forespørgsler) — ikke-fatalt hvis den mangler
+    try {
+      const pRes = await fetch('pipeline.json');
+      pipeline = pRes.ok ? await pRes.json() : [];
+      if (!Array.isArray(pipeline)) pipeline = [];
+    } catch { pipeline = []; }
 
     // Fetch recent news (one broad call for general climate adaptation)
     const queries = ['klimatilpasning', 'vand klima', 'oversvømmelse skybrud'];
@@ -328,15 +349,88 @@ function computeTopics() {
       return terms.some(t => termMatches(blob, t));
     });
 
+    // Pipeline: igangværende forespørgsler der dækker dette emne
+    const pipelineItems = pipeline.filter(p => (p.emner || []).includes(kw));
+
     return {
       keyword: kw,
       webinars: matchingWebinars.length,
       news: matchingNews.length,
       gap: matchingNews.length - matchingWebinars.length,
-      webinarList: matchingWebinars.slice(0, 3),
-      newsList: matchingNews.slice(0, 3),
+      webinarList: matchingWebinars.slice(0, 8),   // flere til drilldown
+      newsList: matchingNews.slice(0, 8),
+      pipelineItems,
     };
   });
+}
+
+// Statuslabel → farve/tekst for pipeline-brikker
+const STATUS_STYLE = {
+  'bekræftet':    { bg: '#E8F5E0', fg: '#3F7A1E', ikon: '✅' },
+  'planlagt':     { bg: '#E6F0F7', fg: '#2C6E9B', ikon: '🗓️' },
+  'forespurgt':   { bg: '#FFF6E5', fg: '#B5730F', ikon: '✉️' },
+  'afventer 2027':{ bg: '#F0F0F0', fg: '#7F8C8D', ikon: '⏳' },
+};
+function pipelineChip(p) {
+  const st = STATUS_STYLE[p.status] || { bg: '#F0F0F0', fg: '#555', ikon: '📌' };
+  const chip = document.createElement('span');
+  chip.className = 'pipe-chip';
+  chip.style.background = st.bg;
+  chip.style.color = st.fg;
+  chip.textContent = st.ikon + ' ' + p.titel + ' · ' + p.status;
+  chip.title = 'Igangværende: ' + p.titel + ' (' + p.status + (p.dato ? ', ' + p.dato : '') + ')';
+  return chip;
+}
+
+// Drilldown: én bred række under emnet med webinarer + nyheder side om side
+function buildDrilldownRow(t) {
+  const tr = document.createElement('tr');
+  tr.className = 'drill-row';
+  const td = document.createElement('td');
+  td.colSpan = 4;
+
+  // Pipeline-brikker øverst hvis emnet allerede er i gang
+  if (t.pipelineItems && t.pipelineItems.length) {
+    const pl = document.createElement('div');
+    pl.className = 'drill-pipe';
+    pl.appendChild(document.createTextNode('På vej: '));
+    t.pipelineItems.forEach(p => pl.appendChild(pipelineChip(p)));
+    td.appendChild(pl);
+  }
+
+  const cols = document.createElement('div');
+  cols.className = 'drill-cols';
+
+  const mkCol = (heading, items, linkKey, emptyMsg) => {
+    const col = document.createElement('div');
+    col.className = 'drill-col';
+    const h = document.createElement('div');
+    h.className = 'drill-h';
+    h.textContent = heading;
+    col.appendChild(h);
+    if (!items.length) {
+      const e = document.createElement('div');
+      e.className = 'idea-empty';
+      e.textContent = emptyMsg;
+      col.appendChild(e);
+    } else {
+      items.forEach(it => {
+        const a = document.createElement('a');
+        a.className = 'drill-item';
+        a.href = safeUrl(it[linkKey]) || '#';
+        a.target = '_blank'; a.rel = 'noopener noreferrer';
+        a.textContent = (it.title || '(uden titel)');
+        col.appendChild(a);
+      });
+    }
+    return col;
+  };
+
+  cols.appendChild(mkCol('🎓 DNNK-webinarer (' + t.webinars + ')', t.webinarList, 'youtube_url', 'Ingen webinarer om emnet endnu.'));
+  cols.appendChild(mkCol('📰 Aktuelle nyheder (' + t.news + ')', t.newsList, 'url', 'Ingen aktuelle nyheder om emnet.'));
+  td.appendChild(cols);
+  tr.appendChild(td);
+  return tr;
 }
 
 function sortBy(key) {
@@ -463,19 +557,40 @@ function render() {
     const tr = document.createElement('tr');
     const gapCls = t.gap > 2 ? 'gap-positive' : (t.gap < -2 ? 'gap-negative' : 'gap-balanced');
     const gapStr = t.gap > 0 ? '+' + t.gap : t.gap.toString();
-    // Nøgleord → klik åbner en søgning i vidensbanken på det emne
+
     const kwTd = document.createElement('td');
     kwTd.className = 'keyword';
+    // Fold-ud-pil: viser webinarer + nyheder om emnet side om side
+    const toggle = document.createElement('span');
+    toggle.className = 'heat-toggle';
+    toggle.textContent = expandedTopic === t.keyword ? '▾' : '▸';
+    toggle.title = 'Vis kilder om emnet';
+    toggle.onclick = () => { expandedTopic = expandedTopic === t.keyword ? null : t.keyword; render(); };
+    kwTd.appendChild(toggle);
+    // Nøgleord → klik åbner en søgning i vidensbanken på det emne
     const kwLink = document.createElement('a');
     kwLink.className = 'topic-link';
     kwLink.href = searchUrl(t.keyword);
     kwLink.textContent = t.keyword;
     kwLink.title = 'Søg i vidensbanken efter "' + t.keyword + '"';
     kwTd.appendChild(kwLink);
+    // Pipeline-markør: emnet er allerede dækket af en igangværende forespørgsel
+    if (t.pipelineItems && t.pipelineItems.length) {
+      const dot = document.createElement('span');
+      dot.className = 'pipe-dot';
+      dot.textContent = '📌';
+      dot.title = 'På vej: ' + t.pipelineItems.map(p => p.titel + ' (' + p.status + ')').join(', ');
+      kwTd.appendChild(dot);
+    }
     tr.appendChild(kwTd);
     tr.insertAdjacentHTML('beforeend',
       `<td class="num">${t.webinars}</td><td class="num">${t.news}</td><td class="num ${gapCls}">${gapStr}</td>`);
     body.appendChild(tr);
+
+    // Drilldown-række: kilder om emnet + pipeline
+    if (expandedTopic === t.keyword) {
+      body.appendChild(buildDrilldownRow(t));
+    }
   });
 
   // Gap insights — trending, low coverage
@@ -553,6 +668,13 @@ function renderInsights(elId, topics, level, metaFn, linkFn, topicHrefFn) {
     metaEl.textContent = metaFn(t);
     div.appendChild(topicEl);
     div.appendChild(metaEl);
+    // Pipeline-flag: er emnet allerede dækket af en igangværende forespørgsel?
+    if (t.pipelineItems && t.pipelineItems.length) {
+      const pl = document.createElement('div');
+      pl.className = 'insight-pipe';
+      t.pipelineItems.forEach(p => pl.appendChild(pipelineChip(p)));
+      div.appendChild(pl);
+    }
     const link = linkFn(t);
     if (link) div.appendChild(link);
     // "+ Gem som idé" — føjer emnet til idébanken

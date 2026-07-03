@@ -158,8 +158,8 @@ async function loadData() {
     const newsResults = await Promise.all(
       queries.map(q => {
         const ctrl = new AbortController();
-        const abortTimer = setTimeout(() => ctrl.abort(), 8000);  // max 8s pr. kald
-        return fetch(KLIMAMONITOR_URL + '/news?q=' + encodeURIComponent(q), { signal: ctrl.signal })
+        const abortTimer = setTimeout(() => ctrl.abort(), 45000);  // /news/full henter ~70 feeds + cold start
+        return fetch(KLIMAMONITOR_URL + '/news/full?q=' + encodeURIComponent(q), { signal: ctrl.signal })
           .then(r => r.ok ? r.json() : { articles: [] })
           .catch(() => ({ articles: [] }))
           .finally(() => clearTimeout(abortTimer));

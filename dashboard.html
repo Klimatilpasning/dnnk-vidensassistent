@@ -69,6 +69,22 @@ tr:hover td { background: #FAFBFC; }
 .app-nav a .arr { color: var(--muted); margin-left: 0.3rem; }
 .footer { text-align: center; color: var(--muted); font-size: 0.7rem; padding: 2rem; }
 .footer a { color: var(--dnnk-blue); }
+#ideaPanel { border-top: 3px solid var(--dnnk-green); }
+.idea-add { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; }
+.idea-add input { flex: 1; padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: 4px; font-size: 0.8rem; font-family: inherit; }
+.idea-item { border: 1px solid var(--border); border-radius: 5px; padding: 0.6rem 0.7rem; margin-bottom: 0.6rem; background: #FAFBFC; }
+.idea-item .idea-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+.idea-item .idea-topic { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.idea-item .idea-del { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; padding: 0 0.2rem; line-height: 1; }
+.idea-item .idea-del:hover { color: var(--hot); }
+.idea-item textarea { width: 100%; margin-top: 0.4rem; border: 1px solid var(--border); border-radius: 4px; padding: 0.4rem; font-size: 0.78rem; font-family: inherit; resize: vertical; min-height: 2.2rem; color: var(--text); }
+.idea-item .idea-links { margin-top: 0.35rem; display: flex; gap: 0.6rem; }
+.idea-item .idea-links a { font-size: 0.72rem; color: var(--dnnk-blue); text-decoration: none; }
+.idea-item .idea-links a:hover { text-decoration: underline; }
+.idea-empty { color: var(--muted); font-size: 0.78rem; font-style: italic; }
+.idea-btn { background: none; border: 1px solid var(--dnnk-green); color: var(--dnnk-green); border-radius: 3px; font-size: 0.68rem; padding: 2px 7px; cursor: pointer; margin-top: 0.35rem; }
+.idea-btn:hover { background: var(--dnnk-green); color: white; }
+.idea-btn.added { border-color: var(--muted); color: var(--muted); cursor: default; }
 </style>
 </head>
 <body>
@@ -117,6 +133,16 @@ tr:hover td { background: #FAFBFC; }
       </div>
 
       <div>
+        <div class="panel" id="ideaPanel">
+          <h2>💡 Mine webinar-idéer</h2>
+          <p class="panel-sub">Din egen planlægningsliste. Gemmes i denne browser. Klik "+ Gem som idé" på et emne — eller tilføj en fri idé her.</p>
+          <div class="idea-add">
+            <input type="text" id="ideaInput" placeholder="Ny idé, fx: Terrænnært grundvand i sommerhusområder" onkeydown="if(event.key==='Enter')addManualIdea()" />
+            <button class="refresh-btn" onclick="addManualIdea()">Tilføj</button>
+          </div>
+          <div id="ideaList"></div>
+        </div>
+
         <div class="panel">
           <h2>🔥 Trending uden dækning</h2>
           <p class="panel-sub">Hot i medierne, men I har ingen eller få webinarer om emnet. Kandidat til næste webinar.</p>
@@ -319,6 +345,103 @@ function sortBy(key) {
   render();
 }
 
+// ─── Webinar-idébank (gemmes lokalt i browseren) ─────────────
+const IDEAS_KEY = 'dnnk_webinar_ideas';
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+let ideas = [];
+function loadIdeas() {
+  try { ideas = JSON.parse(store.get(IDEAS_KEY) || '[]'); }
+  catch { ideas = []; }
+  if (!Array.isArray(ideas)) ideas = [];
+}
+function saveIdeas() { store.set(IDEAS_KEY, JSON.stringify(ideas)); }
+function nextId() { return 'i' + Math.max(0, ...ideas.map(i => +(i.id||'i0').slice(1))) + 1; }
+
+function addIdea(topic, note) {
+  const t = (topic || '').trim();
+  const existing = t && ideas.find(i => (i.topic || '').toLowerCase() === t.toLowerCase());
+  if (existing) { renderIdeas(); return existing.id; }
+  const id = nextId();
+  ideas.unshift({ id, topic: t, note: note || '' });
+  saveIdeas();
+  renderIdeas();
+  return id;
+}
+function addManualIdea() {
+  const input = document.getElementById('ideaInput');
+  const v = input.value.trim();
+  if (!v) return;
+  addIdea(v, '');
+  input.value = '';
+}
+function updateNote(id, text) {
+  const it = ideas.find(i => i.id === id);
+  if (it) { it.note = text; saveIdeas(); }
+}
+function deleteIdea(id) {
+  ideas = ideas.filter(i => i.id !== id);
+  saveIdeas();
+  renderIdeas();
+}
+function hasIdea(topic) {
+  return ideas.some(i => (i.topic || '').toLowerCase() === (topic || '').toLowerCase());
+}
+
+function renderIdeas() {
+  const el = document.getElementById('ideaList');
+  if (!el) return;
+  el.innerHTML = '';
+  if (!ideas.length) {
+    el.innerHTML = '<div class="idea-empty">Ingen idéer gemt endnu.</div>';
+  } else {
+    ideas.forEach(it => {
+      const item = document.createElement('div');
+      item.className = 'idea-item';
+      const head = document.createElement('div');
+      head.className = 'idea-head';
+      const topicEl = document.createElement('span');
+      topicEl.className = 'idea-topic';
+      topicEl.textContent = it.topic || '(uden emne)';
+      const del = document.createElement('button');
+      del.className = 'idea-del';
+      del.textContent = '✕';
+      del.title = 'Slet idé';
+      del.onclick = () => deleteIdea(it.id);
+      head.appendChild(topicEl);
+      head.appendChild(del);
+      const ta = document.createElement('textarea');
+      ta.value = it.note || '';
+      ta.placeholder = 'Note — fx hvem der skal spørges, vinkel, deadline...';
+      ta.oninput = () => updateNote(it.id, ta.value);
+      item.appendChild(head);
+      item.appendChild(ta);
+      // Genveje til at researche emnet
+      if (it.topic) {
+        const links = document.createElement('div');
+        links.className = 'idea-links';
+        const a1 = document.createElement('a');
+        a1.href = searchUrl(it.topic); a1.textContent = '🔍 Vidensbank';
+        const a2 = document.createElement('a');
+        a2.href = monitorUrl(it.topic); a2.target = '_blank'; a2.rel = 'noopener';
+        a2.textContent = '📰 Klimamonitor';
+        links.appendChild(a1); links.appendChild(a2);
+        item.appendChild(links);
+      }
+      el.appendChild(item);
+    });
+  }
+  // Opdatér "+ Gem som idé"-knappernes tilstand
+  document.querySelectorAll('.idea-btn[data-topic]').forEach(btn => {
+    const added = hasIdea(btn.dataset.topic);
+    btn.classList.toggle('added', added);
+    btn.textContent = added ? '✓ Gemt som idé' : '+ Gem som idé';
+    btn.disabled = added;
+  });
+}
+
 function render() {
   // Stats
   document.getElementById('statWebinars').textContent = webinars.length;
@@ -377,6 +500,8 @@ function render() {
     t => t.webinarList.length ? makeInsightLink('Bedst: ', t.webinarList[0].youtube_url, t.webinarList[0].title) : null,
     t => ({ href: searchUrl(t.keyword), title: 'Se webinarerne i vidensbanken' })
   );
+
+  renderIdeas();
 }
 
 // Deeplink-URL'er til de to kilde-sider (nøgleord kommer fra fast liste)
@@ -430,10 +555,20 @@ function renderInsights(elId, topics, level, metaFn, linkFn, topicHrefFn) {
     div.appendChild(metaEl);
     const link = linkFn(t);
     if (link) div.appendChild(link);
+    // "+ Gem som idé" — føjer emnet til idébanken
+    const ideaBtn = document.createElement('button');
+    ideaBtn.className = 'idea-btn';
+    ideaBtn.dataset.topic = t.keyword;
+    ideaBtn.textContent = hasIdea(t.keyword) ? '✓ Gemt som idé' : '+ Gem som idé';
+    if (hasIdea(t.keyword)) { ideaBtn.classList.add('added'); ideaBtn.disabled = true; }
+    ideaBtn.onclick = () => { addIdea(t.keyword, ''); };
+    div.appendChild(document.createElement('br'));
+    div.appendChild(ideaBtn);
     el.appendChild(div);
   });
 }
 
+loadIdeas();
 loadData();
 </script>
 

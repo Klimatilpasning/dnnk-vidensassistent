@@ -291,11 +291,24 @@ async function loadIndex() {
     searchIndex = await resp.json();
     dot.className = 'status-dot ok';
     statusText.textContent = searchIndex.length + ' webinarer indekseret';
+    // Deeplink: åbnes siden med ?q=… (fx fra dashboardet), forudfyld og søg.
+    // Uden parameteren opfører siden sig præcis som før.
+    runQueryFromUrl();
   } catch(e) {
     dot.className = 'status-dot error';
     statusText.textContent = 'Fejl ved indlæsning';
     console.error(e);
   }
+}
+
+function runQueryFromUrl() {
+  try {
+    const q = new URLSearchParams(location.search).get('q');
+    if (!q) return;
+    const input = document.getElementById('searchInput');
+    input.value = q;
+    doSearch();
+  } catch { /* ignorér — søgning kan altid startes manuelt */ }
 }
 
 // ─── Tabs ───────────────────────────────────────────────

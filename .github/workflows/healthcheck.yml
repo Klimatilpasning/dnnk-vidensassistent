@@ -1,0 +1,72 @@
+name: Sundhedstjek
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # hver mandag kl. 06:00 UTC (~08:00 dansk tid)
+  workflow_dispatch:        # kan også køres manuelt
+
+permissions:
+  contents: read
+
+jobs:
+  healthcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tjek offentlige sider + backend
+        run: |
+          set -u
+          fejl=0
+
+          tjek_http() {
+            local navn="$1" url="$2" code
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$url" || echo "000")
+            if [ "$code" = "200" ]; then
+              echo "OK  $navn ($code)"
+            else
+              echo "FEJL $navn — HTTP $code — $url"; fejl=$((fejl+1))
+            fi
+          }
+
+          echo "=== Offentlige sider ==="
+          tjek_http "Soegeside"      "https://klimatilpasning.github.io/dnnk-vidensassistent/"
+          tjek_http "Dashboard"      "https://klimatilpasning.github.io/dnnk-vidensassistent/dashboard.html"
+          tjek_http "pipeline.json"  "https://klimatilpasning.github.io/dnnk-vidensassistent/pipeline.json"
+          tjek_http "search-index"   "https://klimatilpasning.github.io/dnnk-vidensassistent/search-index.json"
+          tjek_http "Klimamonitor"   "https://klimatilpasning.github.io/dnnk-klimamonitor-proxy/"
+
+          echo "=== search-index antal entries ==="
+          curl -s --max-time 30 "https://klimatilpasning.github.io/dnnk-vidensassistent/search-index.json" -o /tmp/idx.json || true
+          antal=$(python3 -c "import json; print(len(json.load(open('/tmp/idx.json'))))" 2>/dev/null || echo 0)
+          if [ "$antal" -ge 200 ]; then echo "OK  search-index: $antal entries"; else echo "FEJL search-index: kun $antal (forventet 200+)"; fejl=$((fejl+1)); fi
+
+          echo "=== Klimamonitor-backend (Render, kan cold-starte) ==="
+          news_ok=0
+          for i in 1 2 3; do
+            curl -s --max-time 90 "https://dnnk-klimamonitor-proxy.onrender.com/news/full?q=klimatilpasning" -o /tmp/news.json || true
+            n=$(python3 -c "import json; print(len(json.load(open('/tmp/news.json')).get('articles',[])))" 2>/dev/null || echo 0)
+            if [ "$n" -gt 0 ]; then echo "OK  /news/full: $n artikler (forsoeg $i)"; news_ok=1; break; fi
+            sleep 10
+          done
+          [ "$news_ok" = "1" ] || { echo "FEJL /news/full: ingen artikler efter 3 forsoeg"; fejl=$((fejl+1)); }
+
+          mcp=$(curl -s --max-time 90 -X POST "https://dnnk-klimamonitor-proxy.onrender.com/mcp" \
+            -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+            -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"healthcheck","version":"1"}}}' || true)
+          if echo "$mcp" | grep -q "dnnk-vidensbank"; then echo "OK  MCP-server svarer"; else echo "FEJL MCP-server svarede ikke korrekt"; fejl=$((fejl+1)); fi
+
+          echo "=== Transskriberings-pipeline (seneste bot-commit) ==="
+          curl -s --max-time 30 "https://api.github.com/repos/Klimatilpasning/dnnk-transcriptor/commits?per_page=15" -o /tmp/commits.json || true
+          python3 -c "import json,datetime; \
+          d=json.load(open('/tmp/commits.json')); \
+          now=datetime.datetime.now(datetime.timezone.utc); \
+          xs=[c['commit']['committer']['date'] for c in d if 'actions' in ((c.get('committer') or {}).get('login','')+((c.get('commit',{}).get('committer') or {}).get('name','')).lower())]; \
+          dage=(now-datetime.datetime.fromisoformat(xs[0].replace('Z','+00:00'))).days if xs else None; \
+          print('OK  pipeline aktiv — seneste bot-commit for %d dage siden' % dage) if dage is not None and dage<=10 else (print('ADVARSEL pipeline: seneste bot-commit for %d dage siden' % dage) if dage is not None else print('INFO ingen nylig bot-commit (ikke kritisk)'))" 2>/dev/null || echo "INFO kunne ikke tjekke pipeline (API-graense?) — ikke kritisk"
+
+          echo ""
+          if [ "$fejl" -eq 0 ]; then
+            echo "GROENT: ALT OK"
+          else
+            echo "ROEDT: $fejl system(er) fejlede — se ovenfor"
+            exit 1
+          fi

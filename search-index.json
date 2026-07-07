@@ -12346,5 +12346,164 @@
       }
     ],
     "match_confidence": 0.98
+  },
+  {
+    "filename": "V.txt",
+    "path": "transcriptions/V.txt",
+    "folder": "transcritranscriptions",
+    "title": "Startup-pitch: Genanvendelse af fosfor fra spildevand med containerløsning i Lemvig",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "En stifter af en vandteknologi-startup fra Svendborg pitcher virksomhedens løsning til at fjerne og genanvende fosfor fra spildevand, afprøvet i et pilotprojekt hos Lemvig Vand. Løsningen er en plug-and-play containerenhed, hvor problemvand cirkuleres igennem og behandles med kort opholdstid, lavt pladsbehov og mulighed for iltning, så fosforniveauet kan bringes helt ned. Pitchet forbinder løsningen med skærpede grænseværdier i EU's vandrammedirektiv, manglen på fosfor som gødning, iltsvind i vandmiljøet og en cirkulær værdikæde, hvor affaldsstoffer bliver til ressourcer. Man får indblik i forretningsmodellen, mulige markeder (renseanlæg, drænvand, industri- og fiskeindustrispildevand) og teamets sammensætning.",
+    "keywords": [
+      "fosfor",
+      "genanvendelse",
+      "spildevand",
+      "cirkulær økonomi",
+      "vandrammedirektivet",
+      "grænseværdier",
+      "containerløsning",
+      "næringsstoffer",
+      "iltsvind",
+      "Lemvig Vand",
+      "startup",
+      "vandteknologi"
+    ],
+    "speakers": [],
+    "places": [
+      "Lemvig",
+      "Svendborg"
+    ],
+    "youtube_id": null,
+    "youtube_url": null,
+    "dnnk_url": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
+        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
+        "dnnk_url": null
+      },
+      {
+        "title": "Rockflow 02 oplæg",
+        "filename": "Rockflow_02_opl_g.mp3.txt",
+        "youtube_url": null,
+        "dnnk_url": null
+      }
+    ]
+  },
+  {
+    "filename": "1755864134064.aac.txt",
+    "path": "transcriptions/1755864134064.aac.txt",
+    "folder": "transcritranscriptions",
+    "title": "Netværksmøde om klimarobuste hospitaler og klimaresiliens i Region Sjælland",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Et online møde mellem DNNK's sekretariat og medarbejdere fra Region Sjælland om klimaresiliens for hospitaler og en samlet regional strategi for klimatilpasning af sundhedsvæsenet. Deltagerne drøfter konkrete udfordringer som hedebølgers betydning for patienter og personale, varmeø-effekt omkring hospitaler i beton og oversvømmelser, herunder Næstved Sygehus, der er blevet oversvømmet to gange på seks år. Der tales om ny lovgivning om kritiske enheders modstandsdygtighed (CER-direktivet), regionernes ændrede rolle efter sundhedsreformen og Herlev Hospital som eksempel på klimasikret hospitalsbyggeri. Mødet munder ud i idéer til en fælles temadag/workshop om klima og sundhed, hvor DNNK kan bidrage med netværk, formidling og praktisk facilitering.",
+    "keywords": [
+      "klimaresiliens",
+      "hospitaler",
+      "Region Sjælland",
+      "sundhedsvæsen",
+      "hedebølge",
+      "oversvømmelse",
+      "beredskab",
+      "CER-direktivet",
+      "kritisk infrastruktur",
+      "temadag",
+      "netværksdannelse",
+      "klimatilpasningsstrategi"
+    ],
+    "speakers": [],
+    "places": [
+      "Region Sjælland",
+      "Næstved",
+      "Herlev",
+      "København"
+    ],
+    "youtube_id": null,
+    "youtube_url": null,
+    "dnnk_url": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Klimahuse i Lemvig",
+        "filename": "Godmorgen_med_DNNK__Klimahuse_i_Lemvig.mp3.txt",
+        "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/"
+      },
+      {
+        "title": "Godmorgen med DNNK - Stormflodsplan for hovedstadsområdet",
+        "filename": "Godmorgen_med_DNNK_-_Stormflodsplan_for_hovedstadsomr_det.mp3.txt",
+        "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/"
+      }
+    ]
+  },
+  {
+    "filename": "youtube_video_057e2dce.mp3.txt",
+    "path": "transcriptions/youtube_video_057e2dce.mp3.txt",
+    "folder": "transcritranscriptions",
+    "title": "Minikonference om rensning af regnvand og overfladevand – regler, teknologier og cases",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Optagelse fra en minikonference/temadag på en fagmesse om håndtering og rensning af regnvand og overfladevand. Miljøstyrelsen gennemgår reglerne for udledning af overfladevand, den nye fortolkning efter Horsens-sagen, en aktuel klagenævnsafgørelse samt igangværende arbejdsspor om miljøfarlige stoffer i vejvand og renseteknologiers formåen. Derefter præsenterer leverandører konkrete løsninger: vortex-partikeludskillere, dobbeltporøs filtrering, tungmetaludskillere, faskinetunneller samt teststandarder (bl.a. tyske DIBt-metoder) og driftserfaringer, herunder en case fra Klokkerholm og et hollandsk bytorv, hvor renset regnvand genanvendes til automatisk vanding af bytræer. Man får både det regulatoriske overblik og praktisk viden om valg, dimensionering, drift og dokumentation af renseløsninger.",
+    "keywords": [
+      "regnvand",
+      "overfladevand",
+      "vejvand",
+      "renseteknologi",
+      "udledningstilladelse",
+      "Horsens-sagen",
+      "Miljøstyrelsen",
+      "miljøfarlige stoffer",
+      "tungmetaller",
+      "vortex-udskiller",
+      "faskiner",
+      "genanvendelse af regnvand"
+    ],
+    "speakers": [
+      {
+        "name": "Jakob Liksander",
+        "org": "Watercare"
+      },
+      {
+        "name": "Kim Laursen",
+        "org": "Uponor / GF Piping Systems"
+      },
+      {
+        "name": "Thomas Hansen",
+        "org": "ACO"
+      }
+    ],
+    "places": [
+      "Horsens",
+      "Klokkerholm",
+      "Brønderslev",
+      "Holland",
+      "København"
+    ],
+    "youtube_id": null,
+    "youtube_url": null,
+    "dnnk_url": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Tech Talk 011 - Rensning af regnvand: Hvad kan vi og hvad skal vi?",
+        "filename": "Tech_Talk_011_-__Rensning_af_regnvand_Hvad_ka__vi_og_hvad_sk.txt",
+        "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/"
+      },
+      {
+        "title": "Tech Talk 021: Status på dobbeltporøs filtrering: DPF",
+        "filename": "Tech_Talk_021___Status_p__dobbeltpor_s_filtrering__DPF_.txt",
+        "youtube_url": "https://youtube.com/watch?v=N1CbssTdim0",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/"
+      }
+    ]
   }
 ]

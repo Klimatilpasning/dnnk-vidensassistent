@@ -44,6 +44,10 @@ try:
 except ImportError:
     yt_dlp = None
 
+# Sættes til True når Anthropic-forbrugsloftet rammes — resten af kørslen
+# springer AI-kald over i stedet for at fejle (jobbet skal lande grønt).
+AI_BUDGET_EXHAUSTED = False
+
 # ── Config ────────────────────────────────────────────────────────────────────
 
 TRANSCRIPTIONS_REPO = "klimatilpasning/dnnk-transcriptor"
@@ -817,7 +821,18 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
                 return None
         except (anthropic.RateLimitError, anthropic.APIStatusError) as e:
             if hasattr(e, 'status_code') and e.status_code not in (429, 529):
-                raise
+                # Ikke-midlertidig API-fejl (fx 400 ved månedligt forbrugsloft).
+                # Må ALDRIG vælte det natlige job — filen springes over og
+                # prøves igen næste kørsel. Ved forbrugsloft stopper vi helt
+                # med at forsøge flere filer i denne kørsel.
+                global AI_BUDGET_EXHAUSTED
+                if "usage limits" in str(e).lower():
+                    AI_BUDGET_EXHAUSTED = True
+                    print("    ::warning::Anthropic-forbrugsloftet er nået — "
+                          "nye filer indekseres, når loftet nulstilles.")
+                else:
+                    print(f"    Warning – API-fejl ({getattr(e, 'status_code', '?')}): {e}")
+                return None
             wait = 60 * (attempt + 1)
             print(f"    Rate limit – venter {wait}s …")
             time.sleep(wait)
@@ -1105,6 +1120,11 @@ def build_index():
                 youtube_url = f"https://youtube.com/watch?v={youtube_id}"
 
         # Generate AI summary
+        if AI_BUDGET_EXHAUSTED:
+            # Forbrugsloftet er nået — ingen grund til at forsøge flere filer
+            # i denne kørsel; de samles op automatisk, når loftet nulstilles.
+            print(f"  Springer {filename} over (Anthropic-forbrugsloft — prøves igen senere)")
+            continue
         print("  → generating summary …")
         ai = generate_summary(client, title, content, description,
                               doc_type="pdf" if is_pdf else "webinar")

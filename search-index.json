@@ -1528,19 +1528,19 @@
         "source_url": null
       },
       {
+        "title": "Netværksmøde om klimarobuste hospitaler og klimaresiliens i Region Sjælland",
+        "filename": "1755864134064.aac.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Tech Talk - Dynamisk beredskabsplanlægning mod stormfloden",
         "filename": "Tech_Talk_-_Dynamisk_beredskabsplanl_gning_mod_stormfloden.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=kG3ZBFW4AHU",
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk 002 - Fra oversvømmelse til risiko",
-        "filename": "Tech_Talk_002_-_Fra_oversv_mmelse_til_risiko.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-        "dnnk_url": null,
         "source_url": null
       }
     ],
@@ -9670,19 +9670,19 @@
         "source_url": null
       },
       {
-        "title": "Tech Talk - Hvordan renser man regnvand for mikroplast",
-        "filename": "Tech_Talk_-_Hvordan_renser_man_regnvand_for_mikroplast_.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
         "title": "Minikonference om rensning af regnvand og overfladevand – regler, teknologier og cases",
         "filename": "youtube_video_057e2dce.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk - Hvordan renser man regnvand for mikroplast",
+        "filename": "Tech_Talk_-_Hvordan_renser_man_regnvand_for_mikroplast_.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ],

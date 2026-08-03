@@ -501,7 +501,15 @@ async function expandQuery(query) {
     const abortTimer = setTimeout(() => ctrl.abort(), 4000);
     let r;
     try {
-      r = await fetch(KLIMAMONITOR_URL + '/expand-query?q=' + encodeURIComponent(query), { signal: ctrl.signal });
+      // /expand-query koster et Claude-kald på DNNK's nøgle, så den er
+      // beskyttet af samme adgangskode som chatten. Har brugeren ingen kode,
+      // sendes headeren tom: serveren svarer 401, og søgningen kører videre
+      // uden synonymudvidelse (se `if (!r.ok) return remember([])` nedenfor).
+      const expandHeaders = {};
+      const expandCode = getAccessCode();
+      if (expandCode) expandHeaders['X-DNNK-Code'] = expandCode;
+      r = await fetch(KLIMAMONITOR_URL + '/expand-query?q=' + encodeURIComponent(query),
+                      { signal: ctrl.signal, headers: expandHeaders });
     } finally {
       clearTimeout(abortTimer);
     }

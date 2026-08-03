@@ -651,6 +651,25 @@ def _shared_significant_token(a: str, b: str) -> bool:
     return any(w in nb_j for w in ta) or any(w in na_j for w in tb)
 
 
+_SPEAKER_SUFFIX = re.compile(
+    r"\s+(?:v\.|ved)\s+[A-ZÆØÅ][\wÆØÅæøå]+\s+[A-ZÆØÅ].*$"
+)
+
+
+def strip_speaker_suffix(title: str) -> str:
+    """Fjern en afsluttende oplægsholder-angivelse fra en video-/event-titel.
+
+    DNNK's YouTube-titler hedder ofte "<emne> v. <Navn>, <organisation>"
+    ("Bidragsmodeller v. Helle Tegner Anker, Professor ved KU"), mens
+    transskriptionens filnavn er klippet ved ~60 tegn og derfor kun hedder
+    "Bidragsmodeller_v". Navnet trækker similarity langt ned, så et korrekt
+    match blev afvist. Kræver to store begyndelsesbogstaver efter v./ved, så
+    almindeligt dansk "ved" ikke rammes ("Interessentinddragelse ved
+    klimatilpasning" forbliver urørt).
+    """
+    return _SPEAKER_SUFFIX.sub("", title).strip(" ,-–")
+
+
 def _match_acceptable(a: str, b: str, score: float) -> bool:
     """Accept-regel for et titelmatch — kalibreret mod falske positiver."""
     a_s = _SERIES_PREFIX.sub("", a)
@@ -1129,7 +1148,11 @@ def build_index():
             best_yt_score = 0.0
             best_yt = None
             for vid in youtube_videos:
-                score = title_similarity(title, vid["title"])
+                # Sammenlign også uden oplægsholder-suffiks: filnavnet er
+                # klippet ved ~60 tegn, så "Bidragsmodeller_v" skal kunne
+                # matche "Bidragsmodeller v. Helle Tegner Anker, KU".
+                cand_titles = {vid["title"], strip_speaker_suffix(vid["title"])}
+                score = max(title_similarity(title, ct) for ct in cand_titles)
                 if score > best_yt_score:
                     best_yt_score = score
                     best_yt = vid

@@ -722,7 +722,11 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
         if best.get("date") and entry.get("date") != best["date"]:
             entry["date"] = best["date"]
             changed = True
-        if not entry.get("youtube_id") and best.get("youtube_id"):
+        # Et event-match er den autoritative kilde til videoen (titel og id
+        # kommer fra samme tabelrække/underside på dnnk.dk). Overskriv derfor
+        # også et FORKERT gemt id — ikke kun et tomt. Uden dette blev gamle
+        # fejlmatch fra kanal-fallbacket aldrig rettet igen.
+        if best.get("youtube_id") and entry.get("youtube_id") != best["youtube_id"]:
             entry["youtube_id"] = best["youtube_id"]
             entry["youtube_url"] = best["youtube_url"]
             changed = True
@@ -1103,21 +1107,25 @@ def build_index():
                 if score > best_yt_score:
                     best_yt_score = score
                     best_yt = vid
-            if best_yt and best_yt_score >= 0.45:
+            # Samme accept-regel som for dnnk.dk-events. Det gamle løse krav
+            # (score >= 0.45, ingen anden validering) gjorde, at "bedste" match
+            # reelt var støj: 179 entries endte med at dele 44 video-id'er, så
+            # "se webinaret" pegede på det forkerte klip for det meste af
+            # arkivet. Et manglende link er bedre end et forkert.
+            if best_yt and _match_acceptable(title, best_yt["title"], best_yt_score):
                 youtube_id  = best_yt["youtube_id"]
                 youtube_url = best_yt["youtube_url"]
                 if not date and best_yt.get("upload_date"):
                     date = best_yt["upload_date"]
                 print(f"  → YouTube match ({best_yt_score:.2f}): {best_yt['title'][:60]}")
+            elif best_yt:
+                print(f"  → YouTube-match afvist ({best_yt_score:.2f}): {best_yt['title'][:60]}")
 
-        # Fallback 2: extract YouTube ID directly from transcript (ikke for PDF)
-        if not is_pdf and not youtube_id:
-            yt_m = re.search(
-                r"(?:youtube\.com/watch\?v=|youtu\.be/)([a-zA-Z0-9_-]{11})", content
-            )
-            if yt_m:
-                youtube_id = yt_m.group(1)
-                youtube_url = f"https://youtube.com/watch?v={youtube_id}"
+        # Fallback 2 FJERNET: et YouTube-link der optræder INDE i en
+        # transskription er som regel noget oplægsholderen henviste til — ikke
+        # optagelsen af webinaret selv. Den regel gav bl.a. jura-webinarer et
+        # link til "Horizon og LIFE projekter om klimatilpasning". Et manglende
+        # link er bedre end et forkert.
 
         # Generate AI summary
         if AI_BUDGET_EXHAUSTED:

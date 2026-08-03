@@ -1003,6 +1003,26 @@ def build_index():
     new_files = [f for f in all_files if f["path"] not in existing_map and f["filename"] not in existing_map]
     print(f"  {len(all_files)} total files, {len(new_files)} new")
 
+    # ── Ryd op efter slettede transskriptioner ───────────────────────────────
+    # Uden dette bliver en entry hængende for evigt, når filen fjernes fra
+    # transskriptions-repoet (fx ved dublet-oprydning) — indekset kunne kun
+    # vokse. Sikkerhedsventil: spring over hvis fillisten ser mistænkeligt
+    # tom ud (GitHub-fejl eller rate limit må ikke tømme indekset).
+    pruned = 0
+    if len(all_files) >= 50:
+        live = {f["path"] for f in all_files} | {f["filename"] for f in all_files}
+        stale = [e for e in existing if (e.get("path") or e["filename"]) not in live]
+        if stale:
+            pruned = len(stale)
+            for e in stale:
+                print(f"  Fjerner entry uden fil: {e.get('title', e['filename'])[:60]}")
+            existing = [e for e in existing if e not in stale]
+            existing_map = {e.get("path") or e["filename"]: e for e in existing}
+            print(f"  {len(stale)} entries fjernet, {len(existing)} tilbage")
+    else:
+        print(f"::warning::kun {len(all_files)} filer hentet fra GitHub - "
+              "springer oprydning af slettede entries over")
+
     print("Scraping dnnk.dk for event metadata …")
     dnnk_events = scrape_dnnk_events()
     if not dnnk_events:
@@ -1010,6 +1030,7 @@ def build_index():
         print("::warning::scrape_dnnk_events() fandt 0 events - dnnk.dk-strukturen kan vaere aendret; tjek kategorisiderne og parsing-heuristikken i scrape_dnnk_events()")
 
     index = list(existing)
+    updated = 0
 
     # ── Metadata-refresh af EKSISTERENDE entries (default, ingen API-kald) ────
     # Kører før og uafhængigt af AI-delen, så date/dnnk_url/description kan
@@ -1022,6 +1043,11 @@ def build_index():
         print(f"  {updated} entries opdateret — {with_url}/{len(index)} har dnnk_url, {with_date}/{len(index)} har dato")
         if updated:
             save_index(index)
+
+    # En ren oprydning (ingen metadata-ændringer, ingen nye filer) skal også
+    # gemmes — ellers ville de fjernede entries dukke op igen næste kørsel.
+    if pruned and not updated:
+        save_index(index)
 
     if not new_files:
         print("Ingen nye filer at behandle.")

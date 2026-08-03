@@ -72,13 +72,45 @@
     "filename": "Godmorgen_med_DNNK__Stort_LAR-anl_g_i_Urbanplan.mp3.txt",
     "path": "transcriptions/August 2025/Godmorgen_med_DNNK__Stort_LAR-anl_g_i_Urbanplan.mp3.txt",
     "folder": "August 2025",
-    "title": "Godmorgen med DNNK: Stort LAR-anl g i Urbanplan",
+    "title": "Godmorgen med DNNK: Stort LAR-anlæg i Urbanplan",
     "category": "Godmorgen med DNNK",
     "date": "2025-03-13",
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret præsenterer et klimatilpasningsprojekt med LAR-anlæg (lokal afledning af regnvand) i Urbanplan, med fokus på Remisevængerne. Fire aktører fra bygherre, ingeniør, landskabsarkitekt og entreprenør deler erfaringer fra tværfagligt samarbejde siden 2018, både succeser og udfordringer i projekterings- og udførelsesfasen.",
+    "keywords": [
+      "LAR-anlæg",
+      "klimatilpasning",
+      "Urbanplan",
+      "Remisevængerne",
+      "tværfagligt samarbejde",
+      "landskabsarkitektur",
+      "biodiversitet",
+      "regnvandshåndtering",
+      "projektering",
+      "udførelsesfase"
+    ],
+    "speakers": [
+      {
+        "name": "Morten Larsen",
+        "org": "KAB (for Boligforeningen 3B)"
+      },
+      {
+        "name": "Pia Knudsen",
+        "org": "AI (arkitekt og ingeniør)"
+      },
+      {
+        "name": "Signe Vestergaard",
+        "org": "Tegnestuen Ting Brændt Landskab"
+      },
+      {
+        "name": "Martin Vickers",
+        "org": "Malmos Landskaber"
+      }
+    ],
+    "places": [
+      "Urbanplan",
+      "Remisevængerne",
+      "Høregården"
+    ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
     "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
@@ -91,13 +123,36 @@
     "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
     "path": "transcriptions/August 2025/Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
     "folder": "August 2025",
-    "title": "Godmorgen med DNNK: Webinar om planl gning af regnvandsh ndt",
+    "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
     "category": "Godmorgen med DNNK",
     "date": "2025-05-08",
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Sissel fra NOVAFOS præsenterer klimatilpasningsprojektet i Kildedal, et nyt byområde med ca. 2.000 boliger og 10.000 arbejdspladser fordelt på tre bydele. Webinaret fokuserer på biodiversitet i klimatilpasningsløsninger, samarbejde og udfordringer i planlægningen af regnvandshåndtering, samt seks bassiner der er under miljøvurdering.",
+    "keywords": [
+      "klimatilpasning",
+      "biodiversitet",
+      "regnvandshåndtering",
+      "Kildedal",
+      "NOVAFOS",
+      "bassiner",
+      "byudvikling",
+      "Fingerplanen",
+      "bæredygtighed",
+      "miljøvurdering"
+    ],
+    "speakers": [
+      {
+        "name": "Sissel",
+        "org": "NOVAFOS"
+      }
+    ],
+    "places": [
+      "Kildedal",
+      "Ballerup",
+      "Måløv",
+      "Novo Nordisk",
+      "Kildedal By",
+      "Kildedal Nord"
+    ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
     "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
@@ -424,13 +479,40 @@
     "filename": "Langsom_Hydrologi___et_alternativ_til_klassisk_vandparkering.mp3.txt",
     "path": "transcriptions/August 2025/Langsom_Hydrologi___et_alternativ_til_klassisk_vandparkering.mp3.txt",
     "folder": "August 2025",
-    "title": "Langsom Hydrologi: et alternativ til klassisk vandparkering",
+    "title": "Langsom Hydrologi: et alternativ til klassisk vandparkering i Ådalene",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Oplægget introducerer begrebet 'langsom hydrologi' som alternativ til klassisk vandparkering i ådale, illustreret med Hylkedal-projektet ved Kolding, hvor jorddæmninger bruges til at opstuve vand og forsinke afstrømning mod byen. Der peges på fordele ved metoden, men også væsentlige ulemper, især risikoen for at oversvømme værdifuld og beskyttet natur i ådalene, som ikke er vant til hyppig eller langvarig oversvømmelse.",
+    "keywords": [
+      "langsom hydrologi",
+      "vandparkering",
+      "ådal",
+      "klimatilpasning",
+      "oversvømmelse",
+      "Hylkedal-projektet",
+      "dæmninger",
+      "Natura 2000",
+      "forsinkelsesvolumen",
+      "vandløb"
+    ],
+    "speakers": [
+      {
+        "name": "Sten Bøgild Fransen",
+        "org": "Kolding Kommune"
+      },
+      {
+        "name": "Carina Bues",
+        "org": "Envidan"
+      }
+    ],
+    "places": [
+      "Kolding",
+      "Holsted Bro",
+      "Vejle",
+      "Hylkedal",
+      "Kolding Fjord",
+      "Senst Mølleå"
+    ],
     "youtube_id": "MIYK5y7B1GU",
     "youtube_url": "https://youtube.com/watch?v=MIYK5y7B1GU",
     "dnnk_url": null,
@@ -442,13 +524,47 @@
     "filename": "M_d_de_nye_elever_i_LAR-klassen__Regndiget__Regnbakken_og_de.mp3.txt",
     "path": "transcriptions/August 2025/M_d_de_nye_elever_i_LAR-klassen__Regndiget__Regnbakken_og_de.mp3.txt",
     "folder": "August 2025",
-    "title": "M d de nye elever i LAR-klassen: Regndiget: Regnbakken og de",
+    "title": "Mød de nye elever i LAR-klassen: Regndiget: Regnbakken og de andre",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret præsenterer OpSkaLAR-projektet i Lundtoftegade, hvor naturbaserede løsninger til regnvandshåndtering udvikles og testes. Fokus er på billige, CO2-neutrale løsninger tilpasset lokale forhold, med inddragelse af eksisterende beplantning, kunst og borgerinvolvering, samt udvikling af et vejledningskatalog inspireret af Philadelphias stormwater management-guide.",
+    "keywords": [
+      "OpSkaLAR",
+      "LAR-løsninger",
+      "regnvandshåndtering",
+      "Lundtoftegade",
+      "AKB",
+      "naturbaserede løsninger",
+      "CO2-neutral",
+      "co-creation",
+      "vandholdningskapacitet",
+      "biobaserede materialer",
+      "demonstratorium",
+      "anvisningskatalog"
+    ],
+    "speakers": [
+      {
+        "name": "Marina",
+        "org": "OpSkaLAR-projektet"
+      },
+      {
+        "name": "Ulrik",
+        "org": "Teknologisk Institut"
+      },
+      {
+        "name": "Carl",
+        "org": "Tilvækst"
+      },
+      {
+        "name": "Søren Emil",
+        "org": "Tilvækst"
+      }
+    ],
+    "places": [
+      "Lundtoftegade",
+      "København",
+      "Philadelphia"
+    ],
     "youtube_id": null,
     "youtube_url": null,
     "dnnk_url": null,
@@ -460,13 +576,26 @@
     "filename": "N_r_vand_l_ber_opad___Tryksat_LAR__bner_for_en_ny_kategori_a.mp3.txt",
     "path": "transcriptions/August 2025/N_r_vand_l_ber_opad___Tryksat_LAR__bner_for_en_ny_kategori_a.mp3.txt",
     "folder": "August 2025",
-    "title": "N r vand l ber opad: Tryksat LAR: bner for en ny kategori a",
+    "title": "Når vand løber opad: Tryksat LAR åbner for en ny kategori",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
+    "summary": "Webinaret introducerer en innovativ, tryksat LAR-løsning som ny kategori inden for naturbaserede løsninger til håndtering af regnvand. Der argumenteres for lokal tilbageholdelse af regnvand tæt på kilden frem for konventionelle løsninger som tunnelrør, underjordiske bassiner og kloakseparering, som primært ser vand som et problem frem for en ressource.",
+    "keywords": [
+      "LAR",
+      "naturbaserede løsninger",
+      "tryksat system",
+      "klimatilpasning",
+      "tunnelrør",
+      "kloakseparering",
+      "regnvandshåndtering",
+      "underjordiske bassiner",
+      "oversvømmelse",
+      "lokal afledning"
+    ],
     "speakers": [],
-    "places": [],
+    "places": [
+      "Hovedstaden"
+    ],
     "youtube_id": null,
     "youtube_url": null,
     "dnnk_url": null,
@@ -542,13 +671,32 @@
     "filename": "P_lidelighed_af_grundvands-_og_vandl_bsberegninger_v._Raphae.mp3.txt",
     "path": "transcriptions/August 2025/P_lidelighed_af_grundvands-_og_vandl_bsberegninger_v._Raphae.mp3.txt",
     "folder": "August 2025",
-    "title": "P lidelighed af grundvands- og vandl bsberegninger v. Raphae",
+    "title": "Pålidelighed af grundvands- og vandløbsberegninger v. Raphael",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Raphael Schneider fra GEUS præsenterer datagrundlaget for grundvands- og vandføringsberegninger i Danmark, herunder databaser som Jupiter, ODA og Vandportalen. Han beskriver den nationale hydrologiske model som en digital tvilling af Danmarks hydrologiske kredsløb, der bruges til vandressourceopgørelser, klimatilpasning og oversvømmelsesvarsling.",
+    "keywords": [
+      "grundvand",
+      "vandføring",
+      "hydrologisk model",
+      "Jupiter-databasen",
+      "ODA",
+      "Vandportalen",
+      "nettonedbør",
+      "klimatilpasning",
+      "oversvømmelsesvarsling",
+      "kvælstofudveksling",
+      "digital tvilling"
+    ],
+    "speakers": [
+      {
+        "name": "Raphael Schneider",
+        "org": "GEUS (De Nationale Geologiske Undersøgelser for Danmark og Grønland)"
+      }
+    ],
+    "places": [
+      "Danmark"
+    ],
     "youtube_id": null,
     "youtube_url": null,
     "dnnk_url": null,
@@ -4619,12 +4767,28 @@
     "filename": "DNNK_Masterclass_v.__DMI_1__Fra_globale_klimamodeller_til_Kl.mp3.txt",
     "path": "transcriptions/DNNK_Masterclass_v.__DMI_1__Fra_globale_klimamodeller_til_Kl.mp3.txt",
     "folder": "transcritranscriptions",
-    "title": "DNNK Masterclass v.: DMI 1: Fra globale klimamodeller til Kl",
+    "title": "DNNK Masterclass v.: DMI 1: Fra globale klimamodeller til Klimaatlas",
     "category": "Masterclass",
     "date": null,
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
+    "summary": "Webinaret er første del af en DMI Masterclass-serie i samarbejde med DNNK, hvor klimaforskere gennemgår arbejdet med klimamodeller. Ole Christian Christensen introducerer forskellen på globale klimamodeller (GCM), regionale klimamodeller (RCM) og højtopløste convection-permitting modeller (CPM), samt hvordan modelresultater bruges i Klimaatlas. Serien fortsætter de næste tirsdage med fokus på skybrud/regn og stormfloder.",
+    "keywords": [
+      "klimamodeller",
+      "Klimaatlas",
+      "globale klimamodeller",
+      "regionale klimamodeller",
+      "convection permitting modeller",
+      "usikkerhed",
+      "DMI",
+      "DNNK",
+      "stormfloder",
+      "skybrud"
+    ],
+    "speakers": [
+      {
+        "name": "Ole Christian Christensen",
+        "org": "DMI"
+      }
+    ],
     "places": [],
     "youtube_id": null,
     "youtube_url": null,
@@ -4941,13 +5105,31 @@
     "filename": "DNNKs_virtuelle_studietur_-_hydroseperatoren.txt",
     "path": "transcriptions/DNNKs_virtuelle_studietur_-_hydroseperatoren.txt",
     "folder": "transcritranscriptions",
-    "title": "DNNKs virtuelle studietur - hydroseperatoren",
+    "title": "DNNKs virtuelle studietur - hydroseparatoren",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
+    "summary": "Webinaret præsenterer hydroseparatoranlægget i Kærby, som renser overløbsvand fra en fælleskloak bestående af spildevand og regnvand via lameller og filtre. Anlægget er et billigere alternativ til separatkloakering (ca. 4 mio. kr. mod estimeret 54 mio. kr.), og vandet ledes efterfølgende videre til et beplantet filteranlæg før udledning til vandløbet ved Varabjerg badestrand.",
+    "keywords": [
+      "hydroseparator",
+      "overløbsbygværk",
+      "spildevand",
+      "regnvand",
+      "lameller",
+      "filter",
+      "beplantet filteranlæg",
+      "separatkloakering",
+      "badevand",
+      "kloakoverløb",
+      "renseanlæg"
+    ],
     "speakers": [],
-    "places": [],
+    "places": [
+      "Kærby",
+      "København",
+      "Boring",
+      "Asperup",
+      "Varabjerg"
+    ],
     "youtube_id": "AsevUr50sDE",
     "youtube_url": "https://youtube.com/watch?v=AsevUr50sDE",
     "dnnk_url": null,
@@ -4962,10 +5144,30 @@
     "title": "DNNKs virtuelle studietur til Klimabyen Middelfart",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret præsenterer Klimabyen i Middelfart, et demonstrationsprojekt for byudvikling gennem klimatilpasning på cirka 450.000 m2. Regnvand frakobles fælleskloakken og håndteres via LAR-løsninger og en trugformet vejprofil, der leder vandet gennem byen til havnen og videre til Lillebælt efter rensning i sandfang og olieudskiller. Projektet er både et spildevandsprojekt og et byudviklingsprojekt med fokus på bedre byrum, genbrugsmaterialer og løsninger mod rotteproblemer.",
+    "keywords": [
+      "klimatilpasning",
+      "regnvandshåndtering",
+      "LAR-løsninger",
+      "fælleskloak",
+      "byudvikling",
+      "trugformet vejprofil",
+      "sandfang",
+      "olieudskiller",
+      "rottesikring",
+      "genbrugsbrosten",
+      "Middelfart Spildevand"
+    ],
+    "speakers": [
+      {
+        "name": "Ukendt oplægsholder",
+        "org": "Middelfart Spildevand"
+      }
+    ],
+    "places": [
+      "Middelfart",
+      "Lillebælt"
+    ],
     "youtube_id": "HN2x08zNQ0k",
     "youtube_url": "https://youtube.com/watch?v=HN2x08zNQ0k",
     "dnnk_url": null,
@@ -4980,10 +5182,26 @@
     "title": "DNNKs virtuelle studietur til Skibhuskvarteret i Odense",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
+    "summary": "Webinaret præsenterer en overjordisk klimaløsning i Skibhuskvarteret i Odense, hvor kloakproblemer og højt grundvand er løst med regnbede og permeable belægninger langs Hørdumsgade og Baggårdensvej. Løsningen kombinerer nedsivning og transport af regnvand via dræn, samtidig med at grønne bånd og træer skal fremme fordampning tilbage til atmosfæren.",
+    "keywords": [
+      "klimatilpasning",
+      "regnvandshåndtering",
+      "permeable belægninger",
+      "regnbede",
+      "kloaksystem",
+      "grundvand",
+      "nedsivning",
+      "fordampning",
+      "Skibhuskvarteret",
+      "overfladeløsning"
+    ],
     "speakers": [],
-    "places": [],
+    "places": [
+      "Skibhuskvarteret",
+      "Odense",
+      "Hørdumsgade",
+      "Baggårdensvej"
+    ],
     "youtube_id": "4h-LgQEW98M",
     "youtube_url": "https://youtube.com/watch?v=4h-LgQEW98M",
     "dnnk_url": null,
@@ -5080,10 +5298,33 @@
     "title": "God Morgen med DNNK – Webinar om Vandrensning",
     "category": "Øvrige",
     "date": null,
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret er det første i en række af tre vintermorgen-webinarer om klimatilpasning arrangeret af DNNK. Denne udgave handler om vandrensning og BAT-begrebet (Bedste Tilgængelige Teknologi) i forhold til rensning af regnvand, med oplæg fra Teknologisk Institut og DTU. Det overordnede fokus er, hvordan miljøbeskyttelse og klimatilpasning kan gå hånd i hånd ved håndtering af regnvandsafstrømning.",
+    "keywords": [
+      "vandrensning",
+      "BAT",
+      "regnvand",
+      "klimatilpasning",
+      "miljøbeskyttelse",
+      "recipient",
+      "afstrømning",
+      "grundvandsbeskyttelse",
+      "renseløsning",
+      "DNNK"
+    ],
+    "speakers": [
+      {
+        "name": "Karin Cederkvist",
+        "org": "Teknologisk Institut"
+      },
+      {
+        "name": "Ditte Marie Reinholdt Jensen",
+        "org": "DTU"
+      }
+    ],
+    "places": [
+      "København",
+      "Hvidovre"
+    ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
     "dnnk_url": null,
@@ -5639,13 +5880,34 @@
     "filename": "Godmorgen med DNNK   Bæredygtigt vandkredsløb  Fortid nutid.txt",
     "path": "transcriptions/Godmorgen med DNNK   Bæredygtigt vandkredsløb  Fortid nutid.txt",
     "folder": "transcritranscriptions",
-    "title": "Godmorgen med DNNK Bæredygtigt vandkredsløb Fortid nutid",
+    "title": "Godmorgen med DNNK Bæredygtigt vandkredsløb Fortid Nutid",
     "category": "Godmorgen med DNNK",
     "date": "2021-04-22",
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Katrine Vibe, adjunkt på Arkitektskolen Aarhus, præsenterer et oplæg om bæredygtig by- og landskabsudvikling med fokus på vandets rolle. Hun gennemgår, hvordan klimaændringer, urbanisering og byggepraksis siden 1960'erne har skabt et 'missing link' mellem landskabets naturlige vandstrukturer og den måde, vi bygger by på, hvilket øger oversvømmelsesrisikoen.",
+    "keywords": [
+      "bæredygtigt vandkredsløb",
+      "klimatilpasning",
+      "byudvikling",
+      "landskabsarkitektur",
+      "oversvømmelsesrisiko",
+      "urbanisering",
+      "regnvand",
+      "grundvand",
+      "terrænbearbejdning",
+      "missing link"
+    ],
+    "speakers": [
+      {
+        "name": "Katrine Vibe",
+        "org": "Arkitektskolen Aarhus"
+      }
+    ],
+    "places": [
+      "Lystrup",
+      "Skejby",
+      "Aarhus",
+      "Odense"
+    ],
     "youtube_id": "p5KWW2mdOrA",
     "youtube_url": "https://youtube.com/watch?v=p5KWW2mdOrA",
     "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
@@ -6212,13 +6474,33 @@
     "filename": "Godmorgen_med_DNNK__Dynamisk_skybrudsplanl_gning___erfaringe.mp3.txt",
     "path": "transcriptions/Godmorgen_med_DNNK__Dynamisk_skybrudsplanl_gning___erfaringe.mp3.txt",
     "folder": "transcritranscriptions",
-    "title": "Godmorgen med DNNK: Dynamisk skybrudsplanl gning: erfaringe",
+    "title": "Godmorgen med DNNK: Dynamisk skybrudsplanlægning: erfaringer",
     "category": "Godmorgen med DNNK",
     "date": "2024-06-27",
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret præsenterer erfaringer fra Norge med dynamisk og adaptiv skybrudsplanlægning, hvor klimatilpasning tænkes sammen med byens øvrige udvikling for at opnå synergieffekter. Fokus er på at udsætte konkrete løsninger til de kan realiseres i sammenhæng med andre projekter, samt bredere involvering af kommuner og aktører i planlægningsprocessen.",
+    "keywords": [
+      "skybrudsplanlægning",
+      "klimatilpasning",
+      "dynamisk planlægning",
+      "adaptiv planlægning",
+      "Oslo",
+      "innovationsprojekt",
+      "ledningsnet",
+      "overvandshåndtering",
+      "kommunesamarbejde",
+      "synergieffekter"
+    ],
+    "speakers": [
+      {
+        "name": "Thorbjørn Frieborg",
+        "org": "EnviDan Norge"
+      }
+    ],
+    "places": [
+      "Norge",
+      "Oslo",
+      "Danmark"
+    ],
     "youtube_id": "eC5v7aZJifY",
     "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
     "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
@@ -6231,13 +6513,48 @@
     "filename": "Godmorgen_med_DNNK__Gr_nningen_NV___Klimatilpasning__Kunst_o.txt",
     "path": "transcriptions/Godmorgen_med_DNNK__Gr_nningen_NV___Klimatilpasning__Kunst_o.txt",
     "folder": "transcritranscriptions",
-    "title": "Godmorgen med DNNK: Gr nningen NV: Klimatilpasning: Kunst o",
+    "title": "Godmorgen med DNNK: Grønningen NV: Klimatilpasning: Kunst og",
     "category": "Godmorgen med DNNK",
     "date": "2025-02-06",
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret præsenterer projektet Grønningen i Nordvest, Bispebjerg, hvor klimatilpasning og kunst kombineres for at skabe merværdi i et udsat byområde. Oplægsholderne fortæller om det tværfaglige samarbejde mellem klimatilpasning, landskabsarkitektur og kunst samt inddragelse af beboere i udviklingen af konkrete klimaløsninger.",
+    "keywords": [
+      "klimatilpasning",
+      "kunst",
+      "Grønningen",
+      "Bispebjerg",
+      "byudvikling",
+      "beboerinddragelse",
+      "tværfagligt samarbejde",
+      "regnvandshåndtering",
+      "landskabsarkitektur",
+      "udsat byområde"
+    ],
+    "speakers": [
+      {
+        "name": "Anne Linja",
+        "org": "Københavns Kommune"
+      },
+      {
+        "name": "Bjørn Gimtoft",
+        "org": "SLA"
+      },
+      {
+        "name": "Esben Ravn Eversen",
+        "org": "NIRAS"
+      },
+      {
+        "name": "Karin Dyhr Vinterdal",
+        "org": "Billedkunstner"
+      }
+    ],
+    "places": [
+      "Bispebjerg",
+      "Grønningen",
+      "Bispeparken",
+      "Nordvest",
+      "Lersøparken",
+      "Øresund"
+    ],
     "youtube_id": "m1wPVwmKkY4",
     "youtube_url": "https://youtube.com/watch?v=m1wPVwmKkY4",
     "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
@@ -6253,10 +6570,34 @@
     "title": "Godmorgen med DNNK: Karens Minde Aksen",
     "category": "Godmorgen med DNNK",
     "date": "2024-05-22",
-    "summary": "",
-    "keywords": [],
-    "speakers": [],
-    "places": [],
+    "summary": "Webinaret præsenterer klimatilpasningsprojektet Karens Minde Aksen i København med fokus på samarbejdet mellem Københavns Kommune og HOFOR. Der gennemgås baggrunden for klimatilpasningsplanen og skybrudsplanen fra 2011-2015, samt principperne for takstfinansiering versus skattefinansiering af projekter, hvor synergier mellem hydraulisk betingede løsninger og byrumsforbedringer skaber merværdi.",
+    "keywords": [
+      "klimatilpasning",
+      "skybrud",
+      "Karens Minde Aksen",
+      "takstfinansiering",
+      "skattefinansiering",
+      "medfinansieringsordning",
+      "skybrudsplan",
+      "vandopmagasinering",
+      "HOFOR",
+      "Københavns Kommune",
+      "synergiprojekter"
+    ],
+    "speakers": [
+      {
+        "name": "Ditte Juul Eriksø Sørensen",
+        "org": "Københavns Kommune"
+      },
+      {
+        "name": "Morten Hansen",
+        "org": "HOFOR"
+      }
+    ],
+    "places": [
+      "København",
+      "Karens Minde Aksen"
+    ],
     "youtube_id": "qLvsiFSkg9c",
     "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
     "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",

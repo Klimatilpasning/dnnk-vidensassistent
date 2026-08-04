@@ -108,7 +108,7 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.894
+    "match_confidence": 0.98
   },
   {
     "filename": "Gr_nsel_s_adf_rd_og_gr_nsel_se_potentialer.mp3.txt",
@@ -4671,7 +4671,7 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.913
+    "match_confidence": 0.98
   },
   {
     "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3 (2).txt",
@@ -4695,8 +4695,8 @@
     ],
     "speakers": [],
     "places": [],
-    "youtube_id": "zyHR6_3osHA",
-    "youtube_url": "https://youtube.com/watch?v=zyHR6_3osHA",
+    "youtube_id": "HQL1SHsGkT0",
+    "youtube_url": "https://youtube.com/watch?v=HQL1SHsGkT0",
     "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
     "description": "I denne DNNK Masterclass sætter Københavns Universitet fokus på planlægning, drift og økonomien i LAR-løsninger. Det er tale om et online forløb med tre kursusgange á 1,5 times varighed fordelt over tre formiddage i april. Hver kursusgang består af et oplæg (30 minutter), en diskussion (15 minutter) og en øvelse relateret til dagens emne (30 minutter). Masterclassen henvender sig til alle med interesse for landskabsbaseret klimatilpasning og den nyeste viden indenfor planlægning, drift, økonomi og bæredygtighed i bred forstand. Masterclassen er særlig relevant for ’begyndere’ og ’let øvede’ in",
     "related_resources": [],
@@ -4758,8 +4758,8 @@
       "København",
       "Danmark"
     ],
-    "youtube_id": "UcfRm_Bbstg",
-    "youtube_url": "https://youtube.com/watch?v=UcfRm_Bbstg",
+    "youtube_id": "HQL1SHsGkT0",
+    "youtube_url": "https://youtube.com/watch?v=HQL1SHsGkT0",
     "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
     "description": "I denne DNNK Masterclass sætter Københavns Universitet fokus på planlægning, drift og økonomien i LAR-løsninger. Det er tale om et online forløb med tre kursusgange á 1,5 times varighed fordelt over tre formiddage i april. Hver kursusgang består af et oplæg (30 minutter), en diskussion (15 minutter) og en øvelse relateret til dagens emne (30 minutter). Masterclassen henvender sig til alle med interesse for landskabsbaseret klimatilpasning og den nyeste viden indenfor planlægning, drift, økonomi og bæredygtighed i bred forstand. Masterclassen er særlig relevant for ’begyndere’ og ’let øvede’ in",
     "related_resources": [],
@@ -6324,7 +6324,7 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.924
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Gr_nningen_NV___Klimatilpasning__Kunst_o.txt",
@@ -6378,7 +6378,7 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.919
+    "match_confidence": 0.98
   },
   {
     "filename": "Godmorgen_med_DNNK__Karens_Minde_Aksen.mp3.txt",
@@ -7769,67 +7769,6 @@
     ]
   },
   {
-    "filename": "1755864134064.aac.txt",
-    "path": "transcriptions/1755864134064.aac.txt",
-    "folder": "transcritranscriptions",
-    "title": "Netværksmøde om klimarobuste hospitaler og klimaresiliens i Region Sjælland",
-    "category": "Øvrige",
-    "date": null,
-    "summary": "Et online møde mellem DNNK's sekretariat og medarbejdere fra Region Sjælland om klimaresiliens for hospitaler og en samlet regional strategi for klimatilpasning af sundhedsvæsenet. Deltagerne drøfter konkrete udfordringer som hedebølgers betydning for patienter og personale, varmeø-effekt omkring hospitaler i beton og oversvømmelser, herunder Næstved Sygehus, der er blevet oversvømmet to gange på seks år. Der tales om ny lovgivning om kritiske enheders modstandsdygtighed (CER-direktivet), regionernes ændrede rolle efter sundhedsreformen og Herlev Hospital som eksempel på klimasikret hospitalsbyggeri. Mødet munder ud i idéer til en fælles temadag/workshop om klima og sundhed, hvor DNNK kan bidrage med netværk, formidling og praktisk facilitering.",
-    "keywords": [
-      "klimaresiliens",
-      "hospitaler",
-      "Region Sjælland",
-      "sundhedsvæsen",
-      "hedebølge",
-      "oversvømmelse",
-      "beredskab",
-      "CER-direktivet",
-      "kritisk infrastruktur",
-      "temadag",
-      "netværksdannelse",
-      "klimatilpasningsstrategi"
-    ],
-    "speakers": [],
-    "places": [
-      "Region Sjælland",
-      "Næstved",
-      "Herlev",
-      "København"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Temadag om kystnære risici: lovgivning og social sårbarhed",
-        "filename": "Temadag_om_kystn_re_risici__lovgivning_og_social_s_rbarhed.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Klimahuse i Lemvig",
-        "filename": "Godmorgen_med_DNNK__Klimahuse_i_Lemvig.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=jBWJQdKfRG0",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Climate Adaptation Summit 2024 - Alan Cohn",
-        "filename": "Climate_Adaptation_Summit_2024_-_Alan_Cohn.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=zpzBuv6P0ys",
-        "dnnk_url": null,
-        "source_url": null
-      }
-    ]
-  },
-  {
     "filename": "Optagelse_af_Pitch_3_Remoni.mp3.txt",
     "path": "transcriptions/Optagelse_af_Pitch_3_Remoni.mp3.txt",
     "folder": "transcritranscriptions",
@@ -8448,65 +8387,6 @@
     "description": null,
     "related_resources": [],
     "related_webinars": []
-  },
-  {
-    "filename": "V.txt",
-    "path": "transcriptions/V.txt",
-    "folder": "transcritranscriptions",
-    "title": "Startup-pitch: Genanvendelse af fosfor fra spildevand med containerløsning i Lemvig",
-    "category": "Øvrige",
-    "date": null,
-    "summary": "En stifter af en vandteknologi-startup fra Svendborg pitcher virksomhedens løsning til at fjerne og genanvende fosfor fra spildevand, afprøvet i et pilotprojekt hos Lemvig Vand. Løsningen er en plug-and-play containerenhed, hvor problemvand cirkuleres igennem og behandles med kort opholdstid, lavt pladsbehov og mulighed for iltning, så fosforniveauet kan bringes helt ned. Pitchet forbinder løsningen med skærpede grænseværdier i EU's vandrammedirektiv, manglen på fosfor som gødning, iltsvind i vandmiljøet og en cirkulær værdikæde, hvor affaldsstoffer bliver til ressourcer. Man får indblik i forretningsmodellen, mulige markeder (renseanlæg, drænvand, industri- og fiskeindustrispildevand) og teamets sammensætning.",
-    "keywords": [
-      "fosfor",
-      "genanvendelse",
-      "spildevand",
-      "cirkulær økonomi",
-      "vandrammedirektivet",
-      "grænseværdier",
-      "containerløsning",
-      "næringsstoffer",
-      "iltsvind",
-      "Lemvig Vand",
-      "startup",
-      "vandteknologi"
-    ],
-    "speakers": [],
-    "places": [
-      "Lemvig",
-      "Svendborg"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ay2QrzQLFuE",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Rockflow 02 oplæg",
-        "filename": "Rockflow_02_opl_g.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk 019: Erfaringer med nye renseløsninger i Køge Nord",
-        "filename": "Tech_Talk_019___Erfaringer_med_nye_rensel_sninger_i_K_ge_Nor.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      }
-    ]
   },
   {
     "filename": "Strategisk_planl_gning_af_fremtidens_klimatilpasning_af_byer.mp3 (1).txt",

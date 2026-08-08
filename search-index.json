@@ -3225,12 +3225,12 @@
       "Danmark",
       "Aalborg"
     ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
+    "youtube_id": "o7oUEobLLTo",
+    "youtube_url": "https://youtube.com/watch?v=o7oUEobLLTo",
+    "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-metoder-til-vaerdiskabelse-i-klimatilpasningen-v-aau/",
     "source_url": null,
-    "match_confidence": null,
-    "description": null,
+    "match_confidence": 0.844,
+    "description": "maj 2025, kl. 9.00-10.30 Om værdiskabelse og afsættet for den første screening for værdier Vi introducerer værdiskabelse som en grundlæggende tilgang til at skabe bredere samfundsmæssig værdi gennem klimatilpasningsprojekter. Vi præsenterer også en række grundlæggende screeningsværktøjer, der kan bruges til at komme i gang med at få øje på relevante værdier at arbejde med. Vi kobler klimatilpasning til bæredygtig omstilling. Undervisere: Birgitte Hoffmann & Maj-Britt Quitzau Materiale: Håndbog: Aktørkortlægning og værdiskabende klimatilpasning: nye metoder til strategisk planlægning Optagelse:",
     "related_resources": [
       {
         "title": "Klimatilpasning – innovationsbehov og eksportpotentialer, konference i Skanderborg",
@@ -3728,7 +3728,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK - Fremtidens kystbeskyttelse",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2026-03-19",
     "summary": "Webinaret fokuserer på naturbaserede løsninger til kystbeskyttelse mod stormflod, med udgangspunkt i danske erfaringer fra Storm Bodil (2013) og oktoberorkanenen (2023). Christian Helledi fra WSP præsenterer designvalg og praktiske erfaringer med at arbejde med naturgivende elementer som strande, klitter og overskudsjord for at skabe robuste, tilpasningsdygtige løsninger, der både beskytter og skaber værdi for byer og mennesker.",
     "keywords": [
       "kystbeskyttelse",
@@ -3760,11 +3760,11 @@
       "Roneklint",
       "Greve"
     ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
+    "youtube_id": "kVc6pf42cMc",
+    "youtube_url": "https://youtube.com/watch?v=kVc6pf42cMc",
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -4561,7 +4561,7 @@
     "type": "webinar",
     "title": "Tech Talks - Livscyklusvurdering af klimatilpasningsløsninger",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-08-31",
     "summary": "Webinaren præsenterer livscyklusvurdering (LCA) som metode til at vurdere miljøbelastninger og ressourceforbrug gennem hele produkters og løsningers livscyklus. Der demonstreres konkrete eksempler på hvordan LCA kan understøtte bæredygtige beslutninger i bygge- og vandsektor, herunder nye klimakrav i bygningsreglement fra 2023 og miljørigtig projektering af afløbssystemer.",
     "keywords": [
       "livscyklusvurdering",
@@ -4585,11 +4585,11 @@
       "Danmark",
       "DTU"
     ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
+    "youtube_id": "ptkNCE1dNUg",
+    "youtube_url": "https://youtube.com/watch?v=ptkNCE1dNUg",
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 0.989,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5179,7 +5179,7 @@
     "type": "webinar",
     "title": "Tech Talks: Multifunktionale stenerev i Danmark",
     "category": "Tech Talk",
-    "date": null,
+    "date": "2023-02-23",
     "summary": "DTU Akva præsenterer forskningsprojektet Bear Reef, som undersøger potentialet i stenerev til at beskytte køber og fremme biodiversitet i danske farvande. Gennem præsentationen fremgår det, hvordan stenopsamling over 100 år har reduceret naturlige stenerev drastisk, og hvordan kunstige stenerev kan genoprette vigtige økosystemer med vegetation, småkrebsdyr og fisk – helt op til beskyttelse af marsvin.",
     "keywords": [
       "stenerev",
@@ -5206,11 +5206,11 @@
       "Sønderborg",
       "danske farvande"
     ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
+    "youtube_id": "YutqZ_sFZ3w",
+    "youtube_url": "https://youtube.com/watch?v=YutqZ_sFZ3w",
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 0.891,
     "description": null,
     "related_resources": [],
     "related_webinars": [

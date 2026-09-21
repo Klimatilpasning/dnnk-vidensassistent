@@ -838,11 +838,11 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
 
 # ── AI summary ────────────────────────────────────────────────────────────────
 
-def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None, doc_type: str = "webinar") -> dict | None:
-    """Returnerer dict med resumé-felter, eller None hvis AI-kaldet fejlede.
-    None betyder: gem IKKE entry'en — filen prøves igen ved næste kørsel.
-    doc_type: 'webinar' (default) eller 'pdf' (rapport/dokument — anden prompt,
-    samme JSON-schema, så downstream-koden er uændret)."""
+def summary_prompt(title: str, content: str, description: str | None = None, doc_type: str = "webinar") -> str:
+    """Prompten der producerer resumé-felterne.
+
+    Delt med den manuelle kø (manuel_eksport.py), så et manuelt resumé får
+    præcis samme instruktioner og samme JSON-schema som det natlige AI-kald."""
     excerpt = content[:5000]
     invitation_block = (
         f"Invitationstekst fra dnnk.dk (verificeret af DNNK, brug som primær kilde):\n{description}\n\n"
@@ -891,6 +891,15 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
             "- places: Konkrete danske eller udenlandske stednavne nævnt i webinaret "
             "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
         )
+    return prompt
+
+
+def generate_summary(client: anthropic.Anthropic, title: str, content: str, description: str | None = None, doc_type: str = "webinar") -> dict | None:
+    """Returnerer dict med resumé-felter, eller None hvis AI-kaldet fejlede.
+    None betyder: gem IKKE entry'en — filen prøves igen ved næste kørsel.
+    doc_type: 'webinar' (default) eller 'pdf' (rapport/dokument — anden prompt,
+    samme JSON-schema, så downstream-koden er uændret)."""
+    prompt = summary_prompt(title, content, description, doc_type)
     json_retries = 0
     for attempt in range(3):
         try:
@@ -1079,6 +1088,176 @@ def save_index(index: list[dict]) -> None:
         json.dump(index, f, ensure_ascii=False, indent=2)
 
 
+def prepare_entry_metadata(file_info: dict, content: str, dnnk_events: list[dict],
+                           youtube_videos: list[dict]) -> dict:
+    """Alt hvad der udledes om en fil FØR resuméet: titel, kategori, dato,
+    event-match, YouTube-link, invitationstekst.
+
+    Udskilt så den manuelle kø (manuel_eksport.py) bruger præcis samme
+    matching som det natlige job i stedet for sin egen kopi."""
+    filename = file_info["filename"]
+    is_pdf = is_pdf_filename(filename)
+    title = decode_filename(filename)
+    category = detect_category(filename)
+
+    matched = None
+    match_confidence = 0.0
+    event_url = youtube_id = youtube_url = description = date = None
+    source_url = None
+
+    if is_pdf:
+        # PDF-dokument: metadata fra headeren — INGEN event-/YouTube-matching
+        meta, body = parse_pdf_document(content)
+        if meta:
+            title = meta["title"] or title
+            category = meta["category"] or "Rapporter"
+            source_url = meta["source_url"]
+            date = meta["date"]
+            content = body or content
+            print(f"  → PDF-dokument: {title[:60]}")
+        else:
+            category = "Rapporter"
+            print(f"  Warning – kunne ikke parse PDF-header i {filename}; "
+                  "bruger filnavnet som titel")
+    else:
+        # Høsterens eget id slår al titelmatching: det er skrevet af den
+        # kode der hentede videoen, ikke gættet ud fra en tekststreng.
+        youtube_id = id_from_transcript(filename, content)
+        if youtube_id:
+            youtube_url = f"https://youtube.com/watch?v={youtube_id}"
+            vid = next((v for v in youtube_videos
+                        if v.get("youtube_id") == youtube_id), None)
+            if vid:
+                # Rigtig titel i stedet for det afkodede filnavn
+                if vid.get("title"):
+                    title = vid["title"]
+                if vid.get("upload_date"):
+                    date = vid["upload_date"]
+            print(f"  → id fra transskription: {youtube_id}")
+        # Match with dnnk.dk event
+        matched, match_confidence = find_best_event(title, dnnk_events)
+
+    if matched:
+        event_url = matched.get("event_url")
+        # Et id fra transskriptionen må ikke overskrives af et gæt
+        if not youtube_id:
+            youtube_id = matched.get("youtube_id")
+            youtube_url = matched.get("youtube_url")
+        # Behold en dato vi allerede har, hvis eventet ikke selv har en
+        date = matched.get("date") or date
+        # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
+        # (find_best_event returnerer kun matches der opfylder _match_acceptable)
+        if matched.get("title"):
+            title = matched["title"]
+        print(f"  → matched ({match_confidence:.2f}): {matched['title'][:60]}")
+        # Beskrivelse kun fra rigtige event-undersider — kategorisider
+        # giver bare listetekst som "beskrivelse"
+        category_urls = {url.rstrip("/") for _, url in DNNK_CATEGORY_PAGES}
+        if event_url and event_url.rstrip("/") not in category_urls:
+            description = get_event_description(event_url)
+            time.sleep(0.5)
+
+    # Fallback 1: match against YouTube channel video titles (ikke for PDF)
+    if not is_pdf and not youtube_id and youtube_videos:
+        best_yt_score = 0.0
+        best_yt = None
+        for vid in youtube_videos:
+            # Sammenlign også uden oplægsholder-suffiks: filnavnet er
+            # klippet ved ~60 tegn, så "Bidragsmodeller_v" skal kunne
+            # matche "Bidragsmodeller v. Helle Tegner Anker, KU".
+            cand_titles = {vid["title"], strip_speaker_suffix(vid["title"])}
+            score = max(title_similarity(title, ct) for ct in cand_titles)
+            if score > best_yt_score:
+                best_yt_score = score
+                best_yt = vid
+        # Samme accept-regel som for dnnk.dk-events. Det gamle løse krav
+        # (score >= 0.45, ingen anden validering) gjorde, at "bedste" match
+        # reelt var støj: 179 entries endte med at dele 44 video-id'er, så
+        # "se webinaret" pegede på det forkerte klip for det meste af
+        # arkivet. Et manglende link er bedre end et forkert.
+        if best_yt and _match_acceptable(title, best_yt["title"], best_yt_score):
+            youtube_id  = best_yt["youtube_id"]
+            youtube_url = best_yt["youtube_url"]
+            if not date and best_yt.get("upload_date"):
+                date = best_yt["upload_date"]
+            print(f"  → YouTube match ({best_yt_score:.2f}): {best_yt['title'][:60]}")
+        elif best_yt:
+            print(f"  → YouTube-match afvist ({best_yt_score:.2f}): {best_yt['title'][:60]}")
+
+    # Fallback 2 FJERNET: et YouTube-link der optræder INDE i en
+    # transskription er som regel noget oplægsholderen henviste til — ikke
+    # optagelsen af webinaret selv. Den regel gav bl.a. jura-webinarer et
+    # link til "Horizon og LIFE projekter om klimatilpasning". Et manglende
+    # link er bedre end et forkert.
+
+    return {
+        "filename": filename,
+        "path": file_info["path"],
+        "folder": file_info["folder"],
+        "is_pdf": is_pdf,
+        "title": title,
+        "category": category,
+        "date": date,
+        "content": content,
+        "source_url": source_url,
+        "dnnk_url": event_url,
+        "youtube_id": youtube_id,
+        "youtube_url": youtube_url,
+        "description": description,
+        "match_confidence": round(match_confidence, 3) if matched else None,
+    }
+
+
+def build_entry(meta: dict, ai: dict, ext_resources: list[dict]) -> dict:
+    """Samler en indeks-entry af metadata + resumé-felter.
+
+    Felterne i ai kommer enten fra generate_summary (nat-jobbet) eller fra et
+    manuelt udfyldt svar (manuel_import.py) — entry'en skal se ens ud."""
+    title = meta["title"]
+    if ai.get("corrected_title") and len(ai["corrected_title"]) > 5:
+        title = ai["corrected_title"]
+    return {
+        "filename": meta["filename"],
+        "path": meta["path"],
+        "folder": meta["folder"],
+        "type": "pdf" if meta["is_pdf"] else "webinar",
+        "title": title,
+        "category": meta["category"],
+        "date": meta["date"],
+        "summary": ai.get("summary", ""),
+        "keywords": ai.get("keywords", []),
+        "speakers": ai.get("speakers", []),
+        "places": ai.get("places", []),
+        "youtube_id": meta["youtube_id"],
+        "youtube_url": meta["youtube_url"],
+        "dnnk_url": meta["dnnk_url"],
+        "source_url": meta["source_url"],  # PDF-kilde-URL; None for webinarer
+        "match_confidence": meta["match_confidence"],
+        "description": meta["description"],
+        "related_resources": find_related_resources(ai.get("keywords", []), title, ext_resources),
+        "related_webinars": [],  # filled in after all entries are built
+    }
+
+
+def drop_generic_resources(index: list[dict]) -> None:
+    """Fjerner ressourcer der matcher 40%+ af alle entries — for generiske til
+    at være nyttige. Deles med manuel_import.py, så begge veje ind i indekset
+    filtrerer ens."""
+    resource_counts = {}
+    for entry in index:
+        for r in entry.get("related_resources", []):
+            resource_counts[r["url"]] = resource_counts.get(r["url"], 0) + 1
+    threshold = len(index) * 0.40
+    too_common = {url for url, cnt in resource_counts.items() if cnt > threshold}
+    if too_common:
+        print(f"  Fjerner {len(too_common)} for generiske ressourcer:")
+        for url in too_common:
+            print(f"    - {url} (matchede {resource_counts[url]} entries)")
+    for entry in index:
+        entry["related_resources"] = [r for r in entry.get("related_resources", [])
+                                      if r["url"] not in too_common]
+
+
 def build_index():
     print("Loading existing index …")
     existing = load_existing_index()
@@ -1157,11 +1336,8 @@ def build_index():
 
     for i, file_info in enumerate(new_files):
         filename = file_info["filename"]
-        is_pdf = is_pdf_filename(filename)
-        title = decode_filename(filename)
-        category = detect_category(filename)
 
-        print(f"[{i+1}/{len(new_files)}] {title[:70]} …")
+        print(f"[{i+1}/{len(new_files)}] {decode_filename(filename)[:70]} …")
 
         # Fetch transcription text
         try:
@@ -1173,95 +1349,7 @@ def build_index():
             print(f"  Error fetching content: {exc}")
             continue
 
-        matched = None
-        match_confidence = 0.0
-        event_url = youtube_id = youtube_url = description = date = None
-        source_url = None
-
-        if is_pdf:
-            # PDF-dokument: metadata fra headeren — INGEN event-/YouTube-matching
-            meta, body = parse_pdf_document(content)
-            if meta:
-                title = meta["title"] or title
-                category = meta["category"] or "Rapporter"
-                source_url = meta["source_url"]
-                date = meta["date"]
-                content = body or content
-                print(f"  → PDF-dokument: {title[:60]}")
-            else:
-                category = "Rapporter"
-                print(f"  Warning – kunne ikke parse PDF-header i {filename}; "
-                      "bruger filnavnet som titel")
-        else:
-            # Høsterens eget id slår al titelmatching: det er skrevet af den
-            # kode der hentede videoen, ikke gættet ud fra en tekststreng.
-            youtube_id = id_from_transcript(filename, content)
-            if youtube_id:
-                youtube_url = f"https://youtube.com/watch?v={youtube_id}"
-                vid = next((v for v in youtube_videos
-                            if v.get("youtube_id") == youtube_id), None)
-                if vid:
-                    # Rigtig titel i stedet for det afkodede filnavn
-                    if vid.get("title"):
-                        title = vid["title"]
-                    if vid.get("upload_date"):
-                        date = vid["upload_date"]
-                print(f"  → id fra transskription: {youtube_id}")
-            # Match with dnnk.dk event
-            matched, match_confidence = find_best_event(title, dnnk_events)
-
-        if matched:
-            event_url = matched.get("event_url")
-            # Et id fra transskriptionen må ikke overskrives af et gæt
-            if not youtube_id:
-                youtube_id = matched.get("youtube_id")
-                youtube_url = matched.get("youtube_url")
-            # Behold en dato vi allerede har, hvis eventet ikke selv har en
-            date = matched.get("date") or date
-            # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
-            # (find_best_event returnerer kun matches der opfylder _match_acceptable)
-            if matched.get("title"):
-                title = matched["title"]
-            print(f"  → matched ({match_confidence:.2f}): {matched['title'][:60]}")
-            # Beskrivelse kun fra rigtige event-undersider — kategorisider
-            # giver bare listetekst som "beskrivelse"
-            category_urls = {url.rstrip("/") for _, url in DNNK_CATEGORY_PAGES}
-            if event_url and event_url.rstrip("/") not in category_urls:
-                description = get_event_description(event_url)
-                time.sleep(0.5)
-
-        # Fallback 1: match against YouTube channel video titles (ikke for PDF)
-        if not is_pdf and not youtube_id and youtube_videos:
-            best_yt_score = 0.0
-            best_yt = None
-            for vid in youtube_videos:
-                # Sammenlign også uden oplægsholder-suffiks: filnavnet er
-                # klippet ved ~60 tegn, så "Bidragsmodeller_v" skal kunne
-                # matche "Bidragsmodeller v. Helle Tegner Anker, KU".
-                cand_titles = {vid["title"], strip_speaker_suffix(vid["title"])}
-                score = max(title_similarity(title, ct) for ct in cand_titles)
-                if score > best_yt_score:
-                    best_yt_score = score
-                    best_yt = vid
-            # Samme accept-regel som for dnnk.dk-events. Det gamle løse krav
-            # (score >= 0.45, ingen anden validering) gjorde, at "bedste" match
-            # reelt var støj: 179 entries endte med at dele 44 video-id'er, så
-            # "se webinaret" pegede på det forkerte klip for det meste af
-            # arkivet. Et manglende link er bedre end et forkert.
-            if best_yt and _match_acceptable(title, best_yt["title"], best_yt_score):
-                youtube_id  = best_yt["youtube_id"]
-                youtube_url = best_yt["youtube_url"]
-                if not date and best_yt.get("upload_date"):
-                    date = best_yt["upload_date"]
-                print(f"  → YouTube match ({best_yt_score:.2f}): {best_yt['title'][:60]}")
-            elif best_yt:
-                print(f"  → YouTube-match afvist ({best_yt_score:.2f}): {best_yt['title'][:60]}")
-
-        # Fallback 2 FJERNET: et YouTube-link der optræder INDE i en
-        # transskription er som regel noget oplægsholderen henviste til — ikke
-        # optagelsen af webinaret selv. Den regel gav bl.a. jura-webinarer et
-        # link til "Horizon og LIFE projekter om klimatilpasning". Et manglende
-        # link er bedre end et forkert.
+        meta = prepare_entry_metadata(file_info, content, dnnk_events, youtube_videos)
 
         # Generate AI summary
         if AI_BUDGET_EXHAUSTED:
@@ -1270,40 +1358,14 @@ def build_index():
             print(f"  Springer {filename} over (Anthropic-forbrugsloft — prøves igen senere)")
             continue
         print("  → generating summary …")
-        ai = generate_summary(client, title, content, description,
-                              doc_type="pdf" if is_pdf else "webinar")
+        ai = generate_summary(client, meta["title"], meta["content"], meta["description"],
+                              doc_type="pdf" if meta["is_pdf"] else "webinar")
         if ai is None:
             # Gem IKKE entry med tomt resumé — spring over, så filen prøves igen næste kørsel
             print(f"  Warning – AI-resumé fejlede for {filename}; springer over (prøves igen næste kørsel)")
             continue
-        if ai.get("corrected_title") and len(ai["corrected_title"]) > 5:
-            title = ai["corrected_title"]
 
-        related_resources = find_related_resources(ai.get("keywords", []), title, ext_resources)
-
-        index.append(
-            {
-                "filename": filename,
-                "path": file_info["path"],
-                "folder": file_info["folder"],
-                "type": "pdf" if is_pdf else "webinar",
-                "title": title,
-                "category": category,
-                "date": date,
-                "summary": ai.get("summary", ""),
-                "keywords": ai.get("keywords", []),
-                "speakers": ai.get("speakers", []),
-                "places": ai.get("places", []),
-                "youtube_id": youtube_id,
-                "youtube_url": youtube_url,
-                "dnnk_url": event_url,
-                "source_url": source_url,  # PDF-kilde-URL; None for webinarer
-                "match_confidence": round(match_confidence, 3) if matched else None,
-                "description": description,
-                "related_resources": related_resources,
-                "related_webinars": [],  # filled in after all entries are built
-            }
-        )
+        index.append(build_entry(meta, ai, ext_resources))
 
         time.sleep(0.3)
 
@@ -1311,20 +1373,8 @@ def build_index():
         if len(index) % 10 == 0:
             save_index(index)
 
-    # Drop ressourcer der matcher 40%+ af alle entries (for generiske til at være nyttige)
     print("Filtrerer for generiske ressourcer …")
-    resource_counts = {}
-    for entry in index:
-        for r in entry.get("related_resources", []):
-            resource_counts[r["url"]] = resource_counts.get(r["url"], 0) + 1
-    threshold = len(index) * 0.40
-    too_common = {url for url, cnt in resource_counts.items() if cnt > threshold}
-    if too_common:
-        print(f"  Fjerner {len(too_common)} for generiske ressourcer:")
-        for url in too_common:
-            print(f"    - {url} (matchede {resource_counts[url]} entries)")
-    for entry in index:
-        entry["related_resources"] = [r for r in entry.get("related_resources", []) if r["url"] not in too_common]
+    drop_generic_resources(index)
 
     # Compute related webinars across entire index
     print("Beregner krydsreferencer mellem webinarer …")

@@ -1558,6 +1558,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Almen Klimakortlægning - Klimaudfordringer i den almene boligsektor",
+        "filename": "PDF_almen_klimakortlaegning.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
+      },
+      {
         "title": "Tech Talk 002 - Fra oversvømmelse til risiko",
         "filename": "Tech_Talk_002_-_Fra_oversv_mmelse_til_risiko.txt",
         "type": "webinar",
@@ -1566,12 +1574,12 @@
         "source_url": null
       },
       {
-        "title": "Almen Klimakortlægning - Klimaudfordringer i den almene boligsektor",
-        "filename": "PDF_almen_klimakortlaegning.txt",
-        "type": "pdf",
-        "youtube_url": null,
+        "title": "Godmorgen med DNNK: Forstå de sociale konsekvenser af oversvømmelser i Danmark",
+        "filename": "Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=tFT2VjSIC3c",
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
+        "source_url": null
       }
     ],
     "match_confidence": 0.98
@@ -2495,11 +2503,11 @@
         "source_url": null
       },
       {
-        "title": "Tech Talk: Ny nordisk håndbog viser vejen til naturbaserede løsninger",
-        "filename": "Tech_Talk__Ny_nordisk_h_ndbog_viser_vejen_til_naturbaserede_.mp3.txt",
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=6JzsjZLjTCw",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
         "source_url": null
       }
     ],
@@ -3250,19 +3258,19 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
       },
       {
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
+      },
+      {
         "title": "Samfundsøkonomiske og sociale konsekvenser af stormfloder",
         "filename": "Konferencer_ZB7K39iiVOs_20260826_062857.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=ZB7K39iiVOs",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Oversvømmelser: beregninger, data og digitale værktøjer",
-        "filename": "Oversv_mmelser__beregninger__data_og_digitale_v_rkt_jer.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HDclqvKaBzw",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -3599,12 +3607,12 @@
         "source_url": null
       },
       {
-        "title": "Byudvikling i forbindelse med stormfloods- og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-        "type": "webinar",
+        "title": "Klimatilpasningsplan II - National plan for kystbeskyttelse af Danmark",
+        "filename": "PDF_db4ba2aec837.txt",
+        "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-ii.pdf"
       }
     ]
   },
@@ -5405,19 +5413,19 @@
         "source_url": null
       },
       {
+        "title": "Regeringens udspil til Klimatilpasningsplan 1 (2023)",
+        "filename": "PDF_de789d2cf2a4.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-i.pdf"
+      },
+      {
         "title": "Byudvikling i forbindelse med stormfloods- og kystsikring af Danmark",
         "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk: Finansiering af kystbeskyttelsesprojekter i Danmark",
-        "filename": "Tech_Talk__Finansiering_af_kystbeskyttelsesprojekter_i_Danma.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=c_hJluY22do",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -5569,18 +5577,18 @@
         "source_url": null
       },
       {
-        "title": "Havets stemme: vandets repræsentation i risikostyringsplaner",
-        "filename": "Havets_stemme___vandets_repr_sentation_i_risikostyringsplane.mp3.txt",
+        "title": "Godmorgen med DNNK: Forstå de sociale konsekvenser af oversvømmelser i Danmark",
+        "filename": "Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=pnWkZcjLm9A",
+        "youtube_url": "https://youtube.com/watch?v=tFT2VjSIC3c",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Når vand løber opad: Tryksat LAR åbner for en ny kategori",
-        "filename": "N_r_vand_l_ber_opad___Tryksat_LAR__bner_for_en_ny_kategori_a.mp3.txt",
+        "title": "Havets stemme: vandets repræsentation i risikostyringsplaner",
+        "filename": "Havets_stemme___vandets_repr_sentation_i_risikostyringsplane.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=9hADLyjXnSo",
+        "youtube_url": "https://youtube.com/watch?v=pnWkZcjLm9A",
         "dnnk_url": null,
         "source_url": null
       }
@@ -5792,19 +5800,83 @@
         "source_url": null
       },
       {
+        "title": "Innovativ klimatilpasning med borgere - Håndbog til bæredygtig omstilling",
+        "filename": "PDF_InnovativKlimatilpasningmBorgereVIB.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/InnovativKlimatilpasningmBorgereVIB.pdf"
+      },
+      {
         "title": "Interessentinddragelse i kommunal klimatilpasning - Kortlægning af interesser og metoder",
         "filename": "PDF_Interessentinddragelse_i_kommunal_klimatilpasning.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Interessentinddragelse_i_kommunal_klimatilpasning_2021_Rapport_web.pdf"
+      }
+    ]
+  },
+  {
+    "filename": "Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Forstå de sociale konsekvenser af oversvømmelser i Danmark",
+    "category": "Godmorgen med DNNK",
+    "date": "2024-09-26",
+    "summary": "Mia Cassidy Prall, erhvervs-ph.d.-studerende ved Aalborg Universitet og Kystdirektoratet, præsenterer et nyt nationalt socialt sårbarhedsindeks og et socialt oversvømmelsesrisikoindeks for Danmark. Modellerne viser, hvordan forskellige grupper og samfund påvirkes forskelligt af oversvømmelser, og kan bruges til at indrette klimatilpasningsstrategier, så ingen lades i stikken. Oplægget var på engelsk og bygger på en open access-artikel i International Journal of Disaster Risk Reduction.",
+    "keywords": [
+      "social sårbarhed",
+      "social retfærdighed",
+      "oversvømmelsesrisiko",
+      "sårbarhedsindeks",
+      "Social Flood Vulnerability Index",
+      "Social Flood Risk Index",
+      "Kystdirektoratet",
+      "Aalborg Universitet",
+      "klimatilpasning",
+      "risikovurdering"
+    ],
+    "speakers": [
+      {
+        "name": "Mia Cassidy Prall",
+        "org": "Aalborg Universitet/Kystdirektoratet"
+      }
+    ],
+    "places": [
+      "Danmark"
+    ],
+    "youtube_id": "tFT2VjSIC3c",
+    "youtube_url": "https://youtube.com/watch?v=tFT2VjSIC3c",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK - Sociale dimensioner af klimatilpasning",
+        "filename": "Godmorgen_med_DNNK_ZnNmeyyKCok_20260807_073224.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=ZnNmeyyKCok",
+        "dnnk_url": null,
+        "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK: Klimatilpasning og den grønne omstilling",
-        "filename": "Godmorgen_med_DNNK___Klimatilpasning_og_den_gr_nne_omstillin.mp3.txt",
+        "title": "Social Dimensions of Climate Adaptation: Just Adaptation in Danish Coastal Planning",
+        "filename": "Godmorgen_med_DNNK_-9iAfpGkPQ4_20260826_113848.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=5g9RiDGEcFE",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=-9iAfpGkPQ4",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Temadag om kystnære risici: lovgivning og social sårbarhed",
+        "filename": "Temadag_om_kystn_re_risici__lovgivning_og_social_s_rbarhed.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=_RMVkoF0fAM",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -5947,6 +6019,157 @@
         "filename": "DNNK_Masterclass_v._DMI_3_-_Stormfloder___hvor__hvor_tit__fo.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Godmorgen_med_DNNK_GhA-Ga8cMfw_20260923_103115.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_GhA-Ga8cMfw_20260923_103115.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Hvornår accelererer konsekvenserne af havstigning?",
+    "category": "Godmorgen med DNNK",
+    "date": "2026-09-14",
+    "summary": "Sebastian Bokhari Irminger fra Statens Geotekniska Institut (SGI) præsenterer tærskelanalyser for 21 kystkommuner i Skåne og Halland. I stedet for at regne på et forudbestemt havniveau vender analysen spørgsmålet om og finder de vandstande, hvor skaderne ikke længere vokser jævnt, men springer. Arbejdet er lavet sammen med kommunerne, länsstyrelsen, SMHI og den svenske myndighed for civilt forsvar som grundlag for planlægning af klimatilpasning.",
+    "keywords": [
+      "havstigning",
+      "tærskelanalyse",
+      "kysterosion",
+      "oversvømmelse",
+      "kystkommuner",
+      "konsekvensvurdering",
+      "klimatilpasning",
+      "SGI",
+      "SMHI",
+      "länsstyrelsen",
+      "Sverige"
+    ],
+    "speakers": [
+      {
+        "name": "Sebastian Bokhari Irminger",
+        "org": "Statens Geotekniska Institut (SGI)"
+      }
+    ],
+    "places": [
+      "Skåne",
+      "Halland",
+      "Sverige",
+      "Malmö"
+    ],
+    "youtube_id": "GhA-Ga8cMfw",
+    "youtube_url": "https://youtube.com/watch?v=GhA-Ga8cMfw",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [
+      {
+        "title": "Klimatilpasning: Oversvømmelser og Skadesberegning",
+        "url": "https://www.dnnk.dk/klimatilpasning-oversvoemmelser-og-skadesberegning/",
+        "source": "DNNK Rapporter",
+        "type": "📄 Dokument"
+      },
+      {
+        "title": "Samfundsøkonomi – oversvømmelser og klimatilpasning",
+        "url": "https://www.dnnk.dk/samfundsoekonomi-oversvoemmelser-og-klimatilpasning/",
+        "source": "DNNK Rapporter",
+        "type": "📄 Dokument"
+      }
+    ],
+    "related_webinars": [
+      {
+        "title": "Den Lille Blå Parlør om Havstigning",
+        "filename": "PDF_direkte_her.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://aarch.dk/wp-content/uploads/2023/03/2023.02.09_DenLilleBlaaParloer_AAA_Wiberg_LQ.pdf"
+      },
+      {
+        "title": "Mellem hav og by - når havstigning møder steder og mennesker",
+        "filename": "Konferencer_kd6EJ3cIjtk_20260826_062948.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=kd6EJ3cIjtk",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Samfundsøkonomiske og sociale konsekvenser af stormfloder",
+        "filename": "Konferencer_ZB7K39iiVOs_20260826_062857.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=ZB7K39iiVOs",
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+    "category": "Godmorgen med DNNK",
+    "date": "2026-02-24",
+    "summary": "Tampere Kommune i Finland fortæller om byens klimatilpasning og arbejdet med naturbaserede løsninger i Interreg-projektet City Blues. Annika Kettunen gennemgår det strategiske niveau, hvor tilpasning er integreret i planen for et klimaneutralt Tampere med fokus på varmeøer og regnvandsoversvømmelser, mens Anna går i dybden med praktiske løsninger som forsinkelsesbassiner og vådområder til regnvandshåndtering.",
+    "keywords": [
+      "naturbaserede løsninger",
+      "City Blues",
+      "regnvandshåndtering",
+      "varmeøer",
+      "skybrud",
+      "klimastrategi",
+      "byplanlægning",
+      "forsinkelsesbassiner",
+      "biodiversitet",
+      "Interreg",
+      "Finland"
+    ],
+    "speakers": [
+      {
+        "name": "Annika Kettunen",
+        "org": "Tampere Kommune"
+      },
+      {
+        "name": "Anna",
+        "org": "Tampere Kommune"
+      }
+    ],
+    "places": [
+      "Tampere",
+      "Finland"
+    ],
+    "youtube_id": "agCuRbhxX3k",
+    "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Aarhus: erfaringer fra City Blues: naturbaserede løsninger",
+        "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=qJ9fw3YFZvs",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Værdisætning af merværdier fra overfladeløsninger til regnvandshåndtering",
+        "filename": "Godmorgen_med_DNNK_YFVZ3gg4sOI_20260923_101041.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=YFVZ3gg4sOI",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Fra friktion til fælles fodslag",
+        "filename": "Godmorgen_med_DNNK_yEvJX7_4Esw_20260806_171149.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=yEvJX7_4Esw",
         "dnnk_url": null,
         "source_url": null
       }
@@ -6346,6 +6569,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Aarhus: erfaringer fra City Blues: naturbaserede løsninger",
         "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
         "type": "webinar",
@@ -6360,13 +6591,139 @@
         "youtube_url": "https://youtube.com/watch?v=yEvJX7_4Esw",
         "dnnk_url": null,
         "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Godmorgen_med_DNNK_eC5v7aZJifY_20260923_103115.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_eC5v7aZJifY_20260923_103115.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Webinar om Kystplanlæggeren",
+    "category": "Godmorgen med DNNK",
+    "date": "2021-01-11",
+    "summary": "Kystdirektoratet præsenterer Kystplanlæggeren, et nyt værktøj der skal hjælpe kommunerne med at planlægge ved kysten og se udfordringer med oversvømmelse og erosion på både kort og lang sigt. Værktøjet bygger på de engelske Shoreline Management Plans (Environment Agency og DEFRA) og på multilayered safety-tankegangen, hvor planlægning, beredskab, robusthed og kystbeskyttelse ses samlet. Oplægget understreger kystbeskyttelseslovens helhedssyn, fordi naturlige sedimentprocesser gør, at tiltag ét sted påvirker kysten andre steder.",
+    "keywords": [
+      "Kystplanlæggeren",
+      "Kystdirektoratet",
+      "kystplanlægning",
+      "Shoreline Management Plans",
+      "multilayered safety",
+      "kystbeskyttelsesloven",
+      "erosion",
+      "oversvømmelse",
+      "sedimenttransport",
+      "kommunal planlægning"
+    ],
+    "speakers": [],
+    "places": [
+      "Lynetteholmen",
+      "Nordhavn",
+      "København",
+      "England"
+    ],
+    "youtube_id": "eC5v7aZJifY",
+    "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Temadag om kystnære risici: lovgivning og social sårbarhed",
+        "filename": "Temadag_om_kystn_re_risici__lovgivning_og_social_s_rbarhed.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=_RMVkoF0fAM",
+        "dnnk_url": null,
+        "source_url": null
       },
       {
-        "title": "Tech Talk: Smart integrering i klimatilpasning",
-        "filename": "Tech_Talk__Smart_integrering_i_klimatilpasning.txt",
+        "title": "Godmorgen med DNNK: Når jorden skrider: landskred som oversete klimarisici",
+        "filename": "Godmorgen_med_DNNK__N_r_jorden_skrider___landskred_som_overs.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=qfU7bfSXtjo",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "youtube_url": "https://youtube.com/watch?v=AHqOLmOaqzg",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Nyt tillæg til spildevandsvejledningen",
+        "filename": "Godmorgen_med_DNNK__Nyt_till_g_til_spildevandsvejledningen.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=r3mkSTF4cug",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Godmorgen_med_DNNK_cQC0R4IQyOg_20260923_103115.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_cQC0R4IQyOg_20260923_103115.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Webinar om stormflodsbeskyttelse af Hvidovre og København",
+    "category": "Godmorgen med DNNK",
+    "date": "2020-12-14",
+    "summary": "Lise Holm og Anders Edstrand præsenterer modningsprojektet om stormflodsbeskyttelse mod syd, et samarbejde mellem Hvidovre Kommune og Københavns Kommune med støtte fra partnerskabet Byerne og det stigende havvand (Realdania og Miljøministeriet). Nye højvandsstatistikker viser behov for beskyttelse syd for Kalveboderne mellem Avedøre Holme og Vestamager, og projektet har også arbejdet med principper for bidragsmodeller til finansiering. Analyserne blev afrapporteret til begge kommuners politikere i november 2020.",
+    "keywords": [
+      "stormflod",
+      "stormflodsbeskyttelse",
+      "højvandsstatistik",
+      "modningsprojekt",
+      "bidragsmodeller",
+      "finansiering",
+      "risikostyringsplan",
+      "Byerne og det stigende havvand",
+      "Realdania",
+      "tværkommunalt samarbejde"
+    ],
+    "speakers": [
+      {
+        "name": "Lise Holm",
+        "org": "Hvidovre Kommune/Københavns Kommune (modningsprojektet)"
+      },
+      {
+        "name": "Anders Edstrand",
+        "org": "Hvidovre Kommune/Københavns Kommune (modningsprojektet)"
+      }
+    ],
+    "places": [
+      "Hvidovre",
+      "København",
+      "Kalveboderne",
+      "Avedøre Holme",
+      "Vestamager"
+    ],
+    "youtube_id": "cQC0R4IQyOg",
+    "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Webinar: Realiseringsprojekter fra Byerne og det stigende havvand",
+        "filename": "Godmorgen_med_DNNK_mvx1dZTtyX8_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=mvx1dZTtyX8",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Byudvikling i forbindelse med stormflods- og kystsikring af byer 2&3",
+        "filename": "Oevrige_TF8C8Udk1tA_20260826_180400.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=TF8C8Udk1tA",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Svanemøllen Skybrudstunnel",
+        "filename": "Godmorgen_med_DNNK__Svanem_llen_Skybrudstunnel.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=wiA38PWQBGs",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ]
@@ -6431,12 +6788,12 @@
         "source_url": null
       },
       {
-        "title": "Overvejelser omkring 1D-2D dynamisk modellering",
-        "filename": "Oevrige_u1kaQlQjbeQ_20260826_183735.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=u1kaQlQjbeQ",
+        "title": "KLIKOVANDs juridiske hovedspørgsmål - ret og vrang i klimatilpasningen",
+        "filename": "PDF_2014_12_18_KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
       }
     ]
   },
@@ -7235,20 +7592,20 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
       },
       {
-        "title": "Rockflow 04 oplæg",
-        "filename": "Rockflow_04_opl_g.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=hAU-rCQOZkA",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Godmorgen med DNNK: Andelskraft i den grønne omstilling",
         "filename": "Godmorgen_med_DNNK_N9jDYwakMaE_20260923_101038.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=N9jDYwakMaE",
         "dnnk_url": null,
         "source_url": null
+      },
+      {
+        "title": "Klimatilpasning med multifunktionalitet og merværdi - Sådan faciliterer forsyning og kommune innovativ klimatilpasning (værdikort, betaversion)",
+        "filename": "PDF_Værdikort_betaversion.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/06/Vaerdikort_betaversion_17122018.pdf"
       }
     ]
   },
@@ -7299,20 +7656,20 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Regnvandsbassiner med natur og aktivitet - Rørcenter-anvisning 025",
-        "filename": "PDF_0cc50515825a.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/anvisning-025_web.pdf"
-      },
-      {
         "title": "Innovativ klimatilpasning med borgere - Håndbog til bæredygtig omstilling",
         "filename": "PDF_InnovativKlimatilpasningmBorgereVIB.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/InnovativKlimatilpasningmBorgereVIB.pdf"
+      },
+      {
+        "title": "Regnvandsbassiner med natur og aktivitet - Rørcenter-anvisning 025",
+        "filename": "PDF_0cc50515825a.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/anvisning-025_web.pdf"
       },
       {
         "title": "Afrapportering Bobleprojekt Elev8 Living",
@@ -7747,12 +8104,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/first-flush-review.pdf"
       },
       {
-        "title": "Tech Talk - Sundhed i klimatilpasning og byplanlægning",
-        "filename": "Tech_Talk_-_Sundhed_i_klimatilpasning_og_byplanl_gning (1).txt",
-        "type": "webinar",
+        "title": "Økosystemtjenester og klimatilpasning - Kagsåparkens regnvandsprojekt",
+        "filename": "PDF_kristine_kjoerup_rasmussen_ramboell.txt",
+        "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/kristine-kjoerup-rasmussen-ramboell.pdf"
       }
     ]
   },
@@ -7847,7 +8204,16 @@
     "match_confidence": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ]
   },
   {
     "filename": "PDF_db4ba2aec837.txt",
@@ -8327,19 +8693,19 @@
         "source_url": null
       },
       {
+        "title": "Projekt ÖReWise - Hvidbog: Klimatilpasning omkring Øresund",
+        "filename": "PDF_OReWise_White_Paper_Signed.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/08/OReWise-White-Paper-Signed.pdf"
+      },
+      {
         "title": "Horizon og LIFE projekter om klimatilpasning og vand",
         "filename": "Horizon_og_LIFE_projekter_om_klimatilpasning_og_vand.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=jQHOOGRZL_E",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk: SUMBA: nem og hurtig hydraulisk modellering",
-        "filename": "Tech_Talk__SUMBA___nem_og_hurtig_hydraulisk_modellering.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=az9p3WWmbFg",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -8427,12 +8793,12 @@
         "source_url": "https://www.navigating360.dk/_files/ugd/06ce87_ff1072c08d3743788cdb50f8edc6a436.pdf"
       },
       {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       }
     ]
   },
@@ -9562,6 +9928,14 @@
     ],
     "related_webinars": [
       {
+        "title": "Almen Klimakortlægning - Klimaudfordringer i den almene boligsektor",
+        "filename": "PDF_almen_klimakortlaegning.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
+      },
+      {
         "title": "Fra vand fra alle sider til en præcis typologi for oversvømmelser, deres årsager og mulige koblinger",
         "filename": "Konferencer_WoJEDJKye-0_20260826_063023.txt",
         "type": "webinar",
@@ -9576,14 +9950,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/01_Guide_Symptomer_og_årsager.pdf"
-      },
-      {
-        "title": "Løsningsmatrice",
-        "filename": "PDF_Løsningsmatrice.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/02_Løsningsmatrix_Symptomer_og_årsager.pdf"
       }
     ]
   },
@@ -9700,18 +10066,18 @@
         "source_url": null
       },
       {
+        "title": "Grundlaget for klimatilpasning og vandhåndtering kan forbedres tidligt - allerede i planfasen",
+        "filename": "PDF_ONE-PAGER.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/08/One-Pager_Klimasikring_juni-2022.pdf"
+      },
+      {
         "title": "Tech Talks - Dynamic Flood i SCALGO Live",
         "filename": "Tech_Talks_lRrtJ3COQ-Y_20260806_171106.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=lRrtJ3COQ-Y",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       }
@@ -9806,19 +10172,19 @@
         "source_url": null
       },
       {
+        "title": "Innovative driftsmodeller i klimatilpasningen - Muligheder og udfordringer i driften af grøn-blå infrastruktur/LAR",
+        "filename": "PDF_vib_innovative_driftsmodeller_i_klimatilpasningen_juni_2018.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
+      },
+      {
         "title": "Ny viden fra Danmarks Universiteter - KU 1: Automatiseret GIS-screening af tagflader til LAR",
         "filename": "Oevrige_-IZEwCGIcME_20260806_171312.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=-IZEwCGIcME",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "DNNK Masterclass: Planlægning, drift og økonomi i LAR-anlæg v. KU, Del 1 af 3",
-        "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3 (1).txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HQL1SHsGkT0",
-        "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
         "source_url": null
       }
     ]
@@ -9904,12 +10270,12 @@
         "source_url": null
       },
       {
-        "title": "God Morgen med DNNK - Webinar om Vandrensning",
-        "filename": "God Morgen med DNNK – Webinar om Vandrensning.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=qLvsiFSkg9c",
+        "title": "Temadag: Kampen om fordeling af vandet - program",
+        "filename": "PDF_Kampen_om_fordeling_af_vandet_program.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/06/Kampen-om-fordeling-af-vandet_program.pdf"
       }
     ]
   },
@@ -10338,20 +10704,20 @@
         "source_url": null
       },
       {
+        "title": "Forsikring og skader fra oversvømmelser",
+        "filename": "PDF_DNNK_Klimatilpasning_DTU_5.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
+      },
+      {
         "title": "Gammelby-casen: Erstatningsansvar ved oversvømmelse før de nye regler pr. 1. januar 2021",
         "filename": "PDF_Oversvømmelse.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/04/Oversvoemmelse_Gammelby-casen1.pdf"
-      },
-      {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
       }
     ]
   },
@@ -10589,18 +10955,18 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       },
       {
+        "title": "Almen Klimakortlægning - Klimaudfordringer i den almene boligsektor",
+        "filename": "PDF_almen_klimakortlaegning.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
+      },
+      {
         "title": "Fra vand fra alle sider til en præcis typologi for oversvømmelser, deres årsager og mulige koblinger",
         "filename": "Konferencer_WoJEDJKye-0_20260826_063023.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=WoJEDJKye-0",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Webinar: Når borgerne tager klimatilpasningen i egne hænder",
-        "filename": "Oevrige_fr-a1sFdHBE_20260810_142036.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=fr-a1sFdHBE",
         "dnnk_url": null,
         "source_url": null
       }
@@ -11503,19 +11869,19 @@
         "source_url": null
       },
       {
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Tech Talk: Ny nordisk håndbog viser vejen til naturbaserede løsninger",
         "filename": "Tech_Talk__Ny_nordisk_h_ndbog_viser_vejen_til_naturbaserede_.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=6JzsjZLjTCw",
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
-        "title": "Urban Shores: landskabsbaseret klimatilpasning i kystområder",
-        "filename": "Urban_Shores___landskabsbaseret_klimatilpasning_i_kystomr_de.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -12015,10 +12381,10 @@
         "source_url": null
       },
       {
-        "title": "Grænseløs adfærd og grænseløse potentialer",
-        "filename": "Gr_nsel_s_adf_rd_og_gr_nsel_se_potentialer.mp3.txt",
+        "title": "Webinar: Realiseringsprojekter fra Byerne og det stigende havvand",
+        "filename": "Godmorgen_med_DNNK_mvx1dZTtyX8_20260923_103115.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Td70paA1PkE",
+        "youtube_url": "https://youtube.com/watch?v=mvx1dZTtyX8",
         "dnnk_url": null,
         "source_url": null
       }
@@ -12263,11 +12629,11 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
-        "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -12971,12 +13337,88 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/2.-Version.-Guide-til-grunderforeningerns-klimatilpasning-PRINT.pdf"
       },
       {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
+      }
+    ]
+  },
+  {
+    "filename": "Godmorgen_med_DNNK_mvx1dZTtyX8_20260923_103115.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_mvx1dZTtyX8_20260923_103115.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Webinar: Realiseringsprojekter fra Byerne og det stigende havvand",
+    "category": "Godmorgen med DNNK",
+    "date": "2023-03-08",
+    "summary": "Projektlederne for to demonstrationsprojekter fra partnerskabet Byerne og det stigende havvand fortæller om overvejelser og planer for at gå fra udviklingsplan til realisering. Lise Holm gennemgår Dragør Kommunes kystbeskyttelsesprojekt, der har fået tilsagn om 18 mio. kr. fra Realdania og 37 mio. kr. fra statslige puljer, herunder dilemmaer, strategi for naturudvikling og de konkrete projektstrækninger på den flade sydspids af Amager. Lotta Tiselius præsenterer det andet realiseringsprojekt.",
+    "keywords": [
+      "kystbeskyttelse",
+      "Byerne og det stigende havvand",
+      "Realdania",
+      "realisering",
+      "demonstrationsprojekt",
+      "udviklingsplan",
+      "naturudvikling",
+      "stormflod",
+      "finansiering",
+      "statslig pulje"
+    ],
+    "speakers": [
+      {
+        "name": "Lise Holm",
+        "org": "Dragør Kommune"
+      },
+      {
+        "name": "Lotta Tiselius",
+        "org": ""
+      }
+    ],
+    "places": [
+      "Dragør",
+      "Amager"
+    ],
+    "youtube_id": "mvx1dZTtyX8",
+    "youtube_url": "https://youtube.com/watch?v=mvx1dZTtyX8",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [
+      {
+        "title": "Godmorgen med DNNK: Organiserings- og finansieringsmodeller til kystbeskyttelsesprojekter",
+        "url": "https://www.dnnk.dk/godmorgen-med-dnnk-organiserings-og-finansieringsmodeller-til-kystbeskyttelsesprojekter/",
+        "source": "DNNK Nyheder",
+        "type": "📍 Case"
+      }
+    ],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Webinar om stormflodsbeskyttelse af Hvidovre og København",
+        "filename": "Godmorgen_med_DNNK_cQC0R4IQyOg_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Byudvikling i forbindelse med stormflods- og kystsikring af byer 5",
+        "filename": "Oevrige_Be8WiDJYFsg_20260826_164736.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=Be8WiDJYFsg",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Klimatilpasningsplan II - National plan for kystbeskyttelse af Danmark",
+        "filename": "PDF_db4ba2aec837.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-ii.pdf"
       }
     ]
   },
@@ -13257,20 +13699,20 @@
     ],
     "related_webinars": [
       {
-        "title": "Godmorgen med DNNK: Trædata som redskab i klimatilpasning",
-        "filename": "Godmorgen_med_DNNK___Tr_data_som_redskab_i_klimatilpasning__.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=3vDCEUgOs4U",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
         "title": "Klimatilpasning med multifunktionalitet og merværdi - Sådan faciliterer forsyning og kommune innovativ klimatilpasning (værdikort, betaversion)",
         "filename": "PDF_Værdikort_betaversion.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/06/Vaerdikort_betaversion_17122018.pdf"
+      },
+      {
+        "title": "Godmorgen med DNNK: Trædata som redskab i klimatilpasning",
+        "filename": "Godmorgen_med_DNNK___Tr_data_som_redskab_i_klimatilpasning__.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=3vDCEUgOs4U",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
       }
     ]
   },
@@ -13455,19 +13897,19 @@
         "source_url": null
       },
       {
+        "title": "Klimatilpasningsplan II - National plan for kystbeskyttelse af Danmark",
+        "filename": "PDF_db4ba2aec837.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-ii.pdf"
+      },
+      {
         "title": "Byudvikling i forbindelse med stormfloods- og kystsikring af Danmark",
         "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Webinar om jura - Kystkjura og klimaaspekter",
-        "filename": "Webinar_om_jura_-_Kystjura_og_klimaaspekter.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=VhqwsCBh1pU",
-        "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
         "source_url": null
       }
     ],
@@ -15087,19 +15529,19 @@
         "source_url": null
       },
       {
+        "title": "KLIKOVANDs juridiske hovedspørgsmål - ret og vrang i klimatilpasningen",
+        "filename": "PDF_2014_12_18_KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
+      },
+      {
         "title": "Oversvømmelser kræver samarbejde - styrk beredskabet på tværs af sektorer",
         "filename": "Konferencer_iEfRoyJ9-Cs_20260826_062919.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=iEfRoyJ9-Cs",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk 023: Bystrategisk vandforvaltning: Panik før skybrud",
-        "filename": "Tech_Talk_023___Bystrategisk_vandforvaltning___Panik_f_r_sky.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -15323,12 +15765,12 @@
         "source_url": null
       },
       {
-        "title": "Før stormfloderne rammer",
-        "filename": "Konferencer_nthRIIYUEAE_20260826_062900.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=nthRIIYUEAE",
+        "title": "Forsikring og skader fra oversvømmelser",
+        "filename": "PDF_DNNK_Klimatilpasning_DTU_5.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
       }
     ]
   },
@@ -15438,6 +15880,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
+      },
+      {
         "title": "Samarbejde på tværs v. Henrik Vejre, professor ved Københavns Universitet",
         "filename": "Oevrige_PKlQbQZRZk0_20260826_180643.txt",
         "type": "webinar",
@@ -15452,14 +15902,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
-      },
-      {
-        "title": "Webinar - Hvordan arbejdes der med klimatilpasning på tværs af grænserne?",
-        "filename": "Oevrige_wEl5KwXTgmQ_20260907_102709.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=wEl5KwXTgmQ",
-        "dnnk_url": null,
-        "source_url": null
       }
     ],
     "match_confidence": 1.0
@@ -15590,10 +16032,10 @@
         "source_url": null
       },
       {
-        "title": "Byudvikling i forbindelse med stormfloods- og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
+        "title": "Godmorgen med DNNK: Andelskraft i den grønne omstilling",
+        "filename": "Godmorgen_med_DNNK_N9jDYwakMaE_20260923_101038.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=N9jDYwakMaE",
         "dnnk_url": null,
         "source_url": null
       }
@@ -15724,12 +16166,12 @@
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       },
       {
-        "title": "Når stormfloderne rammer",
-        "filename": "PDF_06ce87_ff1072c08d3743788cdb50f8edc6a436pdf.txt",
+        "title": "Klimatilpasningsplan II - National plan for kystbeskyttelse af Danmark",
+        "filename": "PDF_db4ba2aec837.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://www.navigating360.dk/_files/ugd/06ce87_ff1072c08d3743788cdb50f8edc6a436.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-ii.pdf"
       }
     ],
     "match_confidence": 0.98
@@ -15915,12 +16357,12 @@
         "source_url": null
       },
       {
-        "title": "Tørke og Hede i Danmark 4: Vandforvaltning i praksis",
-        "filename": "T_rke_og_Hede_i_Danmark_4__Vandforvaltning_i_praksis.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=3F4rAhGYrSo",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       }
     ],
     "match_confidence": 1.0
@@ -16400,19 +16842,19 @@
         "source_url": null
       },
       {
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Urban Shores: landskabsbaseret klimatilpasning i kystområder",
         "filename": "Urban_Shores___landskabsbaseret_klimatilpasning_i_kystomr_de.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Fra testanlæg til hverdagsdrift: sådan",
-        "filename": "Godmorgen_med_DNNK__Fra_testanl_g_til_hverdagsdrift___s_dan_.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=SvUQPhZmeBk",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ],
@@ -16487,12 +16929,12 @@
         "source_url": null
       },
       {
-        "title": "Introduktion til DNNK - Det Nationale Netværk for Klimatilpasning",
-        "filename": "Tech_Talks__McnZqfz9b4_20260806_171131.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=_McnZqfz9b4",
+        "title": "Innovativ klimatilpasning med borgere - Håndbog til bæredygtig omstilling",
+        "filename": "PDF_InnovativKlimatilpasningmBorgereVIB.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/InnovativKlimatilpasningmBorgereVIB.pdf"
       }
     ],
     "match_confidence": 0.98
@@ -16938,19 +17380,19 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
-        "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Tt8y1to2Nv0",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
         "title": "Godmorgen med DNNK: Andelskraft i den grønne omstilling",
         "filename": "Godmorgen_med_DNNK_N9jDYwakMaE_20260923_101038.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=N9jDYwakMaE",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
+        "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=Tt8y1to2Nv0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       },
       {
@@ -17482,12 +17924,12 @@
         "source_url": "https://aarch.dk/wp-content/uploads/2023/03/2023.02.09_DenLilleBlaaParloer_AAA_Wiberg_LQ.pdf"
       },
       {
-        "title": "Social Dimensions of Climate Adaptation: Paneldebat",
-        "filename": "Godmorgen_med_DNNK_-qLfWkFJIyE_20260807_075302.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=-qLfWkFJIyE",
+        "title": "Innovative driftsmodeller i klimatilpasningen - Muligheder og udfordringer i driften af grøn-blå infrastruktur/LAR",
+        "filename": "PDF_vib_innovative_driftsmodeller_i_klimatilpasningen_juni_2018.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
       }
     ],
     "match_confidence": 1.0
@@ -17715,18 +18157,18 @@
         "source_url": null
       },
       {
+        "title": "Klimatilpasningsløsninger i Interreg-regionen Deutschland-Danmark: Inspirationskatalog med eksisterende løsninger",
+        "filename": "PDF_3940a7b024f9.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/07/POSEIDON_INSPIRATIONKATALOG_WEB_-_DK.pdf"
+      },
+      {
         "title": "Ny viden fra Danmarks Universiteter - KU 1: Automatiseret GIS-screening af tagflader til LAR",
         "filename": "Oevrige_-IZEwCGIcME_20260806_171312.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=-IZEwCGIcME",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "To nye bøger om klimatilpasning: Cities in an Era of Sea Level Rise og Urban Shores",
-        "filename": "Konferencer_Fy_kfUxaYXk_20260826_063117.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Fy_kfUxaYXk",
         "dnnk_url": null,
         "source_url": null
       }
@@ -17874,10 +18316,10 @@
         "source_url": null
       },
       {
-        "title": "Samarbejde på tværs v. Henrik Vejre, professor ved Københavns Universitet",
-        "filename": "Oevrige_PKlQbQZRZk0_20260826_180643.txt",
+        "title": "Godmorgen med DNNK: Kolding Å - fra opland til fjord",
+        "filename": "Godmorgen_med_DNNK_wwwgM_3ONqw_20260923_101049.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=PKlQbQZRZk0",
+        "youtube_url": "https://youtube.com/watch?v=wwwgM_3ONqw",
         "dnnk_url": null,
         "source_url": null
       }
@@ -18366,12 +18808,12 @@
         "source_url": null
       },
       {
-        "title": "Oversvømmelser kræver samarbejde - styrk beredskabet på tværs af sektorer",
-        "filename": "Konferencer_iEfRoyJ9-Cs_20260826_062919.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=iEfRoyJ9-Cs",
+        "title": "Opsamling på temadag \"Kampen om retten til vandet\" 8. september 2022",
+        "filename": "PDF_Opsamling_fra_temadag_Kampen_om_retten_til_vandet.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/09/Opsamling-fra-temadag-Kampen-om-retten-til-vandet.pdf"
       }
     ]
   },
@@ -18434,12 +18876,12 @@
         "source_url": null
       },
       {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       }
     ],
     "match_confidence": 1.0
@@ -19094,12 +19536,12 @@
         "source_url": null
       },
       {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       }
     ],
     "match_confidence": 1.0
@@ -19493,10 +19935,10 @@
         "source_url": null
       },
       {
-        "title": "Tech Talk: Dynamisk modellering af oversvømmelser i praksis",
-        "filename": "Tech_Talk__Dynamisk_modellering_af_oversv_mmelser_i_praksis.mp3.txt",
+        "title": "Godmorgen med DNNK: Forstå de sociale konsekvenser af oversvømmelser i Danmark",
+        "filename": "Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=tFT2VjSIC3c",
         "dnnk_url": null,
         "source_url": null
       }
@@ -20228,12 +20670,12 @@
         "source_url": null
       },
       {
-        "title": "Program: Rensning af overfladevand - klimatilpasning og BAT, 18. november 2021",
-        "filename": "PDF_Download_programmet_her.txt",
-        "type": "pdf",
-        "youtube_url": null,
+        "title": "Godmorgen med DNNK: Skærpede krav til udledninger - konsekvenser for klimatilpasning",
+        "filename": "Godmorgen_med_DNNK_1XD2LhdhZKo_20260923_101058.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=1XD2LhdhZKo",
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/10/Endeligt-program-18.11.2021-rensning-af-overfladevand_clean_justering.pdf"
+        "source_url": null
       }
     ],
     "match_confidence": 1.0
@@ -20293,12 +20735,12 @@
         "source_url": "https://www.navigating360.dk/_files/ugd/06ce87_ff1072c08d3743788cdb50f8edc6a436.pdf"
       },
       {
-        "title": "Godmorgen med DNAK: Overløb og oversvømmelser fra vandløb",
-        "filename": "Godmorgen_med_DNNK__Overl_b_og_oversv_mmelser_fra_vandl_b.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=6WNH1LkSKOM",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       }
     ],
     "match_confidence": 1.0
@@ -20666,6 +21108,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
+      },
+      {
         "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
         "filename": "PDF_Download_rapporten_her.txt",
         "type": "pdf",
@@ -20679,14 +21129,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=0Qkl6cc5rfo",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Oversvømmelser: beregninger, data og digitale værktøjer",
-        "filename": "Oversv_mmelser__beregninger__data_og_digitale_v_rkt_jer.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HDclqvKaBzw",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ],
@@ -21469,12 +21911,12 @@
         "source_url": null
       },
       {
-        "title": "Samfundsøkonomiske og sociale konsekvenser af stormfloder",
-        "filename": "Konferencer_ZB7K39iiVOs_20260826_062857.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ZB7K39iiVOs",
+        "title": "Oversvømmelser i Danmark - Årsager, koblinger og strategier for klimatilpasning (DMI-rapport 25-04)",
+        "filename": "PDF_e99fb0a57b32.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/08/DMI_rapport_25-04_-_Oversvoemmelser_i_Danmark.pdf"
       }
     ]
   },
@@ -21527,18 +21969,18 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       },
       {
+        "title": "KLIKOVANDs juridiske hovedspørgsmål - ret og vrang i klimatilpasningen",
+        "filename": "PDF_2014_12_18_KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
+      },
+      {
         "title": "Godmorgen med DNDK - Organiserings- og finansieringsmodeller til kystbeskyttelsesprojekter",
         "filename": "Godmorgen med DNNK Organiserings- og finansieringsmodeller t.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=G6Wa4fHjsQg",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK - Dynamisk Adaptiv Pathway Planning DAPP",
-        "filename": "Godmorgen med DNNK - Dynamisk Adaptiv Pathway Planning DAPP.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=iEYn2mc6k-s",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
@@ -22311,12 +22753,12 @@
         "source_url": null
       },
       {
-        "title": "Metodetilgange for beregning af økonomisk skade på bygninger til risikoanalyser ifm. klimatilpasning",
-        "filename": "PDF_Metodetilgange_for_beregning_af_økonomisk_skade_på_bygninger_til_risikoanalyser_.txt",
+        "title": "Klimatilpasningsplan II - National plan for kystbeskyttelse af Danmark",
+        "filename": "PDF_db4ba2aec837.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/299205990/Metoderapport_skader_DTU_AU_Ramboll.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-ii.pdf"
       }
     ],
     "match_confidence": 0.951
@@ -22821,12 +23263,12 @@
         "source_url": null
       },
       {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 2: 50-årsstrategi for vand og spildevand",
-        "filename": "Konferencer_wQChNkUzVGA_20260826_063010.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=wQChNkUzVGA",
+        "title": "Klimatilpasningsløsninger i Interreg-regionen Deutschland-Danmark: Inspirationskatalog med eksisterende løsninger",
+        "filename": "PDF_3940a7b024f9.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/07/POSEIDON_INSPIRATIONKATALOG_WEB_-_DK.pdf"
       }
     ],
     "match_confidence": 1.0
@@ -22937,6 +23379,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
+        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Aarhus: erfaringer fra City Blues: naturbaserede løsninger",
         "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
         "type": "webinar",
@@ -22949,14 +23399,6 @@
         "filename": "Oevrige_rIsvg0nHu58_20260831_170651.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rIsvg0nHu58",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talks: GISMAP og AI-baseret kortlægning for klimatilpasning",
-        "filename": "Tech_Talks_KGQ1EZ4SEvU_20260806_171057.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=KGQ1EZ4SEvU",
         "dnnk_url": null,
         "source_url": null
       }
@@ -23366,20 +23808,20 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Klimatilpasning med multifunktionalitet og merværdi - Sådan faciliterer forsyning og kommune innovativ klimatilpasning (værdikort, betaversion)",
         "filename": "PDF_Værdikort_betaversion.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/06/Vaerdikort_betaversion_17122018.pdf"
+      },
+      {
+        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
+        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
       },
       {
         "title": "Ny viden fra Arkitektskolen Aarhus: Landskabsarkitekter i fremtiden",
@@ -23497,18 +23939,18 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       },
       {
+        "title": "Klimatilpasningsplan II - National plan for kystbeskyttelse af Danmark",
+        "filename": "PDF_db4ba2aec837.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-ii.pdf"
+      },
+      {
         "title": "Tech Talks: Nationale visioner og mål for klimatilpasning",
         "filename": "Tech_Talks_A9FXERLW-gU_20260806_171119.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=A9FXERLW-gU",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Bidragsmodeller v. Helle Tegner Anker, Professor ved Københavns Universitet",
-        "filename": "Bidragsmodeller_v.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rioeMRDhJAU",
         "dnnk_url": null,
         "source_url": null
       }
@@ -23742,6 +24184,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Forsikring og skader fra oversvømmelser",
+        "filename": "PDF_DNNK_Klimatilpasning_DTU_5.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
+      },
+      {
         "title": "Fremtidens forsikringsmarked og deling af skybrudsdata v. Stine Rytter",
         "filename": "Fremtidens_forsikringsmarked_og_deling_af_skybrudsdata_v._St.mp3.txt",
         "type": "webinar",
@@ -23756,14 +24206,6 @@
         "youtube_url": "https://youtube.com/watch?v=oQx_47fe8z0",
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
-      },
-      {
-        "title": "Forsikring og skader fra oversvømmelser",
-        "filename": "PDF_DNNK_Klimatilpasning_DTU_5.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
       }
     ]
   },
@@ -23812,20 +24254,20 @@
         "source_url": null
       },
       {
+        "title": "Forsikring og skader fra oversvømmelser",
+        "filename": "PDF_DNNK_Klimatilpasning_DTU_5.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
+      },
+      {
         "title": "Gammelby-casen: Erstatningsansvar ved oversvømmelse før de nye regler pr. 1. januar 2021",
         "filename": "PDF_Oversvømmelse.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/04/Oversvoemmelse_Gammelby-casen1.pdf"
-      },
-      {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
       }
     ]
   },
@@ -23862,6 +24304,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Før klimakatastrofen rammer dig - Den største risiko er danskerne mindst forberedt på",
+        "filename": "PDF_543decf909aa.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/10/Foer-klimakatastrofen-rammer-dig.pdf"
+      },
+      {
         "title": "Godmorgen med DNNK - Klimaændringernes effekt på vandkredsløbet",
         "filename": "Godmorgen med DNNK – Klimaændringernes effekt på vandkredslø.txt",
         "type": "webinar",
@@ -23875,14 +24325,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=I6wec8LiyLA",
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
-        "title": "Workshop om oversvømmelser: skader og økonomi: oplæg 7",
-        "filename": "Workshop_om_oversv_mmelser__skader_og__konomi__opl_g_7.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=YV7kyRcXJnk",
-        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -24305,20 +24747,20 @@
         "source_url": null
       },
       {
+        "title": "Forsikring og skader fra oversvømmelser",
+        "filename": "PDF_DNNK_Klimatilpasning_DTU_5.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
+      },
+      {
         "title": "Få styr på vandet - en guide til grundejerforeningers klimatilpasning - interaktiv udgave",
         "filename": "PDF_Få_styr_på_vandet_en_GUIDE_til_grundejerforeningers_klimatipasning_interaktiv_pd.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/1-Version.-Guide-til-grunderforeningerns-klimatilpasning-INTERAKTIV.pdf"
-      },
-      {
-        "title": "Få styr på vandet - en guide til grundejerforeningers klimatilpasning - til print",
-        "filename": "PDF_Få_styr_på_vandet_en_GUIDE_til_grundejerforeningers_klimatipasning_til_print.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/2.-Version.-Guide-til-grunderforeningerns-klimatilpasning-PRINT.pdf"
       }
     ]
   },

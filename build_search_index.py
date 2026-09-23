@@ -838,12 +838,19 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
 
 # ── AI summary ────────────────────────────────────────────────────────────────
 
+MAX_RESUME_TEKST = 150_000  # tegn, ca. 40.000 tokens
+
+
 def summary_prompt(title: str, content: str, description: str | None = None, doc_type: str = "webinar") -> str:
     """Prompten der producerer resumé-felterne.
 
     Delt med den manuelle kø (manuel_eksport.py), så et manuelt resumé får
     præcis samme instruktioner og samme JSON-schema som det natlige AI-kald."""
-    excerpt = content[:5000]
+    # Hele teksten bruges (tidligere kun de første 5.000 tegn, dvs. intro og
+    # første oplæg). Loftet er kun en sikring mod meget store PDF'er.
+    excerpt = content[:MAX_RESUME_TEKST]
+    if len(content) > MAX_RESUME_TEKST:
+        excerpt += "\n\n[... teksten er afkortet her ...]"
     invitation_block = (
         f"Invitationstekst fra dnnk.dk (verificeret af DNNK, brug som primær kilde):\n{description}\n\n"
         if description else ""
@@ -852,7 +859,7 @@ def summary_prompt(title: str, content: str, description: str | None = None, doc
         prompt = (
             f"Rapport/dokument titel: {title}\n\n"
             f"{invitation_block}"
-            f"Uddrag af dokumentets tekst:\n{excerpt}\n\n"
+            f"Dokumentets tekst:\n{excerpt}\n\n"
             "Dette er en rapport eller et dokument om klimatilpasning – IKKE et webinar.\n"
             "Svar KUN med valid JSON – ingen forklaring:\n"
             '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
@@ -873,7 +880,7 @@ def summary_prompt(title: str, content: str, description: str | None = None, doc
         prompt = (
             f"Webinar titel (kan have manglende æ/ø/å): {title}\n\n"
             f"{invitation_block}"
-            f"Transskription (uddrag, brug som supplement):\n{excerpt}\n\n"
+            f"Transskription (hele webinaret, maskintransskriberet - navne kan være stavet forkert):\n{excerpt}\n\n"
             "Svar KUN med valid JSON – ingen forklaring:\n"
             '{"corrected_title": "Korrekt dansk titel med æ/ø/å",\n'
             ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'

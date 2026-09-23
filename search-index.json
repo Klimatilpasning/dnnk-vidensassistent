@@ -5286,7 +5286,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK - Byerne og det stigende havvand 3: Erfaringer med brug af DAPP for involvering af aktører",
     "category": "Godmorgen med DNNK",
-    "date": "2023-03-01",
+    "date": "2023-02-28",
     "summary": "Tredje webinar i serien om pilotprojekter fra Byerne og det stigende havvand handler om Skive Kommunes brug af DAPP (Dynamic Adaptive Policy Pathways) i BigBlue Nord-projektet, bygget på Kystdirektoratets DAPP-model. Skive Kommune, NIRAS og LYTT Architecture fortæller, hvordan klimatilpasning og byudvikling er tænkt sammen gennem åbne borgerarrangementer, lukkede workshops i Big Blue Forum, byscenarier og en handleplan for området.",
     "keywords": [
       "DAPP",
@@ -5321,9 +5321,9 @@
     ],
     "youtube_id": "vdBxSeS557E",
     "youtube_url": "https://youtube.com/watch?v=vdBxSeS557E",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [
       {
@@ -5754,7 +5754,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Andelskraft i den grønne omstilling",
     "category": "Godmorgen med DNNK",
-    "date": "2026-08-28",
+    "date": "2026-08-26",
     "summary": "Andreas Pinstrup Jørgensen fra Tænketanken Demokratisk Erhverv præsenterer pointer fra sin bog \"Andelskraft - styrken i fællesskab og forretning\" om, hvordan demokratisk ejerskab og andelsmodeller kan skabe lokal opbakning, langsigtede løsninger og stærkere fællesskaber i den grønne omstilling. Med afsæt i den stigende borgermodstand mod vindmøller og solceller diskuteres, hvordan samme udfordring gælder store klimatilpasningsprojekter, og hvordan borgerejerskab kan vende modstand til medspil.",
     "keywords": [
       "andelskraft",
@@ -5778,9 +5778,9 @@
     "places": [],
     "youtube_id": "N9jDYwakMaE",
     "youtube_url": "https://youtube.com/watch?v=N9jDYwakMaE",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 0.98,
     "description": null,
     "related_resources": [
       {
@@ -5824,7 +5824,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Forstå de sociale konsekvenser af oversvømmelser i Danmark",
     "category": "Godmorgen med DNNK",
-    "date": "2024-09-26",
+    "date": "2024-09-25",
     "summary": "Mia Cassidy Prall, erhvervs-ph.d.-studerende ved Aalborg Universitet og Kystdirektoratet, præsenterer et nyt nationalt socialt sårbarhedsindeks og et socialt oversvømmelsesrisikoindeks for Danmark. Modellerne viser, hvordan forskellige grupper og samfund påvirkes forskelligt af oversvømmelser, og kan bruges til at indrette klimatilpasningsstrategier, så ingen lades i stikken. Oplægget var på engelsk og bygger på en open access-artikel i International Journal of Disaster Risk Reduction.",
     "keywords": [
       "social sårbarhed",
@@ -5849,9 +5849,9 @@
     ],
     "youtube_id": "tFT2VjSIC3c",
     "youtube_url": "https://youtube.com/watch?v=tFT2VjSIC3c",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -5888,7 +5888,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Fra friktion til fælles fodslag",
     "category": "Godmorgen med DNNK",
-    "date": "2026-05-21",
+    "date": "2026-05-19",
     "summary": "Webinaret handler om regnvandshåndtering i stor skala i den nye by Kildedal ved Måløv i Ballerup Kommune, udviklet af et arealudviklingsselskab ejet af PensionDanmark og Ballerup Kommune. Siv Andersen fra Kildedal, Sissel Davidsen fra Novafos og Karin fra Danmarks Naturfredningsforening Ballerup fortæller, hvordan de har fundet fælles fodslag om åbne grøfter, regnvandsbassiner uden for byen og naturløft. Novafos anbefaler, at bassinerne planlægges tidligere i processen, end det skete her.",
     "keywords": [
       "regnvandshåndtering",
@@ -5925,9 +5925,9 @@
     ],
     "youtube_id": "yEvJX7_4Esw",
     "youtube_url": "https://youtube.com/watch?v=yEvJX7_4Esw",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 0.98,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -6031,7 +6031,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Hvornår accelererer konsekvenserne af havstigning?",
     "category": "Godmorgen med DNNK",
-    "date": "2026-09-14",
+    "date": "2026-09-10",
     "summary": "Sebastian Bokhari Irminger fra Statens Geotekniska Institut (SGI) præsenterer tærskelanalyser for 21 kystkommuner i Skåne og Halland. I stedet for at regne på et forudbestemt havniveau vender analysen spørgsmålet om og finder de vandstande, hvor skaderne ikke længere vokser jævnt, men springer. Arbejdet er lavet sammen med kommunerne, länsstyrelsen, SMHI og den svenske myndighed for civilt forsvar som grundlag for planlægning af klimatilpasning.",
     "keywords": [
       "havstigning",
@@ -6060,9 +6060,9 @@
     ],
     "youtube_id": "GhA-Ga8cMfw",
     "youtube_url": "https://youtube.com/watch?v=GhA-Ga8cMfw",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [
       {
@@ -6112,7 +6112,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
     "category": "Godmorgen med DNNK",
-    "date": "2026-02-24",
+    "date": "2026-02-20",
     "summary": "Tampere Kommune i Finland fortæller om byens klimatilpasning og arbejdet med naturbaserede løsninger i Interreg-projektet City Blues. Annika Kettunen gennemgår det strategiske niveau, hvor tilpasning er integreret i planen for et klimaneutralt Tampere med fokus på varmeøer og regnvandsoversvømmelser, mens Anna går i dybden med praktiske løsninger som forsinkelsesbassiner og vådområder til regnvandshåndtering.",
     "keywords": [
       "naturbaserede løsninger",
@@ -6143,9 +6143,9 @@
     ],
     "youtube_id": "agCuRbhxX3k",
     "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -6182,7 +6182,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Kolding Å - fra opland til fjord",
     "category": "Godmorgen med DNNK",
-    "date": "2025-10-29",
+    "date": "2025-10-24",
     "summary": "Webinaret zoomer ind på Kolding Kommunes klimatilpasningsprojekt i oplandet til Kolding Å, der skal beskytte byen mod både oversvømmelser fra åen og højvande fra fjorden. Planen omfatter et pumpe- og sluseanlæg ved udløbet i Kolding Fjord og oplandsløsninger, der kan tilbageholde ca. 2,3 mio. m3 vand i ådalen, og oplægget belyser baggrunden, de tekniske valg og samspillet mellem opland og kyst, bl.a. med erfaringer fra den store stormflod, der pressede vand fra Lillebælt langt ind i Kolding Å.",
     "keywords": [
       "Kolding Å",
@@ -6213,9 +6213,9 @@
     ],
     "youtube_id": "wwwgM_3ONqw",
     "youtube_url": "https://youtube.com/watch?v=wwwgM_3ONqw",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -6285,9 +6285,9 @@
     ],
     "youtube_id": "1XD2LhdhZKo",
     "youtube_url": "https://youtube.com/watch?v=1XD2LhdhZKo",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -6446,7 +6446,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Valby Skybrudstunnel - fra plan til udførelse",
     "category": "Øvrige",
-    "date": "2026-09-11",
+    "date": "2026-09-08",
     "summary": "HOFOR præsenterer Valby Skybrudstunnel, der bliver 2,5 km lang, 4 meter i diameter og ligger ca. 20 meter under Frederiksberg og Valby. Tunnelen skal kunne rumme ca. 30.000 m3, beskytte mod en 100-årshændelse og reducere overløb til Kalveboderne fra ca. fem om året til under ét. Jesper Heick Thyme gennemgår planlægning og projektering siden skybrudsplanen fra 2012, og Maibrit Gjørup fortæller om udbud, entreprenørsamarbejde og udførelse frem mod forventet færdiggørelse i 2028.",
     "keywords": [
       "Valby Skybrudstunnel",
@@ -6479,9 +6479,9 @@
     ],
     "youtube_id": "MCmHDnIc490",
     "youtube_url": "https://youtube.com/watch?v=MCmHDnIc490",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [
       {
@@ -6525,7 +6525,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Værdisætning af merværdier fra overfladeløsninger til regnvandshåndtering",
     "category": "Godmorgen med DNNK",
-    "date": "2026-03-20",
+    "date": "2026-03-16",
     "summary": "Aarhus Vand og Rambøll fortæller om et eksplorativt samarbejde om at sætte kroner på merværdierne fra blågrønne overfladeløsninger til forsinkelse og rensning af regnvand, fx attraktive opholdsrum, biodiversitet, trafiksikkerhed og sundhed. Oplægget viser, hvordan værdisætningen med Rambølls værktøj NBS Value kan styrke beslutningsgrundlaget og business casen i samarbejdet mellem kommune og forsyning, med projekteksempler fra Vesterbro Torv og Fredensvang i Aarhus.",
     "keywords": [
       "merværdier",
@@ -6562,9 +6562,9 @@
     ],
     "youtube_id": "YFVZ3gg4sOI",
     "youtube_url": "https://youtube.com/watch?v=YFVZ3gg4sOI",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -12048,7 +12048,7 @@
     "youtube_url": "https://youtube.com/watch?v=YutqZ_sFZ3w",
     "dnnk_url": "https://www.dnnk.dk/tech-talks/",
     "source_url": null,
-    "match_confidence": 0.891,
+    "match_confidence": 0.95,
     "description": null,
     "related_resources": [],
     "related_webinars": [
@@ -13353,7 +13353,7 @@
     "type": "webinar",
     "title": "Webinar: Realiseringsprojekter fra Byerne og det stigende havvand",
     "category": "Godmorgen med DNNK",
-    "date": "2023-03-08",
+    "date": "2023-03-07",
     "summary": "Projektlederne for to demonstrationsprojekter fra partnerskabet Byerne og det stigende havvand fortæller om overvejelser og planer for at gå fra udviklingsplan til realisering. Lise Holm gennemgår Dragør Kommunes kystbeskyttelsesprojekt, der har fået tilsagn om 18 mio. kr. fra Realdania og 37 mio. kr. fra statslige puljer, herunder dilemmaer, strategi for naturudvikling og de konkrete projektstrækninger på den flade sydspids af Amager. Lotta Tiselius præsenterer det andet realiseringsprojekt.",
     "keywords": [
       "kystbeskyttelse",
@@ -13383,9 +13383,9 @@
     ],
     "youtube_id": "mvx1dZTtyX8",
     "youtube_url": "https://youtube.com/watch?v=mvx1dZTtyX8",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [
       {

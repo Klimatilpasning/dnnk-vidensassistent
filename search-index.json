@@ -3436,7 +3436,7 @@
         "source_url": null
       },
       {
-        "title": "Tech Talk 007 - New requirements for water management demands",
+        "title": "Tech Talk 007 - Nye krav til vandhåndtering: RockFlow og ROCKWOOL's byklimatilpasningsprogram",
         "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
@@ -3654,6 +3654,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Tech Talk 007 - Nye krav til vandhåndtering: RockFlow og ROCKWOOL's byklimatilpasningsprogram",
+        "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "source_url": null
+      },
+      {
         "title": "V.I.P. Box of Green",
         "filename": "V.I.P._Box_of_Green.mp3.txt",
         "type": "webinar",
@@ -3666,14 +3674,6 @@
         "filename": "Oevrige_rIsvg0nHu58_20260831_170651.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rIsvg0nHu58",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK - Træer som værktøj i klimatilpasning",
-        "filename": "Godmorgen_med_DNNK_Z7NWvXdZE7g_20260806_171137.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Z7NWvXdZE7g",
         "dnnk_url": null,
         "source_url": null
       }
@@ -6783,6 +6783,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
+        "filename": "Climate_Adaptation_Summit_2024_-_Ulf_Thysell.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=YVr1uH0XIAI",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Når vand løber opad: Tryksat LAR åbner for en ny kategori",
         "filename": "N_r_vand_l_ber_opad___Tryksat_LAR__bner_for_en_ny_kategori_a.mp3.txt",
         "type": "webinar",
@@ -6795,14 +6803,6 @@
         "filename": "Godmorgen_med_DNNK__Samskabelse_af_naturbaserede_l_sninger__.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=O_W1EujI2AE",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: NBS i byen - erfaringer fra Malmø",
-        "filename": "Godmorgen_med_DNNK__NBS_i_t_t_by___erfaringer_fra_Malm_.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=4tW5vPcfKNQ",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
@@ -13373,19 +13373,19 @@
     ],
     "related_webinars": [
       {
-        "title": "Tech Talk 007 - New requirements for water management demands",
-        "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
         "title": "Anvendelse af RockFlow på Langelands Plads, Frederiksberg",
         "filename": "Oevrige_rIsvg0nHu58_20260831_170651.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rIsvg0nHu58",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk 007 - Nye krav til vandhåndtering: RockFlow og ROCKWOOL's byklimatilpasningsprogram",
+        "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       },
       {
@@ -15110,11 +15110,11 @@
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
-        "filename": "Climate_Adaptation_Summit_2024_-_Ulf_Thysell.mp3.txt",
+        "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
+        "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=YVr1uH0XIAI",
-        "dnnk_url": null,
+        "youtube_url": "https://youtube.com/watch?v=Tt8y1to2Nv0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ]
@@ -15235,11 +15235,11 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
-        "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Staffan Moberg",
+        "filename": "Climate_Adaptation_Summit_2024_-_Staffan_Moberg.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Tt8y1to2Nv0",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -15490,28 +15490,27 @@
     "title": "Climate Adaptation Summit 2024 - Staffan Moberg",
     "category": "Øvrige",
     "date": "2024-12-19",
-    "summary": "Oplægget fra Climate Adaptation Summit 2024 handler om forsikringsbranchens perspektiv på klimatilpasning i Sverige og Norden, med fokus på stigende skader og omkostninger fra oversvømmelser. Der berøres desuden EU-taksonomi og CSRD-rapporteringskrav samt grønne obligationer og pensionskapitalens rolle i finansiering af klimatilpasning. Transskriptionen er meget maskinfejlbehæftet (svensk-engelsk blanding), hvorfor detaljerne er usikre.",
+    "summary": "Staffan Moberg, jurist hos Insurance Sweden (den svenske forsikringsbranches organisation), taler om forsikringsbranchens rolle i at finansiere og fremme klimarobusthed, med afsæt i samme statslige udredning fra 2007 som Ulf Thysell nævnte. Han peger på, at forsikringsselskabernes store langsigtede kapital, herunder pensionsmidler, kan bruges til at finansiere kommunernes klimatilpasning gennem obligationer, og at det både gavner kommunerne og giver forsikringsselskaberne stabile langsigtede investeringer.",
     "keywords": [
-      "klimatilpasning",
-      "forsikring",
-      "oversvømmelse",
-      "Sverige",
-      "Norden",
-      "CSRD",
-      "EU-taksonomi",
-      "grønne obligationer",
+      "Insurance Sweden",
+      "forsikringsbranchen",
+      "klimafinansiering",
       "pensionskapital",
-      "klimarisiko"
+      "obligationer",
+      "Sverige",
+      "klimatilpasning",
+      "kommuner",
+      "risikodeling",
+      "investering"
     ],
     "speakers": [
       {
         "name": "Staffan Moberg",
-        "org": "Svensk Försäkring"
+        "org": "Insurance Sweden"
       }
     ],
     "places": [
-      "Sverige",
-      "Norden"
+      "Sverige"
     ],
     "youtube_id": "UBAR1IG7kQ4",
     "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
@@ -15520,28 +15519,28 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Kloakeftersynsordning.dk v. Jens Guldberg: Konsulent for Kloak",
-        "filename": "Kloakeftersynsordning.dk_v._Jens_Guldberg__Konsulent_for_Klo.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
+        "filename": "Climate_Adaptation_Summit_2024_-_Ulf_Thysell.mp3.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=YVr1uH0XIAI",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "National undersøgelse af klimatilpasning i et borger- og virksomhedsperspektiv",
-        "filename": "PDF_National_undersøgelse_af_klimatilpasning.txt",
+        "title": "Climate Adaptation Summit 2024 - Rasmus Lauridsen",
+        "filename": "Climate_Adaptation_Summit_2024_-_Rasmus_Lauridsen.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=FstuVt6efp4",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Climate change adaptation and economics and investment decision-making in the cities",
+        "filename": "PDF_Se_rapporten_her.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/02/National-undersoegelse-af-klimatilpasning.pdf"
-      },
-      {
-        "title": "Risikokort CARMS demo",
-        "filename": "Oevrige_PKlQbQZRZk0_20260826_180643.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=PKlQbQZRZk0",
-        "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/05/climate-change-adaptation-and-economics-and-investment-decision-making-in-the-cities.pdf"
       }
     ]
   },
@@ -15552,26 +15551,27 @@
     "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
     "category": "Øvrige",
     "date": "2024-12-19",
-    "summary": "Oplægget fra Climate Adaptation Summit 2024 handler om økonomien i klimatilpasning, herunder offentlig assistance/forsikring ved oversvømmelser og omkostninger ved klimaskader. Der sammenlignes cost-benefit af naturbaserede løsninger med traditionel infrastruktur, og investeringsbehov og genforsikring nævnes, bl.a. med reference til Storbritannien. Transskriptionen er stærkt maskinfejlbehæftet, så flere detaljer er usikre.",
+    "summary": "Ulf Thysell fra den svenske brancheorganisation Svenskt Vatten fortæller om omkostningerne ved klimatilpasning i den svenske vandsektor, som siden en statslig udredning i 2007 har arbejdet med at klimasikre kloak- og drikkevandssystemer i landets 290 kommuner. Han viser, at det er langt billigere at investere i naturbaserede løsninger og åbne regnvandsløsninger frem for at udvide rørsystemerne, og opfordrer til at flytte investeringerne fra rør til grønne byrum.",
     "keywords": [
-      "klimatilpasning",
-      "forsikring",
-      "offentlig assistance",
-      "cost-benefit",
+      "Svenskt Vatten",
+      "Sverige",
       "naturbaserede løsninger",
-      "investeringer",
-      "genforsikring",
-      "oversvømmelse",
-      "klimaøkonomi"
+      "regnvandshåndtering",
+      "kloaksystem",
+      "drikkevand",
+      "investering",
+      "klimatilpasning",
+      "kommuner",
+      "åbne regnvandsløsninger"
     ],
     "speakers": [
       {
         "name": "Ulf Thysell",
-        "org": ""
+        "org": "Svenskt Vatten"
       }
     ],
     "places": [
-      "Storbritannien"
+      "Sverige"
     ],
     "youtube_id": "YVr1uH0XIAI",
     "youtube_url": "https://youtube.com/watch?v=YVr1uH0XIAI",
@@ -15580,27 +15580,27 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "National undersøgelse af klimatilpasning i et borger- og virksomhedsperspektiv",
-        "filename": "PDF_National_undersøgelse_af_klimatilpasning.txt",
+        "title": "Climate change adaptation and economics and investment decision-making in the cities",
+        "filename": "PDF_Se_rapporten_her.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/02/National-undersoegelse-af-klimatilpasning.pdf"
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/05/climate-change-adaptation-and-economics-and-investment-decision-making-in-the-cities.pdf"
       },
       {
-        "title": "Samfundsøkonomiske konsekvenser af oversvømmelser og investeringer i klimatilpasning",
-        "filename": "PDF_Download_rapporten_her.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
-      },
-      {
-        "title": "Climate Adaptation Summit 2024 - Blaz Kurnik",
-        "filename": "Climate_Adaptation_Summit_2024_-_Blaz_Kurnik.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Staffan Moberg",
+        "filename": "Climate_Adaptation_Summit_2024_-_Staffan_Moberg.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=xDdOgmmFbYA",
+        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Aarhus: erfaringer fra City Blues: naturbaserede løsninger",
+        "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=qJ9fw3YFZvs",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ]
@@ -19882,14 +19882,6 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Tech Talk 007 - New requirements for water management demands",
-        "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
         "title": "Anvendelse af RockFlow på Langelands Plads, Frederiksberg",
         "filename": "Oevrige_rIsvg0nHu58_20260831_170651.txt",
         "type": "webinar",
@@ -19903,6 +19895,14 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=DaKuQ9hKYF0",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk 007 - Nye krav til vandhåndtering: RockFlow og ROCKWOOL's byklimatilpasningsprogram",
+        "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -20147,7 +20147,16 @@
     "dnnk_url": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [
+      {
+        "title": "Tech Talk 007 - Nye krav til vandhåndtering: RockFlow og ROCKWOOL's byklimatilpasningsprogram",
+        "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "source_url": null
+      }
+    ]
   },
   {
     "filename": "Strategisk_planl_gning_af_fremtidens_klimatilpasning_af_byer.mp3 (1).txt",
@@ -21370,40 +21379,31 @@
     "filename": "Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
     "path": "transcriptions/Tech_Talk_007_-_New_requirements_for_water_managements_deman.txt",
     "folder": "transcritranscriptions",
-    "title": "Tech Talk 007 - New requirements for water management demands",
+    "title": "Tech Talk 007 - Nye krav til vandhåndtering: RockFlow og ROCKWOOL's byklimatilpasningsprogram",
     "category": "Tech Talk",
     "date": "2021-02-24",
-    "summary": "Tech Talk om produktet RockFlow fra Lapinus/ROCKWOOL, en stenuldsbaseret løsning til opsamling, forsinkelse og rensning af regnvand i byer med pladsmangel. Oplægsholderne gennemgår klimaudfordringer med øget urbanisering og skybrud, samt konkrete projekter i blandt andet Odense, Aarhus og Thisted, og produktets levetid (stenulden holder minimum 50 år). Afslutningsvis drøftes muligheder for at kombinere løsningen med plantevækst og fosforfjernelse.",
+    "summary": "Daniel Kubov fra ROCKWOOL, der leder virksomhedens program for byklimatilpasning, præsenterer nye stenuldsbaserede produkter til at håndtere for meget, for lidt og for varmt vand i byer med begrænset plads. Han gennemgår løsninger som permeable belægninger, grønne facader til afkøling og RockFlow, et regnvandsmagasin der kan lægges parallelt med det almindelige kloaksystem under vejarealer, og fremhæver at produkterne udvikles med fokus på CO2-neutral produktion.",
     "keywords": [
-      "klimatilpasning",
-      "regnvandshåndtering",
-      "skybrud",
-      "stenuld",
-      "RockFlow",
-      "Lapinus",
       "ROCKWOOL",
-      "LAR-løsninger",
-      "vandrensning",
-      "forsinkelse af regnvand",
+      "RockFlow",
+      "stenuld",
+      "regnvandshåndtering",
+      "permeable belægninger",
+      "byklimatilpasning",
       "urbanisering",
-      "fosforfjernelse"
+      "afkøling af byrum",
+      "kloaksystem",
+      "klimatilpasning"
     ],
     "speakers": [
       {
-        "name": "Daan",
-        "org": "Lapinus (ROCKWOOL Group)"
-      },
-      {
-        "name": "Anders",
-        "org": "Lapinus (ROCKWOOL Group)"
+        "name": "Daniel Kubov",
+        "org": "ROCKWOOL"
       }
     ],
     "places": [
       "Danmark",
-      "Odense",
-      "Aarhus",
-      "Thisted",
-      "Portugal"
+      "Europa"
     ],
     "youtube_id": "25a7BNv7clQ",
     "youtube_url": "https://youtube.com/watch?v=25a7BNv7clQ",
@@ -21428,10 +21428,10 @@
         "source_url": null
       },
       {
-        "title": "Rockflow 04 oplæg",
-        "filename": "Rockflow_04_opl_g.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
+        "filename": "Climate_Adaptation_Summit_2024_-_Ulf_Thysell.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=hAU-rCQOZkA",
+        "youtube_url": "https://youtube.com/watch?v=YVr1uH0XIAI",
         "dnnk_url": null,
         "source_url": null
       }

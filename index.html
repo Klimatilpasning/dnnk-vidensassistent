@@ -89,6 +89,7 @@
   .result-card { background:var(--card);border:1px solid var(--border);border-left:4px solid var(--dnnk-blue);padding:1.25rem 1.5rem;margin-bottom:0.75rem;border-radius:0 2px 2px 0;transition:all 0.15s; }
   .result-card:hover { border-left-color:var(--dnnk-green);box-shadow:0 2px 8px rgba(91,155,191,0.12); }
   .result-category { font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;background:#EBF4F9;color:var(--dnnk-blue);padding:0.15rem 0.6rem;display:inline-block;margin-bottom:0.5rem;font-weight:500;border-radius:2px; }
+  .result-type-pdf { font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;background:#EAF6EE;color:var(--dnnk-green);padding:0.15rem 0.6rem;display:inline-block;margin:0 0 0.5rem 0.4rem;font-weight:500;border-radius:2px; }
   .result-title { font-size:0.95rem;font-weight:500;margin-bottom:0.4rem;line-height:1.35;color:var(--text); }
   .result-hint { font-size:0.75rem;color:var(--muted);margin:0.3rem 0 0.5rem;font-style:italic; }
   .result-actions { display:flex;align-items:center;gap:0.75rem;margin-top:0.75rem;flex-wrap:wrap; }
@@ -740,6 +741,13 @@ function buildCard(entry, matchedKws) {
   catEl.textContent = (entry.category || 'Øvrige');
   card.appendChild(catEl);
 
+  if (entry.type === 'pdf') {
+    const typeEl = document.createElement('span');
+    typeEl.className = 'result-type-pdf';
+    typeEl.textContent = '📄 Dokument';
+    card.appendChild(typeEl);
+  }
+
   if (entry.date) {
     const dateEl = document.createElement('span');
     dateEl.style.cssText = 'font-size:0.65rem;color:var(--muted);margin-left:0.5rem;';
@@ -896,7 +904,12 @@ function buildCard(entry, matchedKws) {
   const related = [];
   if (entry.related_webinars && entry.related_webinars.length) {
     entry.related_webinars.forEach(w => {
-      related.push({ label: w.title, url: w.youtube_url || w.dnnk_url, type: 'webinar' });
+      const isPdf = w.type === 'pdf';
+      related.push({
+        label: w.title,
+        url: w.youtube_url || w.dnnk_url || w.source_url,
+        type: isPdf ? 'pdf' : 'webinar',
+      });
     });
   }
   if (entry.related_resources && entry.related_resources.length) {
@@ -922,7 +935,7 @@ function buildCard(entry, matchedKws) {
       link.style.cssText = 'font-size:12px;color:' + (item.type === 'webinar' ? 'var(--dnnk-blue)' : 'var(--dnnk-green)') + ';text-decoration:none;display:flex;align-items:flex-start;gap:4px;';
       link.onclick = e => e.stopPropagation();
       const icon = document.createElement('span');
-      icon.textContent = item.type === 'webinar' ? '▶' : (item.resourceType ? item.resourceType.split(' ')[0] : '📄');
+      icon.textContent = item.type === 'webinar' ? '▶' : (item.type === 'pdf' ? '📄' : (item.resourceType ? item.resourceType.split(' ')[0] : '📄'));
       icon.style.cssText = 'flex-shrink:0;margin-top:1px;font-size:11px;';
       const txt = document.createElement('span');
       const typeLabel = item.resourceType ? item.resourceType.split(' ').slice(1).join(' ') + ' · ' : '';

@@ -2751,10 +2751,10 @@
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Alan Cohn",
-        "filename": "Climate_Adaptation_Summit_2024_-_Alan_Cohn.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Blaz Kurnik",
+        "filename": "Climate_Adaptation_Summit_2024_-_Blaz_Kurnik.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=qIyqX6OD96Y",
+        "youtube_url": "https://youtube.com/watch?v=xDdOgmmFbYA",
         "dnnk_url": null,
         "source_url": null
       }
@@ -14936,28 +14936,30 @@
     "title": "Climate Adaptation Summit 2024 - Alan Cohn",
     "category": "Øvrige",
     "date": "2025-01-23",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om klimatilpasning og byplanlægning med fokus på resiliens over for oversvømmelser og storme. Der præsenteres erfaringer og løsninger fra New York City og København, herunder vandhåndtering, kritisk infrastruktur og samfundsplanlægning. Transskriptionen er af meget lav kvalitet (overvejende engelsk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Alan Cohn fra New Yorks Department of Environmental Protection fortæller om ti års videnudveksling med København og hvordan superstorm Sandy i 2012 satte fokus på stormflod, mens skybrud først for alvor kom på dagsordenen efter samarbejdet med København. Han gennemgår New Yorks arbejde med at klimasikre kritisk infrastruktur og pointerer, at cost-benefit-analyser af klimatilpasningsprojekter skal tage højde for social sårbarhed, så indsatsen prioriteres i udsatte lokalsamfund.",
     "keywords": [
-      "klimatilpasning",
-      "resiliens",
+      "New York",
+      "Department of Environmental Protection",
       "stormflod",
-      "vandhåndtering",
-      "kritisk infrastruktur",
-      "byplanlægning",
-      "New York City",
-      "København",
-      "Climate Adaptation Summit"
+      "skybrud",
+      "cost-benefit-analyse",
+      "social sårbarhed",
+      "videnudveksling",
+      "superstorm Sandy",
+      "klimatilpasning",
+      "byplanlægning"
     ],
     "speakers": [
       {
         "name": "Alan Cohn",
-        "org": "NYC Department of Environmental Protection"
+        "org": "New York City Department of Environmental Protection"
       }
     ],
     "places": [
+      "New York",
       "København",
-      "New York City",
-      "Kalundborg"
+      "Phoenix",
+      "Las Vegas"
     ],
     "youtube_id": "qIyqX6OD96Y",
     "youtube_url": "https://youtube.com/watch?v=qIyqX6OD96Y",
@@ -14965,14 +14967,6 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [
-      {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
-        "filename": "Konferencer_eqIRZXAQplk_20260826_062814.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
-        "dnnk_url": null,
-        "source_url": null
-      },
       {
         "title": "Climate Adaptation Summit 2024 - Jennifer Cherrier",
         "filename": "Climate_Adaptation_Summit_2024_-_Jennifer_Cherrier.mp3.txt",
@@ -14982,10 +14976,18 @@
         "source_url": null
       },
       {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byer",
-        "filename": "Strategisk_planl_gning_af_fremtidens_klimatilpasning_af_byer.mp3.txt",
+        "title": "Tech Talk 016 - Sammenhængen mellem oversvømmelse og folks helbred",
+        "filename": "Tech_Talk_016_-_Sammenh_ngen_mellem_oversv_mmelse__folks_hel.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=oQx_47fe8z0",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "source_url": null
+      },
+      {
+        "title": "Temadag om kystnære risici: lovgivning og social sårbarhed",
+        "filename": "Temadag_om_kystn_re_risici__lovgivning_og_social_s_rbarhed.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=_RMVkoF0fAM",
         "dnnk_url": null,
         "source_url": null
       }
@@ -14998,18 +15000,18 @@
     "title": "Climate Adaptation Summit 2024 - Bertel Ifversen",
     "category": "Øvrige",
     "date": "2024-12-19",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om dansk vand- og spildevandssektors langsigtede investeringsbehov i klimatilpasning. Bertel Ifversen gennemgår scenarier for stigende investeringer i håndtering af regnvand, spildevand og stigende grundvandsniveauer, samt principper for fuld omkostningsdækning og finansiering via vandtaksten. Han peger på behov for innovation og fleksible løsninger, da nyt anlæg skal have lang levetid under usikre klimascenarier.",
+    "summary": "Bertel Ifversen fra DANVA gennemgår omkostningerne ved klimatilpasning i de danske spildevandsselskaber og viser, at næsten halvdelen af selskabernes udgifter reelt går til håndtering af regn- og overfladevand, ikke spildevand. Han præsenterer en langsigtet investeringsprognose, der peger på en kraftig stigning i fornyelsesbehovet, fordi mange ledninger fra 1960'erne og 70'erne når enden af deres levetid samtidig med at klimatilpasning lægger yderligere investeringer oveni, og opfordrer til mere fleksible og billigere løsninger.",
     "keywords": [
-      "klimatilpasning",
-      "spildevand",
-      "regnvand",
-      "grundvandsstigning",
-      "investeringer",
-      "vandsektor",
-      "takstfinansiering",
       "DANVA",
+      "spildevandsselskaber",
+      "regnvandshåndtering",
+      "investeringsprognose",
+      "ledningsfornyelse",
+      "klimatilpasning",
+      "omkostninger",
+      "vandforsyning",
       "infrastruktur",
-      "Climate Adaptation Summit"
+      "grundvand"
     ],
     "speakers": [
       {
@@ -15017,7 +15019,9 @@
         "org": "DANVA"
       }
     ],
-    "places": [],
+    "places": [
+      "Danmark"
+    ],
     "youtube_id": "CaCmwUL1syU",
     "youtube_url": "https://youtube.com/watch?v=CaCmwUL1syU",
     "dnnk_url": null,
@@ -15025,27 +15029,27 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Climate Adaptation Summit 2024 - Karina Barquet",
-        "filename": "Climate_Adaptation_Summit_2024_-_Karina_Barquet.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Webinar om jura 2: Omkostningsbekendtgørelsen",
-        "filename": "Webinar_om_jura_2__Omkostningsbekendtg_relsen.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Terræn og grundvand",
         "filename": "Terr_nn_rt_grundvand.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=GNayfIboS6w",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Oversvømmelser kræver samarbejde - styrk beredskabet på tværs af sektorer",
+        "filename": "Konferencer_iEfRoyJ9-Cs_20260826_062919.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=iEfRoyJ9-Cs",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk: Pathways to water resilient cities",
+        "filename": "Tech_Talk___Pathways_to_water_resilient_cities.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=7xCb7krzoyE",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -15057,19 +15061,18 @@
     "title": "Climate Adaptation Summit 2024 - Blaz Kurnik",
     "category": "Øvrige",
     "date": "2025-01-21",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om klimatilpasning på europæisk niveau, hvor Det Europæiske Miljøagentur (EEA) oversætter viden fra medlemslandene til EU-politik. Der præsenteres data om økonomiske tab fra ekstreme vejrhændelser som skovbrande og oversvømmelser i Europa, stigende sundhedsrisici fra hedebølger, samt behovet for mere proaktiv klimatilpasning i byer frem for reaktiv håndtering. Transskriptionen er af meget lav kvalitet (overvejende engelsk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Blaz Kurnik fra Det Europæiske Miljøagentur (EEA) præsenterer data der viser, at Europa opvarmes dobbelt så hurtigt som resten af verden, og at vejr- og klimaekstremer har kostet EU-landene omkring 740 milliarder euro siden 1980, med særligt store tab i 2021-23 fra oversvømmelser og hedebølger. Han fremhæver byer som frontløbere i klimatilpasningen, hvor omkring halvdelen af de større europæiske byer har en lokal klimatilpasningsplan, og at naturbaserede løsninger er blandt de mest omkostningseffektive svar.",
     "keywords": [
-      "klimatilpasning",
-      "EU-politik",
-      "klimarisiko",
-      "ekstremvejr",
-      "oversvømmelse",
-      "skovbrande",
-      "hedebølge",
-      "sundhed",
       "EEA",
-      "byer",
-      "Climate Adaptation Summit"
+      "Det Europæiske Miljøagentur",
+      "klimaøkonomi",
+      "oversvømmelser",
+      "hedebølge",
+      "naturbaserede løsninger",
+      "klimatilpasningsplan",
+      "Europa",
+      "opvarmning",
+      "risikovurdering"
     ],
     "speakers": [
       {
@@ -15078,9 +15081,11 @@
       }
     ],
     "places": [
-      "New York",
-      "Tyskland",
-      "Island"
+      "Europa",
+      "Slovenien",
+      "Belgien",
+      "Nederlandene",
+      "Tyskland"
     ],
     "youtube_id": "xDdOgmmFbYA",
     "youtube_url": "https://youtube.com/watch?v=xDdOgmmFbYA",
@@ -15089,26 +15094,26 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
-        "filename": "Konferencer_eqIRZXAQplk_20260826_062814.txt",
+        "title": "Tech Talk: Dynamisk modellering af oversvømmelser i praksis",
+        "filename": "Tech_Talk__Dynamisk_modellering_af_oversv_mmelser_i_praksis.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
+        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Lykke Leonardsen",
-        "filename": "Climate_Adaptation_Summit_2024_-_Lykke_Leonardsen.mp3.txt",
+        "title": "Før stormfloderne rammer",
+        "filename": "Konferencer_nthRIIYUEAE_20260826_062900.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ZxCzLZpJmrw",
+        "youtube_url": "https://youtube.com/watch?v=nthRIIYUEAE",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Staffan Moberg",
-        "filename": "Climate_Adaptation_Summit_2024_-_Staffan_Moberg.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
+        "filename": "Climate_Adaptation_Summit_2024_-_Ulf_Thysell.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
+        "youtube_url": "https://youtube.com/watch?v=YVr1uH0XIAI",
         "dnnk_url": null,
         "source_url": null
       }
@@ -15121,28 +15126,29 @@
     "title": "Climate Adaptation Summit 2024 - Jennifer Cherrier",
     "category": "Øvrige",
     "date": "2025-01-22",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om klimatilpasning i byer med fokus på samarbejde mellem universiteter, private virksomheder og offentlige myndigheder. Jennifer Cherrier, professor ved City University of New York, diskuterer action-oriented forskning og hvordan videndeling og partnerskaber mellem forskningsinstitutioner og byer (herunder København) kan omsætte klimaviden til konkret handling. Transskriptionen er af meget lav kvalitet (overvejende engelsk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Jennifer Cherrier, professor ved City University of New York, viser med eksempler fra sit eget Brooklyn-kvarter hvordan tidligere vådområder giver tilbagevendende oversvømmelser, og hvordan grå gader kan omdannes til blå-grønne løsninger der forsinker og renser regnvand. Hun argumenterer for, at klimatilpasning kræver tværfagligt samarbejde mellem universiteter, byer og den private sektor, og fremhæver det tiårige videnssamarbejde mellem New York og København som model for, hvordan forskning kan blive mere handlingsorienteret og direkte anvendelig for byerne.",
     "keywords": [
-      "klimatilpasning",
-      "byer",
-      "forskningssamarbejde",
-      "offentlig-privat partnerskab",
-      "videndeling",
-      "resiliens",
+      "CUNY",
+      "Brooklyn",
+      "vådområder",
+      "blå-grønne løsninger",
+      "regnvandshåndtering",
+      "tværfagligt samarbejde",
+      "videnudveksling",
       "New York",
-      "København",
-      "Climate Adaptation Summit"
+      "klimatilpasning",
+      "byplanlægning"
     ],
     "speakers": [
       {
         "name": "Jennifer Cherrier",
-        "org": "City University of New York"
+        "org": "City University of New York (CUNY)"
       }
     ],
     "places": [
       "New York",
-      "København",
-      "Baltimore"
+      "Brooklyn",
+      "København"
     ],
     "youtube_id": "fifdWf02UK4",
     "youtube_url": "https://youtube.com/watch?v=fifdWf02UK4",
@@ -15159,18 +15165,18 @@
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Lykke Leonardsen",
-        "filename": "Climate_Adaptation_Summit_2024_-_Lykke_Leonardsen.mp3.txt",
+        "title": "Godmorgen med DNNK - Træer som værktøj i klimatilpasning",
+        "filename": "Godmorgen_med_DNNK_Z7NWvXdZE7g_20260806_171137.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ZxCzLZpJmrw",
+        "youtube_url": "https://youtube.com/watch?v=Z7NWvXdZE7g",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
-        "filename": "Konferencer_eqIRZXAQplk_20260826_062814.txt",
+        "title": "Tech Talk - Sundhed i klimatilpasning og byplanlægning",
+        "filename": "Tech_Talk_-_Sundhed_i_klimatilpasning_og_byplanl_gning (1).txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
+        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       }
@@ -15183,19 +15189,18 @@
     "title": "Climate Adaptation Summit 2024 - Karina Barquet",
     "category": "Øvrige",
     "date": "2025-01-21",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om forskning i sammensatte og enkeltstående klimafarer (f.eks. samtidig hedebølge og tørke, eller storm efterfulgt af skybrud) og deres konsekvenser for kritisk infrastruktur og samfund. Karina Barquet fra Stockholm Environment Institute (SEI) præsenterer metoder til bedre prognoser med machine learning samt risikomodeller for infrastruktur, og afslutter med naturbaserede løsninger til regnvandshåndtering og udfordringer med finansiering og ansvarsfordeling. Transskriptionen er af meget lav kvalitet (overvejende engelsk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Karina Barquet fra Stockholm Environment Institute (SEI) præsenterer forskning i sammensatte hydroklimatiske farer og deres kaskadeeffekter, samt hvordan ansvar og finansiering af klimatilpasning fordeles mellem offentlige og private aktører. Hun peger på et misforhold mellem, at store dele af de udsatte byområder i Europa er i privat eje, mens det er kommunerne der bærer hovedansvaret for klimatilpasning, og efterlyser nye samarbejds- og investeringsmodeller der kan fordele ansvaret mere hensigtsmæssigt.",
     "keywords": [
-      "klimatilpasning",
-      "sammensatte klimafarer",
-      "hedebølge",
-      "tørke",
-      "kritisk infrastruktur",
-      "machine learning",
-      "risikomodellering",
-      "naturbaserede løsninger",
-      "regnvandshåndtering",
       "SEI",
-      "Climate Adaptation Summit"
+      "Stockholm Environment Institute",
+      "hydroklimatiske farer",
+      "kaskadeeffekter",
+      "finansiering",
+      "ansvarsfordeling",
+      "offentlig-privat samarbejde",
+      "risikoanalyse",
+      "klimatilpasning",
+      "kommuner"
     ],
     "speakers": [
       {
@@ -15204,7 +15209,8 @@
       }
     ],
     "places": [
-      "Sverige"
+      "Stockholm",
+      "Europa"
     ],
     "youtube_id": "FDhI9jFfQ4A",
     "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
@@ -15213,28 +15219,28 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Tørke og Hede i Danmark 5: Hede i Byen",
-        "filename": "T_rke_og_Hede_i_Danmark_5__Hede_i_Byen.mp3.txt",
+        "title": "Investering i analyser og tiltag inden for klimatilpasning",
+        "filename": "Konferencer_Mc98AuVmaM8_20260826_063100.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Ji4dUzWF6NQ",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Aarhus: erfaringer fra City Blues: naturbaserede løsninger",
-        "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=qJ9fw3YFZvs",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Climate change adaptation and economics and investment decision-making in the cities",
-        "filename": "PDF_Se_rapporten_her.txt",
-        "type": "pdf",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=Mc98AuVmaM8",
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/05/climate-change-adaptation-and-economics-and-investment-decision-making-in-the-cities.pdf"
+        "source_url": null
+      },
+      {
+        "title": "Bidragsmodeller v. Helle Tegner Anker, Professor ved Københavns Universitet",
+        "filename": "Bidragsmodeller_v.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rioeMRDhJAU",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
+        "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=Tt8y1to2Nv0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
       }
     ]
   },
@@ -15245,28 +15251,28 @@
     "title": "Climate Adaptation Summit 2024 - Lykke Leonardsen",
     "category": "Øvrige",
     "date": "2025-01-21",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om C40 Cities' arbejde med klimatilpasning og resiliens i storbyer, med fokus på de tre indsatsområder vand, hedebølger og bynatur. Lykke Leonardsen præsenterer C40's Water Safe Cities-program, finansieret blandt andet af Poul Due Jensen Fonden (Grundfos), der styrker byers vandforsyning og oversvømmelsesberedskab, samt behovet for at integrere klimatilpasning i byers budgetter og finansieringsmodeller, med eksempler fra København og Lagos. Transskriptionen er af meget lav kvalitet (overvejende engelsk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Lykke Leonardsen fra Københavns Kommune, som også er udlånt til C40-netværket, fortæller om C40's arbejde med at hjælpe knap 100 storbyer verden over med en retfærdig omstilling til klimarobusthed. Hun beskriver, hvordan C40 arbejder for at indarbejde risikovurderinger i byernes budgetter, så konsekvenserne af nye projekter for risikoniveauet bliver synlige, og hvordan netværkets finansieringsfacilitet hjælper særligt byer i det globale syd med at få adgang til klimafinansiering.",
     "keywords": [
-      "klimatilpasning",
-      "resiliens",
+      "C40",
+      "Københavns Kommune",
       "byer",
-      "C40 Cities",
-      "vandsikkerhed",
-      "hedebølge",
-      "bynatur",
       "klimafinansiering",
-      "Water Safe Cities",
-      "Climate Adaptation Summit"
+      "risikovurdering",
+      "budgetlægning",
+      "retfærdig omstilling",
+      "globale syd",
+      "netværkssamarbejde",
+      "klimatilpasning"
     ],
     "speakers": [
       {
         "name": "Lykke Leonardsen",
-        "org": "C40 Cities / Københavns Kommune"
+        "org": "Københavns Kommune / C40 Cities"
       }
     ],
     "places": [
       "København",
-      "Lagos"
+      "Venedig"
     ],
     "youtube_id": "ZxCzLZpJmrw",
     "youtube_url": "https://youtube.com/watch?v=ZxCzLZpJmrw",
@@ -15275,27 +15281,27 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Climate Adaptation Summit 2024 - Blaz Kurnik",
-        "filename": "Climate_Adaptation_Summit_2024_-_Blaz_Kurnik.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Rasmus Lauridsen",
+        "filename": "Climate_Adaptation_Summit_2024_-_Rasmus_Lauridsen.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=xDdOgmmFbYA",
+        "youtube_url": "https://youtube.com/watch?v=FstuVt6efp4",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Jennifer Cherrier",
-        "filename": "Climate_Adaptation_Summit_2024_-_Jennifer_Cherrier.mp3.txt",
+        "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
+        "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=fifdWf02UK4",
-        "dnnk_url": null,
+        "youtube_url": "https://youtube.com/watch?v=Tt8y1to2Nv0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       },
       {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
-        "filename": "Konferencer_eqIRZXAQplk_20260826_062814.txt",
+        "title": "Godmorgen med DNNK: Satellites to Measure Social and Human Footprint",
+        "filename": "Godmorgen_med_DNNK__Satellites_to_Measure_Social_and_Human_F.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
-        "dnnk_url": null,
+        "youtube_url": "https://youtube.com/watch?v=VMtDQuapSKI",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ]
@@ -15366,33 +15372,26 @@
     "title": "Climate Adaptation Summit 2024 - Mike Lippert",
     "category": "Øvrige",
     "date": "2025-01-21",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om naturbaserede løsninger i byplanlægning under overskriften 'Cities for Life'. Mike Lippert præsenterer projekter, der bringer natur, vandopsamling og biodiversitet ind i byen, herunder Novo Nordisks naturpark, en grøn have ved Herlev Hospital og daglægning af rørlagt å i Aalborg (Østerå), samt en masterplan i Manchester. Han argumenterer for, at adgang til natur er en menneskeret, og at finansieringsmodeller for grønne klimatilpasningsprojekter skal sikre, at alle bydele - ikke kun de velhavende - får gavn af naturen. Transskriptionen er af meget lav kvalitet (overvejende engelsk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Mike Lippert fra SLA Architects præsenterer sin vision om 'byer for livet', hvor naturbaserede løsninger kobles ind i byernes infrastruktur i stedet for at holde natur og by adskilt, som svar på klimakrisen, biodiversitetskrisen og trivselskrisen. Han argumenterer for, at adgang til natur er en menneskeret, men advarer samtidig om, at naturbaserede projekter historisk har drevet ejendomspriserne op og skabt grøn gentrificering, og opfordrer til at tænke finansieringsmodeller, der sikrer byer for alle.",
     "keywords": [
+      "SLA Architects",
       "naturbaserede løsninger",
       "byplanlægning",
       "biodiversitet",
-      "vandopsamling",
-      "grønne byrum",
+      "grøn gentrificering",
+      "trivsel",
+      "menneskerettigheder",
+      "byliv",
       "klimatilpasning",
-      "daglægning af vandløb",
-      "Novo Nordisk",
-      "Cities for Life",
-      "Climate Adaptation Summit"
+      "infrastruktur"
     ],
     "speakers": [
       {
         "name": "Mike Lippert",
-        "org": "SLA"
+        "org": "SLA Architects"
       }
     ],
-    "places": [
-      "København",
-      "Herlev",
-      "Bispebjerg",
-      "Aalborg",
-      "Manchester",
-      "Toronto"
-    ],
+    "places": [],
     "youtube_id": "0TMF_z4f6Cc",
     "youtube_url": "https://youtube.com/watch?v=0TMF_z4f6Cc",
     "dnnk_url": null,
@@ -15432,16 +15431,18 @@
     "title": "Climate Adaptation Summit 2024 - Rasmus Lauridsen",
     "category": "Øvrige",
     "date": "2025-01-10",
-    "summary": "Oplæg fra Climate Adaptation Summit 2024 om finansiering af klimatilpasning, hvor Rasmus Lauridsen fra Den Europæiske Investeringsbank (EIB) præsenterer bankens mål om, at 50% af alle aktiviteter understøtter klimahandling inden 2025. Han diskuterer, hvordan grøn finansiering og risikovurdering kan bygge bro mellem de økonomiske omkostninger ved klimatilpasning og de fremtidige tab, klimaforandringer ellers vil medføre. Transskriptionen er af meget lav kvalitet (blandet engelsk/dansk tale fejltolket af maskinen), så detaljer er usikre.",
+    "summary": "Rasmus Lauridsen, klimaøkonom hos Den Europæiske Investeringsbank (EIB), taler om, hvordan finansiering af klimatilpasning findes i overlappet mellem bankernes risikoaversion og økonomernes fokus på samfundsmæssig gevinst. Han præsenterer EIB's rolle som verdens største finansieringskilde til klimatilpasning og -modvirkning og en ny how-to-guide med casestudier, der skal hjælpe byer med at overbevise skatteydere og beslutningstagere om, at investering i klimatilpasning kan betale sig.",
     "keywords": [
-      "klimafinansiering",
       "EIB",
-      "grøn finansiering",
+      "Den Europæiske Investeringsbank",
+      "klimafinansiering",
+      "klimaøkonomi",
+      "investeringsmodeller",
+      "casestudier",
+      "byer",
+      "risikovillighed",
       "klimatilpasning",
-      "risikostyring",
-      "investering",
-      "klimarisiko",
-      "Climate Adaptation Summit"
+      "offentlig finansiering"
     ],
     "speakers": [
       {
@@ -15449,9 +15450,7 @@
         "org": "Den Europæiske Investeringsbank (EIB)"
       }
     ],
-    "places": [
-      "København"
-    ],
+    "places": [],
     "youtube_id": "FstuVt6efp4",
     "youtube_url": "https://youtube.com/watch?v=FstuVt6efp4",
     "dnnk_url": null,
@@ -15459,28 +15458,28 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
-        "filename": "Konferencer_eqIRZXAQplk_20260826_062814.txt",
+        "title": "Climate change adaptation and economics and investment decision-making in the cities",
+        "filename": "PDF_Se_rapporten_her.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/05/climate-change-adaptation-and-economics-and-investment-decision-making-in-the-cities.pdf"
+      },
+      {
+        "title": "Climate Adaptation Summit 2024 - Lykke Leonardsen",
+        "filename": "Climate_Adaptation_Summit_2024_-_Lykke_Leonardsen.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
+        "youtube_url": "https://youtube.com/watch?v=ZxCzLZpJmrw",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Bertel Ifversen",
-        "filename": "Climate_Adaptation_Summit_2024_-_Bertel_Ifversen.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=CaCmwUL1syU",
+        "title": "Afrapportering Bobleprojekt Elev8 Living",
+        "filename": "PDF_Afsluttende_rapport_for_Elev8_Living_Singapore.txt",
+        "type": "pdf",
+        "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Climate Adaptation Summit 2024 - Blaz Kurnik",
-        "filename": "Climate_Adaptation_Summit_2024_-_Blaz_Kurnik.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=xDdOgmmFbYA",
-        "dnnk_url": null,
-        "source_url": null
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/afrapportering-bobleprojekt-elev8-living-16082017.pdf"
       }
     ]
   },
@@ -15597,10 +15596,10 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
       },
       {
-        "title": "Grænseløs adfærd og grænseløse potentialer",
-        "filename": "Gr_nsel_s_adf_rd_og_gr_nsel_se_potentialer.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Blaz Kurnik",
+        "filename": "Climate_Adaptation_Summit_2024_-_Blaz_Kurnik.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Td70paA1PkE",
+        "youtube_url": "https://youtube.com/watch?v=xDdOgmmFbYA",
         "dnnk_url": null,
         "source_url": null
       }
@@ -15779,6 +15778,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Climate Adaptation Summit 2024 - Jennifer Cherrier",
+        "filename": "Climate_Adaptation_Summit_2024_-_Jennifer_Cherrier.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=fifdWf02UK4",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
         "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
         "type": "webinar",
@@ -15792,14 +15799,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Styring og regulering af klimatilpasningsprojekter",
-        "filename": "Styring_og_regulering_af_klimatilpasningsprojekter.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=UBpqgUQzJas",
-        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -16318,10 +16317,10 @@
         "source_url": null
       },
       {
-        "title": "DNNKs virtuelle studietur - hydroseparatoren",
-        "filename": "DNNKs_virtuelle_studietur_-_hydroseperatoren.txt",
+        "title": "Climate Adaptation Summit 2024 - Bertel Ifversen",
+        "filename": "Climate_Adaptation_Summit_2024_-_Bertel_Ifversen.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=AsevUr50sDE",
+        "youtube_url": "https://youtube.com/watch?v=CaCmwUL1syU",
         "dnnk_url": null,
         "source_url": null
       }
@@ -20516,73 +20515,6 @@
     "match_confidence": 1.0
   },
   {
-    "filename": "Tech_Talk_-_Fully_integral_hydrodynamic_simulations (1).txt",
-    "path": "transcriptions/Tech_Talk_-_Fully_integral_hydrodynamic_simulations (1).txt",
-    "folder": "transcritranscriptions",
-    "title": "Tech Talk - Fully integral hydrodynamic simulations (1)",
-    "category": "Tech Talk",
-    "date": "2024-03-13",
-    "summary": "Jonas fra det hollandske firma Nelen & Schuurmans præsenterer softwaren 3Di, et cloud-baseret hydrodynamisk værktøj, der ved hjælp af subgrid-beregningsteknologi integrerer overfladevand, kloaksystem og grundvand i én samlet model, så man med høj rumlig opløsning hurtigt kan simulere oversvømmelser fra skybrud. Værktøjet anvendes allerede i flere danske projekter, herunder Lemvig, Roskilde og hovedstadsområdet, til skybrudsplanlægning, realtidsvarsling og vandkvalitetsanalyser, og er designet til at være brugervenligt for ingeniører uden behov for lokal computerkraft, da beregningerne kører i skyen.",
-    "keywords": [
-      "3Di",
-      "hydrodynamisk modellering",
-      "subgrid-teknologi",
-      "overfladevand",
-      "grundvand",
-      "spildevand",
-      "skybrudssimulering",
-      "cloud-baseret software",
-      "Nelen & Schuurmans",
-      "vandkvalitet",
-      "realtidsvarsling"
-    ],
-    "speakers": [
-      {
-        "name": "Jonas",
-        "org": "Nelen & Schuurmans"
-      }
-    ],
-    "places": [
-      "Danmark",
-      "København",
-      "Lemvig",
-      "Roskilde",
-      "Australien"
-    ],
-    "youtube_id": "I6wec8LiyLA",
-    "youtube_url": "https://youtube.com/watch?v=I6wec8LiyLA",
-    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Langsom hydrologi: et alternativ til klassisk vandparkering i ådalene",
-        "filename": "Langsom_Hydrologi___et_alternativ_til_klassisk_vandparkering.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=KT8Sg9ro60E",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Terræn og grundvand",
-        "filename": "Terr_nn_rt_grundvand.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=GNayfIboS6w",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Udfordringer med overløb",
-        "filename": "Udfordringer_med_overl_b.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=wHSGQVYpDB8",
-        "dnnk_url": null,
-        "source_url": null
-      }
-    ],
-    "match_confidence": 1.0
-  },
-  {
     "filename": "Tech_Talk_-_Hvordan_renser_man_regnvand_for_mikroplast_.txt",
     "path": "transcriptions/Tech_Talk_-_Hvordan_renser_man_regnvand_for_mikroplast_.txt",
     "folder": "transcritranscriptions",
@@ -21020,18 +20952,18 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/06/Vaerdikort_betaversion_17122018.pdf"
       },
       {
-        "title": "DNNK Masterclass: Værdiskabelse i klimatilpasningen - Session 3: Storylines og værdisætning",
-        "filename": "DNNK_Masterclass_qDNiNOpMl_8_20260806_171222.txt",
+        "title": "Climate Adaptation Summit 2024 - Jennifer Cherrier",
+        "filename": "Climate_Adaptation_Summit_2024_-_Jennifer_Cherrier.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=qDNiNOpMl_8",
+        "youtube_url": "https://youtube.com/watch?v=fifdWf02UK4",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK - Træer som værktøj i klimatilpasning",
-        "filename": "Godmorgen_med_DNNK_Z7NWvXdZE7g_20260806_171137.txt",
+        "title": "DNNK Masterclass: Værdiskabelse i klimatilpasningen - Session 3: Storylines og værdisætning",
+        "filename": "DNNK_Masterclass_qDNiNOpMl_8_20260806_171222.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Z7NWvXdZE7g",
+        "youtube_url": "https://youtube.com/watch?v=qDNiNOpMl_8",
         "dnnk_url": null,
         "source_url": null
       }
@@ -22053,10 +21985,10 @@
         "source_url": null
       },
       {
-        "title": "Workshop om oversvømmelser: skader og økonomi - oplæg 3",
-        "filename": "Workshop_om_oversv_mmelser__skader_og__konomi__opl_g_3.mp3.txt",
+        "title": "Climate Adaptation Summit 2024 - Alan Cohn",
+        "filename": "Climate_Adaptation_Summit_2024_-_Alan_Cohn.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=_AqcZEgrSo0",
+        "youtube_url": "https://youtube.com/watch?v=qIyqX6OD96Y",
         "dnnk_url": null,
         "source_url": null
       }
@@ -23090,6 +23022,70 @@
       }
     ],
     "match_confidence": 0.98
+  },
+  {
+    "filename": "Tech_Talk_-_Fully_integral_hydrodynamic_simulations (1).txt",
+    "path": "transcriptions/Tech_Talk_-_Fully_integral_hydrodynamic_simulations (1).txt",
+    "folder": "transcritranscriptions",
+    "title": "Tech Talk: Fully integral hydrodynamic simulations (3Di)",
+    "category": "Tech Talk",
+    "date": "2024-03-13",
+    "summary": "Jonas Mölleman fra det hollandske firma Nelen & Schuurmans præsenterer værktøjet 3Di, som integrerer overfladevand, grundvand og spildevand i én hydrodynamisk model, så tidsforløb og vandmængder ved fx digebrud eller skybrud beregnes samlet i stedet for hver for sig. Han gennemgår udviklingen fra prototype i 2010 til i dag, hvor 3Di blandt andet har fået tilføjet grundvand, dræn og en letanvendelig editor, og fremhæver at integrerede modeller er nødvendige for at forstå, hvilke tiltag der reelt beskytter huse, veje og byer mod oversvømmelse.",
+    "keywords": [
+      "3Di",
+      "Nelen & Schuurmans",
+      "hydrodynamisk model",
+      "overfladevand",
+      "grundvand",
+      "spildevand",
+      "digebrud",
+      "skybrud",
+      "oversvømmelsesmodellering",
+      "klimatilpasning"
+    ],
+    "speakers": [
+      {
+        "name": "Jonas Mölleman",
+        "org": "Nelen & Schuurmans"
+      }
+    ],
+    "places": [
+      "Nederlandene",
+      "Vietnam",
+      "Taiwan"
+    ],
+    "youtube_id": "I6wec8LiyLA",
+    "youtube_url": "https://youtube.com/watch?v=I6wec8LiyLA",
+    "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Tech Talk: Dynamisk modellering af oversvømmelser i praksis",
+        "filename": "Tech_Talk__Dynamisk_modellering_af_oversv_mmelser_i_praksis.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Temadag: Hvordan skaber vi en robust og langsigtet strategi",
+        "filename": "Temadag__Hvordan_skaber_vi_en_robust_og_langsigtet_strategi_.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Terræn og grundvand",
+        "filename": "Terr_nn_rt_grundvand.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=GNayfIboS6w",
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ],
+    "match_confidence": 1.0
   },
   {
     "filename": "Tech_Talk__Future_City_Flow.txt",
@@ -24435,10 +24431,10 @@
         "source_url": null
       },
       {
-        "title": "Climate Adaptation Summit 2024 - Karina Barquet",
-        "filename": "Climate_Adaptation_Summit_2024_-_Karina_Barquet.mp3.txt",
+        "title": "Rockflow 04 oplæg",
+        "filename": "Rockflow_04_opl_g.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
+        "youtube_url": "https://youtube.com/watch?v=hAU-rCQOZkA",
         "dnnk_url": null,
         "source_url": null
       }
@@ -24560,14 +24556,6 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Climate Adaptation Summit 2024 - Karina Barquet",
-        "filename": "Climate_Adaptation_Summit_2024_-_Karina_Barquet.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Godmorgen med DNNK: Klimatilpasning i danske kommuners klimahandlingsplaner",
         "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
         "type": "webinar",
@@ -24580,6 +24568,14 @@
         "filename": "T_rke_og_Hede_i_Danmark_3__Data_og_Vandindvinding.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=ifFA3N9jEro",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Tørke og Hede i Danmark 4: Vandforvaltning i praksis",
+        "filename": "T_rke_og_Hede_i_Danmark_4__Vandforvaltning_i_praksis.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=3F4rAhGYrSo",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
@@ -24729,6 +24725,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Climate Adaptation Summit 2024 - Bertel Ifversen",
+        "filename": "Climate_Adaptation_Summit_2024_-_Bertel_Ifversen.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=CaCmwUL1syU",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne - klimatilpasning i fællesskab",
         "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
         "type": "webinar",
@@ -24742,14 +24746,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=hAU-rCQOZkA",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk 019: Erfaringer med nye renseløsninger i Køge Nord",
-        "filename": "Tech_Talk_019___Erfaringer_med_nye_rensel_sninger_i_K_ge_Nor.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HCzn9uIy6-c",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]

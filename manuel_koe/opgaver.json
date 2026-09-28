@@ -430,5 +430,21 @@
     "description": null,
     "match_confidence": null,
     "importeret": true
+  },
+  "028_oevrige": {
+    "filename": "Oevrige_epcmFB3xmsg_20260925_142621.txt",
+    "path": "transcriptions/Oevrige_epcmFB3xmsg_20260925_142621.txt",
+    "folder": "transcriptions",
+    "is_pdf": false,
+    "title": "Oevrige",
+    "category": "Øvrige",
+    "date": null,
+    "source_url": null,
+    "dnnk_url": null,
+    "youtube_id": "epcmFB3xmsg",
+    "youtube_url": "https://youtube.com/watch?v=epcmFB3xmsg",
+    "description": null,
+    "match_confidence": null,
+    "importeret": true
   }
 }

@@ -6184,7 +6184,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Biodiversitet som planlægningsredskab",
     "category": "Øvrige",
-    "date": null,
+    "date": "2026-09-24",
     "summary": "Københavns Kommune og Sweco fortæller, hvordan kommunen med en GIS-baseret screening har lavet tre potentialekort for biodiversitet (bevare, udvide og skabe ny natur) og et inspirationskatalog med ni cases fra kommunens egne arealer, bl.a. skole, plejehjem, idrætsanlæg og grønt tag. Kortene bygger på et heksagon-net, hvor parametre som artsfund, rødlistede arter, beskyttet natur og nærhed til eksisterende natur pointgives, og de bruges som fælles referenceramme på tværs af syv forvaltninger og over for andre grundejere. Oplægsholderne understreger, at kortene er et øjebliksbillede, ikke tager højde for anden planlægning og bør opdateres, gerne som interaktivt kort.",
     "keywords": [
       "biodiversitet",
@@ -6220,9 +6220,9 @@
     ],
     "youtube_id": "_3irIBkBP04",
     "youtube_url": "https://youtube.com/watch?v=_3irIBkBP04",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [

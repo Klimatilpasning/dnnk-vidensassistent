@@ -6178,6 +6178,73 @@
     ]
   },
   {
+    "filename": "Oevrige__3irIBkBP04_20260928_170222.txt",
+    "path": "transcriptions/Oevrige__3irIBkBP04_20260928_170222.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Biodiversitet som planlægningsredskab",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Københavns Kommune og Sweco fortæller, hvordan kommunen med en GIS-baseret screening har lavet tre potentialekort for biodiversitet (bevare, udvide og skabe ny natur) og et inspirationskatalog med ni cases fra kommunens egne arealer, bl.a. skole, plejehjem, idrætsanlæg og grønt tag. Kortene bygger på et heksagon-net, hvor parametre som artsfund, rødlistede arter, beskyttet natur og nærhed til eksisterende natur pointgives, og de bruges som fælles referenceramme på tværs af syv forvaltninger og over for andre grundejere. Oplægsholderne understreger, at kortene er et øjebliksbillede, ikke tager højde for anden planlægning og bør opdateres, gerne som interaktivt kort.",
+    "keywords": [
+      "biodiversitet",
+      "potentialekort",
+      "inspirationskatalog",
+      "biodiversitetsstrategi",
+      "kommuneplanlægning",
+      "GIS-analyse",
+      "heksagon-net",
+      "feltkortlægning",
+      "bynatur",
+      "fokusarter",
+      "grønne korridorer",
+      "Københavns Kommune"
+    ],
+    "speakers": [
+      {
+        "name": "Matilde Thomasen Rasmussen",
+        "org": "Københavns Kommune"
+      },
+      {
+        "name": "Hans Paarup Thomsen",
+        "org": "Sweco"
+      }
+    ],
+    "places": [
+      "København",
+      "Amager Fælled",
+      "Kalvebod Fælled",
+      "Utterslev Mose",
+      "Genforeningspladsen",
+      "Grøndal"
+    ],
+    "youtube_id": "_3irIBkBP04",
+    "youtube_url": "https://youtube.com/watch?v=_3irIBkBP04",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Naturbaserede byer: vejen til klimarobusthed",
+        "filename": "Godmorgen_med_DNNK__Naturbaserede_byer___vejen_til_klimarobu.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=jUoQSfpQqAA",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk: UrbanBioScore: indikator for biodiversitet i byer",
+        "filename": "Tech_Talk__UrbanBioScore___indikator_for_biodiversitet_i_bye.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=NTtn0rpQ_rU",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "source_url": null
+      }
+    ]
+  },
+  {
     "filename": "Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
     "path": "transcriptions/Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
     "folder": "transcriptions",

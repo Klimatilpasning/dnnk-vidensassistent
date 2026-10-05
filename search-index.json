@@ -2667,6 +2667,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Godmorgen med DNNK: Beregning af samfundsøkonomien ved grundvandssænkende foranstaltninger",
+        "filename": "Oevrige_FZI27NBsJi4_20261005_100340.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=FZI27NBsJi4",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Terrænnært grundvand i byer - hvad er det, og hvordan håndteres det?",
         "filename": "Godmorgen_med_DNNK_G_24ifZDlWk_20260826_000307.txt",
         "type": "webinar",
@@ -2680,14 +2688,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=w-YOXLrBiO4",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Pålidelighed af grundvands- og vandløbsberegninger v. Raphael",
-        "filename": "P_lidelighed_af_grundvands-_og_vandl_bsberegninger_v._Raphae.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=cVflXmGwchI",
-        "dnnk_url": null,
         "source_url": null
       }
     ],
@@ -2896,12 +2896,12 @@
         "source_url": null
       },
       {
-        "title": "Almen Klimakortlægning - Klimaudfordringer i den almene boligsektor",
-        "filename": "PDF_almen_klimakortlaegning.txt",
-        "type": "pdf",
-        "youtube_url": null,
+        "title": "Godmorgen med DNNK: Beregning af samfundsøkonomien ved grundvandssænkende foranstaltninger",
+        "filename": "Oevrige_FZI27NBsJi4_20261005_100340.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=FZI27NBsJi4",
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
+        "source_url": null
       }
     ],
     "match_confidence": 0.857
@@ -6174,6 +6174,74 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
+      }
+    ]
+  },
+  {
+    "filename": "Oevrige_FZI27NBsJi4_20261005_100340.txt",
+    "path": "transcriptions/Oevrige_FZI27NBsJi4_20261005_100340.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Beregning af samfundsøkonomien ved grundvandssænkende foranstaltninger",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Miljøstyrelsen gennemgår den nye vejledning til bekendtgørelsen om beregning af samfundsøkonomisk hensigtsmæssighed ved grundvandssænkende foranstaltninger mod terrænnært grundvand, herunder kommunernes frister for at udpege områder i spildevandsplanen (1. juli 2027 og 2029) og spildevandsselskabernes udvidede forsyningspligt. Metoden har fem trin: inddeling i projektområder, farekortlægning med HIP-data suppleret af lokale data og klimafremskrivning (anbefalet RCP 8.5 over fx 100 år), skadeskortlægning med hændelses- og varighedsbaserede skader (664 kr./m2 og 85 kr./m2), løsningsscenarier og beregning af nettonutidsværdi. Selskabet skal som udgangspunkt vælge løsningen med højeste nettonutidsværdi, men kan med begrundelse vælge en op til 25 % mindre rentabel løsning; spørgsmålene handlede bl.a. om usikkerhed i HIP, enhedspriser for infrastruktur, forsikringsdata, GDPR ved offentliggørelse og tilslutning af omfangsdræn.",
+    "keywords": [
+      "terrænnært grundvand",
+      "grundvandssænkende foranstaltninger",
+      "samfundsøkonomisk beregning",
+      "nettonutidsværdi",
+      "spildevandsplan",
+      "forsyningspligt",
+      "spildevandsselskaber",
+      "HIP-grundvandsmodel",
+      "skadeskortlægning",
+      "farekortlægning",
+      "RCP 8.5",
+      "Miljøstyrelsen"
+    ],
+    "speakers": [
+      {
+        "name": "Karina Ivang Hansen",
+        "org": "Miljøstyrelsen"
+      },
+      {
+        "name": "Johan Albertsen",
+        "org": "Miljøstyrelsen"
+      }
+    ],
+    "places": [],
+    "youtube_id": "FZI27NBsJi4",
+    "youtube_url": "https://youtube.com/watch?v=FZI27NBsJi4",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Nyt tillæg til spildevandsvejledningen",
+        "filename": "Godmorgen_med_DNNK__Nyt_till_g_til_spildevandsvejledningen.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=r3mkSTF4cug",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Terræn og grundvand",
+        "filename": "Terr_nn_rt_grundvand.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=GNayfIboS6w",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Horten: Webinar 1 - Planlægning af klimatilpasning - forholdet mellem kommune og forsyning, 30. november 2022",
+        "filename": "PDF_Link_til_præsentation_fra_Horten.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/12/Webinar-1-Planlaegning-af-klimatilpasning-30.-november-2022.pdf"
       }
     ]
   },

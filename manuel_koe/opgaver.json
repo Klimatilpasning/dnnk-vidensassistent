@@ -462,5 +462,21 @@
     "description": null,
     "match_confidence": null,
     "importeret": true
+  },
+  "030_oevrige": {
+    "filename": "Oevrige_FZI27NBsJi4_20261005_100340.txt",
+    "path": "transcriptions/Oevrige_FZI27NBsJi4_20261005_100340.txt",
+    "folder": "transcriptions",
+    "is_pdf": false,
+    "title": "Oevrige",
+    "category": "Øvrige",
+    "date": null,
+    "source_url": null,
+    "dnnk_url": null,
+    "youtube_id": "FZI27NBsJi4",
+    "youtube_url": "https://youtube.com/watch?v=FZI27NBsJi4",
+    "description": null,
+    "match_confidence": null,
+    "importeret": true
   }
 }

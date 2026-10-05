@@ -6184,7 +6184,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Beregning af samfundsøkonomien ved grundvandssænkende foranstaltninger",
     "category": "Øvrige",
-    "date": null,
+    "date": "2026-09-29",
     "summary": "Miljøstyrelsen gennemgår den nye vejledning til bekendtgørelsen om beregning af samfundsøkonomisk hensigtsmæssighed ved grundvandssænkende foranstaltninger mod terrænnært grundvand, herunder kommunernes frister for at udpege områder i spildevandsplanen (1. juli 2027 og 2029) og spildevandsselskabernes udvidede forsyningspligt. Metoden har fem trin: inddeling i projektområder, farekortlægning med HIP-data suppleret af lokale data og klimafremskrivning (anbefalet RCP 8.5 over fx 100 år), skadeskortlægning med hændelses- og varighedsbaserede skader (664 kr./m2 og 85 kr./m2), løsningsscenarier og beregning af nettonutidsværdi. Selskabet skal som udgangspunkt vælge løsningen med højeste nettonutidsværdi, men kan med begrundelse vælge en op til 25 % mindre rentabel løsning; spørgsmålene handlede bl.a. om usikkerhed i HIP, enhedspriser for infrastruktur, forsikringsdata, GDPR ved offentliggørelse og tilslutning af omfangsdræn.",
     "keywords": [
       "terrænnært grundvand",
@@ -6213,9 +6213,9 @@
     "places": [],
     "youtube_id": "FZI27NBsJi4",
     "youtube_url": "https://youtube.com/watch?v=FZI27NBsJi4",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 0.8,
     "description": null,
     "related_resources": [],
     "related_webinars": [

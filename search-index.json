@@ -100,8 +100,7 @@
       "Kildedal",
       "Ballerup",
       "Egedal",
-      "Måløv",
-      "Værebro Å"
+      "Måløv"
     ],
     "youtube_id": "Qk8muDovyb4",
     "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
@@ -167,7 +166,6 @@
       "New Orleans",
       "Rotterdam",
       "København",
-      "Dragør",
       "Amager",
       "Skanderborg"
     ],
@@ -1516,7 +1514,7 @@
     "title": "Vurdering af potentialet for tryksat LAR som klimatilpasning",
     "category": "Øvrige",
     "date": null,
-    "summary": "En forsker fra Københavns Universitet præsenterer en analyse af opskaleringspotentialet for tryksat LAR (trykbaseret lokal afledning af regnvand) som klimatilpasning, med udgangspunkt i et cloudburst-catchment ved Lundtoftegård i hovedstadsområdet. Ved hjælp af GIS-data over arealanvendelse og ejerforhold beregnes andelen af imperviøse arealer og tagflader, og omkostningerne ved at afkoble 30 % af de imperviøse arealer ved hjælp af tryksat LAR estimeres fra ét enkelt anlæg (2,2 hektar, ca. 10 mio. kr.) til hele oplandet (ca. 1.000 hektar) og til byniveau (ca. 10.000 hektar), hvor omkostningerne løber op i milliarder kroner. Oplægget peger på ejerforhold og finansieringsincitamenter som centrale barrierer for opskalering.",
+    "summary": "En forsker fra Københavns Universitet præsenterer en analyse af opskaleringspotentialet for tryksat LAR (trykbaseret lokal afledning af regnvand) som klimatilpasning, med udgangspunkt i et cloudburst-catchment ved Lundtoftegade i hovedstadsområdet. Ved hjælp af GIS-data over arealanvendelse og ejerforhold beregnes andelen af imperviøse arealer og tagflader, og omkostningerne ved at afkoble 30 % af de imperviøse arealer ved hjælp af tryksat LAR estimeres fra ét enkelt anlæg (2,2 hektar, ca. 10 mio. kr.) til hele oplandet (ca. 1.000 hektar) og til byniveau (ca. 10.000 hektar), hvor omkostningerne løber op i milliarder kroner. Oplægget peger på ejerforhold og finansieringsincitamenter som centrale barrierer for opskalering.",
     "keywords": [
       "tryksat LAR",
       "opskalering",
@@ -1532,7 +1530,7 @@
     ],
     "speakers": [],
     "places": [
-      "Lundtoftegård",
+      "Lundtoftegade",
       "København"
     ],
     "youtube_id": null,
@@ -7100,7 +7098,6 @@
       "Aarhus",
       "Vesterbro Torv",
       "Fredensvang",
-      "Viby",
       "Åby",
       "Døde Å"
     ],
@@ -11453,6 +11450,83 @@
     "path": "transcriptions/Oevrige_PKlQbQZRZk0_20260826_180643.txt",
     "folder": "transcriptions",
     "type": "webinar",
+    "title": "Samarbejde på tværs v. Henrik Vejre, professor ved Københavns Universitet",
+    "category": "Øvrige",
+    "date": "2025-05-22",
+    "summary": "Henrik Vejre (KU) beskriver, hvordan strukturreformen i 2007 nedlagde amterne og efterlod kommunerne uden klare rammer for grænseoverskridende klimatilpasningssamarbejde om fx vandløb og kyststrækninger. Baseret på et forskningsprojekt peger han på, at ad hoc-samarbejder mellem kommuner (som Limfjord-samarbejdet eller Nordkystens Fremtid) ofte fungerer godt, men er ressourcekrævende og uden fast skabelon, og rejser spørgsmålet om der bør indføres en mere formaliseret national model, fx via regionerne.",
+    "keywords": [
+      "strukturreform",
+      "kommunalt samarbejde",
+      "klimatilpasning",
+      "vandløb",
+      "kystbeskyttelse",
+      "amter",
+      "regioner",
+      "politik og embedsværk"
+    ],
+    "speakers": [
+      {
+        "name": "Henrik Vejre",
+        "org": "Københavns Universitet"
+      }
+    ],
+    "places": [
+      "Limfjorden",
+      "Gudenå",
+      "Køge Bugt"
+    ],
+    "youtube_id": "PKlQbQZRZk0",
+    "youtube_url": "https://youtube.com/watch?v=PKlQbQZRZk0",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [
+      {
+        "title": "Klimatilpasning: Oversvømmelser og Skadesberegning",
+        "url": "https://www.dnnk.dk/klimatilpasning-oversvoemmelser-og-skadesberegning/",
+        "source": "DNNK Rapporter",
+        "type": "📄 Dokument"
+      },
+      {
+        "title": "Samfundsøkonomi – oversvømmelser og klimatilpasning",
+        "url": "https://www.dnnk.dk/samfundsoekonomi-oversvoemmelser-og-klimatilpasning/",
+        "source": "DNNK Rapporter",
+        "type": "📄 Dokument"
+      }
+    ],
+    "related_webinars": [
+      {
+        "title": "Bidragsmodeller ved klimatilpasning - lovgivningsmæssige rammer",
+        "filename": "PDF_Bidragsmodeller_ved_klimatilpasning.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
+      },
+      {
+        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
+        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
+      },
+      {
+        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
+        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
+      }
+    ]
+  },
+  {
+    "filename": "Oevrige_DHL6mwwN6c4_20260826_181942.txt",
+    "path": "transcriptions/Oevrige_DHL6mwwN6c4_20260826_181942.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
     "title": "Risikokort CARMS demo",
     "category": "Øvrige",
     "date": "2022-05-24",
@@ -11484,26 +11558,13 @@
       "Holbæk",
       "Roskilde"
     ],
-    "youtube_id": "PKlQbQZRZk0",
-    "youtube_url": "https://youtube.com/watch?v=PKlQbQZRZk0",
+    "youtube_id": "DHL6mwwN6c4",
+    "youtube_url": "https://youtube.com/watch?v=DHL6mwwN6c4",
     "dnnk_url": null,
     "source_url": null,
     "match_confidence": null,
     "description": null,
-    "related_resources": [
-      {
-        "title": "Klimatilpasning: Oversvømmelser og Skadesberegning",
-        "url": "https://www.dnnk.dk/klimatilpasning-oversvoemmelser-og-skadesberegning/",
-        "source": "DNNK Rapporter",
-        "type": "📄 Dokument"
-      },
-      {
-        "title": "Samfundsøkonomi – oversvømmelser og klimatilpasning",
-        "url": "https://www.dnnk.dk/samfundsoekonomi-oversvoemmelser-og-klimatilpasning/",
-        "source": "DNNK Rapporter",
-        "type": "📄 Dokument"
-      }
-    ],
+    "related_resources": [],
     "related_webinars": [
       {
         "title": "Vand fra alle sider: Holbæk Kommunes risikokortlægning",
@@ -11532,8 +11593,8 @@
     ]
   },
   {
-    "filename": "Oevrige_DHL6mwwN6c4_20260826_181942.txt",
-    "path": "transcriptions/Oevrige_DHL6mwwN6c4_20260826_181942.txt",
+    "filename": "Konferencer_lChWhMS4SMQ_20260826_063020.txt",
+    "path": "transcriptions/Konferencer_lChWhMS4SMQ_20260826_063020.txt",
     "folder": "transcriptions",
     "type": "webinar",
     "title": "Samarbejde mellem kommune og forsyningsselskab: terrænnært grundvand i Gladsaxe",
@@ -11566,71 +11627,6 @@
       "Gentofte",
       "Mørkhøj"
     ],
-    "youtube_id": "DHL6mwwN6c4",
-    "youtube_url": "https://youtube.com/watch?v=DHL6mwwN6c4",
-    "dnnk_url": null,
-    "source_url": null,
-    "match_confidence": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Jura 1: Planlægning af klimatilpasning: forholdet mellem kommune og forsyning",
-        "filename": "Jura_1__Planl_gning_af_klimatilpasning___forholdet_mellem_ko.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rkUAgSODzwE",
-        "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk 023: Bystrategisk vandforvaltning: Panik før skybrud",
-        "filename": "Tech_Talk_023___Bystrategisk_vandforvaltning___Panik_f_r_sky.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
-        "title": "Terræn og grundvand",
-        "filename": "Terr_nn_rt_grundvand.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=GNayfIboS6w",
-        "dnnk_url": null,
-        "source_url": null
-      }
-    ]
-  },
-  {
-    "filename": "Konferencer_lChWhMS4SMQ_20260826_063020.txt",
-    "path": "transcriptions/Konferencer_lChWhMS4SMQ_20260826_063020.txt",
-    "folder": "transcriptions",
-    "type": "webinar",
-    "title": "Samarbejde på tværs v. Henrik Vejre, professor ved Københavns Universitet",
-    "category": "Øvrige",
-    "date": "2025-05-22",
-    "summary": "Henrik Vejre (KU) beskriver, hvordan strukturreformen i 2007 nedlagde amterne og efterlod kommunerne uden klare rammer for grænseoverskridende klimatilpasningssamarbejde om fx vandløb og kyststrækninger. Baseret på et forskningsprojekt peger han på, at ad hoc-samarbejder mellem kommuner (som Limfjord-samarbejdet eller Nordkystens Fremtid) ofte fungerer godt, men er ressourcekrævende og uden fast skabelon, og rejser spørgsmålet om der bør indføres en mere formaliseret national model, fx via regionerne.",
-    "keywords": [
-      "strukturreform",
-      "kommunalt samarbejde",
-      "klimatilpasning",
-      "vandløb",
-      "kystbeskyttelse",
-      "amter",
-      "regioner",
-      "politik og embedsværk"
-    ],
-    "speakers": [
-      {
-        "name": "Henrik Vejre",
-        "org": "Københavns Universitet"
-      }
-    ],
-    "places": [
-      "Limfjorden",
-      "Gudenå",
-      "Køge Bugt",
-      "Værebro Å"
-    ],
     "youtube_id": "lChWhMS4SMQ",
     "youtube_url": "https://youtube.com/watch?v=lChWhMS4SMQ",
     "dnnk_url": null,
@@ -11659,28 +11655,28 @@
     ],
     "related_webinars": [
       {
-        "title": "Bidragsmodeller ved klimatilpasning - lovgivningsmæssige rammer",
-        "filename": "PDF_Bidragsmodeller_ved_klimatilpasning.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
+        "title": "Jura 1: Planlægning af klimatilpasning: forholdet mellem kommune og forsyning",
+        "filename": "Jura_1__Planl_gning_af_klimatilpasning___forholdet_mellem_ko.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rkUAgSODzwE",
+        "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
+        "source_url": null
       },
       {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
+        "title": "Tech Talk 023: Bystrategisk vandforvaltning: Panik før skybrud",
+        "filename": "Tech_Talk_023___Bystrategisk_vandforvaltning___Panik_f_r_sky.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=ydcOvzPz7Vg",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
+        "source_url": null
       },
       {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
+        "title": "Terræn og grundvand",
+        "filename": "Terr_nn_rt_grundvand.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=GNayfIboS6w",
         "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
+        "source_url": null
       }
     ]
   },
@@ -12109,7 +12105,6 @@
       "København",
       "Køge",
       "Esbjerg",
-      "Risskov",
       "Grønningen",
       "Karens Minde Akse"
     ],
@@ -12228,7 +12223,7 @@
     "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
     "category": "Øvrige",
     "date": "2024-10-29",
-    "summary": "Oplægget argumenterer for, at klimatilpasning bør tænkes bredere end de klassiske strategier beskyttelse, tilpasning og tilbagetrækning, og at der mangler fokus på negative konsekvenser, sårbarhed og resiliens på tværs af siloopdelt lovgivning. Der peges på behovet for adaptiv planlægning frem for faste 100-års-mål, på Hovedstadsområdets risikostyringsplaner og samarbejde på tværs af kommuner (bl.a. omkring Harrestrup Å og en fælles hovedstadsrapport), og på at kritisk infrastruktur og domino-effekter (fx metro uden strøm ved ekstremhændelser) kræver fælles ansvar frem for enkeltprojekter.",
+    "summary": "Oplægget argumenterer for, at klimatilpasning bør tænkes bredere end de klassiske strategier beskyttelse, tilpasning og tilbagetrækning, og at der mangler fokus på negative konsekvenser, sårbarhed og resiliens på tværs af siloopdelt lovgivning. Der peges på behovet for adaptiv planlægning frem for faste 100-års-mål, på Hovedstadsområdets risikostyringsplaner og samarbejde på tværs af kommuner (bl.a. en fælles hovedstadsrapport), og på at kritisk infrastruktur og domino-effekter (fx metro uden strøm ved ekstremhændelser) kræver fælles ansvar frem for enkeltprojekter.",
     "keywords": [
       "klimarisiko",
       "resiliens",
@@ -12245,8 +12240,7 @@
     "speakers": [],
     "places": [
       "Hovedstadsområdet",
-      "København",
-      "Harrestrup Å"
+      "København"
     ],
     "youtube_id": "eqIRZXAQplk",
     "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
@@ -15105,7 +15099,7 @@
     "title": "Climate Adaptation Summit 2024 - Alan Cohn",
     "category": "Øvrige",
     "date": "2025-01-23",
-    "summary": "Alan Cohn fra New Yorks Department of Environmental Protection fortæller om ti års videnudveksling med København og hvordan superstorm Sandy i 2012 satte fokus på stormflod, mens skybrud først for alvor kom på dagsordenen efter samarbejdet med København. Han gennemgår New Yorks arbejde med at klimasikre kritisk infrastruktur og pointerer, at cost-benefit-analyser af klimatilpasningsprojekter skal tage højde for social sårbarhed, så indsatsen prioriteres i udsatte lokalsamfund.",
+    "summary": "Alan Cohn fra New Yorks Department of Environmental Protection fortæller om ti års videnudveksling med København og hvordan superstorm Sandy i 2012 satte fokus på stormflod, mens skybrud først for alvor kom på dagsordenen efter samarbejdet med København. Han gennemgår New Yorks arbejde med at klimatilpasse kritisk infrastruktur og pointerer, at cost-benefit-analyser af klimatilpasningsprojekter skal tage højde for social sårbarhed, så indsatsen prioriteres i udsatte lokalsamfund.",
     "keywords": [
       "New York",
       "Department of Environmental Protection",
@@ -15720,7 +15714,7 @@
     "title": "Climate Adaptation Summit 2024 - Ulf Thysell",
     "category": "Øvrige",
     "date": "2024-12-19",
-    "summary": "Ulf Thysell fra den svenske brancheorganisation Svenskt Vatten fortæller om omkostningerne ved klimatilpasning i den svenske vandsektor, som siden en statslig udredning i 2007 har arbejdet med at klimasikre kloak- og drikkevandssystemer i landets 290 kommuner. Han viser, at det er langt billigere at investere i naturbaserede løsninger og åbne regnvandsløsninger frem for at udvide rørsystemerne, og opfordrer til at flytte investeringerne fra rør til grønne byrum.",
+    "summary": "Ulf Thysell fra den svenske brancheorganisation Svenskt Vatten fortæller om omkostningerne ved klimatilpasning i den svenske vandsektor, som siden en statslig udredning i 2007 har arbejdet med at klimatilpasse kloak- og drikkevandssystemer i landets 290 kommuner. Han viser, at det er langt billigere at investere i naturbaserede løsninger og åbne regnvandsløsninger frem for at udvide rørsystemerne, og opfordrer til at flytte investeringerne fra rør til grønne byrum.",
     "keywords": [
       "Svenskt Vatten",
       "Sverige",
@@ -16818,7 +16812,7 @@
     "title": "God Morgen med DNNK - Webinar om Vandrensning",
     "category": "Øvrige",
     "date": "2020-11-27",
-    "summary": "Godmorgen-webinar om rensning af regnvand, hvor Karin Kvist (Teknologisk Institut) introducerer udfordringerne med manglende retningslinjer for udledning af regnvand og behovet for et fælles vidensløft og dokumentationsprocedure for renseløsninger. Ditte Marie Reinholdt Jensen (DTU) gennemgår derefter BAT-begrebet (bedste tilgængelige teknologi) i detaljer, herunder hvordan regnvandsbassiner har opnået status som BAT, uklarheder om emissionsgrænseværdier kontra funktionskrav, proportionalitetsprincippet og samspillet med EU's vandrammedirektiv og danske bekendtgørelser (1433/796).",
+    "summary": "Godmorgen-webinar om rensning af regnvand, hvor Karin Kvist (Teknologisk Institut) introducerer udfordringerne med manglende retningslinjer for udledning af regnvand og behovet for et fælles vidensløft og dokumentationsprocedure for renseløsninger. Ditte Marie Reinholdt Jensen (DTU) gennemgår derefter BAT-begrebet (bedste tilgængelige teknologi) i detaljer, herunder hvordan regnvandsbassiner har opnået status som BAT, uklarheder om emissionsgrænseværdier kontra funktionskrav, proportionalitetsprincippet og samspillet med EU's vandrammedirektiv og danske bekendtgørelser (bl.a. bekendtgørelse 1433).",
     "keywords": [
       "BAT",
       "vandrensning",
@@ -17819,10 +17813,7 @@
       }
     ],
     "places": [
-      "Gyldensteen Strand",
-      "Odense",
-      "Djursland",
-      "Singapore"
+      "Gyldensteen Strand"
     ],
     "youtube_id": "CgdzP4k0egA",
     "youtube_url": "https://youtube.com/watch?v=CgdzP4k0egA",
@@ -20478,7 +20469,6 @@
     ],
     "places": [
       "New York",
-      "Pennsylvania",
       "München",
       "Amsterdam",
       "Danmark"
@@ -22954,7 +22944,6 @@
       "Lemvig Kommune",
       "Frederiksberg Kommune",
       "Svendborg",
-      "Middelfart",
       "Storebæltsbroen"
     ],
     "youtube_id": null,
@@ -23814,7 +23803,7 @@
     "title": "Tech Talk: Pathways to water resilient cities",
     "category": "Tech Talk",
     "date": "2022-11-07",
-    "summary": "Forskere fra Københavns Universitet præsenterede sammen med sydafrikanske kolleger fra University of Cape Town et DANIDA-støttet projekt om at gøre Cape Town mere tørkeresilient ved at genanvende byens over 800 tørre regnvandsbassiner ('stormwater ponds') til grundvandsdannelse og rekreative grønne lommeparker. Oplægget dækkede Sydafrikas vandkrise og befolkningsvækst, det tekniske eksperiment med at lede indløbsvand langs bassinkanten for at øge infiltrationen, betydningen af lokalsamfundets ejerskab og medvirken, samt hvordan Cape Towns vandstrategi og styringsmiljø kan fremme vandresiliens og multifunktionel grøn infrastruktur.",
+    "summary": "Forskere fra Københavns Universitet præsenterede sammen med sydafrikanske kolleger fra University of Cape Town et DANIDA-støttet projekt om at gøre Cape Town mere tørkeresilient ved at genanvende byens mange tørre regnvandsbassiner ('stormwater ponds') til grundvandsdannelse og rekreative grønne lommeparker. Oplægget dækkede Sydafrikas vandkrise og befolkningsvækst, det tekniske eksperiment med at lede indløbsvand langs bassinkanten for at øge infiltrationen, betydningen af lokalsamfundets ejerskab og medvirken, samt hvordan Cape Towns vandstrategi og styringsmiljø kan fremme vandresiliens og multifunktionel grøn infrastruktur.",
     "keywords": [
       "vandresiliens",
       "tørke",
@@ -23842,9 +23831,7 @@
     "places": [
       "Cape Town",
       "Mitchells Plain",
-      "Sydafrika",
-      "Addis Ababa",
-      "Dar es Salaam"
+      "Sydafrika"
     ],
     "youtube_id": "7xCb7krzoyE",
     "youtube_url": "https://youtube.com/watch?v=7xCb7krzoyE",
@@ -24482,7 +24469,7 @@
     "title": "Tørke og Hede i Danmark 4: Vandforvaltning i praksis",
     "category": "Øvrige",
     "date": "2024-10-30",
-    "summary": "Søren Kolind Hvid fra SEGES Innovation gennemgår vandreservoirer, der opsamler drænvand til markvanding, med eksempler fra Samsø hvor knap grundvandsressource og saltvandsindtrængning har gjort reservoirer nødvendige siden 1970'ernes tørkeår. Han argumenterer for, at reservoirer fremover også bliver relevante i Østdanmark på grund af stigende forårstørke, og at de udover klimatilpasning af markvanding også kan fungere som effektivt kvælstof- og fosforfjernende virkemiddel, mere effektivt end minivådområder. Afslutningsvis berøres krav om tilladelser (vandforsyningsloven, vandløbsloven, VVM-screening) samt spørgsmål om reservoirernes påvirkning af natur og Parkhof 3-status.",
+    "summary": "Søren Kolind Hvid fra SEGES Innovation gennemgår vandreservoirer, der opsamler drænvand til markvanding, med eksempler fra Samsø hvor knap grundvandsressource og saltvandsindtrængning har gjort reservoirer nødvendige siden 1970'ernes tørkeår. Han argumenterer for, at reservoirer fremover også bliver relevante i Østdanmark på grund af stigende forårstørke, og at de udover klimatilpasning af markvanding også kan fungere som effektivt kvælstof- og fosforfjernende virkemiddel, mere effektivt end minivådområder. Afslutningsvis berøres krav om tilladelser (vandforsyningsloven, vandløbsloven, VVM-screening) samt spørgsmål om reservoirernes påvirkning af natur og §3-beskyttelse efter naturbeskyttelsesloven.",
     "keywords": [
       "vandreservoirer",
       "markvanding",
@@ -25760,7 +25747,7 @@
     "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
     "category": "Masterclass",
     "date": null,
-    "summary": "Anden del af Teknologisk Instituts masterclass-serie gennemgår, hvordan man klimasikrer bygninger mod regn- og grundvand, herunder lovgivning, klimatjekordningen og digitale værktøjer som KAMP, DinGeo og Scalgo til forundersøgelser. Oplægget zoomer ind på konkrete sikringstiltag for klimaskærm, kælder og afløb - herunder højvandslukkere, pumpebrønde og bypass-anlæg - samt udfordringer med terrænnært grundvand og kommende lovgivning på området.",
+    "summary": "Anden del af Teknologisk Instituts masterclass-serie gennemgår, hvordan man klimatilpasser bygninger mod regn- og grundvand, herunder lovgivning, klimatjekordningen og digitale værktøjer som KAMP, DinGeo og Scalgo til forundersøgelser. Oplægget zoomer ind på konkrete sikringstiltag for klimaskærm, kælder og afløb - herunder højvandslukkere, pumpebrønde og bypass-anlæg - samt udfordringer med terrænnært grundvand og kommende lovgivning på området.",
     "keywords": [
       "klimatilpasning",
       "håndtering af skybrud",

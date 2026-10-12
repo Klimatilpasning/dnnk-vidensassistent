@@ -207,6 +207,10 @@
     <button class="filter-btn" data-category="Jura" onclick="setFilter(this)">Jura</button>
     <button class="filter-btn" data-category="Masterclass" onclick="setFilter(this)">Masterclass</button>
     <button class="filter-btn" data-category="Øvrige" onclick="setFilter(this)">Øvrige</button>
+    <!-- Temaer tildelt pr. post (felt 'temaer' i search-index.json); udfyldes ved indlæsning -->
+    <select id="temaSelect" class="filter-btn" aria-label="Filtrér på tema" onchange="setTema(this.value)">
+      <option value="alle">Alle temaer</option>
+    </select>
   </div>
   <div id="recentSearches" style="display:none;margin-top:0.6rem;font-size:0.75rem;color:var(--muted);">
     <span style="margin-right:0.4rem;">Seneste:</span>
@@ -252,6 +256,7 @@
 <script>
 let searchIndex = [];
 let currentFilter = 'alle';
+let currentTema = 'alle';
 let chatHistory = [];
 let chatContext = null;
 let searchSeq = 0; // request-id: forhindrer at gamle søgninger overskriver nye
@@ -290,6 +295,7 @@ async function loadIndex() {
     const resp = await fetch('search-index.json');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     searchIndex = await resp.json();
+    populateTemaSelect();
     dot.className = 'status-dot ok';
     statusText.textContent = searchIndex.length + ' webinarer indekseret';
     // Deeplink: åbnes siden med ?q=… (fx fra dashboardet), forudfyld og søg.
@@ -348,8 +354,42 @@ function setFilter(btn) {
 // Eksakt match mod category-værdierne i search-index.json
 // (Tech Talk / Godmorgen med DNNK / Jura / Masterclass / Øvrige)
 function filterMatches(entry) {
+  if (currentTema !== 'alle' && !(entry.temaer || []).includes(currentTema)) return false;
   if (currentFilter === 'alle') return true;
   return (entry.category || 'Øvrige') === currentFilter;
+}
+
+// Temaliste med antal, bygget ud fra indekset så nye temaer kommer med af sig selv
+function populateTemaSelect() {
+  const counts = {};
+  searchIndex.forEach(e => (e.temaer || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
+  const sel = document.getElementById('temaSelect');
+  Object.keys(counts).sort((a, b) => a.localeCompare(b, 'da')).forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t + ' (' + counts[t] + ')';
+    sel.appendChild(opt);
+  });
+}
+
+// Med søgeord: filtrér søgningen. Uden søgeord: vis hele temaet, nyeste først.
+function setTema(tema) {
+  currentTema = tema;
+  document.getElementById('temaSelect').classList.toggle('active', tema !== 'alle');
+  if (document.getElementById('searchInput').value.trim()) { doSearch(); return; }
+  if (tema === 'alle') {
+    document.getElementById('results').innerHTML = '';
+    document.getElementById('resultsHeader').style.display = 'none';
+    document.getElementById('sortRow').style.display = 'none';
+    document.getElementById('emptyState').style.display = 'block';
+    lastResults = null;
+    return;
+  }
+  currentSort = 'dato';
+  document.getElementById('sortSelect').value = 'dato';
+  const ranked = searchIndex.filter(e => filterMatches(e)).map(e => ({ e, hits: [], score: 0 }));
+  renderResults(ranked, 'tema: ' + tema, []);
+  if (ranked.length) document.getElementById('resultsHeader').textContent = ranked.length + ' poster i temaet "' + tema + '"';
 }
 
 // ─── Search ────────────────────────────────────────────────
@@ -802,6 +842,27 @@ function buildCard(entry, matchedKws) {
     plEl.style.cssText = 'font-size:0.72rem;color:var(--muted);margin:0 0 0.5rem 0;';
     plEl.textContent = '📍 ' + entry.places.join(' · ');
     card.appendChild(plEl);
+  }
+
+  if (entry.temaer && entry.temaer.length) {
+    const temaEl = document.createElement('div');
+    temaEl.style.cssText = 'font-size:0.72rem;color:var(--muted);margin:0 0 0.5rem 0;';
+    temaEl.append('🏷️ ');
+    entry.temaer.forEach((t, i) => {
+      if (i) temaEl.append(' · ');
+      const link = document.createElement('a');
+      link.href = '#';
+      link.textContent = t;
+      link.style.cssText = 'color:var(--dnnk-blue);text-decoration:none;';
+      link.onclick = ev => {
+        ev.preventDefault();
+        ev.stopPropagation();  // kortet åbner ellers YouTube
+        document.getElementById('temaSelect').value = t;
+        setTema(t);
+      };
+      temaEl.appendChild(link);
+    });
+    card.appendChild(temaEl);
   }
 
   if (entry.summary) {

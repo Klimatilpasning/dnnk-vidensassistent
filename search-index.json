@@ -66,7 +66,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Kyst og stormflod",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
@@ -133,7 +138,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Gr_nsel_s_adf_rd_og_gr_nsel_se_potentialer.mp3.txt",
@@ -199,6 +209,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -257,6 +272,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Jura og regulering"
     ]
   },
   {
@@ -324,6 +344,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -391,6 +416,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -454,6 +484,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Skybrud og regnvand",
+      "Beredskab og forsikring"
     ]
   },
   {
@@ -517,6 +552,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -577,6 +617,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -653,6 +698,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Kyst og stormflod",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -719,6 +769,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -779,6 +834,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Teknisk-bilag-om-datakatalog-ofr-Værebo-Å-oplandet.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Grundvand",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -846,6 +906,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -909,6 +973,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Jura og regulering",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -982,6 +1051,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -1055,6 +1129,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -1122,7 +1201,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Temadag_om_kystn_re_risici__lovgivning_og_social_s_rbarhed.mp3.txt",
@@ -1202,6 +1286,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -1282,6 +1371,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -1361,6 +1455,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/12/Webinar-1-Planlaegning-af-klimatilpasning-30.-november-2022.pdf"
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Jura og regulering",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -1437,6 +1536,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Jura og regulering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -1505,6 +1609,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -1563,6 +1672,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Økonomi og finansiering",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -1636,7 +1750,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Bygninger og anlæg",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__N_r_jorden_skrider___landskred_som_overs.mp3.txt",
@@ -1709,7 +1828,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.967
+    "match_confidence": 0.967,
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Risikokommunikation_i_Kystomr_der.mp3.txt",
@@ -1778,7 +1902,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod",
+      "Beredskab og forsikring"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Samskabelse_af_naturbaserede_l_sninger__.mp3.txt",
@@ -1847,7 +1976,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Tech_Talk__Holder_rensel_sninger_til_rensning_af_regnvand__v.mp3.txt",
@@ -1918,7 +2052,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Bygninger og anlæg"
+    ]
   },
   {
     "filename": "Tech_Talk__Klimatilpasning_i_Danmark_med_blik_for_den_gr_nne.mp3.txt",
@@ -1978,7 +2117,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.957
+    "match_confidence": 0.957,
+    "temaer": [
+      "Bygninger og anlæg",
+      "Vandløb og ådale",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Tech-Talk__Screeningsv_rkt_j_til_beregning_af_klimaaftryk_p_.mp3.txt",
@@ -2046,7 +2190,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Bygninger og anlæg",
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimatilpasning__naturbeskyttelse_og_nat.mp3.txt",
@@ -2113,7 +2262,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Jura og regulering",
+      "Naturbaserede løsninger og biodiversitet",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__NBS_i_t_t_by___erfaringer_fra_Malm_.mp3.txt",
@@ -2182,7 +2336,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Fra_testanl_g_til_hverdagsdrift___s_dan_.mp3.txt",
@@ -2250,7 +2409,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimahuse_i_Lemvig.mp3.txt",
@@ -2320,7 +2484,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Bygninger og anlæg",
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Screeningsv_rkt_j_til_udv_lgelse_af_rens.mp3.txt",
@@ -2384,7 +2553,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/1100029554-afsluttende-notat.pdf"
       }
     ],
-    "match_confidence": 0.873
+    "match_confidence": 0.873,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Jura og regulering"
+    ]
   },
   {
     "filename": "Tech_Talk__Effektiv_rensning_af_afstr_mmende_regnvand___erfa.mp3.txt",
@@ -2425,7 +2599,12 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Aarhus__erfaringer_fra_City_Blues___natu.mp3.txt",
@@ -2489,7 +2668,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Vandløb og ådale",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Biodiversitet_som_beslutningsgrundlag_i_.mp3.txt",
@@ -2557,7 +2741,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Fra_lukket_land_til__bent_landskab.mp3.txt",
@@ -2624,7 +2813,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Planlægning og strategi",
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Nyt_till_g_til_spildevandsvejledningen.mp3.txt",
@@ -2689,7 +2883,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Grundvand",
+      "Jura og regulering",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Satellites_to_Measure_Social_and_Human_F.mp3.txt",
@@ -2757,7 +2956,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Internationale erfaringer",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Svanem_llen_Skybrudstunnel.mp3.txt",
@@ -2825,7 +3029,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.944
+    "match_confidence": 0.944,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Terr_nn_rt_grundvand___fra_lovgivning_ti.mp3.txt",
@@ -2902,7 +3111,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.857
+    "match_confidence": 0.857,
+    "temaer": [
+      "Grundvand",
+      "Data, modeller og kortlægning",
+      "Jura og regulering"
+    ]
   },
   {
     "filename": "Klimatilpasning_i_den_dansk-tyske_gr_nseregion__fra_klimadat.mp3.txt",
@@ -2982,7 +3196,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.948
+    "match_confidence": 0.948,
+    "temaer": [
+      "Internationale erfaringer",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Tech_Talk__Styrbar_vandbremse_med_rensefunktion.mp3.txt",
@@ -3050,7 +3269,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "PDF_da3144540d3d.txt",
@@ -3134,6 +3358,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/1100029554-afsluttende-notat.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -3209,6 +3438,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Spildevand og vandkvalitet",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -3292,6 +3526,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -3374,6 +3613,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Bygninger og anlæg",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -3449,6 +3693,10 @@
         "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -3524,6 +3772,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -3558,7 +3811,11 @@
     "match_confidence": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "PDF_5647a6a53142.txt",
@@ -3643,6 +3900,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/04/LAR-huskeliste.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -3709,6 +3971,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Tørke og hede",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -3774,6 +4041,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -3851,6 +4123,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -3940,6 +4217,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -4019,6 +4301,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -4082,6 +4369,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Internationale erfaringer",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -4167,6 +4459,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Grundvand"
     ]
   },
   {
@@ -4249,6 +4546,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -4331,6 +4633,10 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/07/Haandbog-Aktoerkortlaegning.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -4406,6 +4712,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/06/Vaerdikort_betaversion_17122018.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -4489,6 +4800,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -4591,6 +4907,11 @@
         "dnnk_url": null,
         "source_url": "https://aarch.dk/wp-content/uploads/2023/03/2023.02.09_DenLilleBlaaParloer_AAA_Wiberg_LQ.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -4681,6 +5002,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -4757,6 +5083,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/notat_01-workshop.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -4845,6 +5176,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -4911,6 +5247,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Beredskab og forsikring",
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -4994,6 +5335,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/monitering-af-first-flush-og-hverdagsregn.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -5069,6 +5415,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -5146,6 +5497,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -5228,6 +5584,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/03_Guide_til_Hvem_skal_vi_tale_med.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -5305,6 +5666,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Del_1_Forstå_vandet_Workshop_kit_Grundejerforeningers_klimatilpasning_110618.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Skybrud og regnvand",
+      "Grundvand"
     ]
   },
   {
@@ -5383,6 +5749,11 @@
         "dnnk_url": null,
         "source_url": "https://www.navigating360.dk/_files/ugd/06ce87_ff1072c08d3743788cdb50f8edc6a436.pdf"
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Borgerinddragelse og social sårbarhed",
+      "Beredskab og forsikring"
     ]
   },
   {
@@ -5473,6 +5844,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/10/Foer-klimakatastrofen-rammer-dig.pdf"
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Økonomi og finansiering",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -5556,6 +5932,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -5620,6 +6001,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -5702,6 +6088,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -5772,6 +6163,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -5864,6 +6260,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -5937,6 +6338,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -6011,6 +6417,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Tørke og hede"
     ]
   },
   {
@@ -6096,6 +6507,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -6173,6 +6589,11 @@
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -6241,6 +6662,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/12/Webinar-1-Planlaegning-af-klimatilpasning-30.-november-2022.pdf"
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Økonomi og finansiering",
+      "Jura og regulering"
     ]
   },
   {
@@ -6308,6 +6734,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -6375,6 +6806,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -6453,6 +6889,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -6522,6 +6963,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -6605,6 +7050,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -6680,6 +7130,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -6751,6 +7206,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Kyst og stormflod",
+      "Jura og regulering"
     ]
   },
   {
@@ -6826,6 +7286,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -6904,6 +7369,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/afrapportering-bobleprojekt-elev8-living-16082017.pdf"
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -6973,6 +7443,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Planlægning og strategi",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -7055,6 +7530,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -7133,6 +7613,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -7204,6 +7689,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -7279,6 +7769,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Økonomi og finansiering",
+      "Jura og regulering"
     ]
   },
   {
@@ -7349,6 +7844,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -7408,6 +7908,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Jura og regulering",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -7466,6 +7971,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/2.-Version.-Guide-til-grunderforeningerns-klimatilpasning-PRINT.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -7524,6 +8034,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Skybrud og regnvand",
+      "Grundvand"
     ]
   },
   {
@@ -7591,6 +8106,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/09/Webinar-2-Omkostningsbekendtkoerelsen-28.-september.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -7658,6 +8178,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/12/Webinar-1-Planlaegning-af-klimatilpasning-30.-november-2022.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -7725,6 +8250,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -7794,6 +8324,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Skybrud og regnvand",
+      "Grundvand"
     ]
   },
   {
@@ -7883,6 +8418,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Lovgivningsmaessige-rammer-og-barrierer-for-alternative-bidragsmodeller.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -7972,6 +8512,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Lovgivningsmaessige-rammer-og-barrierer-for-alternative-bidragsmodeller.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -8037,6 +8582,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -8108,6 +8658,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Skybrud og regnvand",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -8191,6 +8746,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -8266,6 +8826,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Del_2_Løsninger_Workshop_kit_Grundejerforeningers_klimatilpasning_110618.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -8354,6 +8919,10 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Modeller_for_kommunale_samarbejder_2021_Rapport_web.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -8421,6 +8990,9 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi"
     ]
   },
   {
@@ -8510,6 +9082,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -8580,6 +9157,10 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Værebro-Å_samarbejde_slides-fra-1.-workshop-7.-januar-2019.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -8652,6 +9233,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/09/Webinar-2-Omkostningsbekendtkoerelsen-28.-september.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -8731,6 +9317,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -8801,6 +9392,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Planlægning og strategi",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -8884,6 +9480,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -8959,6 +9560,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Økonomi og finansiering",
+      "Jura og regulering"
     ]
   },
   {
@@ -9020,6 +9626,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/2.-Version.-Guide-til-grunderforeningerns-klimatilpasning-PRINT.pdf"
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Beredskab og forsikring",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -9078,6 +9689,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Jura og regulering",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -9151,6 +9767,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Skybrud og regnvand",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -9226,6 +9847,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -9283,6 +9909,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Skybrud og regnvand",
+      "Grundvand"
     ]
   },
   {
@@ -9361,6 +9992,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -9436,6 +10072,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -9512,7 +10153,12 @@
         "type": "📄 Dokument"
       }
     ],
-    "related_webinars": []
+    "related_webinars": [],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Data, modeller og kortlægning",
+      "Bygninger og anlæg"
+    ]
   },
   {
     "filename": "PDF_Værdikort_metrikker.txt",
@@ -9590,6 +10236,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -9679,6 +10330,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/notat_01-workshop.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Jura og regulering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -9754,6 +10410,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Overblik-over-samt-analyse-af-hydrauliske-data-for-Værebro-Å-oplandet.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Vandløb og ådale",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -9835,6 +10496,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Vandløb og ådale",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -9902,6 +10568,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Modeller_for_kommunale_samarbejder_2021_Rapport_web.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -9981,6 +10652,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/06/DNNK-Klimatilpasning-DTU-5.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Beredskab og forsikring",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -10065,6 +10741,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -10156,6 +10837,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Økonomi og finansiering",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -10239,6 +10925,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -10310,6 +11001,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Skybrud og regnvand",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -10389,6 +11085,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Tørke og hede",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -10489,6 +11190,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Økonomi og finansiering",
+      "Jura og regulering"
     ]
   },
   {
@@ -10563,6 +11269,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Værebro-Å-samarbejde-slides-fra-3.-workshop-24-april2019.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Vandløb og ådale",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -10643,6 +11354,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Kyst og stormflod",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -10725,6 +11441,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -10808,6 +11529,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Beredskab og forsikring",
+      "Kyst og stormflod",
+      "Jura og regulering"
     ]
   },
   {
@@ -10870,6 +11596,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -10929,6 +11660,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -10992,6 +11728,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -11074,6 +11815,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Jura og regulering"
     ]
   },
   {
@@ -11140,6 +11886,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/05/MoU-Bilag-A-1.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Internationale erfaringer",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -11217,6 +11968,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Vandoplandsbaseret-samarbejde-langs-Vaerebro-Aa.pdf"
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -11299,6 +12055,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Vandoplandsbaseret-samarbejde-langs-Vaerebro-Aa.pdf"
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Planlægning og strategi",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -11368,6 +12129,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Økonomi og finansiering",
+      "Jura og regulering"
     ]
   },
   {
@@ -11443,6 +12209,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -11520,6 +12291,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Jura og regulering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -11590,6 +12366,11 @@
         "dnnk_url": null,
         "source_url": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/299205990/Metoderapport_skader_DTU_AU_Ramboll.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Jura og regulering"
     ]
   },
   {
@@ -11678,6 +12459,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Jura og regulering",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -11762,6 +12548,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Data, modeller og kortlægning",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -11852,6 +12643,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Kyst og stormflod",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -11922,6 +12718,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Internationale erfaringer",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -11999,6 +12800,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -12059,6 +12865,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Internationale erfaringer",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -12140,6 +12951,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Internationale erfaringer",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -12213,6 +13029,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -12274,6 +13095,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Jura og regulering"
     ]
   },
   {
@@ -12353,6 +13179,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Modeller_for_kommunale_samarbejder_2021_Rapport_web.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Vandløb og ådale",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -12423,6 +13254,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -12494,6 +13330,10 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/10/Endeligt-program-18.11.2021-rensning-af-overfladevand_clean_justering.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -12567,6 +13407,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Beredskab og forsikring"
     ]
   },
   {
@@ -12638,6 +13483,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -12705,6 +13555,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -12773,6 +13628,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -12839,6 +13699,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -12904,6 +13769,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -12973,6 +13842,10 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -13059,6 +13932,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Jura og regulering",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -13140,6 +14018,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Vandløb og ådale"
     ]
   },
   {
@@ -13216,6 +14099,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Tørke og hede",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -13304,6 +14192,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -13372,6 +14265,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -13436,6 +14334,10 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -13485,6 +14387,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Jura og regulering"
     ]
   },
   {
@@ -13559,6 +14465,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -13646,6 +14557,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -13724,6 +14640,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Grundvand",
+      "Spildevand og vandkvalitet",
+      "Jura og regulering"
     ]
   },
   {
@@ -13803,6 +14724,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Værebro-Å_samarbejde_slides-fra-1.-workshop-7.-januar-2019.pdf"
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Planlægning og strategi",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -13870,6 +14796,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/afrapportering-bobleprojekt-elev8-living-16082017.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -13948,6 +14879,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Referat-af-afsluttende-workshop-i-Værebro-Å-projekt-24april2019.pdf"
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -14044,6 +14980,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Vandoplandsbaseret-samarbejde-langs-Vaerebro-Aa.pdf"
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -14116,6 +15057,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Vandoplandsbaseret-samarbejde-langs-Vaerebro-Aa.pdf"
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -14208,6 +15154,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Planlægning og strategi",
+      "Tørke og hede"
     ]
   },
   {
@@ -14294,6 +15245,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Del_1_Forstå_vandet_Workshop_kit_Grundejerforeningers_klimatilpasning_110618.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod",
+      "Beredskab og forsikring"
     ]
   },
   {
@@ -14376,6 +15332,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -14437,6 +15398,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/Hovedresultater-fra-interview_Klimatilpasning-i-grundejerforeninger.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Data, modeller og kortlægning",
+      "Jura og regulering"
     ]
   },
   {
@@ -14495,6 +15461,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -14556,6 +15527,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/1-Version.-Guide-til-grunderforeningerns-klimatilpasning-INTERAKTIV.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -14619,6 +15595,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/InnovativKlimatilpasningmBorgereVIB.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -14695,6 +15676,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/06/Vaerdikort_betaversion_17122018.pdf"
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Skybrud og regnvand",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -14756,6 +15742,11 @@
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -14826,7 +15817,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Byerne_og_det_stigende_havvand___Kystbeskyttelsesprojekter_i.mp3.txt",
@@ -14896,7 +15892,12 @@
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Jura og regulering",
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_.txt",
@@ -14957,6 +15958,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -15024,6 +16030,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -15090,6 +16101,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -15154,6 +16170,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -15215,6 +16236,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -15280,6 +16306,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Økonomi og finansiering",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -15343,6 +16374,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -15405,6 +16441,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -15467,6 +16508,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Internationale erfaringer",
+      "Økonomi og finansiering",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -15526,6 +16572,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/10/TFMKE3-4_2024-Ellen-Margrethe-Basse.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Internationale erfaringer",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -15585,6 +16636,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -15644,6 +16700,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/afrapportering-bobleprojekt-elev8-living-16082017.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Internationale erfaringer",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -15705,6 +16766,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/05/climate-change-adaptation-and-economics-and-investment-decision-making-in-the-cities.pdf"
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Beredskab og forsikring",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -15766,6 +16832,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -15833,6 +16904,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/04/LAR-huskeliste.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -15903,6 +16979,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Jura og regulering"
     ]
   },
   {
@@ -15964,6 +17045,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -16017,6 +17103,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -16087,6 +17178,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -16157,6 +17252,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -16224,7 +17323,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Planlægning og strategi",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3.txt",
@@ -16291,7 +17395,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3 (2).txt",
@@ -16360,7 +17469,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Økonomi og finansiering",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
@@ -16421,6 +17535,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Skybrud og regnvand",
+      "Jura og regulering"
     ]
   },
   {
@@ -16487,6 +17606,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet",
+      "Jura og regulering"
     ]
   },
   {
@@ -16545,6 +17669,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Økonomi og finansiering",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -16602,6 +17731,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -16662,6 +17796,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -16738,6 +17877,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Grundvand",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -16803,6 +17947,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Beredskab og forsikring",
+      "Data, modeller og kortlægning",
+      "Jura og regulering"
     ]
   },
   {
@@ -16872,6 +18021,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Jura og regulering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -16940,7 +18094,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Planlægning og strategi",
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK  Mulighedskatalog for involvering af borg.txt",
@@ -17012,7 +18171,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK_-_Stormflodsplan_for_hovedstadsomr_det.mp3.txt",
@@ -17091,7 +18255,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Jura og regulering"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK - Webinar om Klimaatlas.txt",
@@ -17168,6 +18337,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi",
+      "Kyst og stormflod"
     ]
   },
   {
@@ -17247,7 +18421,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Kyst og stormflod",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK - Borgerinddragelse og klimatilpasning -.txt",
@@ -17319,7 +18498,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK – Borgerinddragelsesprocesser i klimatilp.txt",
@@ -17389,7 +18573,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK Det bæredygtige vandkredsløb – fra en reg.txt",
@@ -17467,7 +18656,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Planlægning og strategi",
+      "Vandløb og ådale",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Drag_r__klimarobust_kystkommune___fra_ud.txt",
@@ -17534,7 +18728,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK - Dynamisk Adaptiv Pathway Planning DAPP.txt",
@@ -17600,7 +18799,11 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Dynamisk_skybrudsplanl_gning___erfaringe.mp3.txt",
@@ -17641,7 +18844,12 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Planlægning og strategi",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK_-_Ekstreme_skybrud_og_stormfloder.mp3.txt",
@@ -17710,7 +18918,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Gr_nningen_NV___Klimatilpasning__Kunst_o.txt",
@@ -17783,7 +18996,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.924
+    "match_confidence": 0.924,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK – Inspirationsoplæg om NBS og monitering.txt",
@@ -17846,7 +19064,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Karens_Minde_Aksen.mp3.txt",
@@ -17919,7 +19142,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Økonomi og finansiering",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimaforandringernes_konsekvenser_for_kl.mp3.txt",
@@ -17992,7 +19220,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.927
+    "match_confidence": 0.927,
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK___Klimatilpasning_i_danske_kommuners_klim.mp3.txt",
@@ -18061,7 +19294,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Planlægning og strategi",
+      "Jura og regulering",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK___Klimatilpasning_og_den_gr_nne_omstillin.mp3.txt",
@@ -18134,7 +19372,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Planlægning og strategi",
+      "Bygninger og anlæg",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Klimatilpasning_og_kystbeskyttelse_i_K_g.mp3.txt",
@@ -18203,7 +19446,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2026/02/klimatilpasningsplan-i.pdf"
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Kyst og stormflod",
+      "Bygninger og anlæg",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK – Klimaændringernes effekt på vandkredslø.txt",
@@ -18276,7 +19524,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/10/TFMKE3-4_2024-Ellen-Margrethe-Basse.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Grundvand",
+      "Data, modeller og kortlægning",
+      "Vandløb og ådale"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__K_ge_Nord___Tv_rfaglig_samarbejdsform__i.mp3.txt",
@@ -18348,7 +19601,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK___M_det_og_dialogen_med_borgerne.mp3.txt",
@@ -18404,7 +19662,10 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/vib-innovative-driftsmodeller-i-klimatilpasningen-juni-2018.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Naturbaserede_byer___vejen_til_klimarobu.mp3.txt",
@@ -18473,7 +19734,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi",
+      "Tørke og hede"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK_-_Ny_klimatilpasningsplan_i_Aarhus_Kommun.mp3.txt",
@@ -18541,7 +19807,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Opdaterede_h_jvandsstatistikker_2024.mp3.txt",
@@ -18610,7 +19881,11 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK Organiserings- og finansieringsmodeller t.txt",
@@ -18682,7 +19957,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Kyst og stormflod",
+      "Jura og regulering",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Overl_b_og_oversv_mmelser_fra_vandl_b.txt",
@@ -18753,7 +20033,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Vandløb og ådale",
+      "Data, modeller og kortlægning",
+      "Beredskab og forsikring"
+    ]
   },
   {
     "filename": "Godmorgen med DNNK – Skitsering af problematikker for vores.txt",
@@ -18825,7 +20110,11 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Skred_og_klimaforandringer_i_Danmark.mp3.txt",
@@ -18892,7 +20181,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Kyst og stormflod",
+      "Grundvand"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Stort_LAR-anl_g_i_Urbanplan.txt",
@@ -18968,7 +20262,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Svendborgs_nye_strategi_for_beskyttelse_.mp3.txt",
@@ -19036,7 +20335,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Kyst og stormflod",
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
@@ -19103,7 +20407,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/01/Samfundsoekonomiske-konsekvenser-af-oversvoemmelser-og-investeringer-i-klimatilpasning-_-final_reduced.pdf"
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Jura og regulering"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Vandets_veje.mp3.txt",
@@ -19174,6 +20483,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -19245,7 +20559,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Kyst og stormflod",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Gr_nne_v_gge___en_overset_klimatilpasningsl_sning_i_DK_.mp3.txt",
@@ -19323,6 +20642,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg",
+      "Tørke og hede"
     ]
   },
   {
@@ -19401,6 +20725,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Internationale erfaringer",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -19468,6 +20797,10 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Road-Map_RammeForSamarbejde_220317.pdf"
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -19551,7 +20884,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.976
+    "match_confidence": 0.976,
+    "temaer": [
+      "Jura og regulering",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Klimatilpasning_i_det__bne_land_-_Strategier_og_eksempler_fr.mp3.txt",
@@ -19619,7 +20957,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.94
+    "match_confidence": 0.94,
+    "temaer": [
+      "Planlægning og strategi",
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "youtube_video_057e2dce.mp3.txt",
@@ -19698,6 +21041,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Jura og regulering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -19744,6 +21092,10 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Grundvand"
     ]
   },
   {
@@ -19805,6 +21157,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Kyst og stormflod",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -19869,6 +21226,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -19920,6 +21282,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -20008,7 +21375,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Økonomi og finansiering",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Rockflow_01_opl_g.mp3.txt",
@@ -20065,6 +21437,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -20130,6 +21507,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/first-flush-review.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -20195,6 +21577,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Jura og regulering"
     ]
   },
   {
@@ -20267,6 +21654,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -20316,6 +21707,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -20379,6 +21775,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -20439,6 +21840,11 @@
         "dnnk_url": null,
         "source_url": "https://aarch.dk/wp-content/uploads/2023/03/2023.02.09_DenLilleBlaaParloer_AAA_Wiberg_LQ.pdf"
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Kyst og stormflod",
+      "Jura og regulering"
     ]
   },
   {
@@ -20488,7 +21894,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Tech_Talk_-_CO2_fra_forsyningsselskabets_anl_gsprojekter.txt",
@@ -20541,7 +21952,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Den_gode_vej_til_planl_gning_af_klimatilpasning_.txt",
@@ -20609,7 +22025,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Økonomi og finansiering",
+      "Jura og regulering",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Dynamisk_beredskabsplanl_gning_mod_stormfloden.txt",
@@ -20680,7 +22101,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Beredskab og forsikring",
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Hvordan_renser_man_regnvand_for_mikroplast_.txt",
@@ -20723,7 +22149,11 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Tech_Talk_-_H_jtst_ende_grundvand_til_PtX.txt",
@@ -20787,7 +22217,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Grundvand",
+      "Jura og regulering",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Klimask_rm.txt",
@@ -20858,6 +22293,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -20922,7 +22362,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Grundvand",
+      "Kyst og stormflod",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Oversv_mmelsesberegninger_med_integrerede_modell.txt",
@@ -20995,6 +22440,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -21061,7 +22511,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Tørke og hede"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Sundhed_i_klimatilpasning_og_byplanl_gning (1).txt",
@@ -21135,6 +22590,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Borgerinddragelse og social sårbarhed",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -21179,7 +22639,12 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.757
+    "match_confidence": 0.757,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Beredskab og forsikring"
+    ]
   },
   {
     "filename": "Tech_Talk_001_-_Sygdomssporing_i_Spildevand.txt",
@@ -21224,7 +22689,12 @@
     "dnnk_url": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Data, modeller og kortlægning",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Tech_Talk_002_-_Fra_oversv_mmelse_til_risiko.txt",
@@ -21290,6 +22760,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Beredskab og forsikring"
     ]
   },
   {
@@ -21358,7 +22833,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Bygninger og anlæg",
+      "Planlægning og strategi",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Tech_Talk_004_-_VeVa.txt",
@@ -21398,7 +22878,11 @@
     "dnnk_url": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Tech_Talk_005_-_Digitale_tvillinger_for_afl_bssystem_og_rens.txt",
@@ -21462,6 +22946,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -21532,6 +23021,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/12/Webinar-1-Planlaegning-af-klimatilpasning-30.-november-2022.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Økonomi og finansiering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -21595,7 +23089,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Tørke og hede"
+    ]
   },
   {
     "filename": "Tech_Talk_008_-__Dannozzle_Klimasikringsanl_g.txt",
@@ -21661,7 +23160,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Kyst og stormflod",
+      "Bygninger og anlæg"
+    ]
   },
   {
     "filename": "Tech_Talk_009___Fra_Satellitdata_til_klimatilpasning.txt",
@@ -21730,7 +23234,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Tech_Talk_010___IOT_og_vand_n_r_terr_n.txt",
@@ -21797,7 +23306,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Grundvand",
+      "Vandløb og ådale"
+    ]
   },
   {
     "filename": "Tech_Talk_011_-__Rensning_af_regnvand_Hvad_ka__vi_og_hvad_sk.txt",
@@ -21866,7 +23380,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Tech_Talk_012___Geofysik_til_detaljerede_hydrogeologiske_und.txt",
@@ -21934,7 +23453,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Grundvand"
+    ]
   },
   {
     "filename": "Tech_Talk_014_-_HOFORs_erfaringer_med_overv_gning_af_spildev.txt",
@@ -22003,7 +23527,11 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Tech_Talk_015_-_N_r_klimatilpasning_skal_t_nkes_sammen_med_f.txt",
@@ -22083,7 +23611,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Borgerinddragelse og social sårbarhed"
+    ]
   },
   {
     "filename": "Tech_Talk_016_-_Sammenh_ngen_mellem_oversv_mmelse__folks_hel.txt",
@@ -22152,7 +23685,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.938
+    "match_confidence": 0.938,
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Økonomi og finansiering",
+      "Kyst og stormflod"
+    ]
   },
   {
     "filename": "Tech_Talk_017_-_Biologiske_vandbehandlingsprincipper_fra_sv_.txt",
@@ -22221,7 +23759,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.959
+    "match_confidence": 0.959,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Tech_Talk_018_-_Konstruerede_v_domr_der_i_Danmark___nyeste_e.txt",
@@ -22290,7 +23833,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Tech_Talk_019___Erfaringer_med_nye_rensel_sninger_i_K_ge_Nor.txt",
@@ -22361,7 +23909,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Tech_Talk_020_-_Terr_nn_rt_grundvand_i_danske_byer___en_ekse.txt",
@@ -22445,7 +23998,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Grundvand",
+      "Jura og regulering",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Tech_Talk_021___Status_p__dobbeltpor_s_filtrering__DPF_.txt",
@@ -22514,7 +24072,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/notat_01-workshop.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Bygninger og anlæg"
+    ]
   },
   {
     "filename": "Tech_Talk_022_-_Funktionelle_regnbede_der_virker_fra_dag_1__.txt",
@@ -22575,7 +24138,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk_023___Bystrategisk_vandforvaltning___Panik_f_r_sky.txt",
@@ -22641,7 +24209,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk_024___T_nk__hvis_skybrud_ikke_var_et_problem__men_.txt",
@@ -22711,7 +24284,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Borgerinddragelse og social sårbarhed",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk_025___B_redygtighed___dilemmaernes_holdeplads.txt",
@@ -22769,7 +24347,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Jura og regulering",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Tech_Talk_Regnvand___udfordringer_og_muligheder_ (1).txt",
@@ -22837,7 +24420,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Skybrud og regnvand",
+      "Bygninger og anlæg"
+    ]
   },
   {
     "filename": "Tech_Talk__Byudvikling__vandbalance_og__kologi.txt",
@@ -22910,6 +24498,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Vandløb og ådale",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -22976,6 +24569,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -23044,7 +24642,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Økonomi og finansiering",
+      "Kyst og stormflod",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Tech_Talk__Fra_Nordens_st_rste_renseanl_g_via_milj_problem_t.txt",
@@ -23111,7 +24714,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.833
+    "match_confidence": 0.833,
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Bygninger og anlæg",
+      "Naturbaserede løsninger og biodiversitet"
+    ]
   },
   {
     "filename": "Tech_Talk__Fra_problem_til_potentiale___klimatilpasning_der_.txt",
@@ -23179,7 +24787,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Tech_Talk_-_Fully_integral_hydrodynamic_simulations (1).txt",
@@ -23243,7 +24856,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Tech_Talk__Future_City_Flow.txt",
@@ -23309,6 +24927,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet",
+      "Internationale erfaringer"
     ]
   },
   {
@@ -23386,7 +25009,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/InnovativKlimatilpasningmBorgereVIB.pdf"
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Grundvand",
+      "Jura og regulering",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "Tech_Talk__Klimatilpasning_i_Frederiksberg_Kommune.txt",
@@ -23456,7 +25084,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk__Kunstig_og_menneskelig_viden_i_den_digitale_vandf.mp3.txt",
@@ -23520,7 +25153,11 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2021/05/MoU-Bilag-A-1.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Bygninger og anlæg"
+    ]
   },
   {
     "filename": "Tech_Talk__MAPIT.mp3.txt",
@@ -23587,6 +25224,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Kyst og stormflod",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -23655,6 +25297,10 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -23725,6 +25371,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -23794,7 +25445,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Jura og regulering"
+    ]
   },
   {
     "filename": "Tech_Talk___Pathways_to_water_resilient_cities.txt",
@@ -23864,7 +25520,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.817
+    "match_confidence": 0.817,
+    "temaer": [
+      "Internationale erfaringer",
+      "Tørke og hede",
+      "Grundvand"
+    ]
   },
   {
     "filename": "Tech_Talk___Prognoser_for_afstr_mning_og_oversv_mmelse_gjort.txt",
@@ -23932,7 +25593,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Beredskab og forsikring"
+    ]
   },
   {
     "filename": "Tech_Talk__SUMBA___nem_og_hurtig_hydraulisk_modellering.mp3.txt",
@@ -24000,7 +25666,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/03_Guide_til_Hvem_skal_vi_tale_med.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Tech_Talk__Smart_integrering_i_klimatilpasning.txt",
@@ -24073,7 +25744,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Tech_Talk__Storkeengen_i_Randers.txt",
@@ -24141,6 +25817,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Vandløb og ådale",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -24206,7 +25887,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Tech-Talk__Automatisk_insektmonitorering___kvantitative_biod.mp3.txt",
@@ -24249,7 +25935,11 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "Temadag_-_nye_metoder_til_akt_rkortl_gning_og_v_rdiskabende_.txt",
@@ -24320,6 +26010,10 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -24388,6 +26082,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/10/TFMKE3-4_2024-Ellen-Margrethe-Basse.pdf"
       }
+    ],
+    "temaer": [
+      "Tørke og hede",
+      "Vandløb og ådale",
+      "Naturbaserede løsninger og biodiversitet"
     ]
   },
   {
@@ -24460,7 +26159,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Grundvand",
+      "Data, modeller og kortlægning",
+      "Tørke og hede"
+    ]
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_4__Vandforvaltning_i_praksis.mp3.txt",
@@ -24528,7 +26232,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Tørke og hede",
+      "Spildevand og vandkvalitet",
+      "Jura og regulering"
+    ]
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_5__Hede_i_Byen.mp3.txt",
@@ -24595,7 +26304,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Tørke og hede",
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_6__T_rke_og_Grundvandsstand.mp3.txt",
@@ -24667,7 +26381,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Tørke og hede",
+      "Grundvand",
+      "Data, modeller og kortlægning"
+    ]
   },
   {
     "filename": "T_rke_og_Hede_i_Danmark_2__T_rke_og_Klimatilpasning_i_Dansk_.mp3.txt",
@@ -24736,7 +26455,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.906
+    "match_confidence": 0.906,
+    "temaer": [
+      "Tørke og hede",
+      "Naturbaserede løsninger og biodiversitet",
+      "Internationale erfaringer"
+    ]
   },
   {
     "filename": "V.I.P._AquaGreen.mp3.txt",
@@ -24794,6 +26518,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Modeller_for_kommunale_samarbejder_2021_Rapport_web.pdf"
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Grundvand",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -24838,6 +26567,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Skybrud og regnvand",
+      "Tørke og hede"
     ]
   },
   {
@@ -24904,6 +26638,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -24934,7 +26673,11 @@
     "dnnk_url": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "V.I.P.__WaterZerv.mp3.txt",
@@ -24996,6 +26739,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -25047,7 +26795,12 @@
     "dnnk_url": null,
     "description": null,
     "related_resources": [],
-    "related_webinars": []
+    "related_webinars": [],
+    "temaer": [
+      "Jura og regulering",
+      "Planlægning og strategi",
+      "Skybrud og regnvand"
+    ]
   },
   {
     "filename": "Webinar_om_jura_-_Kystjura_og_klimaaspekter.mp3.txt",
@@ -25114,7 +26867,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Jura og regulering",
+      "Kyst og stormflod",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Webinar_om_jura_2__Omkostningsbekendtg_relsen.mp3.txt",
@@ -25178,6 +26936,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -25238,6 +27001,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2023/09/Webinar-2-Omkostningsbekendtkoerelsen-28.-september.pdf"
       }
+    ],
+    "temaer": [
+      "Jura og regulering",
+      "Økonomi og finansiering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -25308,7 +27076,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Jura og regulering",
+      "Kyst og stormflod",
+      "Vandløb og ådale"
+    ]
   },
   {
     "filename": "Workshop_om_oversv_mmelser__skader_og__konomi__opl_g_3.mp3.txt",
@@ -25363,6 +27136,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Beredskab og forsikring",
+      "Borgerinddragelse og social sårbarhed"
     ]
   },
   {
@@ -25430,6 +27208,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Skybrud og regnvand",
+      "Data, modeller og kortlægning"
     ]
   },
   {
@@ -25491,6 +27274,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Data, modeller og kortlægning",
+      "Beredskab og forsikring"
     ]
   },
   {
@@ -25553,6 +27341,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Data, modeller og kortlægning",
+      "Økonomi og finansiering"
     ]
   },
   {
@@ -25611,6 +27404,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Kyst og stormflod",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -25670,6 +27468,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Økonomi og finansiering",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -25738,6 +27541,11 @@
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Skybrud og regnvand",
+      "Jura og regulering",
+      "Bygninger og anlæg"
     ]
   },
   {
@@ -25802,6 +27610,11 @@
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Bygninger og anlæg",
+      "Skybrud og regnvand",
+      "Grundvand"
     ]
   },
   {
@@ -25865,6 +27678,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Jura og regulering",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -25927,6 +27745,11 @@
         "dnnk_url": null,
         "source_url": null
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Borgerinddragelse og social sårbarhed",
+      "Skybrud og regnvand"
     ]
   },
   {
@@ -25992,6 +27815,11 @@
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/1-Version.-Guide-til-grunderforeningerns-klimatilpasning-INTERAKTIV.pdf"
       }
+    ],
+    "temaer": [
+      "Data, modeller og kortlægning",
+      "Skybrud og regnvand",
+      "Planlægning og strategi"
     ]
   },
   {
@@ -26059,7 +27887,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Skybrud og regnvand",
+      "Økonomi og finansiering"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Drift__renovering_og_design_af_regnvands.mp3.txt",
@@ -26123,7 +27956,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 1.0
+    "match_confidence": 1.0,
+    "temaer": [
+      "Skybrud og regnvand",
+      "Bygninger og anlæg",
+      "Spildevand og vandkvalitet"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK__Gr_n_byudvikling_med_data_og_tr_er___100.mp3.txt",
@@ -26204,7 +28042,12 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
+    ]
   },
   {
     "filename": "Godmorgen_med_DNNK___Tr_data_som_redskab_i_klimatilpasning__.mp3.txt",
@@ -26277,6 +28120,11 @@
         "source_url": null
       }
     ],
-    "match_confidence": 0.98
+    "match_confidence": 0.98,
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Data, modeller og kortlægning",
+      "Planlægning og strategi"
+    ]
   }
 ]

@@ -42,6 +42,7 @@ SVAR_SKABELON = {
     "keywords": [],
     "speakers": [],
     "places": [],
+    "temaer": [],
 }
 
 

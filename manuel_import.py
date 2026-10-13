@@ -52,7 +52,7 @@ def laes_svar(sti: str) -> tuple[dict | None, str]:
     if not isinstance(keywords, list) or not keywords:
         return None, "'keywords' mangler eller er tom"
 
-    for felt in ("speakers", "places"):
+    for felt in ("speakers", "places", "temaer"):
         if felt in data and not isinstance(data[felt], list):
             return None, f"'{felt}' skal være en liste"
 

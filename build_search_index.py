@@ -48,6 +48,35 @@ except ImportError:
 # springer AI-kald over i stedet for at fejle (jobbet skal lande grønt).
 AI_BUDGET_EXHAUSTED = False
 
+# Faste temaer til søgesidens temafilter (felt "temaer"). Samme liste som
+# engangskørslen 12/10-2026 (dnnk-batch/tema_batch.py) - ændres den, skal
+# alle poster klassificeres igen, ellers passer filteret ikke.
+TEMAER = [
+    "Skybrud og regnvand", "Kyst og stormflod", "Vandløb og ådale", "Grundvand",
+    "Tørke og hede", "Naturbaserede løsninger og biodiversitet", "Spildevand og vandkvalitet",
+    "Jura og regulering", "Økonomi og finansiering", "Planlægning og strategi",
+    "Data, modeller og kortlægning", "Borgerinddragelse og social sårbarhed",
+    "Bygninger og anlæg", "Beredskab og forsikring", "Internationale erfaringer",
+]
+_TEMA_KRAV = (
+    "- temaer: 1-3 temaer som indholdet reelt handler om (ikke blot nævner), hovedtemaet først. "
+    "Brug KUN disse værdier ordret: " + "; ".join(TEMAER) + "."
+)
+
+
+def rens_temaer(raa) -> list[str]:
+    """Kun tilladte temaer, uden dubletter, højst 3. Et manuelt svar kan stave
+    et tema med andre versaler - så matches uden."""
+    if not isinstance(raa, list):
+        return []
+    kendte = {t.lower(): t for t in TEMAER}
+    ud = []
+    for t in raa:
+        tema = kendte.get(str(t).strip().lower())
+        if tema and tema not in ud:
+            ud.append(tema)
+    return ud[:3]
+
 # ── Config ────────────────────────────────────────────────────────────────────
 
 TRANSCRIPTIONS_REPO = "klimatilpasning/dnnk-transcriptor"
@@ -866,7 +895,8 @@ def summary_prompt(title: str, content: str, description: str | None = None, doc
             ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
             ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
             ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...],\n'
-            ' "places": ["Stednavn1", "Stednavn2", ...]}\n\n'
+            ' "places": ["Stednavn1", "Stednavn2", ...],\n'
+            ' "temaer": ["Tema1", "Tema2"]}\n\n'
             "Krav:\n"
             "- corrected_title: Behold titlen uændret medmindre den har åbenlyse fejl "
             "(fx manglende æ/ø/å).\n"
@@ -874,7 +904,8 @@ def summary_prompt(title: str, content: str, description: str | None = None, doc
             "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
             "- speakers: Forfattere eller udgivende organisationer hvis de fremgår tydeligt, max 4. Tom hvis uklart.\n"
             "- places: Konkrete danske eller udenlandske stednavne nævnt i dokumentet "
-            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
+            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'.\n"
+            + _TEMA_KRAV
         )
     else:
         prompt = (
@@ -886,7 +917,8 @@ def summary_prompt(title: str, content: str, description: str | None = None, doc
             ' "summary": "2-3 sætninger om indhold og vigtigste pointer (dansk)",\n'
             ' "keywords": ["nøgleord1", "nøgleord2", ...],\n'
             ' "speakers": [{"name": "Fornavn Efternavn", "org": "Organisation"}, ...],\n'
-            ' "places": ["Stednavn1", "Stednavn2", ...]}\n\n'
+            ' "places": ["Stednavn1", "Stednavn2", ...],\n'
+            ' "temaer": ["Tema1", "Tema2"]}\n\n'
             "Krav:\n"
             "- corrected_title: Ret manglende eller forkerte æ/ø/å i titlen baseret på kontekst. "
             "Behold titlen uændret hvis den allerede er korrekt.\n"
@@ -896,7 +928,8 @@ def summary_prompt(title: str, content: str, description: str | None = None, doc
             "- keywords: 8-12 ord (emner, steder, teknologier, metoder, aktører)\n"
             "- speakers: Identificer faktiske oplægsholdere (ikke moderator), max 4. Tom hvis uklart.\n"
             "- places: Konkrete danske eller udenlandske stednavne nævnt i webinaret "
-            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'."
+            "(byer, kommuner, fjorde, regioner, vandløb). Max 6. Kun navngivne steder, ikke generiske som 'kysten'.\n"
+            + _TEMA_KRAV
         )
     return prompt
 
@@ -912,7 +945,7 @@ def generate_summary(client: anthropic.Anthropic, title: str, content: str, desc
         try:
             resp = client.messages.create(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=850,
+                max_tokens=950,   # + temaer
                 messages=[{"role": "user", "content": prompt}],
             )
             raw = resp.content[0].text.strip()
@@ -1215,6 +1248,41 @@ def prepare_entry_metadata(file_info: dict, content: str, dnnk_events: list[dict
     }
 
 
+def tilfoej_manglende_temaer(client, index: list[dict], loft: int = 25) -> int:
+    """Giv poster uden temaer 1-3 temaer ud fra titel, resumé og nøgleord.
+    Højst `loft` pr. kørsel, så en fejl aldrig bliver dyr. Returnerer antal."""
+    mangler = [e for e in index if not e.get("temaer") and e.get("summary")]
+    if not mangler:
+        return 0
+    print(f"Tildeler temaer til {len(mangler)} poster uden (højst {loft}) …")
+    sat = 0
+    for e in mangler[:loft]:
+        if AI_BUDGET_EXHAUSTED:
+            break
+        prompt = (
+            f"Titel: {e.get('title')}\nType: {e.get('type') or 'webinar'}\n"
+            f"Resumé: {e.get('summary')}\nNøgleord: {', '.join(e.get('keywords') or [])}\n\n"
+            "Indholdet er fra vidensbanken hos Det Nationale Netværk for Klimatilpasning.\n"
+            + _TEMA_KRAV
+            + '\nSvar KUN med valid JSON: {"temaer": ["Tema1", "Tema2"]}'
+        )
+        try:
+            resp = client.messages.create(
+                model="claude-haiku-4-5-20251001", max_tokens=200,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = re.sub(r"^```json\s*|\s*```$", "", resp.content[0].text.strip())
+            temaer = rens_temaer(json.loads(raw).get("temaer"))
+        except Exception as exc:
+            print(f"  Warning – tema-kald fejlede for {e.get('filename')}: {exc}")
+            continue
+        if temaer:
+            e["temaer"] = temaer
+            sat += 1
+    print(f"  {sat} poster fik temaer")
+    return sat
+
+
 def build_entry(meta: dict, ai: dict, ext_resources: list[dict]) -> dict:
     """Samler en indeks-entry af metadata + resumé-felter.
 
@@ -1235,6 +1303,7 @@ def build_entry(meta: dict, ai: dict, ext_resources: list[dict]) -> dict:
         "keywords": ai.get("keywords", []),
         "speakers": ai.get("speakers", []),
         "places": ai.get("places", []),
+        "temaer": rens_temaer(ai.get("temaer")),
         "youtube_id": meta["youtube_id"],
         "youtube_url": meta["youtube_url"],
         "dnnk_url": meta["dnnk_url"],
@@ -1323,6 +1392,19 @@ def build_index():
     # gemmes — ellers ville de fjernede entries dukke op igen næste kørsel.
     if pruned and not updated:
         save_index(index)
+
+    # ── Temaer til poster uden (billigt kald på titel + resumé) ──────────────
+    # Temaerne blev sat på alle poster 12/10-2026; nye poster får dem i
+    # resumé-kaldet. Dette fanger resten: manuelt importerede svar uden
+    # felt, eller et svar hvor modellen ikke gav et gyldigt tema.
+    if anthropic is not None and os.environ.get("ANTHROPIC_API_KEY"):
+        if tilfoej_manglende_temaer(anthropic.Anthropic(), index):
+            save_index(index)
+    else:
+        mangler = sum(1 for e in index if not e.get("temaer"))
+        if mangler:
+            print(f"::warning::{mangler} poster mangler temaer (ingen ANTHROPIC_API_KEY) - "
+                  "de vises ikke i temafilteret")
 
     if not new_files:
         print("Ingen nye filer at behandle.")

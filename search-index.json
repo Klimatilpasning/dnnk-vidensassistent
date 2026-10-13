@@ -186,14 +186,6 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Byudvikling i forbindelse med stormflodsbeskyttelse og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Havets stemme: vandets repræsentation i risikostyringsplaner",
         "filename": "Havets_stemme___vandets_repr_sentation_i_risikostyringsplane.mp3.txt",
         "type": "webinar",
@@ -539,14 +531,6 @@
       {
         "title": "Tørke og Hede i Danmark 1: Tørke og Stigende Vandtemperatur",
         "filename": "T_rke_og_Hede_i_Danmark_1__T_rke_og_Stigende_Vandtemperature.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
@@ -3757,14 +3741,6 @@
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       },
       {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
-      },
-      {
         "title": "Godmorgen med DNNK: Organiserings- og finansieringsmodeller til kystbeskyttelsesprojekter",
         "filename": "Godmorgen med DNNK Organiserings- og finansieringsmodeller t.txt",
         "type": "webinar",
@@ -4247,7 +4223,12 @@
       "risikokortlægning",
       "medfinansiering"
     ],
-    "speakers": [],
+    "speakers": [
+      {
+        "name": "Ole Fryd",
+        "org": "Københavns Universitet"
+      }
+    ],
     "places": [
       "Grenå",
       "Ebeltoft",
@@ -4282,14 +4263,6 @@
         "filename": "Konferencer_kd6EJ3cIjtk_20260826_062948.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=kd6EJ3cIjtk",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Byudvikling i forbindelse med stormflodsbeskyttelse og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-        "type": "webinar",
-        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       },
@@ -7504,14 +7477,6 @@
         "youtube_url": "https://youtube.com/watch?v=FjuP3GM6eZo",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
-      },
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
       }
     ],
     "temaer": [
@@ -8622,108 +8587,6 @@
     ],
     "related_webinars": [
       {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
-      },
-      {
-        "title": "Bidragsmodeller ved klimatilpasning - lovgivningsmæssige rammer",
-        "filename": "PDF_Bidragsmodeller_ved_klimatilpasning.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
-      },
-      {
-        "title": "Lovgivningsmæssige rammer og barrierer for alternative bidragsmodeller vedrørende klimatilpasning",
-        "filename": "PDF_Lovgivningsmæssige_rammer_og_barrierer_for_alternative_bidragsmodeller.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Lovgivningsmaessige-rammer-og-barrierer-for-alternative-bidragsmodeller.pdf"
-      }
-    ],
-    "temaer": [
-      "Økonomi og finansiering",
-      "Jura og regulering",
-      "Kyst og stormflod"
-    ]
-  },
-  {
-    "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-    "path": "transcriptions/PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-    "folder": "transcriptions",
-    "type": "pdf",
-    "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-    "category": "Rapporter_s3",
-    "date": "2026-09-21",
-    "summary": "Rapporten fra Københavns Universitet og Aarhus Universitet (projektet Klimatilpasning på tværs) analyserer bidragsfordeling i danske kyst- og vandløbsprojekter gennem litteraturscreening, seks projektcases (bl.a. Blårenden i Hørsholm, Grønninghoved Strand og St. Vejle Å), otte tværkommunale samarbejder, samtaler og en workshop med kommuner og forsyninger. Den konkluderer, at nytteprincippet fungerer i mindre, homogene områder, men er udfordret i store tværkommunale by- og kystområder med mange interesser og svært verificerbare gevinster, og at kommunerne mangler kompetencer og økonomi til at løfte de store projekter alene. Den anbefaler en bredere diskussion af bidragsfordeling, undersøgelse af en solidaritetsmodel som supplement til nytteværdi-modellen og regional eller statslig involvering og koordinering.",
-    "keywords": [
-      "bidragsfordeling",
-      "nytteprincippet",
-      "solidaritetsmodel",
-      "kystbeskyttelsesloven",
-      "vandløbsloven",
-      "tværkommunalt samarbejde",
-      "finansiering",
-      "vandoplande",
-      "kystbeskyttelse",
-      "Klimatilpasning på tværs",
-      "Region Hovedstaden"
-    ],
-    "speakers": [
-      {
-        "name": "Ole Fryd",
-        "org": "IGN, Københavns Universitet"
-      },
-      {
-        "name": "Toke Emil Panduro",
-        "org": "DCE, Aarhus Universitet"
-      },
-      {
-        "name": "Lin Horn-Petersen",
-        "org": "IGN, Københavns Universitet"
-      },
-      {
-        "name": "Helle Tegner Anker",
-        "org": "IFRO, Københavns Universitet"
-      }
-    ],
-    "places": [
-      "St. Vejle Å",
-      "Hørsholm Kommune",
-      "Grønninghoved Strand",
-      "Kolding Kommune",
-      "Usserød Å",
-      "Gudenåen"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf",
-    "match_confidence": null,
-    "description": null,
-    "related_resources": [
-      {
-        "title": "Ny rapport fra forskere fra Københavns og Aarhus Universiteter, hvor bidragsmodellerne for klimatilpasning i kystområder og vandoplande, sættes under lup",
-        "url": "https://www.dnnk.dk/ny-rapport-fra-forskere-fra-koebenhavns-og-aarhus-universiteter-hvor-bidragsmodellerne-for-klimatilpasning-i-kystomraader-og-vandoplande-saettes-under-lup/",
-        "source": "DNNK Rapporter",
-        "type": "📊 Rapport"
-      }
-    ],
-    "related_webinars": [
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
         "title": "Bidragsmodeller ved klimatilpasning - lovgivningsmæssige rammer",
         "filename": "PDF_Bidragsmodeller_ved_klimatilpasning.txt",
         "type": "pdf",
@@ -8800,14 +8663,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
     ],
     "temaer": [
@@ -10065,14 +9920,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
     ],
     "temaer": [
@@ -10195,14 +10042,6 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [
-      {
-        "title": "Byudvikling i forbindelse med stormflodsbeskyttelse og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
       {
         "title": "Keynote fra DNNK sommermøde 2025",
         "filename": "Keynote_fra_DNNK_s__rsm_de_2025.mp3.txt",
@@ -10708,14 +10547,6 @@
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       },
       {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
-      },
-      {
         "title": "Bidragsmodeller ved klimatilpasning - lovgivningsmæssige rammer",
         "filename": "PDF_Bidragsmodeller_ved_klimatilpasning.txt",
         "type": "pdf",
@@ -10778,14 +10609,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       },
       {
         "title": "Modeller for kommunale samarbejder inden for landskab, vand og klima - analyse og anbefalinger",
@@ -11395,14 +11218,6 @@
     "related_webinars": [
       {
         "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
         "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
         "type": "pdf",
         "youtube_url": null,
@@ -11564,14 +11379,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       },
       {
         "title": "Bidragsmodeller ved klimatilpasning - lovgivningsmæssige rammer",
@@ -12347,14 +12154,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
     ],
     "temaer": [
@@ -12677,14 +12476,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
     ],
     "temaer": [
@@ -13389,14 +13180,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       },
       {
         "title": "Modeller for kommunale samarbejder inden for landskab, vand og klima - analyse og anbefalinger",
@@ -15674,14 +15457,6 @@
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null,
         "source_url": null
-      },
-      {
-        "title": "Byudvikling i forbindelse med stormflodsbeskyttelse og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
       }
     ],
     "temaer": [
@@ -15929,14 +15704,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/11/2014_12_18__KLIKOVANDs_JURIDISKE_HOVEDSPORGSMAAL1.pdf"
-      },
-      {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
       },
       {
         "title": "Innovativ klimatilpasning med borgere - Håndbog til bæredygtig omstilling",
@@ -16313,78 +16080,6 @@
     "temaer": [
       "Planlægning og strategi",
       "Kyst og stormflod",
-      "Internationale erfaringer"
-    ]
-  },
-  {
-    "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-    "path": "transcriptions/Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-    "folder": "transcritranscriptions",
-    "title": "Byudvikling i forbindelse med stormflodsbeskyttelse og kystsikring af Danmark",
-    "category": "Øvrige",
-    "date": null,
-    "summary": "Webinaret præsenterer erfaringer fra besøg i 18 pilotprojekter i 19 danske kommuner, støttet af Realdania under projektet 'Byerne og det stigende havvand'. Konklusionen er, at kommunerne primært arbejder med beskyttelse mod stormflod og ikke langsigtet planlægning for stigende havvand, at tilbagetrækning fra truede områder sjældent er i spil, og at mange byer er ved at bygge sig ind i fremtidige problemer. Med eksempler fra blandt andet Grenå, Fåborg og Ebeltoft samt internationale cases (New York, Fukushima) anbefales det at 'læse landskabet' og genbesøge havneplaner, da op mod 85% af skader kunne undgås ved ikke at bygge i udsatte områder.",
-    "keywords": [
-      "kystbeskyttelse",
-      "stormflod",
-      "havvandsstigning",
-      "byudvikling",
-      "klimatilpasning",
-      "landskabslæsning",
-      "tilbagetrækning",
-      "Realdania",
-      "havneomdannelse",
-      "risikostyring",
-      "planlægning"
-    ],
-    "speakers": [
-      {
-        "name": "Ole Fryd",
-        "org": "Københavns Universitet"
-      }
-    ],
-    "places": [
-      "Grenå",
-      "Fåborg",
-      "Ebeltoft",
-      "Middelfart",
-      "New York",
-      "Fukushima"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Mellem hav og by - når havstigning møder steder og mennesker",
-        "filename": "Konferencer_kd6EJ3cIjtk_20260826_062948.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=kd6EJ3cIjtk",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Strategisk planlægning af fremtidens klimatilpasning af byerne 3: Klimarisiko, konsekvenser og resiliens",
-        "filename": "Konferencer_eqIRZXAQplk_20260826_062814.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=eqIRZXAQplk",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Grænseløs adfærd og grænseløse potentialer",
-        "filename": "Gr_nsel_s_adf_rd_og_gr_nsel_se_potentialer.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Td70paA1PkE",
-        "dnnk_url": null,
-        "source_url": null
-      }
-    ],
-    "temaer": [
-      "Kyst og stormflod",
-      "Planlægning og strategi",
       "Internationale erfaringer"
     ]
   },
@@ -17307,14 +17002,6 @@
         "source_url": null
       },
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Mød de nye elever i LAR-klassen: Regndiget: Regnbakken og de andre",
         "filename": "M_d_de_nye_elever_i_LAR-klassen__Regndiget__Regnbakken_og_de.mp3.txt",
         "type": "webinar",
@@ -17327,72 +17014,6 @@
       "Skybrud og regnvand",
       "Bygninger og anlæg",
       "Jura og regulering"
-    ]
-  },
-  {
-    "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-    "path": "transcriptions/DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-    "folder": "transcritranscriptions",
-    "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-    "category": "Masterclass",
-    "date": null,
-    "summary": "Første masterclass i en serie om håndtering af regnvand med fokus på klimatilpasning i byer. Indleder med generel introduktion til klimaforandringer og regnvandshåndtering, med kommende sessioner om skybrudssikring af bygninger og regnvanskvalitet. Værten præsenterer Rørcenteret på Teknologisk Institut og deres arbejde med klimatilpasning, kloaksystemer og udvikling af nye løsninger.",
-    "keywords": [
-      "regnvand",
-      "klimatilpasning",
-      "byplanlægning",
-      "kloaksystemer",
-      "skybrudssikring",
-      "grønne løsninger",
-      "regnvanskvalitet",
-      "klimaforandringer",
-      "afløbssystemer",
-      "bæredygtig udvikling"
-    ],
-    "speakers": [
-      {
-        "name": "Lars Jørgensen",
-        "org": "Rørcenteret, Teknologisk Institut"
-      }
-    ],
-    "places": [
-      "Tåstrup"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Climate Adaptation Summit 2024 - Jennifer Cherrier",
-        "filename": "Climate_Adaptation_Summit_2024_-_Jennifer_Cherrier.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=fifdWf02UK4",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
-        "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      }
-    ],
-    "temaer": [
-      "Skybrud og regnvand",
-      "Bygninger og anlæg",
-      "Spildevand og vandkvalitet"
     ]
   },
   {
@@ -17863,14 +17484,6 @@
         "source_url": null
       },
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Rockflow 04 oplæg",
         "filename": "Rockflow_04_opl_g.mp3.txt",
         "type": "webinar",
@@ -17882,77 +17495,6 @@
     "temaer": [
       "Bygninger og anlæg",
       "Skybrud og regnvand",
-      "Jura og regulering"
-    ]
-  },
-  {
-    "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-    "path": "transcriptions/DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-    "folder": "transcritranscriptions",
-    "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-    "category": "Masterclass",
-    "date": null,
-    "summary": "Masterclass om regnvandskvalitet og håndtering af stigende mængder regnvand i Danmark. Sessionen dækker lovgivning, forureningskilder i regnvand og rensningsteknikker, med fokus på at undgå overløb i fælleskloak og håndtere regnvand separat fra spildevand.",
-    "keywords": [
-      "regnvandshåndtering",
-      "regnvandskvalitet",
-      "fælleskloak",
-      "overløb",
-      "forurening",
-      "lovgivning",
-      "separering af kloakker",
-      "spildevand",
-      "kvælstof",
-      "næringsstoffer",
-      "regnvand"
-    ],
-    "speakers": [
-      {
-        "name": "Katrine Nielsen",
-        "org": "Teknologisk Institut"
-      }
-    ],
-    "places": [
-      "Taastrup",
-      "Aarhus",
-      "København",
-      "Esbjerg",
-      "Danmark"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "DNNKs virtuelle studietur til Klimabyen Middelfart",
-        "filename": "DNNKs_virtuelle_studietur_til_Klimabyen_Middelfart.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HN2x08zNQ0k",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Udfordringer med overløb",
-        "filename": "Udfordringer_med_overl_b.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=wHSGQVYpDB8",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Climate Adaptation Summit 2024 - Bertel Ifversen",
-        "filename": "Climate_Adaptation_Summit_2024_-_Bertel_Ifversen.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=CaCmwUL1syU",
-        "dnnk_url": null,
-        "source_url": null
-      }
-    ],
-    "temaer": [
-      "Skybrud og regnvand",
-      "Spildevand og vandkvalitet",
       "Jura og regulering"
     ]
   },
@@ -17993,14 +17535,6 @@
         "filename": "Udfordringer_med_overl_b.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=wHSGQVYpDB8",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       },
@@ -18050,14 +17584,6 @@
     "description": null,
     "related_resources": [],
     "related_webinars": [
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
       {
         "title": "DNNKs virtuelle studietur - hydroseparatoren",
         "filename": "DNNKs_virtuelle_studietur_-_hydroseperatoren.txt",
@@ -18989,14 +18515,6 @@
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland_1.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Hvem-skal-betale_Bidragsmodeller-for-klimatilpasning-i-kystomraader-og-vandoplande.pdf"
       }
     ],
     "match_confidence": 0.98,
@@ -21554,14 +21072,6 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/08/One-Pager_Klimasikring_juni-2022.pdf"
       },
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
         "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
         "type": "webinar",
@@ -23092,14 +22602,6 @@
         "filename": "Konferencer_kd6EJ3cIjtk_20260826_062948.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=kd6EJ3cIjtk",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Byudvikling i forbindelse med stormflodsbeskyttelse og kystsikring af Danmark",
-        "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
-        "type": "webinar",
-        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       }
@@ -25259,14 +24761,6 @@
         "filename": "Tech_Talk_005_-_Digitale_tvillinger_for_afl_bssystem_og_rens.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=oeUQmiidh9o",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       }
@@ -27889,75 +27383,6 @@
       "Skybrud og regnvand",
       "Jura og regulering",
       "Bygninger og anlæg"
-    ]
-  },
-  {
-    "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
-    "path": "transcriptions/wordwebinarer/DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
-    "folder": "wordwebinarer",
-    "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-    "category": "Masterclass",
-    "date": null,
-    "summary": "Anden del af Teknologisk Instituts masterclass-serie gennemgår, hvordan man klimatilpasser bygninger mod regn- og grundvand, herunder lovgivning, klimatjekordningen og digitale værktøjer som KAMP, DinGeo og Scalgo til forundersøgelser. Oplægget zoomer ind på konkrete sikringstiltag for klimaskærm, kælder og afløb - herunder højvandslukkere, pumpebrønde og bypass-anlæg - samt udfordringer med terrænnært grundvand og kommende lovgivning på området.",
-    "keywords": [
-      "klimatilpasning",
-      "håndtering af skybrud",
-      "klimatjek",
-      "grundvand",
-      "højvandslukker",
-      "pumpebrønd",
-      "bypass-anlæg",
-      "klimaskærm",
-      "kælderoversvømmelse",
-      "KAMP",
-      "Rørcenteret",
-      "bygningsreglement"
-    ],
-    "speakers": [
-      {
-        "name": "Ulla",
-        "org": "Rørcenteret, Teknologisk Institut"
-      }
-    ],
-    "places": [
-      "Samsø",
-      "København"
-    ],
-    "youtube_id": null,
-    "youtube_url": null,
-    "dnnk_url": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Godmorgen med DNNK: Terrænnært grundvand i byer - hvad er det, og hvordan håndteres det?",
-        "filename": "Godmorgen_med_DNNK_G_24ifZDlWk_20260826_000307.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=G_24ifZDlWk",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Almen Klimakortlægning - Klimaudfordringer i den almene boligsektor",
-        "filename": "PDF_almen_klimakortlaegning.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2025/11/almen-klimakortlaegning.pdf"
-      },
-      {
-        "title": "Godmorgen med DNNK: Valby Skybrudstunnel - fra plan til udførelse",
-        "filename": "Oevrige_MCmHDnIc490_20260914_145038.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=MCmHDnIc490",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      }
-    ],
-    "temaer": [
-      "Bygninger og anlæg",
-      "Skybrud og regnvand",
-      "Grundvand"
     ]
   },
   {

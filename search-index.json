@@ -4314,81 +4314,6 @@
     ]
   },
   {
-    "filename": "Oevrige_CSqivu6Cdmw_20261012_200257.txt",
-    "path": "transcriptions/Oevrige_CSqivu6Cdmw_20261012_200257.txt",
-    "folder": "transcriptions",
-    "type": "webinar",
-    "title": "Climate Adaptation Summit 2024 - Markku Rummukainen",
-    "category": "Øvrige",
-    "date": null,
-    "summary": "Markku Rummukainen gennemgår på engelsk den nyeste klimaviden fra IPCC's sjette vurderingsrapport: verden nærmer sig 1,5 graders opvarmning, Europa og Norden opvarmes hurtigere end det globale gennemsnit, og Sverige og Danmark er allerede blevet henholdsvis ca. 2 og 1,5 grader varmere. Han viser, hvordan klimaforandringerne gør ekstremer som hedebølger, skybrud og storme hyppigere og kraftigere, bl.a. via attributionsstudier af nylige regnhændelser, og at havstigningen fortsætter i århundreder, med op til flere meter i 2300 afhængigt af opvarmningen. Pointen er, at tilpasning bliver sværere og møder grænser jo højere opvarmningen bliver, mens usikkerheden om vippepunkter i iskapper, havstrømme og økosystemer understreger behovet for robust planlægning.",
-    "keywords": [
-      "IPCC",
-      "AR6",
-      "1,5 graders opvarmning",
-      "ekstremvejr",
-      "skybrud",
-      "hedebølger",
-      "attributionsstudier",
-      "havstigning",
-      "vippepunkter",
-      "iskapper",
-      "tilpasningsgrænser",
-      "Norden"
-    ],
-    "speakers": [
-      {
-        "name": "Markku Rummukainen",
-        "org": "Lunds Universitet"
-      }
-    ],
-    "places": [
-      "Sverige",
-      "Danmark",
-      "Europa",
-      "Spanien",
-      "Grønland",
-      "Antarktis"
-    ],
-    "temaer": [
-      "Internationale erfaringer",
-      "Data, modeller og kortlægning"
-    ],
-    "youtube_id": "CSqivu6Cdmw",
-    "youtube_url": "https://youtube.com/watch?v=CSqivu6Cdmw",
-    "dnnk_url": null,
-    "source_url": null,
-    "match_confidence": null,
-    "description": null,
-    "related_resources": [],
-    "related_webinars": [
-      {
-        "title": "Keynote fra DNNK sommermøde 2025",
-        "filename": "Keynote_fra_DNNK_s__rsm_de_2025.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=51hamTlsPoI",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: NBS i byen - erfaringer fra Malmø",
-        "filename": "Godmorgen_med_DNNK__NBS_i_t_t_by___erfaringer_fra_Malm_.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=4tW5vPcfKNQ",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Byudvikling i forbindelse med stormflods- og kystsikring af byer 1",
-        "filename": "Oevrige_gMnODGapiRI_20260826_170455.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=gMnODGapiRI",
-        "dnnk_url": null,
-        "source_url": null
-      }
-    ]
-  },
-  {
     "filename": "PDF_Se_rapporten_her.txt",
     "path": "transcriptions/PDF_Se_rapporten_her.txt",
     "folder": "transcriptions",
@@ -6171,7 +6096,7 @@
     "type": "webinar",
     "title": "God morgen med DNNK - Webinar om Lynetteholmen",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2021-01-14",
     "summary": "Hans Vasehus fra By & Havn giver status på Lynetteholm, der kombinerer stormflodsbeskyttelse af København mod nord med nyttiggørelse af overskudsjord, herunder VVM-høringen, et naturbaseret kystlandskab mod øst, besejlingssimuleringer, jordtransportvej og påvirkning af havmiljø og badevandskvalitet. Bertha Lysgaard fra Københavns Kommune sætter projektet i perspektiv af kommunens stormflodsplan fra 2017 med en yderløsning mod både nord og syd, en mulig port i Kronløbet og behovet for en samlet løsning på tværs af kommunerne.",
     "keywords": [
       "Lynetteholm",
@@ -6212,7 +6137,7 @@
     ],
     "youtube_id": "YEJyvfjXpZA",
     "youtube_url": "https://youtube.com/watch?v=YEJyvfjXpZA",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/event/god-morgen-med-dnnk-om-lynetteholmen-et-projekt-der-raekker-flere-generationer-ud-i-fremtiden/",
     "source_url": null,
     "match_confidence": null,
     "description": null,
@@ -6984,7 +6909,7 @@
     "type": "webinar",
     "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
     "category": "Godmorgen med DNNK",
-    "date": null,
+    "date": "2023-01-31",
     "summary": "Anders Dam fra Assens Kommune fortæller, hvordan kommunen med naturbaserede og adaptive løsninger (DAPP) vil beskytte Assens by mod højvande i tre etaper, med strandengslandskab, stenrev og bedre vilkår for biodiversitet på Assens Næs. Bent Hummelmose fra Stevns Kommune beskriver processen med en fælles strategi for kystbeskyttelse og kystudvikling i Strøby Egede og Strøby Ladeplads, hvor sandfodring, råstofindvinding fra havbunden, Natura 2000-hensyn og især bidragsfordeling mellem grundejere er de store dilemmaer.",
     "keywords": [
       "naturbaseret kystbeskyttelse",
@@ -7025,7 +6950,7 @@
     ],
     "youtube_id": "rRMkpYpnkWk",
     "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
-    "dnnk_url": null,
+    "dnnk_url": "https://www.dnnk.dk/event/byerne-og-det-stigende-havvand-2-muligheder-og-dilemmaer-ved-naturbaseret-kystbeskyttelse/",
     "source_url": null,
     "match_confidence": null,
     "description": null,

@@ -574,5 +574,37 @@
     "description": null,
     "match_confidence": null,
     "importeret": true
+  },
+  "037_god_morgen_med_dnnk_webinar_om_lynetteho": {
+    "filename": "Godmorgen_med_DNNK_YEJyvfjXpZA_20261013_183426.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_YEJyvfjXpZA_20261013_183426.txt",
+    "folder": "transcriptions",
+    "is_pdf": false,
+    "title": "God morgen med DNNK - Webinar om Lynetteholmen",
+    "category": "Godmorgen med DNNK",
+    "date": null,
+    "source_url": null,
+    "dnnk_url": null,
+    "youtube_id": "YEJyvfjXpZA",
+    "youtube_url": "https://youtube.com/watch?v=YEJyvfjXpZA",
+    "description": null,
+    "match_confidence": null,
+    "importeret": true
+  },
+  "039_godmorgen_med_dnnk": {
+    "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+    "path": "transcriptions/Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+    "folder": "transcriptions",
+    "is_pdf": false,
+    "title": "Godmorgen med DNNK",
+    "category": "Godmorgen med DNNK",
+    "date": null,
+    "source_url": null,
+    "dnnk_url": null,
+    "youtube_id": "rRMkpYpnkWk",
+    "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
+    "description": null,
+    "match_confidence": null,
+    "importeret": true
   }
 }

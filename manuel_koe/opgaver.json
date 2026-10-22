@@ -590,5 +590,21 @@
     "description": null,
     "match_confidence": null,
     "importeret": true
+  },
+  "038_oevrige": {
+    "filename": "Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
+    "path": "transcriptions/Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
+    "folder": "transcriptions",
+    "is_pdf": false,
+    "title": "Oevrige",
+    "category": "Øvrige",
+    "date": null,
+    "source_url": null,
+    "dnnk_url": null,
+    "youtube_id": "9Pnmwnd0uJw",
+    "youtube_url": "https://youtube.com/watch?v=9Pnmwnd0uJw",
+    "description": null,
+    "match_confidence": null,
+    "importeret": true
   }
 }

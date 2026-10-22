@@ -1952,6 +1952,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Masterclass: Danmark som kontekst for naturbaserede løsninger - Fra ambition til handling: Hvad kræver god interessentinddragelse i naturbaserede løsninger?",
+        "filename": "Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=9Pnmwnd0uJw",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Tech Talk: Ny nordisk håndbog viser vejen til naturbaserede løsninger",
         "filename": "Tech_Talk__Ny_nordisk_h_ndbog_viser_vejen_til_naturbaserede_.mp3.txt",
         "type": "webinar",
@@ -1965,14 +1973,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rz9tMaOc1i8",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Klimatilpasning og naturbaserede løsninger i Tampere - City Blues som case",
-        "filename": "Godmorgen_med_DNNK_agCuRbhxX3k_20260923_103115.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=agCuRbhxX3k",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ],
@@ -6743,12 +6743,12 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       },
       {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
+        "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
+        "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
       }
     ],
     "temaer": [
@@ -10215,6 +10215,81 @@
     ]
   },
   {
+    "filename": "Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
+    "path": "transcriptions/Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Masterclass: Danmark som kontekst for naturbaserede løsninger - Fra ambition til handling: Hvad kræver god interessentinddragelse i naturbaserede løsninger?",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Anden session i DNNK's masterclass med Center for Naturbaserede Løsninger (Aarhus Universitet), hvor ph.d.-studerende Jóna Ólavsdóttir ser på, hvad der skal til for at komme fra ambition til handling med naturbaserede løsninger, med udgangspunkt i IUCN-standardens kriterie 5 om meningsfuld inddragelse af berørte aktører. Et litteraturreview af europæiske projekter viser ti kategorier af barrierer, hvor interessentinddragelse især kan afhjælpe de videns- og governance-relaterede, mens finansiering, regulering og pladsmangel kun påvirkes indirekte. Danmark har gode forudsætninger med høj tillid, kommunal autonomi, flade hierarkier og stærk administrativ kapacitet, men tidspres (fx i den grønne trepart), symbolsk inddragelse og manglende midler til koordinering, projektledelse, drift og monitorering kan undergrave dem, så klimatilpasningsprojekter bør budgettere med processen og ikke kun anlægget.",
+    "keywords": [
+      "naturbaserede løsninger",
+      "interessentinddragelse",
+      "samskabelse",
+      "IUCN-standard",
+      "governance",
+      "tillid",
+      "kommunal autonomi",
+      "grøn trepart",
+      "lokale treparter",
+      "projektledelse",
+      "lokalbaseret monitorering",
+      "Assens-modellen"
+    ],
+    "speakers": [
+      {
+        "name": "Jóna Ólavsdóttir",
+        "org": "Aarhus Universitet, Center for Naturbaserede Løsninger"
+      }
+    ],
+    "places": [
+      "Danmark",
+      "Færøerne",
+      "Suðuroy",
+      "Assens Kommune",
+      "Italien"
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Naturbaserede løsninger og biodiversitet",
+      "Planlægning og strategi"
+    ],
+    "youtube_id": "9Pnmwnd0uJw",
+    "youtube_url": "https://youtube.com/watch?v=9Pnmwnd0uJw",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Samskabelse af naturbaserede løsninger",
+        "filename": "Godmorgen_med_DNNK__Samskabelse_af_naturbaserede_l_sninger__.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=O_W1EujI2AE",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "DNNK-Masterclass: Danmark som kontekst for naturbaserede løsninger",
+        "filename": "Oevrige_rz9tMaOc1i8_20261012_181029.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rz9tMaOc1i8",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Towards governance-aware decision support for sustainable stormwater management",
+        "filename": "Godmorgen_med_DNNK_0rrfcg3InM0_20260807_070616.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=0rrfcg3InM0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      }
+    ]
+  },
+  {
     "filename": "Konferencer_kd6EJ3cIjtk_20260826_062948.txt",
     "path": "transcriptions/Konferencer_kd6EJ3cIjtk_20260826_062948.txt",
     "folder": "transcriptions",
@@ -12412,20 +12487,20 @@
         "source_url": null
       },
       {
+        "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
+        "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
         "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
         "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
-      },
-      {
-        "title": "Klimatilpasningslovgivning, -strategier og -handlingsplaner på EU og nationalt niveau (del 1 og 2)",
-        "filename": "PDF_httpsusercontentonewpwwwdnnkdkwp-contentuploads202410TFMKE3-4_2024-Ellen-Margret.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/10/TFMKE3-4_2024-Ellen-Margrethe-Basse.pdf"
       }
     ],
     "temaer": [
@@ -15739,19 +15814,19 @@
         "source_url": null
       },
       {
+        "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
+        "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Webinar om stormflodsbeskyttelse af Hvidovre og København",
         "filename": "Godmorgen_med_DNNK_cQC0R4IQyOg_20260923_103115.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=cQC0R4IQyOg",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Svendborgs nye strategi for beskyttelse mod højvande",
-        "filename": "Godmorgen_med_DNNK__Svendborgs_nye_strategi_for_beskyttelse_.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=81w4qr2mD1c",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ],
@@ -16215,19 +16290,19 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
+        "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Svendborgs nye strategi for beskyttelse mod højvande",
         "filename": "Godmorgen_med_DNNK__Svendborgs_nye_strategi_for_beskyttelse_.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=81w4qr2mD1c",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
-        "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
-        "dnnk_url": null,
         "source_url": null
       },
       {
@@ -16298,20 +16373,20 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Bidragsmodeller-ved-klimatilpasning-lovgivningsmaessige-rammer_-Anker-og-Janfelt.pdf"
       },
       {
+        "title": "Godmorgen med DNNK: Byerne og det stigende havvand 2 - Muligheder og dilemmaer ved naturbaseret kystbeskyttelse",
+        "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Webinar om Kystplanlæggeren",
         "filename": "Godmorgen_med_DNNK_eC5v7aZJifY_20260923_103115.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=eC5v7aZJifY",
         "dnnk_url": null,
         "source_url": null
-      },
-      {
-        "title": "Hvem skal betale? Bidragsmodeller for klimatilpasning i kystområder og vandoplande",
-        "filename": "PDF_Hvem_skal_betale_Bidragsmodeller_for_klimatilpasning_i_kystområder_og_vandopland.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://static-curis.ku.dk/portal/files/258665669/IGN_Rapport_Bidragsmodeller_Klimatilpasning_Marts2021.pdf"
       }
     ],
     "match_confidence": 0.98,
@@ -16899,14 +16974,6 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Climate Adaptation Summit 2024 - Markku Rummukainen",
-        "filename": "Oevrige_CSqivu6Cdmw_20261012_200257.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=CSqivu6Cdmw",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Keynote fra DNNK sommermøde 2025",
         "filename": "Keynote_fra_DNNK_s__rsm_de_2025.mp3.txt",
         "type": "webinar",
@@ -16921,6 +16988,14 @@
         "youtube_url": "https://youtube.com/watch?v=gMnODGapiRI",
         "dnnk_url": null,
         "source_url": null
+      },
+      {
+        "title": "Klimatilpasningslovgivning, -strategier og -handlingsplaner på EU og nationalt niveau (del 1 og 2)",
+        "filename": "PDF_httpsusercontentonewpwwwdnnkdkwp-contentuploads202410TFMKE3-4_2024-Ellen-Margret.txt",
+        "type": "pdf",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2024/10/TFMKE3-4_2024-Ellen-Margrethe-Basse.pdf"
       }
     ],
     "temaer": [
@@ -20528,7 +20603,7 @@
         "filename": "Godmorgen_med_DNNK_rRMkpYpnkWk_20261013_190337.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rRMkpYpnkWk",
-        "dnnk_url": null,
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       },
       {

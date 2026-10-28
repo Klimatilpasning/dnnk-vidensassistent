@@ -528,8 +528,8 @@
     "importeret": true
   },
   "039_oevrige": {
-    "filename": "Oevrige_opp2Kcbwupc_20261012_181036.txt",
-    "path": "transcriptions/Oevrige_opp2Kcbwupc_20261012_181036.txt",
+    "filename": "Oevrige_75_C0O5-I7A_20261028_074018.txt",
+    "path": "transcriptions/Oevrige_75_C0O5-I7A_20261028_074018.txt",
     "folder": "transcriptions",
     "is_pdf": false,
     "title": "Oevrige",
@@ -537,8 +537,8 @@
     "date": null,
     "source_url": null,
     "dnnk_url": null,
-    "youtube_id": "opp2Kcbwupc",
-    "youtube_url": "https://youtube.com/watch?v=opp2Kcbwupc",
+    "youtube_id": "75_C0O5-I7A",
+    "youtube_url": "https://youtube.com/watch?v=75_C0O5-I7A",
     "description": null,
     "match_confidence": null,
     "importeret": true
@@ -603,6 +603,22 @@
     "dnnk_url": null,
     "youtube_id": "9Pnmwnd0uJw",
     "youtube_url": "https://youtube.com/watch?v=9Pnmwnd0uJw",
+    "description": null,
+    "match_confidence": null,
+    "importeret": true
+  },
+  "040_oevrige": {
+    "filename": "Oevrige_u0VUXtZdRh4_20261028_074016.txt",
+    "path": "transcriptions/Oevrige_u0VUXtZdRh4_20261028_074016.txt",
+    "folder": "transcriptions",
+    "is_pdf": false,
+    "title": "Oevrige",
+    "category": "Øvrige",
+    "date": null,
+    "source_url": null,
+    "dnnk_url": null,
+    "youtube_id": "u0VUXtZdRh4",
+    "youtube_url": "https://youtube.com/watch?v=u0VUXtZdRh4",
     "description": null,
     "match_confidence": null,
     "importeret": true

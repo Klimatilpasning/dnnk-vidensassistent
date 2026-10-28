@@ -1956,7 +1956,7 @@
         "filename": "Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=9Pnmwnd0uJw",
-        "dnnk_url": null,
+        "dnnk_url": "https://www.dnnk.dk/event/masterclass-danmark-som-kontekst-for-naturbaserede-loesninger/2026-10-07/",
         "source_url": null
       },
       {
@@ -4970,6 +4970,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Masterclass: Danmark som kontekst for naturbaserede løsninger - Teknisk vinkel: Den globale standard for NBS og fremtidige muligheder",
+        "filename": "Oevrige_u0VUXtZdRh4_20261028_074016.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=u0VUXtZdRh4",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Sårbar eller styrke: Naturens dobbeltrolle i fremtidens vandforvaltning",
         "filename": "Tech_Talks_2vrQr211cwE_20260806_171134.txt",
         "type": "webinar",
@@ -4982,14 +4990,6 @@
         "filename": "Godmorgen_med_DNNK__Samskabelse_af_naturbaserede_l_sninger__.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=O_W1EujI2AE",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Biodiversitet som beslutningsgrundlag i naturbaserede løsninger",
-        "filename": "Godmorgen_med_DNNK__Biodiversitet_som_beslutningsgrundlag_i_.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=3Osuo3Kyqsw",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
@@ -6978,6 +6978,77 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=h1dFEX4Kedw",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Oevrige_75_C0O5-I7A_20261028_074018.txt",
+    "path": "transcriptions/Oevrige_75_C0O5-I7A_20261028_074018.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Favrholm, Hillerød - når klimatilpasning bygges ind fra første spadestik",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "I byudviklingsområdet Favrholm i Hillerød (ca. 300 ha) er landskabet designet, så vandet samles i grønne kiler mellem bykvartererne, og Hillerød Kommune og Hillerød Forsyning deler erfaringer fra ti år på tværs af planlægning, anlæg og drift, skybrud, hverdagsregn og grundvand. Ambitionen om at tilpasse til en 100-årshændelse blev i Favrholm Nordvest ændret til en klimafremskrevet 50-årshændelse efter en samfundsøkonomisk beregning, bl.a. for at undgå omfattende terrænregulering, og et udledningskrav på 0,6 l/s/red. ha gav så store bassiner og lange tømmetider, at en arbejdsgruppe flyttede en del af forsinkelsen ud i den grønne kile, så parcellerne må udlede 1,1 l/s/red. ha og tømmetiden faldt fra ca. 20 til 10 døgn. Erfaringerne peger på tværfagligt samarbejde fra start, vandhåndteringsplaner i lokalplaner, et fælles regnvandslaug, hensyn til højtstående grundvand (helst ingen kældre) og mere nænsom brug af det naturlige terræn i de næste etaper.",
+    "keywords": [
+      "Favrholm",
+      "byudvikling",
+      "grønne kiler",
+      "hverdagsregn",
+      "regnvandsbassiner",
+      "udledningskrav",
+      "tømmetid",
+      "samfundsøkonomisk beregning",
+      "terrænregulering",
+      "regnvandslaug",
+      "terrænnært grundvand",
+      "vandhåndteringsplan"
+    ],
+    "speakers": [],
+    "places": [
+      "Hillerød",
+      "Favrholm",
+      "Pøle Å",
+      "Havelse Å",
+      "Roskilde Fjord",
+      "Arresø"
+    ],
+    "temaer": [
+      "Planlægning og strategi",
+      "Skybrud og regnvand",
+      "Grundvand"
+    ],
+    "youtube_id": "75_C0O5-I7A",
+    "youtube_url": "https://youtube.com/watch?v=75_C0O5-I7A",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
+        "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Nyt tillæg til spildevandsvejledningen",
+        "filename": "Godmorgen_med_DNNK__Nyt_till_g_til_spildevandsvejledningen.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=r3mkSTF4cug",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Fremtidens våde regnvandsbassiner - design og dimensionering",
+        "filename": "Oevrige_UUPd8QxmKvE_20260907_102715.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=UUPd8QxmKvE",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -10285,6 +10356,84 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=0rrfcg3InM0",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Oevrige_u0VUXtZdRh4_20261028_074016.txt",
+    "path": "transcriptions/Oevrige_u0VUXtZdRh4_20261028_074016.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Masterclass: Danmark som kontekst for naturbaserede løsninger - Teknisk vinkel: Den globale standard for NBS og fremtidige muligheder",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Tredje og sidste session i DNNK's masterclass om naturbaserede løsninger (NBS) i en dansk kontekst. Nikolai Friberg viser, hvordan naturelementer som pileanlæg, konstruerede vådområder, levende hegn og kantzoner kan rense vand, øge infiltration, binde kulstof og styrke biodiversiteten, og argumenterer for naturlig hydrologi i vandløbsrestaurering, sammenhængende løsninger på oplandsniveau og bedre overvågning, fx med eDNA og droner. Daniel Spelling Clausen gennemgår IUCN's globale standard for NBS med otte kriterier og self assessment-værktøjet og afprøver den på Skjern Å-projektet, der scorer 51 % med styrker på biodiversitet og økonomi og svagheder på adaptiv forvaltning; en dansk oversættelse af værktøjet og en nordisk guide er på vej.",
+    "keywords": [
+      "naturbaserede løsninger",
+      "IUCN global standard",
+      "self assessment tool",
+      "Skjern Å",
+      "levende hegn",
+      "kantzoner",
+      "vandløbsrestaurering",
+      "naturlig hydrologi",
+      "konstruerede vådområder",
+      "biodiversitet",
+      "adaptiv forvaltning",
+      "eDNA"
+    ],
+    "speakers": [
+      {
+        "name": "Nikolai Friberg",
+        "org": "Center for Naturbaserede Løsninger, Institut for Ecoscience, Aarhus Universitet"
+      },
+      {
+        "name": "Daniel Spelling Clausen",
+        "org": "Center for Naturbaserede Løsninger, Institut for Ecoscience, Aarhus Universitet"
+      }
+    ],
+    "places": [
+      "Skjern Å",
+      "Ringkøbing Fjord",
+      "Roskilde Kommune",
+      "Nordsjælland",
+      "Sønderjylland"
+    ],
+    "temaer": [
+      "Naturbaserede løsninger og biodiversitet",
+      "Vandløb og ådale"
+    ],
+    "youtube_id": "u0VUXtZdRh4",
+    "youtube_url": "https://youtube.com/watch?v=u0VUXtZdRh4",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "DNNK-Masterclass: Danmark som kontekst for naturbaserede løsninger",
+        "filename": "Oevrige_rz9tMaOc1i8_20261012_181029.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rz9tMaOc1i8",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Temadag: Hvordan skaber vi en robust og langsigtet strategi",
+        "filename": "Temadag__Hvordan_skaber_vi_en_robust_og_langsigtet_strategi_.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk: Ny nordisk håndbog viser vejen til naturbaserede løsninger",
+        "filename": "Tech_Talk__Ny_nordisk_h_ndbog_viser_vejen_til_naturbaserede_.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=6JzsjZLjTCw",
+        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]

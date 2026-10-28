@@ -7021,9 +7021,9 @@
     ],
     "youtube_id": "75_C0O5-I7A",
     "youtube_url": "https://youtube.com/watch?v=75_C0O5-I7A",
-    "dnnk_url": "https://www.dnnk.dk/event/godmorgen-med-dnnk-favrholm-hilleroed-naar-klimatilpasning-bygges-ind-fra-foerste-spadestik/",
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [

@@ -4974,7 +4974,7 @@
         "filename": "Oevrige_u0VUXtZdRh4_20261028_074016.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=u0VUXtZdRh4",
-        "dnnk_url": null,
+        "dnnk_url": "https://www.dnnk.dk/10981-2/",
         "source_url": null
       },
       {
@@ -5563,20 +5563,20 @@
         "source_url": null
       },
       {
+        "title": "Godmorgen med DNNK: Favrholm, Hillerød - når klimatilpasning bygges ind fra første spadestik",
+        "filename": "Oevrige_75_C0O5-I7A_20261028_074018.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=75_C0O5-I7A",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
         "title": "Grundlaget for klimatilpasning og vandhåndtering kan forbedres tidligt - allerede i planfasen",
         "filename": "PDF_ONE-PAGER.txt",
         "type": "pdf",
         "youtube_url": null,
         "dnnk_url": null,
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/08/One-Pager_Klimasikring_juni-2022.pdf"
-      },
-      {
-        "title": "DNNK Masterclass om Klimaveje v. VIA University College i Horsens",
-        "filename": "DNNK_Masterclass_om_Klimaveje_v__VIA_University_College_i_sa.mp3 (1).txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
       }
     ],
     "temaer": [
@@ -6816,12 +6816,12 @@
         "source_url": null
       },
       {
-        "title": "Horten: Webinar 1 - Planlægning af klimatilpasning - forholdet mellem kommune og forsyning, 30. november 2022",
-        "filename": "PDF_Link_til_præsentation_fra_Horten.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/12/Webinar-1-Planlaegning-af-klimatilpasning-30.-november-2022.pdf"
+        "title": "Godmorgen med DNNK: Favrholm, Hillerød - når klimatilpasning bygges ind fra første spadestik",
+        "filename": "Oevrige_75_C0O5-I7A_20261028_074018.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=75_C0O5-I7A",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
       }
     ],
     "temaer": [
@@ -7659,18 +7659,18 @@
         "source_url": null
       },
       {
+        "title": "Masterclass: Danmark som kontekst for naturbaserede løsninger - Teknisk vinkel: Den globale standard for NBS og fremtidige muligheder",
+        "filename": "Oevrige_u0VUXtZdRh4_20261028_074016.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=u0VUXtZdRh4",
+        "dnnk_url": "https://www.dnnk.dk/10981-2/",
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Inspirationsoplæg om naturbaserede løsninger og monitorering",
         "filename": "Godmorgen med DNNK – Inspirationsoplæg om NBS og monitering.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=CgdzP4k0egA",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Klimatilpasning og kystbeskyttelse i Køge Bugt",
-        "filename": "Godmorgen_med_DNNK__Klimatilpasning_og_kystbeskyttelse_i_K_g.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Evq4ElsQXKg",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
@@ -10286,6 +10286,74 @@
     ]
   },
   {
+    "filename": "Oevrige_orBYLdsCa34_20261106_073440.txt",
+    "path": "transcriptions/Oevrige_orBYLdsCa34_20261106_073440.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Masterclass: Beyond Asset Loss",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Shreya Some fra DTU Management præsenterer forskning i en menneskecentreret vurdering af oversvømmelsesrisiko i Danmark med udgangspunkt i capability-tilgangen: DTU's skadesøkonomimodel, der i dag beregner tab på bygninger, infrastruktur og andre sektorer, suppleres med skjulte omkostninger som tid brugt på oprydning, helbredsrelaterede tab og ekstra transporttid ved genhusning, hvilket øger de samlede skadesomkostninger med knap 8 % på landsplan og op til over 20 % i enkelte kommuner. En ikke-lineær vægtning af alder, indkomst og uddannelse viser, at især økommuner som Læsø, Samsø, Langeland, Ærø og Fanø bærer en uforholdsmæssig stor byrde, og at ensartede politikker derfor rammer skævt. Interessentdialoger peger på, at data alene ikke løser opgaven: de største barrierer er finansiering, fragmenteret regulering, adgang til skadesdata (GDPR) og manglende samarbejde på tværs af kommuner.",
+    "keywords": [
+      "capability-tilgang",
+      "skadesøkonomimodel",
+      "DTU",
+      "skjulte omkostninger",
+      "social sårbarhed",
+      "ulighed",
+      "økommuner",
+      "oversvømmelsesrisiko",
+      "socioøkonomiske indikatorer",
+      "PESTLE-analyse",
+      "interessentinddragelse",
+      "OS2"
+    ],
+    "speakers": [
+      {
+        "name": "Shreya Some",
+        "org": "DTU Management, Danmarks Tekniske Universitet"
+      }
+    ],
+    "places": [
+      "Læsø",
+      "Samsø",
+      "Langeland",
+      "Ærø",
+      "Fanø",
+      "Kolding"
+    ],
+    "temaer": [
+      "Borgerinddragelse og social sårbarhed",
+      "Økonomi og finansiering",
+      "Data, modeller og kortlægning"
+    ],
+    "youtube_id": "orBYLdsCa34",
+    "youtube_url": "https://youtube.com/watch?v=orBYLdsCa34",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Forstå de sociale konsekvenser af oversvømmelser i Danmark",
+        "filename": "Godmorgen_med_DNNK_tFT2VjSIC3c_20260923_103115.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=tFT2VjSIC3c",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk 002 - Fra oversvømmelse til risiko",
+        "filename": "Tech_Talk_002_-_Fra_oversv_mmelse_til_risiko.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ]
+  },
+  {
     "filename": "Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
     "path": "transcriptions/Oevrige_9Pnmwnd0uJw_20261022_082056.txt",
     "folder": "transcriptions",
@@ -10675,7 +10743,16 @@
         "type": "📄 Dokument"
       }
     ],
-    "related_webinars": [],
+    "related_webinars": [
+      {
+        "title": "Masterclass: Beyond Asset Loss",
+        "filename": "Oevrige_orBYLdsCa34_20261106_073440.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=orBYLdsCa34",
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ],
     "temaer": [
       "Økonomi og finansiering",
       "Data, modeller og kortlægning",
@@ -14884,6 +14961,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Godmorgen med DNNK: Favrholm, Hillerød - når klimatilpasning bygges ind fra første spadestik",
+        "filename": "Oevrige_75_C0O5-I7A_20261028_074018.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=75_C0O5-I7A",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
         "title": "Grundlaget for klimatilpasning og vandhåndtering kan forbedres tidligt - allerede i planfasen",
         "filename": "PDF_ONE-PAGER.txt",
         "type": "pdf",
@@ -14897,14 +14982,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=2vrQr211cwE",
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Karens Minde Aksen",
-        "filename": "Godmorgen_med_DNNK__Karens_Minde_Aksen.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=bB_kNM928t8",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ],

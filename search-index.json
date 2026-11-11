@@ -6983,6 +6983,75 @@
     ]
   },
   {
+    "filename": "Oevrige_Ecxcml6eqsc_20261111_062104.txt",
+    "path": "transcriptions/Oevrige_Ecxcml6eqsc_20261111_062104.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Godmorgen med DNNK: Eksisterende spildevandsbassiner - data, tilstand og strategi",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Sonia Dias Silva fra Novafos fortæller, hvordan forsyningen har skabt overblik over omkring 200 eksisterende spildevandsbassiner i ni ejerkommuner: bassinerne er klassificeret som lukkede, åbne og rørlagte, tilstanden vurderes systematisk, og en godkendt aktivplan med asset management-principper prioriterer renovering efter risiko, dvs. sandsynlighed for dysfunktion og konsekvenser opstrøms og nedstrøms. Da budgettet ikke rækker til alle registrerede forbedringer, kombineres billige tiltag med stor risikoreduktion (fx udskiftning af pumper) med overvågning og yderligere undersøgelser af resten, og renoveringen ses i sammenhæng med separeringsplaner, byudvikling og bassinernes fremtidige funktion, fx forhøjede overløbskanter, ombygning til rørbassiner eller konvertering til regnvandsbassin. Oplægget understreger værdien af at starte småt og iterativt, af godt samarbejde med drift og kommuner, og af opmærksomhed på membraner og drikkevandsinteresser ved åbne bassiner.",
+    "keywords": [
+      "spildevandsbassiner",
+      "Novafos",
+      "tilstandsvurdering",
+      "asset management",
+      "aktivplan",
+      "risikobaseret prioritering",
+      "renovering",
+      "overløb",
+      "overløbskant",
+      "separering",
+      "regnvandsbassin",
+      "rørbassiner"
+    ],
+    "speakers": [
+      {
+        "name": "Sonia Dias Silva",
+        "org": "Novafos"
+      }
+    ],
+    "places": [],
+    "temaer": [
+      "Spildevand og vandkvalitet",
+      "Bygninger og anlæg",
+      "Planlægning og strategi"
+    ],
+    "youtube_id": "Ecxcml6eqsc",
+    "youtube_url": "https://youtube.com/watch?v=Ecxcml6eqsc",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK: Drift, renovering og design af regnvandsbassiner",
+        "filename": "Godmorgen_med_DNNK__Drift__renovering_og_design_af_regnvands.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rx610PWdwDY",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
+        "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Udfordringer med overløb",
+        "filename": "Udfordringer_med_overl_b.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=wHSGQVYpDB8",
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ]
+  },
+  {
     "filename": "Oevrige_75_C0O5-I7A_20261028_074018.txt",
     "path": "transcriptions/Oevrige_75_C0O5-I7A_20261028_074018.txt",
     "folder": "transcriptions",
@@ -9281,12 +9350,12 @@
         "source_url": null
       },
       {
-        "title": "Modeller for kommunale samarbejder inden for landskab, vand og klima - analyse og anbefalinger",
-        "filename": "PDF_Modeller_for_kommunale_samarbejder.txt",
-        "type": "pdf",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2022/11/Modeller_for_kommunale_samarbejder_2021_Rapport_web.pdf"
+        "title": "Masterclass: Beyond Asset Loss",
+        "filename": "Oevrige_orBYLdsCa34_20261106_073440.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=orBYLdsCa34",
+        "dnnk_url": "https://www.dnnk.dk/event/dnnk-masterclass-beyond-asset-loss-towards-a-human-centred-approach-to-flood-risk-management-in-denmark/",
+        "source_url": null
       }
     ],
     "temaer": [
@@ -10749,7 +10818,7 @@
         "filename": "Oevrige_orBYLdsCa34_20261106_073440.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=orBYLdsCa34",
-        "dnnk_url": null,
+        "dnnk_url": "https://www.dnnk.dk/event/dnnk-masterclass-beyond-asset-loss-towards-a-human-centred-approach-to-flood-risk-management-in-denmark/",
         "source_url": null
       }
     ],
@@ -28385,11 +28454,11 @@
         "source_url": "https://usercontent.one/wp/www.dnnk.dk/wp-content/uploads/2020/07/anvisning-025_web.pdf"
       },
       {
-        "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
-        "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
+        "title": "Godmorgen med DNNK: Eksisterende spildevandsbassiner - data, tilstand og strategi",
+        "filename": "Oevrige_Ecxcml6eqsc_20261111_062104.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=Ecxcml6eqsc",
+        "dnnk_url": null,
         "source_url": null
       }
     ],

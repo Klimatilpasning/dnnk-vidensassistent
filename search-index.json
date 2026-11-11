@@ -7019,9 +7019,9 @@
     ],
     "youtube_id": "Ecxcml6eqsc",
     "youtube_url": "https://youtube.com/watch?v=Ecxcml6eqsc",
-    "dnnk_url": "https://www.dnnk.dk/event/godmorgen-med-dnnk-eksisterende-spildevandsbassiner-data-tilstand-og-strategi/",
+    "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
     "source_url": null,
-    "match_confidence": null,
+    "match_confidence": 1.0,
     "description": null,
     "related_resources": [],
     "related_webinars": [
